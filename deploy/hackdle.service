@@ -1,0 +1,18 @@
+[Unit]
+Description=hackdle
+After=network.target
+
+[Service]
+Type=simple
+User=ck
+WorkingDirectory=/home/ck/hackdle
+Environment=PORT=3941
+Environment=HOST=127.0.0.1
+Environment=ORIGIN=https://hackdle.ckacha.dev
+Environment=HACKDLE_TZ=America/New_York
+ExecStart=/usr/bin/node /home/ck/hackdle/build
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

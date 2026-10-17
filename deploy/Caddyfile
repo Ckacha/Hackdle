@@ -1,0 +1,3 @@
+hackdle.ckacha.dev {
+    reverse_proxy localhost:3941
+}
