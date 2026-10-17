@@ -1,0 +1,80 @@
+/* Hack Club brand: https://hackclub.com/brand/ — tokens from github.com/hackclub/site app/globals.css */
+
+@font-face {
+	font-family: 'Phantom Sans';
+	src:
+		url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2') format('woff2'),
+		url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Phantom Sans';
+	src:
+		url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2') format('woff2'),
+		url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Phantom Sans';
+	src:
+		url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2') format('woff2'),
+		url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--background: #ffffff;
+	--foreground: #17171d;
+	--surface: #f9fafc;
+	--surface-hover: #f1f2f5;
+	--border: rgba(0, 0, 0, 0.08);
+	--muted: rgba(23, 23, 29, 0.7);
+	--shadow-dd: 0 8px 32px rgba(0, 0, 0, 0.13);
+
+	--red: #ec3750;
+	--red-text: #be1e3a; /* brand red fails 4.5:1 for small text; use this under 24px */
+	--orange: #ff8c37;
+	--yellow: #f1c40f;
+	--green: #33d6a6;
+	--cyan: #5bc0de;
+	--blue: #338eda;
+	--purple: #a633d6;
+	--slate: #8492a6;
+
+	--font-phantom: 'Phantom Sans', system-ui, sans-serif;
+	color-scheme: light;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	overflow-x: clip;
+}
+
+body {
+	min-height: 100vh;
+	color: var(--foreground);
+	font-family: var(--font-phantom);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* hackclub.com hero: magazine illustration over a faint-to-red gradient */
+	background:
+		url('/background.webp') center bottom / 100% auto no-repeat fixed,
+		linear-gradient(180deg, rgba(236, 55, 80, 0.04) 60%, rgba(236, 55, 80, 0.4) 100%) fixed,
+		var(--background);
+}
+
+img {
+	-webkit-user-drag: none;
+	user-select: none;
+}

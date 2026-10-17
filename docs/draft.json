@@ -1,0 +1,861 @@
+[
+	{
+		"name": "15 Days in Public",
+		"slug": "15-days-in-public",
+		"kind": "ysws",
+		"description": "Learn, build, or do something everyday for 15 days and post progress reports.",
+		"url": null,
+		"slack_channel": "#15-days-in-public",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Anchor",
+		"slug": "anchor",
+		"kind": "ysws",
+		"description": "Design a VTuber-style logo for your High Seas project and receive custom stickers.",
+		"url": "https://anchor.hackclub.com/",
+		"slack_channel": "#anchor",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json",
+			"https://hackclub.com/api/v1/events/recepBUx0dFRyJXNj"
+		],
+		"hackclub_event_id": "recepBUx0dFRyJXNj",
+		"project_types": [
+			"Other"
+		],
+		"start_date": "2024-11-06",
+		"end_date": "2025-01-27",
+		"logo_file": "logos/anchor.webp",
+		"logo": "https://hackclub.com/api/v1/events/recepBUx0dFRyJXNj",
+		"logo_kind": "logo"
+	},
+	{
+		"name": "Apogee",
+		"slug": "apogee",
+		"kind": "ysws",
+		"description": "a rocketry ysws - still workshopping the idea!",
+		"url": null,
+		"slack_channel": "#apogee",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "ArcadAi",
+		"slug": "arcadai",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2026-06-23",
+		"end_date": "2026-07-25",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://arcadai.hackclub.com/assets/favicon.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/arcadai.png",
+		"url": "https://arcadai.hackclub.com/",
+		"url_status": "online",
+		"archive_url": null,
+		"description": "Learn to make a Retro Arcade Game with AI and Get a Reward for Shipping It",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://arcadai.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/rec7bRWjk9YYaezBJ"
+		],
+		"catalog_status": "draft",
+		"hackclub_event_id": "rec7bRWjk9YYaezBJ",
+		"project_types": []
+	},
+	{
+		"name": "Arcade",
+		"slug": "arcade",
+		"kind": "ysws",
+		"type": "both",
+		"start_date": "2024-06-01",
+		"end_date": "2024-09-01",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/logos/arcade%202.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/arcade.png",
+		"url": "https://hackclub.com/arcade",
+		"url_status": "online",
+		"archive_url": null,
+		"description": "The summer is yours for the making",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://hackclub.com/arcade",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/recHnd1ttjwPlgVIt"
+		],
+		"catalog_status": "draft",
+		"hackclub_event_id": "recHnd1ttjwPlgVIt",
+		"project_types": [
+			"Websites",
+			"Software",
+			"Electronics"
+		]
+	},
+	{
+		"name": "Bestsellr",
+		"slug": "bestsellr",
+		"kind": "ysws",
+		"description": "Write a short story and build a webpage for it like a real published book.",
+		"url": "https://incredible-chaja-b44bb7.netlify.app/",
+		"slack_channel": "#bestsellr",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Blot",
+		"slug": "blot",
+		"kind": "ysws",
+		"type": "both",
+		"start_date": "2024-04-09",
+		"end_date": "2024-11-23",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/logos/blot.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/blot.png",
+		"url": "https://blot.hackclub.com/",
+		"url_status": "online",
+		"archive_url": null,
+		"description": "Write code that makes generative art and get a Blot drawing machine.",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://blot.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/rec8eH7KozQJlIDQV"
+		],
+		"catalog_status": "draft",
+		"hackclub_event_id": "rec8eH7KozQJlIDQV",
+		"project_types": [
+			"Software",
+			"Electronics"
+		]
+	},
+	{
+		"name": "Boba Manor",
+		"slug": "boba-manor",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": null,
+		"end_date": "2024-10-31",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/logos/boba.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/boba-manor.png",
+		"url": "https://manor.hackclub.com/",
+		"url_status": "online",
+		"archive_url": null,
+		"description": "Website building with rewards.",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://manor.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events"
+		],
+		"catalog_status": "draft"
+	},
+	{
+		"name": "Bugged",
+		"slug": "bugged",
+		"kind": "ysws",
+		"description": "Make anything with intentional bugs, get security, debugging and puzzle related goodies!",
+		"url": null,
+		"slack_channel": "#bugged",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Buy The World",
+		"slug": "buy-the-world",
+		"kind": "ysws",
+		"description": "Make software/hardware projects, buy countries and get free prizes!",
+		"url": "https://rsvp.soon.it/buytheworld",
+		"slack_channel": "#buy-the-world",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Cargo Cult",
+		"slug": "cargo-cult",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2024-11-06",
+		"end_date": "2024-12-31",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://user-cdn.hackclub-assets.com/019c2538-afd2-7d2e-b738-7155cb740e6a/screenshot_2024-11-26_at_18.25.06.png",
+		"logo_kind": "photo",
+		"logo_file": "logos/cargo-cult.png",
+		"url": null,
+		"url_status": null,
+		"archive_url": null,
+		"description": "Build a Rust CLI and get a Rust book.",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/reconHxKzWI8Zp43M"
+		],
+		"catalog_status": "draft",
+		"hackclub_event_id": "reconHxKzWI8Zp43M",
+		"project_types": [
+			"Software"
+		]
+	},
+	{
+		"name": "Constellation",
+		"slug": "constellation",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": null,
+		"end_date": null,
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/constellation/HEAD/viewer/public/constellation-background.png",
+		"logo_kind": "banner",
+		"logo_file": "logos/constellation.png",
+		"url": null,
+		"url_status": null,
+		"archive_url": null,
+		"description": "You ship a self host, full stack website, we ship a Raspberry Pi Zero 2 W to host it on",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events"
+		],
+		"catalog_status": "draft"
+	},
+	{
+		"name": "Easel",
+		"slug": "easel",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2024-05-10",
+		"end_date": "2024-06-30",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://user-cdn.hackclub-assets.com/019c5895-5f34-7b91-8aa2-71b70e7f423d/video-capture-8135_2-min.png",
+		"logo_kind": "photo",
+		"logo_file": "logos/easel.png",
+		"url": "https://easel.hackclub.com/orpheus-finds-easel",
+		"url_status": "online",
+		"archive_url": null,
+		"description": "Build a programming language, get fudge.",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://easel.hackclub.com/orpheus-finds-easel",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/recLh2KxoyLbqiuAi"
+		],
+		"catalog_status": "draft",
+		"hackclub_event_id": "recLh2KxoyLbqiuAi",
+		"project_types": [
+			"Software"
+		]
+	},
+	{
+		"name": "flagged",
+		"slug": "flagged",
+		"kind": "ysws",
+		"description": "Learn how to actually hack, earn hacking themed prizes!",
+		"url": "https://flagged-ysws.ingo.au",
+		"slack_channel": "#flagged",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Hack a Home",
+		"slug": "hack-a-home",
+		"kind": "ysws",
+		"description": "Mod, tweak, and upgrade your devices — earn grants to buy IoT hardware.",
+		"url": "https://hackahome.nullbyte.rip/",
+		"slack_channel": "#hackahome",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "HackABand",
+		"slug": "hackaband",
+		"kind": "ysws",
+		"description": "ship a wristband design and we ship you fabric woven wristband with NFC chip",
+		"url": "https://hackaband.vercel.app/",
+		"slack_channel": "#hack-a-band",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Hackanomous",
+		"slug": "hackanomous",
+		"kind": "ysws",
+		"description": "Build into AI. Get funding<br> and win prizes!",
+		"url": "https://hackanomous.vercel.app/",
+		"slack_channel": "#hackanomous",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Hackmouse",
+		"slug": "hackmouse",
+		"kind": "ysws",
+		"description": "Design a PCB & case for a mouse and get the parts shipped to you.",
+		"url": null,
+		"slack_channel": "#hackmouse",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Hackxpansion",
+		"slug": "hackxpansion",
+		"kind": "ysws",
+		"type": "both",
+		"start_date": "2026-08-03",
+		"end_date": "2026-09-07",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/logos/hackxpansion_logo.png",
+		"logo_kind": "icon",
+		"logo_file": "logos/hackxpansion.png",
+		"url": "https://hackxpansion.hackclub.com/",
+		"url_status": "online",
+		"archive_url": null,
+		"description": "Design four expansion cards and apps for them, and get a custom handheld console to use them in.",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackxpansion.hackclub.com/",
+			"https://hackclub.com/api/v1/events/recNQWQNYh1EozEAJ"
+		],
+		"catalog_status": "draft",
+		"hackclub_event_id": "recNQWQNYh1EozEAJ",
+		"project_types": [
+			"Electronics",
+			"Software",
+			"Gamedev"
+		]
+	},
+	{
+		"name": "HAM Radio YSWS",
+		"slug": "ham-radio-ysws",
+		"kind": "ysws",
+		"description": "Related to HAM radio projects.",
+		"url": null,
+		"slack_channel": "#hamradio",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "High Seas",
+		"slug": "high-seas",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2024-10-30",
+		"end_date": "2025-01-31",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/logos/high%20seas.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/high-seas.png",
+		"url": "https://highseas.hackclub.com/",
+		"url_status": "online",
+		"archive_url": null,
+		"description": "Work on projects, earn doubloons, and compete in the Wonderdome.",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://highseas.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/reczTBJrxy80ONaK6"
+		],
+		"catalog_status": "draft",
+		"hackclub_event_id": "reczTBJrxy80ONaK6",
+		"project_types": []
+	},
+	{
+		"name": "Improv",
+		"slug": "improv",
+		"kind": "ysws",
+		"description": "Find something that interests or deeply annoys you, whether that's overpriced PaaS, missing features or something else. build a tool to fix it, ship your project and get Uptime + discounts. profit!",
+		"url": "https://improv-silk.vercel.app/",
+		"slack_channel": "#improv",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "issued",
+		"slug": "issued",
+		"kind": "ysws",
+		"description": "Design with Code, Wear Apparel with those designs",
+		"url": "https://issued.bing-bong.uk",
+		"slack_channel": "#issued",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Jetsu",
+		"slug": "jetsu",
+		"kind": "ysws",
+		"description": "You ship a ML Robot, We ship a Jetson Nano / Jetson Orin Nano",
+		"url": "https://jetsu.vercel.app",
+		"slack_channel": "#jetsu",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Jus'STUDY",
+		"slug": "jus-study",
+		"kind": "ysws",
+		"description": "Get study stuff by shipping projects that help you and others study!",
+		"url": "https://jus-study.hackclub.com/",
+		"slack_channel": "#jus-study",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Kintsugi",
+		"slug": "kintsugi",
+		"kind": "ysws",
+		"description": "Build Any general or problem solving project for 50 hours. Come to an IRL hackathon in Tokyo,Japan for free",
+		"url": "https://kintsugi-ysws.vercel.app/",
+		"slack_channel": "#kintsugi",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Kit Lab",
+		"slug": "kit-lab",
+		"kind": "ysws",
+		"description": "Build software according to themes and gets kits to build projects and ship projects made using only the kit electronics and get prizes!",
+		"url": null,
+		"slack_channel": "#kit-lab",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Lightsaber",
+		"slug": "lightsaber",
+		"kind": "ysws",
+		"description": "You ship a beat saber map, we ship a(n) <undecided>.",
+		"url": null,
+		"slack_channel": "#lightsaber",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "LLM YSWS",
+		"slug": "llm-ysws",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": null,
+		"end_date": "2024-10-01",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": null,
+		"url_status": null,
+		"archive_url": null,
+		"description": "Projects using language models.",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml"
+		],
+		"catalog_status": "draft"
+	},
+	{
+		"name": "MakerCreate",
+		"slug": "makercreate",
+		"kind": "ysws",
+		"description": "Spawn into a world of hardware and CAD modelling with MakerCreate",
+		"url": "https://makercreate.vercel.app/",
+		"slack_channel": "#makercreate",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Neon",
+		"slug": "neon",
+		"kind": "ysws",
+		"type": "both",
+		"start_date": null,
+		"end_date": "2025-01-31",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/logos/neon.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/neon.png",
+		"url": "https://neon.hackclub.com/",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Write code for an LED display and get a 64x32 LED matrix.",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://neon.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml"
+		],
+		"catalog_status": "draft"
+	},
+	{
+		"name": "Onward",
+		"slug": "onward",
+		"kind": "ysws",
+		"description": "Build a robot using Arduino and receive one.",
+		"url": null,
+		"slack_channel": "#onward",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Pyramid Scheme",
+		"slug": "pyramid-scheme",
+		"kind": "ysws",
+		"description": "Put up Hack Club posters to earn prizes.",
+		"url": null,
+		"slack_channel": "#pyramid-scheme",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Retrospect",
+		"slug": "retrospect",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2025-02-09",
+		"end_date": "2024-10-08",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/logos/Retrospect-1.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/retrospect.png",
+		"url": "https://retrospect.hackclub.com/",
+		"url_status": "online",
+		"archive_url": null,
+		"description": "Create a DOS game and have it delivered on a floppy disk.",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://retrospect.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/recxey2dJOqGdv7Nj"
+		],
+		"catalog_status": "draft",
+		"hackclub_event_id": "recxey2dJOqGdv7Nj",
+		"project_types": [
+			"Gamedev"
+		]
+	},
+	{
+		"name": "Rework",
+		"slug": "rework",
+		"kind": "ysws",
+		"type": "hardware",
+		"start_date": null,
+		"end_date": "2026-03-06",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://rework.hackclub.com/favicon.png",
+		"logo_kind": "icon",
+		"logo_file": "logos/rework.png",
+		"url": "https://rework.hackclub.com",
+		"url_status": "online",
+		"archive_url": null,
+		"description": "CAD a 3D printer mod and get $75 plus 1kg of filament to build it.",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://rework.hackclub.com",
+			"https://rework.hackclub.com/favicon.png"
+		],
+		"catalog_status": "draft"
+	},
+	{
+		"name": "Say Cheese!",
+		"slug": "say-cheese",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2025-01-09",
+		"end_date": "2025-01-26",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/logos/say%20cheese-1.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/say-cheese.png",
+		"url": "https://saycheese.hackclub.com/",
+		"url_status": "online",
+		"archive_url": null,
+		"description": "Fit a program in a QR code, get a portable printer and maybe a Blåhaj.",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://saycheese.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/recaFoqCU8OckbUXZ"
+		],
+		"catalog_status": "draft",
+		"hackclub_event_id": "recaFoqCU8OckbUXZ",
+		"project_types": [
+			"Software"
+		]
+	},
+	{
+		"name": "Servo",
+		"slug": "servo",
+		"kind": "ysws",
+		"description": "Design upgrades for your robot, get parts & prizes!",
+		"url": "https://servo-ysws.netlify.app/",
+		"slack_channel": "#servo",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Sock",
+		"slug": "sock",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": null,
+		"end_date": "2025-03-01",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": null,
+		"url_status": null,
+		"archive_url": null,
+		"description": "Collaborate on a project for 10 days, get Hack Club socks!",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://github.com/hackclub/sock"
+		],
+		"catalog_status": "draft"
+	},
+	{
+		"name": "Survive",
+		"slug": "survive",
+		"kind": "ysws",
+		"description": "Make offline and outdoors themed projects, win outdoors gear!",
+		"url": "https://survive-website.vercel.app/",
+		"slack_channel": "#survive",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "The Bin",
+		"slug": "the-bin",
+		"kind": "ysws",
+		"type": "hardware",
+		"start_date": "2024-04-14",
+		"end_date": "2024-09-30",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/logos/the%20bin.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/the-bin.png",
+		"url": "https://bin.hackclub.com/",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Build hardware projects with free parts from a virtual parts bin.",
+		"confidence": "high",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://bin.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/rec0cAdSi6dFsnr1y"
+		],
+		"catalog_status": "draft",
+		"hackclub_event_id": "rec0cAdSi6dFsnr1y",
+		"project_types": [
+			"Electronics"
+		]
+	},
+	{
+		"name": "Trek",
+		"slug": "trek",
+		"kind": "ysws",
+		"description": "Build your escape from a stranded island by engineering something that flies, floats, drives, or defies sanity, and win prizes! RSVP at https://rsvp.soon.it/trek",
+		"url": "https://ysws-sigma.vercel.app/",
+		"slack_channel": "#trek-ysws",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Trick or Trace",
+		"slug": "trick-or-trace",
+		"kind": "ysws",
+		"type": "hardware",
+		"start_date": null,
+		"end_date": null,
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://trickortrace.hackclub.com/title.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/trick-or-trace.png",
+		"url": "https://trickortrace.hackclub.com/",
+		"url_status": "online",
+		"archive_url": null,
+		"description": "Design a PCB in October, vote on the best designs, and get a second grant.",
+		"confidence": "medium",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://trickortrace.hackclub.com/",
+			"https://trickortrace.hackclub.com/title.png"
+		],
+		"catalog_status": "draft"
+	},
+	{
+		"name": "Utopia",
+		"slug": "utopia",
+		"kind": "ysws",
+		"description": "Build portable battery-powered technology and earn grants and a ticket to a 4 day hackathon.",
+		"url": "https://utopia-hc.vercel.app/",
+		"slack_channel": "#utopia",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	},
+	{
+		"name": "Winter Boba Drops",
+		"slug": "winter-boba-drops",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": null,
+		"end_date": "2024-12-31",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/logos/boba.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/winter-boba-drops.png",
+		"url": null,
+		"url_status": null,
+		"archive_url": null,
+		"description": "Create a winter-themed static website, get a boba plushie!",
+		"confidence": "medium",
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml"
+		],
+		"catalog_status": "draft"
+	},
+	{
+		"name": "Wonders",
+		"slug": "wonders",
+		"kind": "ysws",
+		"description": "make a wonderful and personal project without counting hours, get a wonderful surprise!",
+		"url": "https://wonders.ridit.space",
+		"slack_channel": "#wonders",
+		"catalog_status": "draft",
+		"sources": [
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/api.json"
+		]
+	}
+]
