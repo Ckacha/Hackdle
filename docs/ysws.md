@@ -1,8 +1,6 @@
 # YSWS
 
-- 10 Days In Public
 - 10 Days of Tarot
-- 10 Hours in Public
 - 3AM
 - 555
 - Accelerate
@@ -43,11 +41,9 @@
 - Braize
 - Breadboard
 - Browser Buddy
-- Build Your Own LLM
 - builders club
 - Bulky
 - C-LI
-- Cafe
 - Calculate
 - Canvas
 - Cargo Cult
@@ -76,7 +72,6 @@
 - Cubed
 - Cœur
 - Darkroom
-- Decode
 - Defector
 - Dessert
 - dockerize
@@ -198,7 +193,6 @@
 - Nothing
 - Off-Track
 - OnBoard
-- OnBoard Live
 - onekey
 - Optimize
 - OrpheusAthon
@@ -219,10 +213,8 @@
 - Playphone
 - Plush
 - Polygon
-- Popcorn
 - Portal VR
 - Portputer
-- Power Hour
 - Power Tools
 - premiere
 - Printboard
@@ -232,7 +224,6 @@
 - Pulse
 - Pulsewidth
 - Pxl
-- Q
 - Radish Jam
 - Rageclick
 - Railway
@@ -304,9 +295,7 @@
 - The Zoo
 - thingondesk
 - thirdspace
-- This Sketch
 - Throwback
-- Thunder
 - Tile
 - Timeless
 - Tonic

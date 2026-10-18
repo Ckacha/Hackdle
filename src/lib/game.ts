@@ -2,6 +2,7 @@ import list from '../../docs/list.json';
 
 export type Kind = 'ysws' | 'hackathon' | 'both';
 export type Type = 'software' | 'hardware' | 'both';
+export type Format = 'online' | 'in-person' | 'both';
 
 export interface Program {
 	name: string;
@@ -16,9 +17,20 @@ export interface Program {
 	logo_file: string | null;
 	url: string | null;
 	description: string | null;
+	organizers: string[];
+	organizer_confidence: 'high' | 'medium' | 'low' | null;
 }
 
-export type Verdict = 'correct' | 'partial' | 'wrong';
+export interface Guess {
+	slug: string;
+	start: string;
+	end: string;
+	format: Format;
+	type: Type;
+	organizer: string;
+}
+
+export type Verdict = 'correct' | 'wrong';
 
 export interface Cell {
 	label: string;
@@ -28,14 +40,16 @@ export interface Cell {
 
 export const programs = list as Program[];
 
+export const bySlug = new Map(programs.map((p) => [p.slug, p]));
+
 export function logoFor(p: Program): string | null {
 	return p.logo_file ? `/${p.logo_file}` : p.logo;
 }
 
-export const KIND_LABEL: Record<Kind, string> = {
-	ysws: 'YSWS',
-	hackathon: 'Hackathon',
-	both: 'YSWS + Event'
+export const FORMAT_LABEL: Record<Format, string> = {
+	online: 'Online',
+	'in-person': 'In person',
+	both: 'Both'
 };
 
 export const TYPE_LABEL: Record<Type, string> = {
@@ -44,40 +58,68 @@ export const TYPE_LABEL: Record<Type, string> = {
 	both: 'Both'
 };
 
-export const STATUS_LABEL: Record<Program['status'], string> = {
-	ended: 'Ended',
-	ongoing: 'Ongoing',
-	upcoming: 'Upcoming'
+const KIND_FORMAT: Record<Kind, Format> = {
+	ysws: 'online',
+	hackathon: 'in-person',
+	both: 'both'
 };
 
-export const COLUMNS = ['Program', 'Kind', 'Type', 'Status', 'Year'] as const;
+export const formatOf = (p: Program): Format => KIND_FORMAT[p.kind];
 
-export const answerPool = programs.filter((p) => p.end_date && p.type && logoFor(p));
+export const COLUMNS = ['Program', 'Start', 'End', 'Format', 'Type', 'Organizer'] as const;
 
-function compareOverlap<T extends string>(guess: T, answer: T, labels: Record<T, string>): Cell {
-	const verdict: Verdict = guess === answer ? 'correct' : guess === 'both' || answer === 'both' ? 'partial' : 'wrong';
-	return { label: labels[guess], verdict };
+export const organizers = [
+	...new Set(programs.flatMap((p) => p.organizers))
+].sort((a, b) => a.localeCompare(b));
+
+const playable = programs.filter(
+	(p) => p.kind !== 'hackathon' && p.start_date && p.end_date && p.type
+);
+const withOrganizer = playable.filter(
+	(p) => p.organizers.length && p.organizer_confidence !== 'low'
+);
+
+export const answerPool = withOrganizer.length ? withOrganizer : playable;
+
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+export function monthLabel(ym: string): string {
+	const [y, m] = ym.split('-');
+	return `${MONTHS[Number(m) - 1]} ${y}`;
 }
 
-const year = (p: Program) => (p.end_date ? Number(p.end_date.slice(0, 4)) : null);
+function compareMonth(guess: string, answer: string): Cell {
+	const a = answer.slice(0, 7);
+	if (guess === a) return { label: monthLabel(guess), verdict: 'correct' };
+	return { label: monthLabel(guess), verdict: 'wrong', arrow: guess < a ? 'up' : 'down' };
+}
 
-export function compare(guess: Program, answer: Program): Cell[] {
-	const gy = year(guess);
-	const ay = year(answer)!;
+const norm = (s: string) => s.trim().toLowerCase();
+
+const isOrganizer = (guess: string, p: Program) =>
+	p.organizers.some((o) => norm(o) === norm(guess));
+
+export function compare(guess: Guess, answer: Program): Cell[] {
 	return [
-		{ label: guess.name, verdict: guess.slug === answer.slug ? 'correct' : 'wrong' },
-		compareOverlap(guess.kind, answer.kind, KIND_LABEL),
-		guess.type ? compareOverlap(guess.type, answer.type!, TYPE_LABEL) : { label: '?', verdict: 'wrong' },
 		{
-			label: STATUS_LABEL[guess.status],
-			verdict: guess.status === answer.status ? 'correct' : 'wrong'
+			label: bySlug.get(guess.slug)?.name ?? guess.slug,
+			verdict: guess.slug === answer.slug ? 'correct' : 'wrong'
 		},
-		gy === null
-			? { label: '?', verdict: 'wrong' }
-			: {
-				label: String(gy),
-				verdict: gy === ay ? 'correct' : 'wrong',
-				arrow: gy === ay ? undefined : gy < ay ? 'up' : 'down'
-				}
+		compareMonth(guess.start, answer.start_date!),
+		compareMonth(guess.end, answer.end_date!),
+		{
+			label: FORMAT_LABEL[guess.format],
+			verdict: guess.format === formatOf(answer) ? 'correct' : 'wrong'
+		},
+		{
+			label: TYPE_LABEL[guess.type],
+			verdict: guess.type === answer.type ? 'correct' : 'wrong'
+		},
+		{
+			label: guess.organizer,
+			verdict: isOrganizer(guess.organizer, answer) ? 'correct' : 'wrong'
+		}
 	];
 }
+
+export const isWin = (cells: Cell[]) => cells.every((c) => c.verdict === 'correct');

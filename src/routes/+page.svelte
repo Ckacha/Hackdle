@@ -1,64 +1,118 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { programs, compare, logoFor, COLUMNS, type Program } from '#lib/game.ts';
+	import {
+		programs,
+		bySlug,
+		compare,
+		isWin,
+		formatOf,
+		logoFor,
+		organizers,
+		COLUMNS,
+		FORMAT_LABEL,
+		TYPE_LABEL,
+		type Format,
+		type Guess,
+		type Type
+	} from '#lib/game.ts';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
 
-	const bySlug = new Map(programs.map((p) => [p.slug, p]));
 	let answer = $derived(bySlug.get(data.answer)!);
 	let yesterday = $derived(data.yesterday ? bySlug.get(data.yesterday) : undefined);
-	let storageKey = $derived(`hackdle:${data.key}`);
+	let storageKey = $derived(`hackdle:v2:${data.key}`);
 
-	let guesses = $state<Program[]>([]);
+	let guesses = $state<Guess[]>([]);
+	let gaveUp = $state(false);
+
 	let query = $state('');
+	let slug = $state('');
+	let start = $state('');
+	let end = $state('');
+	let format = $state<Format | ''>('');
+	let type = $state<Type | ''>('');
+	let organizer = $state('');
 	let highlighted = $state(0);
-	let won = $derived(guesses.some((g) => g.slug === answer.slug));
+	let open = $state(false);
+
+	let results = $derived(guesses.map((g) => compare(g, answer)));
+	let won = $derived(results.some(isWin));
+	let done = $derived(won || gaveUp);
+	let complete = $derived(!!(slug && start && end && format && type && organizer.trim()));
 
 	let suggestions = $derived.by(() => {
 		const q = query.trim().toLowerCase();
-		if (!q) return [];
-		const used = new Set(guesses.map((g) => g.slug));
+		if (!q || !open) return [];
 		return programs
-			.filter((p) => !used.has(p.slug) && p.name.toLowerCase().includes(q))
+			.filter((p) => p.name.toLowerCase().includes(q))
 			.sort((a, b) => +!a.name.toLowerCase().startsWith(q) - +!b.name.toLowerCase().startsWith(q))
 			.slice(0, 8);
 	});
 
 	onMount(() => {
 		try {
-			const saved: string[] = JSON.parse(localStorage.getItem(storageKey) ?? '[]');
-			guesses = saved.map((s) => bySlug.get(s)).filter((p): p is Program => !!p);
+			const saved = JSON.parse(localStorage.getItem(storageKey) ?? '{}');
+			guesses = (saved.guesses ?? []).filter((g: Guess) => bySlug.has(g.slug));
+			gaveUp = !!saved.gaveUp;
 		} catch {}
 	});
 
-	function guess(p: Program) {
-		if (won || guesses.some((g) => g.slug === p.slug)) return;
-		guesses = [p, ...guesses];
-		query = '';
-		highlighted = 0;
+	function save() {
 		try {
-			localStorage.setItem(storageKey, JSON.stringify(guesses.map((g) => g.slug)));
+			localStorage.setItem(storageKey, JSON.stringify({ guesses, gaveUp }));
 		} catch {}
 	}
 
-	function onKeydown(e: KeyboardEvent) {
+	function pick(i: number) {
+		const p = suggestions[i];
+		if (!p) return;
+		slug = p.slug;
+		query = p.name;
+		open = false;
+	}
+
+	function onQueryInput() {
+		slug = '';
+		highlighted = 0;
+		open = true;
+	}
+
+	function onQueryKeydown(e: KeyboardEvent) {
+		if (!suggestions.length) return;
 		if (e.key === 'ArrowDown') {
 			e.preventDefault();
 			highlighted = Math.min(highlighted + 1, suggestions.length - 1);
 		} else if (e.key === 'ArrowUp') {
 			e.preventDefault();
 			highlighted = Math.max(highlighted - 1, 0);
-		} else if (e.key === 'Enter' && suggestions[highlighted]) {
+		} else if (e.key === 'Enter') {
 			e.preventDefault();
-			guess(suggestions[highlighted]);
+			pick(highlighted);
+		} else if (e.key === 'Escape') {
+			open = false;
 		}
+	}
+
+	function submit(e: SubmitEvent) {
+		e.preventDefault();
+		if (!complete || done) return;
+		guesses = [
+			{ slug, start, end, format: format as Format, type: type as Type, organizer: organizer.trim() },
+			...guesses
+		];
+		save();
+	}
+
+	function giveUp() {
+		gaveUp = true;
+		save();
 	}
 </script>
 
 <svelte:head>
 	<title>Hackdle</title>
-	<meta name="description" content="Guess today's Hack Club YSWS or hackathon." />
+	<meta name="description" content="Guess today's Hack Club YSWS, field by field." />
 </svelte:head>
 
 <main>
@@ -67,9 +121,9 @@
 		<p class="tagline">The daily guessing game for Hack Club programs</p>
 	</header>
 
-	<section class="card prompt">
-		{#if won}
-			<h2>You got it!</h2>
+	{#if done}
+		<section class="card result">
+			<h2>{won ? 'You got it!' : 'Today’s program was'}</h2>
 			<div class="winner">
 				{#if logoFor(answer)}<img src={logoFor(answer)} alt="" />{/if}
 				<div>
@@ -78,69 +132,134 @@
 					{#if answer.url}<a href={answer.url} target="_blank" rel="noreferrer">Visit site →</a>{/if}
 				</div>
 			</div>
+			<dl class="facts">
+				<div><dt>Start</dt><dd>{answer.start_date}</dd></div>
+				<div><dt>End</dt><dd>{answer.end_date}</dd></div>
+				<div><dt>Format</dt><dd>{FORMAT_LABEL[formatOf(answer)]}</dd></div>
+				<div><dt>Type</dt><dd>{answer.type ? TYPE_LABEL[answer.type] : '?'}</dd></div>
+				<div><dt>{answer.organizers.length > 1 ? 'Organizers' : 'Organizer'}</dt><dd>{answer.organizers.join(', ') || 'Unknown'}</dd></div>
+			</dl>
 			<p class="muted">
-				Solved in {guesses.length}
-				{guesses.length === 1 ? 'guess' : 'guesses'}. Come back tomorrow for a new one.
+				{#if won}Solved in {guesses.length} {guesses.length === 1 ? 'guess' : 'guesses'}.{/if}
+				Come back tomorrow for a new one.
 			</p>
-		{:else}
+		</section>
+	{:else}
+		<form class="card guess" onsubmit={submit}>
 			<h2>Guess today's Hack Club program!</h2>
-			<p class="muted">Type any YSWS or hackathon to begin.</p>
-			<div class="search">
-				<input
-					type="text"
-					placeholder="Type a program name…"
-					autocomplete="off"
-					spellcheck="false"
-					aria-label="Program name"
-					bind:value={query}
-					oninput={() => (highlighted = 0)}
-					onkeydown={onKeydown}
-				/>
-				<button
-					class="submit"
-					aria-label="Submit guess"
-					disabled={!suggestions.length}
-					onclick={() => suggestions[highlighted] && guess(suggestions[highlighted])}>➤</button
-				>
-				{#if suggestions.length}
-					<ul class="suggestions" role="listbox">
-						{#each suggestions as p, i (p.slug)}
-							<li role="option" aria-selected={i === highlighted}>
-								<button
-									class:active={i === highlighted}
-									onmouseenter={() => (highlighted = i)}
-									onclick={() => guess(p)}
-								>
-									{#if logoFor(p)}<img src={logoFor(p)} alt="" loading="lazy" />{:else}<span
-											class="ph">{p.name[0]}</span
-										>{/if}
-									{p.name}
-								</button>
-							</li>
+			<p class="muted">Fill in every field, then guess. Each field tells you if it's right.</p>
+
+			<div class="fields">
+				<label class="field wide">
+					<span>Program</span>
+					<div class="search">
+						<input
+							type="text"
+							placeholder="Type a program name…"
+							autocomplete="off"
+							spellcheck="false"
+							bind:value={query}
+							oninput={onQueryInput}
+							onkeydown={onQueryKeydown}
+							onblur={() => setTimeout(() => (open = false), 150)}
+							class:valid={!!slug}
+						/>
+
+						{#if suggestions.length}
+							<ul class="suggestions" role="listbox">
+								{#each suggestions as p, i (p.slug)}
+									<li role="option" aria-selected={i === highlighted}>
+										<button
+											type="button"
+											class:active={i === highlighted}
+											onmouseenter={() => (highlighted = i)}
+											onmousedown={(e) => e.preventDefault()}
+											onclick={() => pick(i)}
+										>
+
+											{#if logoFor(p)}<img src={logoFor(p)} alt="" loading="lazy" />{:else}<span
+													class="ph">{p.name[0]}</span
+												>{/if}
+
+											{p.name}
+										</button>
+									</li>
+								{/each}
+							</ul>
+						{/if}
+					</div>
+				</label>
+
+				<label class="field">
+					<span>Start</span>
+					<input type="month" min="2018-01" max="2027-12" bind:value={start} />
+				</label>
+
+				<label class="field">
+					<span>End</span>
+					<input type="month" min="2018-01" max="2027-12" bind:value={end} />
+				</label>
+
+				<fieldset class="field">
+					<legend>Format</legend>
+					<div class="choices">
+						{#each Object.entries(FORMAT_LABEL) as [value, label]}
+							<button type="button" class:on={format === value} onclick={() => (format = value as Format)}
+								>{label}</button
+							>
 						{/each}
-					</ul>
+					</div>
+				</fieldset>
+
+				<fieldset class="field">
+					<legend>Type</legend>
+					<div class="choices">
+						{#each Object.entries(TYPE_LABEL) as [value, label]}
+							<button type="button" class:on={type === value} onclick={() => (type = value as Type)}>{label}</button>
+						{/each}
+					</div>
+				</fieldset>
+
+				<label class="field wide">
+					<span>Organizer</span>
+					<input
+						type="text"
+						placeholder="Who ran it? Any organizer counts"
+						autocomplete="off"
+						spellcheck="false"
+						list="organizers"
+						bind:value={organizer}
+					/>
+					
+					<datalist id="organizers">
+						{#each organizers as o}<option value={o}></option>{/each}
+					</datalist>
+				</label>
+			</div>
+
+			<div class="actions">
+				<button class="submit" type="submit" disabled={!complete}>Guess</button>
+				{#if guesses.length >= 3}
+					<button class="link" type="button" onclick={giveUp}>Give up</button>
 				{/if}
 			</div>
-		{/if}
-	</section>
+		</form>
+	{/if}
 
 	{#if guesses.length}
 		<section class="board" aria-label="Guesses">
 			<div class="row head">
 				{#each COLUMNS as c}<div>{c}</div>{/each}
 			</div>
-			{#each guesses as g (g.slug)}
+			{#each guesses as g, n (guesses.length - n)}
+				{@const p = bySlug.get(g.slug)}
 				<div class="row">
-					{#each compare(g, answer) as cell, i}
-						<div class="tile {cell.verdict}" style="animation-delay: {i * 180}ms">
-							{#if i === 0}
-								{#if logoFor(g)}<img src={logoFor(g)} alt="" />{/if}
-								<span class="name">{cell.label}</span>
-							{:else}
-								<span>{cell.label}</span>
-								{#if cell.arrow}<span class="arrow" aria-label={cell.arrow === 'up' ? 'later' : 'earlier'}
-										>{cell.arrow === 'up' ? '▲' : '▼'}</span
-									>{/if}
+					{#each results[n] as cell, i}
+						<div class="tile {cell.verdict}" style="animation-delay: {i * 150}ms">
+							{#if i === 0 && p && logoFor(p)}<img src={logoFor(p)} alt="" />{/if}
+							<span class:name={i === 0}>{cell.label}</span>
+							{#if cell.arrow}
+							<span class="arrow" aria-label={cell.arrow === 'up' ? 'later' : 'earlier'}>{cell.arrow === 'up' ? '▲' : '▼'}</span>
 							{/if}
 						</div>
 					{/each}
@@ -150,9 +269,8 @@
 
 		<section class="card legend">
 			<span><i class="correct"></i>Correct</span>
-			<span><i class="partial"></i>Partial</span>
 			<span><i class="wrong"></i>Wrong</span>
-			<span>▲▼ Answer's year is later / earlier</span>
+			<span>▲▼ The real date is later / earlier</span>
 		</section>
 	{/if}
 
@@ -162,12 +280,12 @@
 </main>
 
 <footer>
-	Not affiliated with Hack Club. Data from <a href="https://ysws.hackclub.com">ysws.hackclub.com</a>.
+	Made with &lt;3 by a Hack Clubber
 </footer>
 
 <style>
 	main {
-		max-width: 760px;
+		max-width: 920px;
 		margin: 0 auto;
 		padding: 48px 16px 24px;
 		display: flex;
@@ -198,7 +316,7 @@
 
 	.card {
 		width: 100%;
-		max-width: 520px;
+		max-width: 680px;
 		background: var(--background);
 		border: 1px solid var(--border);
 		border-radius: 16px;
@@ -217,21 +335,42 @@
 		color: var(--muted);
 	}
 
-	.search {
-		position: relative;
+	.fields {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 14px 16px;
+		margin-top: 20px;
+		text-align: left;
+	}
+
+	.field {
 		display: flex;
-		gap: 8px;
-		margin-top: 16px;
+		flex-direction: column;
+		gap: 6px;
+		min-width: 0;
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+
+	.field.wide {
+		grid-column: 1 / -1;
+	}
+
+	.field > span,
+	.field > legend {
+		padding: 0;
+		font-weight: bold;
+		font-size: 15px;
 	}
 
 	input {
-		flex: 1;
-		min-width: 0;
+		width: 100%;
 		font: inherit;
-		font-size: 18px;
-		padding: 12px 16px;
+		font-size: 17px;
+		padding: 10px 14px;
 		border: 2px solid var(--border);
-		border-radius: 999px;
+		border-radius: 12px;
 		background: var(--surface);
 		color: var(--foreground);
 		outline: none;
@@ -242,31 +381,50 @@
 		border-color: var(--red);
 	}
 
-	.submit {
-		width: 52px;
-		border: none;
-		border-radius: 999px;
-		background: var(--red);
-		color: white;
-		font-size: 20px;
+	input.valid {
+		border-color: var(--green);
+	}
+
+	.choices {
+		display: flex;
+		gap: 6px;
+	}
+
+	.choices button {
+		flex: 1;
+		padding: 10px 6px;
+		border: 2px solid var(--border);
+		border-radius: 12px;
+		background: var(--surface);
+		font: inherit;
+		font-size: 15px;
+		color: var(--foreground);
 		cursor: pointer;
-		transition: filter 0.2s;
+		transition:
+			background 0.15s,
+			border-color 0.15s;
 	}
 
-	.submit:hover:not(:disabled) {
-		filter: brightness(1.15);
+	.choices button:hover {
+		background: var(--surface-hover);
 	}
 
-	.submit:disabled {
-		opacity: 0.4;
-		cursor: default;
+	.choices button.on {
+		background: var(--red);
+		border-color: var(--red);
+		color: white;
+		font-weight: bold;
+	}
+
+	.search {
+		position: relative;
 	}
 
 	.suggestions {
 		position: absolute;
 		top: calc(100% + 6px);
 		left: 0;
-		right: 60px;
+		right: 0;
 		z-index: 10;
 		margin: 0;
 		padding: 6px;
@@ -275,7 +433,6 @@
 		border: 1px solid var(--border);
 		border-radius: 12px;
 		box-shadow: var(--shadow-dd);
-		text-align: left;
 	}
 
 	.suggestions button {
@@ -315,6 +472,45 @@
 		color: var(--muted);
 	}
 
+	.actions {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+		margin-top: 20px;
+	}
+
+	.submit {
+		padding: 12px 40px;
+		border: none;
+		border-radius: 999px;
+		background: var(--red);
+		color: white;
+		font: inherit;
+		font-size: 18px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: filter 0.2s;
+	}
+
+	.submit:hover:not(:disabled) {
+		filter: brightness(1.15);
+	}
+
+	.submit:disabled {
+		opacity: 0.4;
+		cursor: default;
+	} 
+
+	.link {
+		border: none;
+		background: none;
+		font: inherit;
+		color: var(--red-text);
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
 	.winner {
 		display: flex;
 		align-items: center;
@@ -345,6 +541,24 @@
 		text-decoration: none;
 	}
 
+	.facts {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 8px 20px;
+		margin: 0 0 16px;
+	}
+
+	.facts dt {
+		font-size: 13px;
+		color: var(--muted);
+	}
+
+	.facts dd {
+		margin: 0;
+		font-weight: bold;
+	}
+
 	.board {
 		width: 100%;
 		overflow-x: auto;
@@ -356,9 +570,9 @@
 
 	.row {
 		display: grid;
-		grid-template-columns: minmax(120px, 1.6fr) repeat(4, minmax(88px, 1fr));
+		grid-template-columns: minmax(120px, 1.5fr) repeat(4, minmax(96px, 1fr)) minmax(120px, 1.3fr);
 		gap: 8px;
-		min-width: 560px;
+		min-width: 720px;
 	}
 
 	.row.head div {
@@ -383,6 +597,7 @@
 		border: 2px solid rgba(0, 0, 0, 0.12);
 		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 		animation: flip 0.5s ease both;
+		overflow-wrap: anywhere;
 	}
 
 	.tile img {
@@ -408,10 +623,6 @@
 		background: var(--green);
 	}
 
-	.partial {
-		background: var(--orange);
-	}
-
 	.wrong {
 		background: var(--red);
 	}
@@ -430,6 +641,12 @@
 	@media (prefers-reduced-motion: reduce) {
 		.tile {
 			animation: none;
+		}
+	}
+
+	@media (max-width: 560px) {
+		.fields {
+			grid-template-columns: 1fr;
 		}
 	}
 
@@ -468,9 +685,5 @@
 		text-align: center;
 		font-size: 14px;
 		color: var(--muted);
-	}
-
-	footer a {
-		color: var(--red-text);
 	}
 </style>

@@ -26,7 +26,7 @@ export function daily() {
 	const history = read();
 	const today = todayKey();
 
-	if (!history[today]) {
+	if (!history[today] || !answerPool.some((p) => p.slug === history[today])) {
 		const used = new Set(Object.values(history));
 		const fresh = answerPool.filter((p) => !used.has(p.slug));
 		const pool = fresh.length ? fresh : answerPool;
