@@ -81,7 +81,7 @@ const withOrganizer = playable.filter(
 
 export const answerPool = withOrganizer.length ? withOrganizer : playable;
 
-const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+export const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 export function monthLabel(ym: string): string {
 	const [y, m] = ym.split('-');

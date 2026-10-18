@@ -1,5 +1,4 @@
 # Hackdle
 A Wordle Clone but for Hack Club Hackathons!
 
-
-Check it out at hackdle.ckacha.dev
+Check it out [here](hackdle.ckacha.dev)
