@@ -14,6 +14,7 @@
 		TYPE_LABEL,
 		type Format,
 		type Guess,
+		type Program,
 		type Type
 	} from '#lib/game.ts';
 	import type { PageProps } from './$types';
@@ -41,7 +42,10 @@
 	let format = $state<Format | ''>('');
 	let type = $state<Type | ''>('');
 	let organizer = $state('');
+	let orgOpen = $state(false);
+	let orgHighlighted = $state(0);
 	let highlighted = $state(0);
+	let dialog = $state<HTMLDialogElement>();
 	let open = $state(false);
 
 	let results = $derived(guesses.map((g) => compare(g, answer)));
@@ -57,6 +61,63 @@
 			.sort((a, b) => +!a.name.toLowerCase().startsWith(q) - +!b.name.toLowerCase().startsWith(q))
 			.slice(0, 8);
 	});
+
+	let orgValid = $derived(organizers.some((o) => o.toLowerCase() === organizer.trim().toLowerCase()));
+
+	let orgSuggestions = $derived.by(() => {
+		if (!orgOpen) return [];
+		const q = organizer.trim().toLowerCase();
+		if (!q || orgValid) return organizers;
+		return organizers
+			.filter((o) => o.toLowerCase().includes(q))
+			.sort((a, b) => +!a.toLowerCase().startsWith(q) - +!b.toLowerCase().startsWith(q));
+	});
+
+	function keepVisible(node: HTMLElement, active: boolean) {
+		if (active) node.scrollIntoView({ block: 'nearest' });
+		return {
+			update(active: boolean) {
+				if (active) node.scrollIntoView({ block: 'nearest' });
+			}
+		};
+	}
+
+	function pickOrganizer(i: number) {
+		const o = orgSuggestions[i];
+		if (!o) return;
+		organizer = o;
+		orgOpen = false;
+	}
+
+	function randomOrganizer() {
+		organizer = organizers[Math.floor(Math.random() * organizers.length)];
+		orgOpen = false;
+	}
+
+	function onOrgKeydown(e: KeyboardEvent) {
+		if (e.key === 'Escape') {
+			orgOpen = false;
+			return;
+		}
+		if (!orgOpen) {
+			if (e.key === 'ArrowDown') {
+				orgOpen = true;
+				orgHighlighted = 0;
+			}
+			return;
+		}
+		if (!orgSuggestions.length) return;
+		if (e.key === 'ArrowDown') {
+			e.preventDefault();
+			orgHighlighted = Math.min(orgHighlighted + 1, orgSuggestions.length - 1);
+		} else if (e.key === 'ArrowUp') {
+			e.preventDefault();
+			orgHighlighted = Math.max(orgHighlighted - 1, 0);
+		} else if (e.key === 'Enter') {
+			e.preventDefault();
+			pickOrganizer(orgHighlighted);
+		}
+	}
 
 	onMount(() => {
 		try {
@@ -132,21 +193,7 @@
 	{#if done}
 		<section class="card result">
 			<h2>{won ? 'You got it!' : 'Today’s program was'}</h2>
-			<div class="winner">
-				{#if logoFor(answer)}<img src={logoFor(answer)} alt="" />{/if}
-				<div>
-					<strong>{answer.name}</strong>
-					{#if answer.description}<p>{answer.description}</p>{/if}
-					{#if answer.url}<a href={answer.url} target="_blank" rel="noreferrer">Visit site →</a>{/if}
-				</div>
-			</div>
-			<dl class="facts">
-				<div><dt>Start</dt><dd>{answer.start_date}</dd></div>
-				<div><dt>End</dt><dd>{answer.end_date}</dd></div>
-				<div><dt>Format</dt><dd>{FORMAT_LABEL[formatOf(answer)]}</dd></div>
-				<div><dt>Type</dt><dd>{answer.type ? TYPE_LABEL[answer.type] : '?'}</dd></div>
-				<div><dt>{answer.organizers.length > 1 ? 'Organizers' : 'Organizer'}</dt><dd>{answer.organizers.join(', ') || 'Unknown'}</dd></div>
-			</dl>
+			{@render details(answer)}
 			<p class="muted">
 				{#if won}Solved in {guesses.length} {guesses.length === 1 ? 'guess' : 'guesses'}.{/if}
 				Come back tomorrow for a new one.
@@ -248,18 +295,50 @@
 
 				<label class="field wide">
 					<span>Organizer</span>
-					<input
-						type="text"
-						placeholder="Who ran it? Any organizer counts"
-						autocomplete="off"
-						spellcheck="false"
-						list="organizers"
-						bind:value={organizer}
-					/>
-					
-					<datalist id="organizers">
-						{#each organizers as o}<option value={o}></option>{/each}
-					</datalist>
+					<div class="search org">
+						<input
+							type="text"
+							placeholder="Who ran it? Any organizer counts"
+							autocomplete="off"
+							spellcheck="false"
+							role="combobox"
+							aria-expanded={orgOpen}
+							aria-controls="organizer-list"
+							bind:value={organizer}
+							onfocus={() => ((orgOpen = true), (orgHighlighted = 0))}
+							oninput={() => ((orgOpen = true), (orgHighlighted = 0))}
+							onkeydown={onOrgKeydown}
+							onblur={() => setTimeout(() => (orgOpen = false), 150)}
+							class:valid={orgValid}
+						/>
+						<button
+							class="dice"
+							type="button"
+							title="Random organizer"
+							aria-label="Random organizer"
+							onmousedown={(e) => e.preventDefault()}
+							onclick={randomOrganizer}>🎲</button
+						>
+
+						{#if orgSuggestions.length}
+							<ul class="suggestions scroll" id="organizer-list" role="listbox">
+								{#each orgSuggestions as o, i (o)}
+									<li role="option" aria-selected={i === orgHighlighted} use:keepVisible={i === orgHighlighted}>
+										<button
+											type="button"
+											class:active={i === orgHighlighted}
+											onmouseenter={() => (orgHighlighted = i)}
+											onmousedown={(e) => e.preventDefault()}
+											onclick={() => pickOrganizer(i)}
+										>
+											<span class="ph">{o[0].toUpperCase()}</span>
+											{o}
+										</button>
+									</li>
+								{/each}
+							</ul>
+						{/if}
+					</div>
 				</label>
 			</div>
 
@@ -301,9 +380,48 @@
 	{/if}
 
 	{#if yesterday}
-		<p class="yesterday">Yesterday's program was <strong>{yesterday.name}</strong></p>
+		<button class="yesterday" type="button" onclick={() => dialog?.showModal()}>
+			Yesterday's program was <strong>{yesterday.name}</strong>
+		</button>
+
+		<dialog
+			class="modal"
+			bind:this={dialog}
+			onclick={(e) => e.target === dialog && dialog.close()}
+			aria-labelledby="yesterday-title"
+		>
+			<div class="card">
+				<button class="close" type="button" aria-label="Close" onclick={() => dialog?.close()}>×</button>
+				<h2 id="yesterday-title">Yesterday's program</h2>
+				{@render details(yesterday)}
+			</div>
+		</dialog>
 	{/if}
 </main>
+
+{#snippet details(p: Program)}
+
+	<div class="winner">
+		{#if logoFor(p)}<img src={logoFor(p)} alt="" />{/if}
+		<div>
+			<strong>{p.name}</strong>
+			{#if p.description}<p>{p.description}</p>{/if}
+			{#if p.url}<a href={p.url} target="_blank" rel="noreferrer">Visit site →</a>{/if}
+		</div>
+	</div>
+
+	<dl class="facts">
+		<div><dt>Start</dt><dd>{p.start_date ?? '?'}</dd></div>
+		<div><dt>End</dt><dd>{p.end_date ?? '?'}</dd></div>
+		<div><dt>Format</dt><dd>{FORMAT_LABEL[formatOf(p)]}</dd></div>
+		<div><dt>Type</dt><dd>{p.type ? TYPE_LABEL[p.type] : '?'}</dd></div>
+		<div>
+			<dt>{p.organizers.length > 1 ? 'Organizers' : 'Organizer'}</dt>
+			<dd>{p.organizers.join(', ') || 'Unknown'}</dd>
+		</div>
+	</dl>
+
+{/snippet}
 
 <footer>
 	Made with &lt;3 by a Hack Clubber
