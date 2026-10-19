@@ -273,7 +273,7 @@
 					</div>
 				</fieldset>
 
-				<fieldset class="field">
+				<fieldset class="field wide">
 					<legend>Format</legend>
 					<div class="choices">
 						{#each Object.entries(FORMAT_LABEL) as [value, label]}
@@ -284,7 +284,7 @@
 					</div>
 				</fieldset>
 
-				<fieldset class="field">
+				<fieldset class="field wide">
 					<legend>Type</legend>
 					<div class="choices">
 						{#each Object.entries(TYPE_LABEL) as [value, label]}

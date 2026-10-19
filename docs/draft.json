@@ -62,7 +62,6 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Learn to make a Retro Arcade Game with AI and Get a Reward for Shipping It",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -79,7 +78,7 @@
 		"name": "Arcade",
 		"slug": "arcade",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2024-06-01",
 		"end_date": "2024-09-01",
 		"status": "ended",
@@ -92,7 +91,6 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "The summer is yours for the making",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -125,7 +123,7 @@
 		"name": "Blot",
 		"slug": "blot",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2024-04-09",
 		"end_date": "2024-11-23",
 		"status": "ended",
@@ -138,7 +136,6 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Write code that makes generative art and get a Blot drawing machine.",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -171,7 +168,6 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Website building with rewards.",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -222,7 +218,6 @@
 		"url_status": null,
 		"archive_url": null,
 		"description": "Build a Rust CLI and get a Rust book.",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -253,7 +248,6 @@
 		"url_status": null,
 		"archive_url": null,
 		"description": "You ship a self host, full stack website, we ship a Raspberry Pi Zero 2 W to host it on",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -279,7 +273,6 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Build a programming language, get fudge.",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -358,7 +351,7 @@
 		"name": "Hackxpansion",
 		"slug": "hackxpansion",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-08-03",
 		"end_date": "2026-09-07",
 		"status": "ended",
@@ -371,7 +364,6 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Design four expansion cards and apps for them, and get a custom handheld console to use them in.",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -415,7 +407,6 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Work on projects, earn doubloons, and compete in the Wonderdome.",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -529,7 +520,6 @@
 		"url_status": null,
 		"archive_url": null,
 		"description": "Projects using language models.",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -553,7 +543,7 @@
 		"name": "Neon",
 		"slug": "neon",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": null,
 		"end_date": "2025-01-31",
 		"status": "ended",
@@ -566,7 +556,6 @@
 		"url_status": "offline",
 		"archive_url": null,
 		"description": "Write code for an LED display and get a 64x32 LED matrix.",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -616,7 +605,6 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Create a DOS game and have it delivered on a floppy disk.",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -648,7 +636,6 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "CAD a 3D printer mod and get $75 plus 1kg of filament to build it.",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -674,7 +661,6 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Fit a program in a QR code, get a portable printer and maybe a Blåhaj.",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -718,7 +704,6 @@
 		"url_status": null,
 		"archive_url": null,
 		"description": "Collaborate on a project for 10 days, get Hack Club socks!",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -756,7 +741,6 @@
 		"url_status": "offline",
 		"archive_url": null,
 		"description": "Build hardware projects with free parts from a virtual parts bin.",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -800,7 +784,6 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Design a PCB in October, vote on the best designs, and get a second grant.",
-		"confidence": "medium",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -838,7 +821,6 @@
 		"url_status": null,
 		"archive_url": null,
 		"description": "Create a winter-themed static website, get a boba plushie!",
-		"confidence": "medium",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",

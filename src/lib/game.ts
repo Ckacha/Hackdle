@@ -1,7 +1,7 @@
 import list from '../../docs/list.json';
 
 export type Kind = 'ysws' | 'hackathon' | 'both';
-export type Type = 'software' | 'hardware' | 'both';
+export type Type = 'software' | 'hardware' | 'cad' | 'everything';
 export type Format = 'online' | 'in-person' | 'both';
 
 export interface Program {
@@ -18,7 +18,6 @@ export interface Program {
 	url: string | null;
 	description: string | null;
 	organizers: string[];
-	organizer_confidence: 'high' | 'medium' | 'low' | null;
 }
 
 export interface Guess {
@@ -55,7 +54,8 @@ export const FORMAT_LABEL: Record<Format, string> = {
 export const TYPE_LABEL: Record<Type, string> = {
 	software: 'Software',
 	hardware: 'Hardware',
-	both: 'Both'
+	cad: 'CAD',
+	everything: 'Everything'
 };
 
 const KIND_FORMAT: Record<Kind, Format> = {
@@ -75,9 +75,7 @@ export const organizers = [
 const playable = programs.filter(
 	(p) => p.kind !== 'hackathon' && p.start_date && p.end_date && p.type
 );
-const withOrganizer = playable.filter(
-	(p) => p.organizers.length && p.organizer_confidence !== 'low'
-);
+const withOrganizer = playable.filter((p) => p.organizers.length);
 
 export const answerPool = withOrganizer.length ? withOrganizer : playable;
 

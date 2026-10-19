@@ -147,7 +147,8 @@
 										<option value="">Unknown</option>
 										<option value="software">Software</option>
 										<option value="hardware">Hardware</option>
-										<option value="both">Both</option>
+										<option value="cad">CAD</option>
+										<option value="everything">Everything</option>
 									</select>
 								</label>
 
@@ -167,16 +168,6 @@
 										<option value="ended">Ended</option>
 										<option value="ongoing">Ongoing</option>
 										<option value="upcoming">Upcoming</option>
-									</select>
-								</label>
-
-								<label>
-									<span>Organizer confidence</span>
-									<select name="organizer_confidence" value={current?.organizer_confidence ?? ''}>
-										<option value="">None</option>
-										<option value="high">High</option>
-										<option value="medium">Medium</option>
-										<option value="low">Low (kept out of daily answers)</option>
 									</select>
 								</label>
 

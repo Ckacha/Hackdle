@@ -34,11 +34,12 @@
 
 .choices {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 6px;
 }
 
 .choices button {
-	flex: 1;
+	flex: 1 0 auto;
 	padding: 10px 6px;
 	border: 2px solid var(--border);
 	border-radius: 12px;

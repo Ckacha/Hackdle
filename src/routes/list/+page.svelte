@@ -63,7 +63,7 @@
 
 					<div class="tags">
 						<span>{formatOf(p) === 'both' ? 'Online + In person' : FORMAT_LABEL[formatOf(p)]}</span>
-						{#if p.type}<span>{p.type === 'both' ? 'Software + Hardware' : TYPE_LABEL[p.type]}</span>{/if}
+						{#if p.type}<span>{TYPE_LABEL[p.type]}</span>{/if}
 					</div>
 
 					<p class="program-org">

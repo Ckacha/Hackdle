@@ -19,8 +19,6 @@
 		"organizers": [
 			"Max Wofford"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -58,8 +56,6 @@
 			"Hridhaan Sahay",
 			"Sebastian Hernandez"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -94,8 +90,6 @@
 		"organizers": [
 			"Rudy"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recKKV60VEJomAOUA",
 			"https://555.hackclub.com",
@@ -126,8 +120,6 @@
 		"organizers": [
 			"Alex Van Doren"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -147,7 +139,7 @@
 		"name": "Aces",
 		"slug": "aces",
 		"kind": "both",
-		"type": "both",
+		"type": "everything",
 		"start_date": null,
 		"end_date": "2026-04-26",
 		"status": "ended",
@@ -169,8 +161,6 @@
 			"Niko Yu",
 			"ShyMike"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -203,8 +193,6 @@
 		"organizers": [
 			"Euan Ripper"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recSV5CaYzc4FQ9eq",
 			"https://github.com/hackclub/HackTheAesthetic",
@@ -233,8 +221,6 @@
 		"organizers": [
 			"Alex Ren"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recoHYKBDk6ISnxyC",
 			"https://github.com/hackclub/alleyway",
@@ -265,8 +251,6 @@
 		"organizers": [
 			"Mohamad Mortada"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec2t8TkCSVpFkJSm",
 			"https://anansi.hackclub.com",
@@ -297,8 +281,6 @@
 		"organizers": [
 			"ascpixi"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -334,8 +316,6 @@
 			"Charlie Nicholson",
 			"Samuel Fernandez"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recvfbLnlZdxgMTP8",
 			"https://mpkendall.com",
@@ -367,8 +347,6 @@
 		"organizers": [
 			"Beltran"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/reckFSlhg1TWZZJri",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
@@ -384,7 +362,7 @@
 		"name": "Apocalypse",
 		"slug": "apocalypse",
 		"kind": "hackathon",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2024-05-17",
 		"end_date": "2024-05-19",
 		"status": "ended",
@@ -402,8 +380,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://apocalypse.hackclub.com",
 			"https://github.com/hackclub/apocalypse"
@@ -429,8 +405,6 @@
 		"organizers": [
 			"Jolly Wang"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recSXJBZV0mMayQpx",
 			"https://github.com/hackclub/archaeology",
@@ -461,8 +435,6 @@
 		"organizers": [
 			"Mihir Maroju"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recA5tsrZkNbIbFuv",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
@@ -491,8 +463,6 @@
 		"organizers": [
 			"Alex Van Doren"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -532,8 +502,6 @@
 			"Andrea",
 			"Savina"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec2qEOmAlDJcpNGL",
 			"https://github.com/hackclub/ascend"
@@ -563,8 +531,6 @@
 		"organizers": [
 			"Kai Pereira"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recpUpez1ndcIEuLt",
 			"https://asic.hackclub.com/",
@@ -580,7 +546,7 @@
 		"name": "Assemble",
 		"slug": "assemble",
 		"kind": "hackathon",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2022-08-05",
 		"end_date": "2022-08-07",
 		"status": "ended",
@@ -598,8 +564,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://github.com/hackclub/assemble"
 		]
@@ -624,8 +588,6 @@
 		"organizers": [
 			"Alex Ren"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -665,8 +627,6 @@
 			"Reem Khalifa",
 			"Annabel"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://athena.hackclub.com",
 			"https://ncwit.org/blog/empowering-the-next-generation-reem-khalifas-journey-with-hack-clubs-athena-award-program-and-ncwits-aspirations-in-computing/",
@@ -686,7 +646,7 @@
 		"name": "Atlantis",
 		"slug": "atlantis",
 		"kind": "ysws",
-		"type": "hardware",
+		"type": "cad",
 		"start_date": "2026-09-21",
 		"end_date": "2026-11-16",
 		"status": "ongoing",
@@ -705,8 +665,6 @@
 			"Arca Cengiz",
 			"Mihir"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec1l4Rvwv48G91iM",
 			"https://atlantis.hackclub.com",
@@ -738,8 +696,6 @@
 			"Dandililacs",
 			"Jim Dinias"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -770,8 +726,6 @@
 			"Tanjim Kamal",
 			"Dhamari Trice-Hanson"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -806,8 +760,6 @@
 		"organizers": [
 			"Adithiya Venkatakrishnan"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -821,7 +773,7 @@
 		"name": "BakeBuild",
 		"slug": "bakebuild",
 		"kind": "ysws",
-		"type": "hardware",
+		"type": "cad",
 		"start_date": "2025-01-10",
 		"end_date": null,
 		"status": "ongoing",
@@ -840,8 +792,6 @@
 			"Kayla Blosser",
 			"Jared Senesac"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -860,7 +810,7 @@
 		"name": "Bauble",
 		"slug": "bauble",
 		"kind": "ysws",
-		"type": "hardware",
+		"type": "cad",
 		"start_date": "2025-12-07",
 		"end_date": "2025-12-25",
 		"status": "ended",
@@ -877,8 +827,6 @@
 			"dld",
 			"Alex Van Doren"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -899,7 +847,7 @@
 		"name": "Beest",
 		"slug": "beest",
 		"kind": "both",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-04-02",
 		"end_date": "2026-08-21",
 		"status": "ended",
@@ -919,8 +867,6 @@
 		"organizers": [
 			"Euan Ripper"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -956,8 +902,6 @@
 			"Freddie Yershon",
 			"Jared Senesac"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recJpnVAclGXVPH27",
 			"http://bento.hackclub.com/",
@@ -987,8 +931,6 @@
 			"Christian Well",
 			"EnterpriseGoose"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -1024,8 +966,6 @@
 		"organizers": [
 			"Charlie Nicholson"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recGwhCS1CJroHwbb",
 			"https://github.com/hackclub/bitstream",
@@ -1040,7 +980,7 @@
 		"name": "Black Box",
 		"slug": "black-box",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2025-02-05",
 		"end_date": "2025-03-29",
 		"status": "ended",
@@ -1056,8 +996,6 @@
 		"organizers": [
 			"Lux Loff"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -1090,8 +1028,6 @@
 		"organizers": [
 			"Liam Newbill"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -1129,8 +1065,6 @@
 			"Sam Liu",
 			"Alex Ren"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -1167,8 +1101,6 @@
 		"archive_url": null,
 		"description": "Hang out with friends, make a website, get free boba! ",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recHGbPMwL6rdkDIP"
 		],
@@ -1199,8 +1131,6 @@
 			"Rushil Chopra",
 			"Max Wofford"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -1236,8 +1166,6 @@
 		"organizers": [
 			"Rushil Chopra"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -1257,7 +1185,7 @@
 		"name": "Boot",
 		"slug": "boot",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-01-31",
 		"end_date": "2026-06-01",
 		"status": "ended",
@@ -1274,8 +1202,6 @@
 			"Ginobeano",
 			"Ingo"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -1313,8 +1239,6 @@
 			"Ketan",
 			"Jenny"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -1345,8 +1269,6 @@
 			"Tanishq Goyal",
 			"Tom (Deployor)"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -1381,8 +1303,6 @@
 		"organizers": [
 			"Josias Aurel"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -1417,8 +1337,6 @@
 		"organizers": [
 			"Fox Ellison-Taylor"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recoZ3wD0J9n0IzuL",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
@@ -1449,8 +1367,6 @@
 		"organizers": [
 			"Selena Nguyen"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rechQEuOP8GH4ApQz",
 			"https://bulky.hackclub.com/",
@@ -1481,8 +1397,6 @@
 		"organizers": [
 			"Brendan Reynard"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recEzvQGhEhhjn210",
 			"https://c-li.hackclub.com/",
@@ -1513,8 +1427,6 @@
 		"organizers": [
 			"Candy Ying"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -1556,8 +1468,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "medium",
 		"sources": [
 			"https://campfire.hackclub.com",
 			"https://workshops.hackclub.com/leader-newsletters/2026-01-22/",
@@ -1587,8 +1497,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "medium",
 		"sources": [
 			"https://hackathons.hackclub.com/years/2026/",
 			"https://hackclub.com/api/v1/events",
@@ -1619,8 +1527,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rechw9N86dUpC7i47"
 		],
@@ -1649,8 +1555,6 @@
 		"organizers": [
 			"Emma"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recDORbTT25Tkm64M",
 			"https://canvas.hackclub.com",
@@ -1685,8 +1589,6 @@
 		"archive_url": null,
 		"description": "Go to Washington D.C. for a hackathon!",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "medium",
 		"sources": [
 			"https://capitol.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -1720,8 +1622,6 @@
 		"organizers": [
 			"Josias Aurel"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -1754,8 +1654,6 @@
 			"Rushil Chopra",
 			"Thanishkka Vijayabaskar"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -1787,8 +1685,6 @@
 			"Fox Ellison-Taylor",
 			"Violet"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recNuXqw01je55Ugm",
 			"https://catgirl.hackclub.com",
@@ -1822,8 +1718,6 @@
 			"Gus Ruben",
 			"Jiang Tongyu"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recMcioaHlt1Jp2Np",
 			"https://ceiling.hackclub.com",
@@ -1857,8 +1751,6 @@
 		"organizers": [
 			"Liam Newbill"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -1893,8 +1785,6 @@
 			"Faisal Sayed",
 			"Mohamad Mortada"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -1931,8 +1821,6 @@
 		"organizers": [
 			"Dandililacs"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -1962,8 +1850,6 @@
 		"organizers": [
 			"Lola"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -1994,8 +1880,6 @@
 		"organizers": [
 			"Mihir Maroju"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recFulYPt4BUUZbHJ",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
@@ -2026,8 +1910,6 @@
 		"organizers": [
 			"Antonio Archer"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -2064,8 +1946,6 @@
 		"organizers": [
 			"Ethan Canterbury"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recxp7od3AsEp28ry",
 			"https://github.com/hackclub/club-dashboard",
@@ -2080,7 +1960,7 @@
 		"name": "Club Shop",
 		"slug": "club-shop",
 		"kind": "hackathon",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-08-07",
 		"end_date": null,
 		"status": "ongoing",
@@ -2098,8 +1978,6 @@
 		"archive_url": null,
 		"description": "Don't run your programming club alone, make it a Hack Club! \nRun workshops, ship projects, get rewards with friends for free!",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recGbfov976IrojBD"
 		],
@@ -2133,8 +2011,6 @@
 		"organizers": [
 			"Ben Elliott"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -2169,8 +2045,6 @@
 		"organizers": [
 			"Sam Liu"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -2204,8 +2078,6 @@
 		"organizers": [
 			"Memma"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recqNEHajXIUBkUmN",
 			"https://github.com/hackclub/CodeQuest",
@@ -2221,7 +2093,7 @@
 		"name": "Construct",
 		"slug": "construct",
 		"kind": "ysws",
-		"type": "hardware",
+		"type": "cad",
 		"start_date": null,
 		"end_date": "2026-04-19",
 		"status": "ended",
@@ -2238,8 +2110,6 @@
 			"Olive Wu",
 			"Arca Cengiz"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -2270,8 +2140,6 @@
 		"organizers": [
 			"Leo"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -2284,7 +2152,7 @@
 		"name": "Coral",
 		"slug": "coral",
 		"kind": "both",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-08-10",
 		"end_date": "2027-02-28",
 		"status": "ongoing",
@@ -2305,8 +2173,6 @@
 			"Aarav Jhamb",
 			"Sebastian Hernandez"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recTqXI9ZmsI2Q8Tq",
 			"https://coral.hackclub.com",
@@ -2342,8 +2208,6 @@
 		"archive_url": null,
 		"description": "Hack Club's beginner friendly game jam",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://counterspell.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -2359,7 +2223,7 @@
 		"name": "CQ",
 		"slug": "cq",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-09-01",
 		"end_date": "2026-12-31",
 		"status": "ongoing",
@@ -2375,8 +2239,6 @@
 		"organizers": [
 			"Ruben Sutton"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -2409,8 +2271,6 @@
 			"Cyao",
 			"Max Wofford"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recM8UspBmpDRIUzU"
 		],
@@ -2440,8 +2300,6 @@
 		"organizers": [
 			"Karo Roghzai"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recWGGMud20XqlCBu",
 			"https://github.com/hackclub/crawl",
@@ -2472,8 +2330,6 @@
 			"Euan Ripper",
 			"Anson Chung"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -2490,7 +2346,7 @@
 		"name": "Cubed",
 		"slug": "cubed",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-10-12",
 		"end_date": "2026-11-09",
 		"status": "ongoing",
@@ -2508,8 +2364,6 @@
 			"Aahil",
 			"Chika Ugorji"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/reckwvYzuSvwCsY1O",
 			"https://cubed.hackclub.com/",
@@ -2542,8 +2396,6 @@
 		"organizers": [
 			"Lynn"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -2563,7 +2415,7 @@
 		"name": "Darkroom",
 		"slug": "darkroom",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-08-13",
 		"end_date": "2026-09-30",
 		"status": "ended",
@@ -2579,8 +2431,6 @@
 		"organizers": [
 			"Trulle123"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recrRI09y5MVxicVZ",
 			"https://darkroom.hackclub.com/",
@@ -2618,8 +2468,6 @@
 		"archive_url": null,
 		"description": "Game jam for high schoolers. Organized by high schoolers in 100 cities worldwide",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://daydream.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -2653,8 +2501,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "medium",
 		"sources": [
 			"https://daysofservice.hackclub.com"
 		]
@@ -2679,8 +2525,6 @@
 		"organizers": [
 			"Lewin Kelly"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recNaQUFlGqXnKZGI",
 			"https://defector.hackclub.com",
@@ -2713,8 +2557,6 @@
 			"Scooter",
 			"Max Wofford"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -2743,8 +2585,6 @@
 		"organizers": [
 			"Nathan Cloutier"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recvdg4H9oEwo6Wwp",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
@@ -2774,8 +2614,6 @@
 		"organizers": [
 			"Jolly Wang"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recUP1KbAPSWdXGrX",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
@@ -2806,8 +2644,6 @@
 		"organizers": [
 			"dld"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recq2ytTGzXzEjU1r",
 			"https://duck.hackclub.com",
@@ -2840,8 +2676,6 @@
 			"Euan Ripper",
 			"Peleg"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -2874,8 +2708,6 @@
 		"organizers": [
 			"Brendan Reynard"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recMyuLBfOKoDs6EW",
 			"https://dyad.hackclub.com/",
@@ -2906,8 +2738,6 @@
 		"organizers": [
 			"Lola"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rechHxomaFKZf1EHK",
 			"https://ellipse.hackclub.com",
@@ -2938,8 +2768,6 @@
 		"organizers": [
 			"Barnav Mitra"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recQq7MqVx468nleJ",
 			"https://embassy.hackclub.com",
@@ -2969,8 +2797,6 @@
 			"Gus Ruben",
 			"Jiang Tongyu"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec8Rl8byVdqM6Yuk",
 			"https://ember.hackclub.com",
@@ -3003,8 +2829,6 @@
 		"organizers": [
 			"Euan Ripper"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -3040,8 +2864,6 @@
 		"organizers": [
 			"Jeremy Woolley"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recaZ0GEEof9qv8Pg",
 			"https://enpassant.hackclub.com",
@@ -3057,7 +2879,7 @@
 		"name": "Enclosure",
 		"slug": "enclosure",
 		"kind": "ysws",
-		"type": "hardware",
+		"type": "cad",
 		"start_date": null,
 		"end_date": null,
 		"status": "ended",
@@ -3074,8 +2896,6 @@
 			"Adhdhyan Jain",
 			"Jacob Navaratne"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -3106,8 +2926,6 @@
 		"organizers": [
 			"Artem Kim"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -3126,7 +2944,7 @@
 		"name": "Entropy",
 		"slug": "entropy",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-06-24",
 		"end_date": "2026-07-08",
 		"status": "ended",
@@ -3143,8 +2961,6 @@
 			"Arcade Wise",
 			"Nick Do"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recFhhdlc6NsULcjH",
 			"https://entropy.hackclub.com",
@@ -3180,8 +2996,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://github.com/hackclub/epoch"
 		]
@@ -3190,7 +3004,7 @@
 		"name": "Expedition",
 		"slug": "expedition",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-09-10",
 		"end_date": "2026-11-27",
 		"status": "ongoing",
@@ -3206,8 +3020,6 @@
 		"organizers": [
 			"Johnathan McPhilbin"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recPYFw3Ke9CQu36h",
 			"https://expedition.hackclub.com",
@@ -3244,8 +3056,6 @@
 		"organizers": [
 			"Alex Van Doren"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -3281,8 +3091,6 @@
 		"organizers": [
 			"Liam Newbill"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec5iSFpXM8jLLgDQ",
 			"https://github.com/hackclub/fabricate",
@@ -3321,8 +3129,6 @@
 			"Sophia Duan",
 			"Anson Chung"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/programs",
 			"https://hackclub.com/api/v1/events",
@@ -3361,8 +3167,6 @@
 			"Nirvaan Kohli",
 			"Manitej Boorgu"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -3397,8 +3201,6 @@
 		"organizers": [
 			"Emme McDonald"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/reclYcPkibGkcvbZI",
 			"https://feud.hackclub.com/",
@@ -3429,8 +3231,6 @@
 			"Wally",
 			"Jared Senesac"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -3460,8 +3260,6 @@
 		"organizers": [
 			"Gus Ruben"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recm761QQ8i5MByAN",
 			"https://github.com/hackclub/fix-it",
@@ -3491,8 +3289,6 @@
 			"Nathan Alspaugh",
 			"Freddie Yershon"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recXHambOhVVD95X5",
 			"https://flavorless.hackclub.com",
@@ -3508,7 +3304,7 @@
 		"name": "Flavortown",
 		"slug": "flavortown",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2025-12-19",
 		"end_date": "2026-04-30",
 		"status": "ended",
@@ -3524,8 +3320,6 @@
 		"organizers": [
 			"Hack Club HQ"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -3550,7 +3344,7 @@
 		"name": "flickr",
 		"slug": "flickr",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-07-14",
 		"end_date": "2026-07-16",
 		"status": "ended",
@@ -3566,8 +3360,6 @@
 		"organizers": [
 			"Louisa"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recILnO5S1ucjadUf",
 			"https://flickr.hackclub.com",
@@ -3601,8 +3393,6 @@
 		"organizers": [
 			"Brendan Reynard"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recdoooA19NZG8uMU",
 			"https://github.com/hackclub/folktale",
@@ -3633,8 +3423,6 @@
 		"organizers": [
 			"Swarit Narang"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -3669,8 +3457,6 @@
 			"Aarav Jhamb",
 			"Ryan (Cybdo)"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -3706,8 +3492,6 @@
 		"organizers": [
 			"Rudy"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recK1bOJHLXE0c3Iq",
 			"https://frame.hackclub.com",
@@ -3738,8 +3522,6 @@
 		"organizers": [
 			"Reem Khalifa"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -3757,7 +3539,7 @@
 		"name": "Fusering",
 		"slug": "fusering",
 		"kind": "ysws",
-		"type": "hardware",
+		"type": "cad",
 		"start_date": "2025-08-20",
 		"end_date": null,
 		"status": "ongoing",
@@ -3774,8 +3556,6 @@
 			"David P",
 			"Jared Senesac"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -3798,7 +3578,7 @@
 		"name": "Future",
 		"slug": "future",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-08-03",
 		"end_date": "2026-09-15",
 		"status": "ended",
@@ -3814,8 +3594,6 @@
 		"organizers": [
 			"Antonio Archer"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -3856,8 +3634,6 @@
 			"Acon Lin",
 			"Sophia Duan"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -3895,8 +3671,6 @@
 			"Rushil Chopra",
 			"Ivie Fonner"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -3931,8 +3705,6 @@
 		"organizers": [
 			"Mohamad Mortada"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -3968,8 +3740,6 @@
 		"organizers": [
 			"Joaquin Schere"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/reciARgzuw2lm84j1",
 			"https://genesis.hackclub.com/title.js",
@@ -3999,8 +3769,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec1yiOy0LzQApsaq"
 		],
@@ -4029,8 +3797,6 @@
 		"organizers": [
 			"Ren Leonard"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recX8xC5ng1vDMek3",
 			"https://gong.hackclub.com/",
@@ -4059,8 +3825,6 @@
 		"organizers": [
 			"BananaJeans"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recNMKvfpEYyxOvc2",
 			"https://github.com/hackclub/go-ship"
@@ -4091,8 +3855,6 @@
 			"Shashwat",
 			"Sebastian Hernandez"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recSQcSJh8jAKk2ls",
 			"https://grandma.hackclub.com"
@@ -4120,8 +3882,6 @@
 		"organizers": [
 			"Brendan Reynard"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recNj2skc9fIsVzKy",
 			"https://greeble.hackclub.com",
@@ -4150,8 +3910,6 @@
 		"organizers": [
 			"Clay Nicholson"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recj1meO7HpbrAScP",
 			"https://github.com/hackclub/grounded",
@@ -4183,8 +3941,6 @@
 			"Artem Kim",
 			"Jared Senesac"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -4197,7 +3953,7 @@
 		"name": "Hack Club: The Game",
 		"slug": "hack-club-the-game",
 		"kind": "both",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-05-22",
 		"end_date": "2026-05-25",
 		"status": "ended",
@@ -4217,8 +3973,6 @@
 		"organizers": [
 			"Hack Club HQ"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://game.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -4261,8 +4015,6 @@
 			"Jonathan Dong",
 			"Shubham Patil"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -4299,8 +4051,6 @@
 			"Lola",
 			"Sebastian Hernandez"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec5Mir1SadO2Ggp6",
 			"https://github.com/hackclub/hackachu",
@@ -4315,7 +4065,7 @@
 		"name": "Hackapet",
 		"slug": "hackapet",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": null,
 		"end_date": "2025-02-03",
 		"status": "ended",
@@ -4333,8 +4083,6 @@
 			"spacevini8",
 			"Alex Ren"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -4364,8 +4112,6 @@
 		"organizers": [
 			"Memma"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -4401,8 +4147,6 @@
 			"Cyao",
 			"Max Wofford"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -4438,8 +4182,6 @@
 			"Acon Lin",
 			"Souptik Samanta"
 		],
-		"organizer_confidence": "low",
-		"confidence": "medium",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -4475,8 +4217,6 @@
 		"organizers": [
 			"Charlie Nicholson"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -4505,8 +4245,6 @@
 		"organizers": [
 			"Joel Gallagher"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -4542,8 +4280,6 @@
 		"organizers": [
 			"Hridya Agrawal"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -4578,8 +4314,6 @@
 		"organizers": [
 			"Alex Ren"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -4609,8 +4343,6 @@
 		"organizers": [
 			"Alice (espcaa)"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec5S2LK4Of57qe3y",
 			"https://github.com/hackclub/hackrail"
@@ -4642,8 +4374,6 @@
 		"organizers": [
 			"fireentity"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -4657,7 +4387,7 @@
 		"name": "HackTank",
 		"slug": "hacktank",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-10-02",
 		"end_date": "2027-02-28",
 		"status": "ongoing",
@@ -4674,8 +4404,6 @@
 			"Johnathan McPhilbin",
 			"Sebastian Hernandez"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recx7UqC7A5JKJSRq",
 			"https://hacktank.hackclub.com",
@@ -4710,8 +4438,6 @@
 		"organizers": [
 			"Benjamin Graetz"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -4749,8 +4475,6 @@
 			"Scott",
 			"Ryan (LimesKey)"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -4780,8 +4504,6 @@
 			"Tushar Sinha",
 			"Rupnil"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec6rWJfUTJMHfrqi",
 			"https://github.com/hackclub/haj4ever",
@@ -4814,8 +4536,6 @@
 		"organizers": [
 			"Meghana Madiraju"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recMbhE93XPc0hrZC"
 		],
@@ -4846,8 +4566,6 @@
 			"Charlie Nicholson",
 			"Jasper Mayone"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rectvQ49dMZdaKHQP",
 			"https://github.com/hackclub/ham-club"
@@ -4877,8 +4595,6 @@
 		"organizers": [
 			"Leafd"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recPimoHxXnOiwLn0",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
@@ -4906,8 +4622,6 @@
 		"archive_url": null,
 		"description": "Build a spooky project for a haunted house hackathon and get ready for some frightful fun!",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recRJCzLovGBPvRKD"
 		],
@@ -4937,8 +4651,6 @@
 			"Charmunk",
 			"Jenin Henin"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -4969,8 +4681,6 @@
 		"archive_url": null,
 		"description": "A worldwide game jam happening in 200+ cities on\nNovember 14th & 15th. Find an event in your city!",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "medium",
 		"sources": [
 			"https://haven.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -5003,8 +4713,6 @@
 			"Charmunk",
 			"Jenin Henin"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -5043,8 +4751,6 @@
 		"organizers": [
 			"Max H"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -5078,8 +4784,6 @@
 		"organizers": [
 			"Meghana Madiraju"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/reckjOs9Gd4rDOWGK",
 			"https://hermes.hackclub.com",
@@ -5117,8 +4821,6 @@
 			"Cyao",
 			"Alex Ren"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -5150,8 +4852,6 @@
 		"organizers": [
 			"Lux (sporeball)"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -5182,8 +4882,6 @@
 			"Saurabh",
 			"Manitej Boorgu"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -5225,8 +4923,6 @@
 			"Annabel",
 			"dld"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -5266,8 +4962,6 @@
 			"Annabel",
 			"dld"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://arcana.hackclub.com",
 			"https://horizons.hackclub.com/",
@@ -5301,8 +4995,6 @@
 			"Annabel",
 			"dld"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://crux.hackclub.com",
 			"https://horizons.hackclub.com/",
@@ -5336,8 +5028,6 @@
 			"Annabel",
 			"dld"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://equinox.hackclub.com",
 			"https://horizons.hackclub.com/",
@@ -5371,8 +5061,6 @@
 			"Annabel",
 			"dld"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://horizons.hackclub.com/",
 			"https://hackathons.hackclub.com/years/2026/",
@@ -5406,8 +5094,6 @@
 			"Annabel",
 			"dld"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://nexus.hackclub.com",
 			"https://horizons.hackclub.com/",
@@ -5440,8 +5126,6 @@
 			"Annabel",
 			"dld"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://horizons.hackclub.com/",
 			"https://hackathons.hackclub.com/years/2026/",
@@ -5475,8 +5159,6 @@
 			"Annabel",
 			"dld"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://horizons.hackclub.com/",
 			"https://github.com/hackclub/horizons/blob/main/frontend/static/content/faq-sol.md",
@@ -5504,8 +5186,6 @@
 			"Dhamari Trice-Hanson",
 			"Adhdhyan Jain"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -5523,7 +5203,7 @@
 		"name": "Illumination",
 		"slug": "illumination",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": null,
 		"end_date": "2025-07-16",
 		"status": "ended",
@@ -5539,8 +5219,6 @@
 		"organizers": [
 			"Natey Hecht"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -5570,8 +5248,6 @@
 		"organizers": [
 			"Alex Ren"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -5605,8 +5281,6 @@
 		"organizers": [
 			"EnterpriseGoose"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -5641,8 +5315,6 @@
 		"organizers": [
 			"aqua (phthallo)"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recr5bSOzc4SPYWlh",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
@@ -5672,8 +5344,6 @@
 		"organizers": [
 			"roxstar123"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -5702,8 +5372,6 @@
 		"organizers": [
 			"ascpixi"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -5720,7 +5388,7 @@
 		"name": "Jackpot",
 		"slug": "jackpot",
 		"kind": "both",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-02-13",
 		"end_date": "2026-05-15",
 		"status": "ended",
@@ -5738,8 +5406,6 @@
 			"Scooter",
 			"Neon"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/receh6Y6LeucG8Fwl",
 			"https://github.com/hackclub/jackpot"
@@ -5771,8 +5437,6 @@
 		"organizers": [
 			"Gus Ruben"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -5803,8 +5467,6 @@
 		"archive_url": null,
 		"description": "Get travel stipends just by programming with Jet Fund!",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recaq91LDxgXWya84"
 		],
@@ -5833,8 +5495,6 @@
 		"organizers": [
 			"Jolly Wang"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recqe8pw2619z22Nv",
 			"https://jolly.hackclub.com",
@@ -5865,8 +5525,6 @@
 		"organizers": [
 			"Kartikey Chauhan"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -5894,8 +5552,6 @@
 		"archive_url": null,
 		"description": "Build a game inspired by a photo in a 25-hour overnight jam and unleash your creativity!",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec8WzB60gMxr0xPn"
 		],
@@ -5924,8 +5580,6 @@
 		"organizers": [
 			"Antonio Archer"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recPZoiwjJZ6BpM7c",
 			"https://github.com/AD-Archer/JS2Photo",
@@ -5960,8 +5614,6 @@
 		"organizers": [
 			"Thomas Stubblefield"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://github.com/hackclub/juice",
 			"https://hackclub.com/api/v1/events",
@@ -5997,8 +5649,6 @@
 		"organizers": [
 			"Estella Gu"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -6027,8 +5677,6 @@
 		"organizers": [
 			"Thomas Stubblefield"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -6057,8 +5705,6 @@
 		"organizers": [
 			"roxstar123"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -6091,8 +5737,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recCdPnG1aFtMY6Gj"
 		],
@@ -6119,8 +5763,6 @@
 		"archive_url": null,
 		"description": "Build a website at our in-person workshop for girls and non-binary students and gain essential coding skills!",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/reczYtdg59OnyijBH"
 		],
@@ -6149,8 +5791,6 @@
 		"organizers": [
 			"Nick Do"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recQYISOz3m29iCaA",
 			"https://keyframe.hackclub.com",
@@ -6179,8 +5819,6 @@
 		"organizers": [
 			"Arjav Jain"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recOOgz87EQ6Suebm",
 			"https://levelzero.hackclub.com",
@@ -6212,8 +5850,6 @@
 		"organizers": [
 			"Jeremy Woolley"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recAfM4hAXcf4rB7z",
 			"https://99.hackclub.com",
@@ -6249,8 +5885,6 @@
 			"Joaquin Schere",
 			"Max (maxwell_mph)"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec68sQCS3PYSFcOU",
 			"https://itch.io/jam/liquidate",
@@ -6282,8 +5916,6 @@
 		"organizers": [
 			"Sebastian Hernandez"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recpuqHNfdOL1Acop",
 			"https://github.com/hackclub/live",
@@ -6314,8 +5946,6 @@
 		"organizers": [
 			"Ben (malted)"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -6344,8 +5974,6 @@
 		"organizers": [
 			"Johnathan McPhilbin"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec6fQdnDTsO80WRG",
 			"https://lookalike.hackclub.com/",
@@ -6376,8 +6004,6 @@
 			"ascpixi",
 			"Felix"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -6391,7 +6017,7 @@
 		"name": "Macondo",
 		"slug": "macondo",
 		"kind": "both",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-08-14",
 		"end_date": "2026-08-16",
 		"status": "ended",
@@ -6411,8 +6037,6 @@
 		"organizers": [
 			"Santi Beltran"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://macondo.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -6455,8 +6079,6 @@
 		"organizers": [
 			"Alex Van Doren"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -6492,8 +6114,6 @@
 		"organizers": [
 			"Tritium Labs"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -6506,7 +6126,7 @@
 		"name": "Midnight",
 		"slug": "midnight",
 		"kind": "both",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-01-04",
 		"end_date": "2026-01-08",
 		"status": "ended",
@@ -6526,8 +6146,6 @@
 		"organizers": [
 			"Hack Club HQ"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://midnight.hackclub.com",
 			"https://github.com/hackclub/midnight",
@@ -6567,8 +6185,6 @@
 			"Cisco",
 			"Jay"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -6605,8 +6221,6 @@
 		"organizers": [
 			"Sahana"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recgXAn2HqZu3Whh9",
 			"https://mini.hackclub.com",
@@ -6635,8 +6249,6 @@
 		"organizers": [
 			"Leafd"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recNKkAVIY8PIHEck",
 			"https://github.com/hackclub/minicraft"
@@ -6666,8 +6278,6 @@
 		"organizers": [
 			"Andre Snellings Jr."
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -6696,8 +6306,6 @@
 		"organizers": [
 			"Mahad Kalam"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -6727,8 +6335,6 @@
 		"organizers": [
 			"Lux (sporeball)"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -6762,8 +6368,6 @@
 		"organizers": [
 			"Brendan Reynard"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recnGypJu0F781i1A",
 			"https://mipmap.hackclub.com",
@@ -6796,8 +6400,6 @@
 			"Thomas Stubblefield",
 			"Leafd"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recrHReFgh3a8PRvN",
 			"https://github.com/hackclub/mob-games"
@@ -6811,7 +6413,7 @@
 		"name": "Moonshot",
 		"slug": "moonshot",
 		"kind": "both",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2025-12-12",
 		"end_date": "2025-12-15",
 		"status": "ended",
@@ -6833,8 +6435,6 @@
 			"Josias Aurel",
 			"Memma"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://github.com/hackclub/moonshot",
 			"https://moonshot.hackclub.com",
@@ -6874,8 +6474,6 @@
 			"Saurabh",
 			"Dhamari Trice-Hanson"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -6904,8 +6502,6 @@
 		"organizers": [
 			"Joaquin Schere"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -6944,8 +6540,6 @@
 		"organizers": [
 			"Thomas Stubblefield"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -6980,8 +6574,6 @@
 		"organizers": [
 			"Kashyap Sukshavasi"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recZL8pvW0PII6Y2X",
 			"https://neohack.hackclub.com",
@@ -7012,8 +6604,6 @@
 		"organizers": [
 			"Kaylee Dinh"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -7048,8 +6638,6 @@
 		"organizers": [
 			"Amber"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recW31O6pkxzNqpQP",
 			"https://github.com/hackclub/nothing",
@@ -7078,8 +6666,6 @@
 		"organizers": [
 			"Emma"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recch1rlt143hLMc0",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
@@ -7109,8 +6695,6 @@
 			"Max Wofford",
 			"Ryan (LimesKey)"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -7144,8 +6728,6 @@
 		"organizers": [
 			"Stelle Tran"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/reckBhHrcB92vLu22",
 			"https://github.com/hackclub/onekey",
@@ -7178,8 +6760,6 @@
 		"organizers": [
 			"Hridya Agrawal"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recfUrmCnCURU5puy",
 			"https://github.com/hridaya423/optimize",
@@ -7210,8 +6790,6 @@
 		"organizers": [
 			"Antonio Archer"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recoVgK7m7y6Dibuv",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
@@ -7239,8 +6817,6 @@
 		"organizers": [
 			"ingobeans"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -7258,7 +6834,7 @@
 		"name": "Outernet",
 		"slug": "outernet",
 		"kind": "hackathon",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2023-07-28",
 		"end_date": "2023-07-31",
 		"status": "ended",
@@ -7276,8 +6852,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://outernet.hackclub.com",
 			"https://github.com/hackclub/outernet"
@@ -7308,8 +6882,6 @@
 			"Acon Lin",
 			"Alex Ren"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://outpost.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -7348,8 +6920,6 @@
 			"Zara",
 			"EnterpriseGoose"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -7387,8 +6957,6 @@
 		"organizers": [
 			"Jiang Tongyu"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://overglade.hackclub.com",
 			"https://github.com/hackclub/overglade",
@@ -7417,8 +6985,6 @@
 		"organizers": [
 			"Acon Lin"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recBZd1yuW9poXYCq",
 			"https://page.hackclub.com/",
@@ -7451,8 +7017,6 @@
 			"Lola",
 			"Kaylee Dinh"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rectMCKqCrwfa13VZ",
 			"https://paperclip.hackclub.com/",
@@ -7489,8 +7053,6 @@
 		"organizers": [
 			"Dhamari Trice-Hanson"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://paradox.hackclub.com",
 			"https://hackathons.hackclub.com/years/2026/",
@@ -7502,7 +7064,7 @@
 		"name": "Parthenon",
 		"slug": "parthenon",
 		"kind": "hackathon",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2025-11-14",
 		"end_date": "2025-11-16",
 		"status": "ended",
@@ -7520,8 +7082,6 @@
 		"archive_url": null,
 		"description": "Build your dream project with teens from around the world and showcase your skills at Parthenon!",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://parthenon.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -7554,8 +7114,6 @@
 		"organizers": [
 			"Meghana Madiraju"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -7588,8 +7146,6 @@
 		"organizers": [
 			"Nick Do"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -7624,8 +7180,6 @@
 		"organizers": [
 			"ascpixi"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -7639,7 +7193,7 @@
 		"name": "Phantom",
 		"slug": "phantom",
 		"kind": "both",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2027-02-12",
 		"end_date": "2027-02-14",
 		"status": "upcoming",
@@ -7660,8 +7214,6 @@
 			"Anson Chung",
 			"Stelle Tran"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://phantom.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -7698,8 +7250,6 @@
 		"organizers": [
 			"Aarav Jhamb"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recEUB8vPOv4RIe3p"
 		],
@@ -7728,8 +7278,6 @@
 		"organizers": [
 			"Emma"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recL9ud4Qbp9Rn92v",
 			"https://picture-this.hackclub.com",
@@ -7763,8 +7311,6 @@
 		"organizers": [
 			"M0HID"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -7783,7 +7329,7 @@
 		"name": "Pixl",
 		"slug": "pixl",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-08-18",
 		"end_date": "2026-12-31",
 		"status": "ongoing",
@@ -7801,8 +7347,6 @@
 			"Gabin Tavernier",
 			"Ricky Parmar"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -7839,8 +7383,6 @@
 			"Froppii",
 			"Armand"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recOLHdx42CMfaepG",
 			"https://playground.hackclub.com/",
@@ -7874,8 +7416,6 @@
 		"organizers": [
 			"Selena Nguyen"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recPLi1cO0L2qA3ob",
 			"https://playhouse.hackclub.com/",
@@ -7907,8 +7447,6 @@
 			"Charmunk",
 			"ShyMike"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -7935,8 +7473,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recScXgFX7kWIpPg8"
 		],
@@ -7966,8 +7502,6 @@
 			"Mohammed Zaid",
 			"Wally"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8003,8 +7537,6 @@
 		"organizers": [
 			"Nishtha Sharma"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8017,7 +7549,7 @@
 		"name": "Portputer",
 		"slug": "portputer",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-07-14",
 		"end_date": "2026-07-28",
 		"status": "ended",
@@ -8034,8 +7566,6 @@
 			"Lily Flowers",
 			"Lola"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -8064,8 +7594,6 @@
 		"organizers": [
 			"Lewin Kelly"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recUXpjBHFDdlPJXa",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
@@ -8095,8 +7623,6 @@
 		"organizers": [
 			"Shurui Guo"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recarK8rUhnwZ9opv",
 			"https://premiere.hackclub.com",
@@ -8111,7 +7637,7 @@
 		"name": "Printboard",
 		"slug": "printboard",
 		"kind": "ysws",
-		"type": "hardware",
+		"type": "cad",
 		"start_date": null,
 		"end_date": "2025-02-16",
 		"status": "ended",
@@ -8127,8 +7653,6 @@
 		"organizers": [
 			"Ivie Fonner"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -8159,8 +7683,6 @@
 		"organizers": [
 			"Julia"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec2KYEiVYNdnhTAt",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
@@ -8190,8 +7712,6 @@
 			"qcoral",
 			"Clay Nicholson"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recalBePmnZ2ZxagX",
 			"https://github.com/hackclub/Prototype",
@@ -8222,8 +7742,6 @@
 		"organizers": [
 			"Wally"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recaFMK1bmoe3f48H",
 			"https://github.com/hackclub/PullQuests",
@@ -8254,8 +7772,6 @@
 		"organizers": [
 			"Hussein (46-HA)"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8268,7 +7784,7 @@
 		"name": "Pulsewidth",
 		"slug": "pulsewidth",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-07-21",
 		"end_date": "2026-08-05",
 		"status": "ended",
@@ -8284,8 +7800,6 @@
 		"organizers": [
 			"Louisa"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recXR2ZasaMHS8JJc",
 			"https://pulsewidth.hackclub.com",
@@ -8320,8 +7834,6 @@
 			"Nico Smith",
 			"Ben Elliott"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8357,8 +7869,6 @@
 		"organizers": [
 			"Giles Ellison-Taylor"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recDFXvSpx4603YEa",
 			"https://radish.hackclub.com/",
@@ -8391,8 +7901,6 @@
 		"organizers": [
 			"Sebastian Hernandez"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recCLGhBViZjTO7XY",
 			"https://github.com/hackclub/rageclick-ysws",
@@ -8424,8 +7932,6 @@
 		"organizers": [
 			"Sarah Park-Ngai"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8461,8 +7967,6 @@
 		"organizers": [
 			"Sahil Deshmukh"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8499,8 +8003,6 @@
 		"organizers": [
 			"Fonz Beato"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recwXwf6N7gLcx0lc",
 			"https://github.com/hackclub/raspite",
@@ -8534,8 +8036,6 @@
 			"Jordan",
 			"Jolly Wang"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recRgiNUt71wfH9NF",
 			"https://re-dream.hackclub.com",
@@ -8567,8 +8067,6 @@
 			"Arjav Jain",
 			"Jps"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8598,8 +8096,6 @@
 		"organizers": [
 			"Rushil Chopra"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://github.com/hackclub/YSWS-Catalog/commit/7ce14bf",
 			"https://reality.hackclub.com",
@@ -8633,8 +8129,6 @@
 		"organizers": [
 			"Sarah Park-Ngai"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rectafwZFwrD1N72x",
 			"https://github.com/idksarah/REAMDE"
@@ -8666,8 +8160,6 @@
 			"Memma",
 			"Neon"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8703,8 +8195,6 @@
 		"organizers": [
 			"pmnlla"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/reccutv4YlUXXj6Zf",
 			"https://github.com/hackclub/reflow",
@@ -8736,8 +8226,6 @@
 			"Vihaan Sondhi",
 			"Rushil Chopra"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8766,8 +8254,6 @@
 		"organizers": [
 			"Dhamari Trice-Hanson"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8805,8 +8291,6 @@
 			"fireentity",
 			"swn"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8840,8 +8324,6 @@
 			"Jenin Henin",
 			"Dhamari Trice-Hanson"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8877,8 +8359,6 @@
 		"organizers": [
 			"manni"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/reccuzAJkCOYt5nXr",
 			"https://github.com/hackclub/retrograde",
@@ -8911,8 +8391,6 @@
 		"organizers": [
 			"Louisa"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8948,8 +8426,6 @@
 			"Neon",
 			"Leah Anderson"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -8985,8 +8461,6 @@
 		"organizers": [
 			"Jiang Tongyu"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec9ypC9Ndlo3wiKw",
 			"https://roulette.hackclub.com",
@@ -9018,8 +8492,6 @@
 		"organizers": [
 			"aqua (phthallo)"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recm19FkNIcQuxIPA",
 			"https://github.com/hackclub/rpg",
@@ -9050,8 +8522,6 @@
 		"organizers": [
 			"Rushil Chopra"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -9065,7 +8535,7 @@
 		"name": "Scare",
 		"slug": "scare",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-10-01",
 		"end_date": "2026-10-31",
 		"status": "ongoing",
@@ -9081,8 +8551,6 @@
 		"organizers": [
 			"Barnav Mitra"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recjrJqFnHdhxgfuP",
 			"https://scare.hackclub.com",
@@ -9116,8 +8584,6 @@
 		"organizers": [
 			"Miguel"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recSRxdXaZFrqrgUa",
 			"https://scrape.hackclub.com",
@@ -9150,8 +8616,6 @@
 			"Iamalive",
 			"Nathan (notaroomba)"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -9165,7 +8629,7 @@
 		"name": "Scrapyard",
 		"slug": "scrapyard",
 		"kind": "hackathon",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2025-03-15",
 		"end_date": "2025-03-16",
 		"status": "ended",
@@ -9183,8 +8647,6 @@
 		"archive_url": null,
 		"description": "Build stupid stuff, get stupid prizes.",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://scrapyard.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -9197,7 +8659,7 @@
 		"name": "Scrapyard Flagship",
 		"slug": "scrapyard-flagship",
 		"kind": "hackathon",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2025-03-01",
 		"end_date": "2025-03-02",
 		"status": "ended",
@@ -9215,8 +8677,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://scrapyard.hackclub.com"
 		]
@@ -9241,8 +8701,6 @@
 		"organizers": [
 			"Jenny"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -9271,8 +8729,6 @@
 		"organizers": [
 			"Manitej Boorgu"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rechyas2TcsYmOMsN",
 			"https://self-portrait.hackclub.com",
@@ -9304,8 +8760,6 @@
 		"organizers": [
 			"Graham Darcey"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recofxZ0xDBKgOvAF",
 			"https://github.com/hackclub/shallow-learning",
@@ -9340,8 +8794,6 @@
 		"organizers": [
 			"Thomas Stubblefield"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -9362,7 +8814,7 @@
 		"name": "Shipwrecked",
 		"slug": "shipwrecked",
 		"kind": "both",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2025-08-08",
 		"end_date": "2025-08-11",
 		"status": "ended",
@@ -9382,8 +8834,6 @@
 		"organizers": [
 			"Hack Club HQ"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://shipwrecked.hackclub.com",
 			"https://github.com/hackclub/shipwrecked",
@@ -9417,8 +8867,6 @@
 		"organizers": [
 			"Bisher Almasri"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -9447,8 +8895,6 @@
 		"organizers": [
 			"Anson Chung"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recYcAF2sad2VCGnJ",
 			"https://shrink.hackclub.com",
@@ -9479,8 +8925,6 @@
 			"Nora",
 			"Phoebe"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -9516,8 +8960,6 @@
 		"organizers": [
 			"Olive Wu"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -9548,8 +8990,6 @@
 			"Rudy",
 			"Aarav J"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -9561,7 +9001,7 @@
 		"name": "Sleepover",
 		"slug": "sleepover",
 		"kind": "both",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-04-24",
 		"end_date": "2026-04-26",
 		"status": "ended",
@@ -9582,8 +9022,6 @@
 			"Celeste Roselli",
 			"Reem Khalifa"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://sleepover.hackclub.com/faq/sleepover",
 			"https://hackclub.com/api/v1/events",
@@ -9625,8 +9063,6 @@
 		"organizers": [
 			"Mustafa"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -9655,8 +9091,6 @@
 			"Alex Van Doren",
 			"Sam Liu"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -9685,8 +9119,6 @@
 		"organizers": [
 			"Ren"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recbTHmv1Curu4AJT",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
@@ -9720,8 +9152,6 @@
 		"organizers": [
 			"Hack Club HQ"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://snowglobe.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -9756,8 +9186,6 @@
 		"organizers": [
 			"Jenin Henin"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recujSvjyVH3kexp3",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
@@ -9787,8 +9215,6 @@
 		"organizers": [
 			"Ben Dixon"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recZoBHhXx7dMa3wq",
 			"https://github.com/hackclub/sock",
@@ -9820,8 +9246,6 @@
 			"Acon Lin",
 			"Cyao"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -9850,8 +9274,6 @@
 		"organizers": [
 			"Angad Behl"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -9871,7 +9293,7 @@
 		"name": "Sprig",
 		"slug": "sprig",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2022-07-14",
 		"end_date": null,
 		"status": "ongoing",
@@ -9889,8 +9311,6 @@
 			"Graham Darcey",
 			"Lucas Honda"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -9910,7 +9330,7 @@
 		"name": "Squeak",
 		"slug": "squeak",
 		"kind": "ysws",
-		"type": "hardware",
+		"type": "cad",
 		"start_date": null,
 		"end_date": "2025-07-13",
 		"status": "ended",
@@ -9927,8 +9347,6 @@
 			"Sarah Park-Ngai",
 			"Jenin Henin"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -9958,8 +9376,6 @@
 			"Scooter",
 			"Memma"
 		],
-		"organizer_confidence": "low",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rechvw5nKUPFMFHKa",
 			"https://stack.hackclub.com",
@@ -9972,7 +9388,7 @@
 		"name": "Stardance",
 		"slug": "stardance",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-05-30",
 		"end_date": "2026-10-31",
 		"status": "ongoing",
@@ -9988,8 +9404,6 @@
 		"organizers": [
 			"Hack Club HQ"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -10034,8 +9448,6 @@
 			"Alex Park",
 			"Clay Nicholson"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://stasis.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -10072,8 +9484,6 @@
 		"organizers": [
 			"Rudy"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec8FEcWABaGeYxSO",
 			"https://static.hackclub.com",
@@ -10105,8 +9515,6 @@
 		"organizers": [
 			"Anson Chung"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recn8p03P59SfC3Hv",
 			"https://github.com/hackclub/sticky",
@@ -10143,8 +9551,6 @@
 			"Yunfei Shuai",
 			"Susan Zheng"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -10173,8 +9579,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recTyNiJ7ZFXqsqmQ"
 		],
@@ -10203,8 +9607,6 @@
 		"organizers": [
 			"Hack Club HQ"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -10243,8 +9645,6 @@
 		"archive_url": null,
 		"description": "A social coding event for girls 13-18 around the world! 20+ events in 20+ cities.",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec272KDQctg60HTq"
 		],
@@ -10274,8 +9674,6 @@
 		"organizers": [
 			"Julia"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recNOMt3uW5kOs25T",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
@@ -10303,8 +9701,6 @@
 		"organizers": [
 			"Dhyan"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -10339,8 +9735,6 @@
 		"organizers": [
 			"Aryan Madan"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recBdGKQHiTpZFzHQ",
 			"https://github.com/hackclub/tabbed"
@@ -10373,8 +9767,6 @@
 		"organizers": [
 			"Alex Radu"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -10409,8 +9801,6 @@
 		"organizers": [
 			"Kaylee Dinh"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recPNoIgMnDRjzDZu",
 			"https://tailor.hackclub.com/",
@@ -10441,8 +9831,6 @@
 		"organizers": [
 			"Julia"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recGvUqkCCS1sUJEe"
 		],
@@ -10469,8 +9857,6 @@
 		"organizers": [
 			"Arcade Wise"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -10506,8 +9892,6 @@
 		"organizers": [
 			"Reem Khalifa"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recyxZhU9OIXGwB70",
 			"https://teachyourmachine.hackclub.com",
@@ -10538,8 +9922,6 @@
 		"organizers": [
 			"Josias Aurel"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -10572,8 +9954,6 @@
 			"Fiona",
 			"Chan Kai Ling"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recBr3EcgTa1ALLmR",
 			"https://terra.hackclub.com",
@@ -10605,8 +9985,6 @@
 			"Kartikey Chauhan",
 			"Ben Dixon"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recNAxSGgS3PKJV4p",
 			"https://github.com/hackclub/journey",
@@ -10641,8 +10019,6 @@
 		"organizers": [
 			"Thomas Stubblefield"
 		],
-		"organizer_confidence": "high",
-		"confidence": "medium",
 		"sources": [
 			"https://trail.hackclub.com",
 			"https://hackathons.hackclub.com/years/2024/"
@@ -10668,8 +10044,6 @@
 		"organizers": [
 			"Lynn"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -10682,7 +10056,7 @@
 		"name": "thingondesk",
 		"slug": "thingondesk",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-07-02",
 		"end_date": "2026-07-17",
 		"status": "ended",
@@ -10698,8 +10072,6 @@
 		"organizers": [
 			"Antonio Archer"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recVSEcjC4YF4zARk",
 			"https://thingondesk.hackclub.com",
@@ -10732,8 +10104,6 @@
 		"organizers": [
 			"Louisa"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recHDTltjcPpFMUgu",
 			"https://thirdspace.hackclub.com",
@@ -10765,8 +10135,6 @@
 		"organizers": [
 			"Ren Leonard"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recAhnVfGO9dxAdov",
 			"https://throwback.hackclub.com",
@@ -10798,8 +10166,6 @@
 		"organizers": [
 			"Olive Wu"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -10829,8 +10195,6 @@
 		"organizers": [
 			"Lux Loff"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -10863,8 +10227,6 @@
 		"archive_url": null,
 		"description": "Run a Blinky electronics workshop, learn to solder, build LED circuits, and get free PCB kits!",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recZ5l8X58v59Zb9h",
 			"https://github.com/hackclub/tinker"
@@ -10895,8 +10257,6 @@
 			"Lux Loff",
 			"Reem Khalifa"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recerA2mYF22Od3hL",
 			"https://tonic.hackclub.com",
@@ -10927,8 +10287,6 @@
 		"organizers": [
 			"Sam Liu"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -10959,8 +10317,6 @@
 			"Shambhavi Sinha",
 			"Jared Senesac"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -10996,8 +10352,6 @@
 			"Alex Van Doren",
 			"Gus Ruben"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recWnoLvkVsBSBhxm",
 			"https://touch-grass.hackclub.com",
@@ -11028,8 +10382,6 @@
 		"organizers": [
 			"Jiang Tongyu"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -11058,8 +10410,6 @@
 		"organizers": [
 			"Peleg"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -11088,8 +10438,6 @@
 		"organizers": [
 			"Peleg"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recEnnbZY5xtgrZMr",
 			"https://treasure.hackclub.com"
@@ -11119,8 +10467,6 @@
 		"organizers": [
 			"Mihir Maroju"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recO21kDLGrO3UNVg",
 			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
@@ -11148,8 +10494,6 @@
 		"organizers": [
 			"Barnav Mitra"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -11163,7 +10507,7 @@
 		"name": "Twisted",
 		"slug": "twisted",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-09-08",
 		"end_date": null,
 		"status": "ongoing",
@@ -11181,8 +10525,6 @@
 			"Kavyansh Khaitan",
 			"Aoishik Khan"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recS2HhvwN6LrzyYC",
 			"https://github.com/hackclub/twisted",
@@ -11219,8 +10561,6 @@
 			"Max H",
 			"Jenny"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/reclih3lmcsNIqABA",
 			"https://typeface.hackclub.com",
@@ -11254,8 +10594,6 @@
 		"archive_url": null,
 		"description": "4-day Hardware Hackathon",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://undercity.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -11287,8 +10625,6 @@
 		"organizers": [
 			"Freddie Yershon"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec3X8pFTzOoKhBfx",
 			"https://github.com/hackclub/vibes",
@@ -11301,7 +10637,7 @@
 		"name": "Visioneer",
 		"slug": "visioneer",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": null,
 		"end_date": "2025-04-20",
 		"status": "ended",
@@ -11318,8 +10654,6 @@
 			"Karthik Sankar",
 			"Ashwath Chandran"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -11350,8 +10684,6 @@
 		"organizers": [
 			"Euan Ripper"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -11381,8 +10713,6 @@
 			"Sahana",
 			"Jared Senesac"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -11401,7 +10731,7 @@
 		"name": "Waveband",
 		"slug": "waveband",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2025-06-11",
 		"end_date": "2025-07-11",
 		"status": "ended",
@@ -11417,8 +10747,6 @@
 		"organizers": [
 			"Craig Giles"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -11455,8 +10783,6 @@
 		"organizers": [
 			"Manitej Boorgu"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -11490,8 +10816,6 @@
 		"organizers": [
 			"Katsu (the-kat-kat)"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec94seFpW168Vcza",
 			"https://github.com/the-kat-kat/whimsy"
@@ -11523,8 +10847,6 @@
 		"organizers": [
 			"Barnav Mitra"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recgMImjBQ0PMwKU5",
 			"https://widget.hackclub.com",
@@ -11556,8 +10878,6 @@
 			"Ella Xu",
 			"Belle See"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://github.com/hackclub/winter",
 			"https://events.hackclub.com/winter-hardware-wonderland-kick-off/",
@@ -11585,8 +10905,6 @@
 		"organizers": [
 			"Zach Latta"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recSODGhknuccVVfj",
 			"https://github.com/hackclub/wizard-orpheus"
@@ -11617,8 +10935,6 @@
 			"Aditya",
 			"Freddie Yershon"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -11637,7 +10953,7 @@
 		"name": "Wrangler",
 		"slug": "wrangler",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": "2026-08-10",
 		"end_date": "2026-09-15",
 		"status": "ended",
@@ -11653,8 +10969,6 @@
 		"organizers": [
 			"Nick Do"
 		],
-		"organizer_confidence": "high",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recywhohGlnpd6Zrf",
 			"https://wrangler.hackclub.com",
@@ -11687,8 +11001,6 @@
 		"organizers": [
 			"fish (fishtested)"
 		],
-		"organizer_confidence": "low",
-		"confidence": "medium",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -11717,8 +11029,6 @@
 		"organizers": [
 			"Sami.s"
 		],
-		"organizer_confidence": "medium",
-		"confidence": "medium",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -11746,8 +11056,6 @@
 		"organizers": [
 			"KuzuiYaridomi"
 		],
-		"organizer_confidence": "low",
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recMnGhDE5zgY3GQq",
 			"https://github.com/hackclub/ZoneOut"

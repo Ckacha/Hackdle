@@ -5,9 +5,8 @@ import { addName, moveToDeprecated, readList, renameName, writeList, type Entry 
 import type { Actions, PageServerLoad } from './$types';
 
 const KINDS = ['ysws', 'hackathon', 'both'];
-const TYPES = ['software', 'hardware', 'both'];
+const TYPES = ['software', 'hardware', 'cad', 'everything'];
 const STATUSES = ['ended', 'ongoing', 'upcoming'];
-const CONFIDENCE = ['high', 'medium', 'low'];
 const IMAGE_EXT: Record<string, string> = {
 	'image/png': 'png',
 	'image/jpeg': 'jpg',
@@ -60,7 +59,6 @@ function fields(f: FormData) {
 						.filter(Boolean)
 				)
 			],
-			organizer_confidence: oneOf(text(f, 'organizer_confidence'), CONFIDENCE),
 			logo_file: orNull(text(f, 'logo_file'))
 		} as Partial<Entry>
 	};
@@ -150,8 +148,6 @@ export const actions: Actions = {
 			archive_url: null,
 			description: null,
 			organizers: [],
-			organizer_confidence: null,
-			confidence: null,
 			sources: [],
 			...parsed.values,
 			...(logo.file ? { logo_file: logo.file } : {})

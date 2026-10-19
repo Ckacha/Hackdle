@@ -17,8 +17,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recqYkMrUxNn5v6X0"
 		],
@@ -43,8 +41,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "medium",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recWh4JY75X2GQOoU"
 		],
@@ -69,8 +65,6 @@
 		"archive_url": null,
 		"description": "Build and train your own small language model using Python; gain hands-on experience with machine learning!",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recogPY9YwTFHFBjT"
 		],
@@ -97,8 +91,6 @@
 		"archive_url": null,
 		"description": "Collect cups, progress the graph, earn bonuses!",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
@@ -113,7 +105,7 @@
 		"name": "Decode",
 		"slug": "decode",
 		"kind": "ysws",
-		"type": "both",
+		"type": "everything",
 		"start_date": null,
 		"end_date": "2025-07-10",
 		"status": "ended",
@@ -127,8 +119,6 @@
 		"archive_url": null,
 		"description": "Learn how a tech product works and get a grant to make it yourself.",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
@@ -156,8 +146,6 @@
 		"archive_url": null,
 		"description": "Design a PCB live on stream and earn PCB credit per hour.",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml"
@@ -181,8 +169,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec1yPqTrjX15CyG3"
 		],
@@ -209,8 +195,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec939NW8NA9MIr2L"
 		],
@@ -237,8 +221,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/recUfu7Q286A0NSH4"
 		],
@@ -265,8 +247,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "high",
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec3cfpjdgcUsfloS"
 		],
@@ -293,8 +273,6 @@
 		"archive_url": null,
 		"description": "You Ship A Slack bot. We Ship A limited edition Orpheus bucket hat.",
 		"organizers": [],
-		"organizer_confidence": null,
-		"confidence": "medium",
 		"sources": [
 			"https://ysws.hackclub.com/",
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
