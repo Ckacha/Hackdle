@@ -31,6 +31,7 @@
 
 	let query = $state('');
 	let slug = $state('');
+	let filledFrom = '';
 	let startMonth = $state('');
 	let startYear = $state('');
 	let endMonth = $state('');
@@ -136,9 +137,20 @@
 	function pick(i: number) {
 		const p = suggestions[i];
 		if (!p) return;
+		const fresh = p.slug !== filledFrom;
 		slug = p.slug;
 		query = p.name;
 		open = false;
+		if (fresh) fill(p);
+	}
+
+	function fill(p: Program) {
+		filledFrom = p.slug;
+		[startYear, startMonth] = p.start_date ? p.start_date.split('-') : ['', ''];
+		[endYear, endMonth] = p.end_date ? p.end_date.split('-') : ['', ''];
+		format = formatOf(p);
+		type = p.type ?? '';
+		organizer = p.organizers[0] ?? '';
 	}
 
 	function onQueryInput() {

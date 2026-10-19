@@ -694,7 +694,8 @@
 		"description": "Build the weirdest and never-before-seen authentication system, get yubikeys, programmable nfc tags, antivirus giftcards and more!",
 		"organizers": [
 			"Dandililacs",
-			"Jim Dinias"
+			"Jim Dinias",
+			"Graham Darcey"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -724,7 +725,8 @@
 		"description": "YSWS for math/science projects!",
 		"organizers": [
 			"Tanjim Kamal",
-			"Dhamari Trice-Hanson"
+			"Dhamari Trice-Hanson",
+			"Gus Ruben"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -825,7 +827,8 @@
 		"description": "3D model an ornament and get it printed and hung on the HQ tree.",
 		"organizers": [
 			"dld",
-			"Alex Van Doren"
+			"Alex Van Doren",
+			"Dhamari Trice-Hanson"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -929,7 +932,8 @@
 		"description": "You ship a birthday themed project we ship a birthday card!",
 		"organizers": [
 			"Christian Well",
-			"EnterpriseGoose"
+			"EnterpriseGoose",
+			"Dhamari Trice-Hanson"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -1100,7 +1104,9 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Hang out with friends, make a website, get free boba! ",
-		"organizers": [],
+		"organizers": [
+			"Jared Senesac"
+		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recHGbPMwL6rdkDIP"
 		],
@@ -1129,7 +1135,8 @@
 		"description": "Build a website and get boba!",
 		"organizers": [
 			"Rushil Chopra",
-			"Max Wofford"
+			"Max Wofford",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -1164,7 +1171,8 @@
 		"archive_url": null,
 		"description": "Hack Clubbers team up to build websites in wild weekly categories",
 		"organizers": [
-			"Rushil Chopra"
+			"Rushil Chopra",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -1200,7 +1208,8 @@
 		"description": "Make your own operating system and get hardware to run it on.",
 		"organizers": [
 			"Ginobeano",
-			"Ingo"
+			"Ingo",
+			"Annabel"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -1301,7 +1310,8 @@
 		"archive_url": null,
 		"description": "Build a Chrome extension, and Hack Club provides $30 to launch it on Chrome Web Store.",
 		"organizers": [
-			"Josias Aurel"
+			"Josias Aurel",
+			"Graham Darcey"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -1335,7 +1345,7 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [
-			"Fox Ellison-Taylor"
+			"Foxmoss"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recoZ3wD0J9n0IzuL",
@@ -1496,7 +1506,13 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": null,
-		"organizers": [],
+		"organizers": [
+			"Deven Jadhav",
+			"Gus Ruben",
+			"Euan Ripper",
+			"Kai Ling",
+			"Sam Liu"
+		],
 		"sources": [
 			"https://hackathons.hackclub.com/years/2026/",
 			"https://hackclub.com/api/v1/events",
@@ -1526,7 +1542,9 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": null,
-		"organizers": [],
+		"organizers": [
+			"Deven Jadhav"
+		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/rechw9N86dUpC7i47"
 		],
@@ -1588,7 +1606,11 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Go to Washington D.C. for a hackathon!",
-		"organizers": [],
+		"organizers": [
+			"Max H",
+			"Antonio Archer",
+			"Selena Nguyen"
+		],
 		"sources": [
 			"https://capitol.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -1620,7 +1642,8 @@
 		"archive_url": null,
 		"description": "Build an extension, plugin, or widget get prizes",
 		"organizers": [
-			"Josias Aurel"
+			"Josias Aurel",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -1652,7 +1675,8 @@
 		"organizers": [
 			"Zenab",
 			"Rushil Chopra",
-			"Thanishkka Vijayabaskar"
+			"Thanishkka Vijayabaskar",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -1682,7 +1706,7 @@
 		"archive_url": null,
 		"description": "hewwo! please join catgirl you ship we ship. you ship ANY project we ship a catgirl (the catgirl is you!)",
 		"organizers": [
-			"Fox Ellison-Taylor",
+			"Foxmoss",
 			"Violet"
 		],
 		"sources": [
@@ -1783,7 +1807,8 @@
 		"description": "Create an iOS app and receive a $100 Apple Developer account to publish it.",
 		"organizers": [
 			"Faisal Sayed",
-			"Mohamad Mortada"
+			"Mohamad Mortada",
+			"Graham Darcey"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -1944,7 +1969,8 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [
-			"Ethan Canterbury"
+			"Ethan Canterbury",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recxp7od3AsEp28ry",
@@ -1977,7 +2003,9 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Don't run your programming club alone, make it a Hack Club! \nRun workshops, ship projects, get rewards with friends for free!",
-		"organizers": [],
+		"organizers": [
+			"Jared Senesac"
+		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recGbfov976IrojBD"
 		],
@@ -2009,7 +2037,8 @@
 		"archive_url": null,
 		"description": "You ship something to organize your digital life. We ship you a grant to buy something to organize your physical life.",
 		"organizers": [
-			"Ben Elliott"
+			"Ben Elliott",
+			"Olive Wu"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -2138,7 +2167,8 @@
 		"archive_url": "http://web.archive.org/web/20260217081200/https://submit.hackclub.com/converge-rsvp",
 		"description": "Build Discord/Slack bots, we ship domain names, server hosting, Blahajs, and more",
 		"organizers": [
-			"Leo"
+			"Leo",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -2207,7 +2237,9 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Hack Club's beginner friendly game jam",
-		"organizers": [],
+		"organizers": [
+			"Deven Jadhav"
+		],
 		"sources": [
 			"https://counterspell.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -2269,7 +2301,8 @@
 		"organizers": [
 			"Felix",
 			"Cyao",
-			"Max Wofford"
+			"Max Wofford",
+			"Sebastian Sanchez"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recM8UspBmpDRIUzU"
@@ -2394,7 +2427,8 @@
 		"archive_url": null,
 		"description": "Make an e-card, earn heart themed prizes (including a sweatshirt!!!)",
 		"organizers": [
-			"Lynn"
+			"Lynn",
+			"Olive Wu"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -2467,7 +2501,11 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Game jam for high schoolers. Organized by high schoolers in 100 cities worldwide",
-		"organizers": [],
+		"organizers": [
+			"Deven Jadhav",
+			"Gus Ruben",
+			"Renran Sun"
+		],
 		"sources": [
 			"https://daydream.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -2583,7 +2621,8 @@
 		"archive_url": null,
 		"description": "You Ship an app with Docker We Ship you a t-shirt!",
 		"organizers": [
-			"Nathan Cloutier"
+			"Nathan Cloutier",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recvdg4H9oEwo6Wwp",
@@ -2612,7 +2651,8 @@
 		"archive_url": null,
 		"description": "Come make me a bot friend!",
 		"organizers": [
-			"Jolly Wang"
+			"Jolly Wang",
+			"Katie Sue"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recUP1KbAPSWdXGrX",
@@ -2894,7 +2934,8 @@
 		"description": "Design a custom enclosure for your project and get it 3D printed.",
 		"organizers": [
 			"Adhdhyan Jain",
-			"Jacob Navaratne"
+			"Jacob Navaratne",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -2924,7 +2965,8 @@
 		"archive_url": null,
 		"description": "Build a REST API, get a grant for Raspberry Pi or Cloud Credits",
 		"organizers": [
-			"Artem Kim"
+			"Artem Kim",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -3089,7 +3131,8 @@
 		"archive_url": null,
 		"description": "Design a hardware project and we’ll pay for it",
 		"organizers": [
-			"Liam Newbill"
+			"Liam Newbill",
+			"Rudy"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec5iSFpXM8jLLgDQ",
@@ -3287,7 +3330,8 @@
 		"description": "Build a functional website without any CSS and show off your unique style!",
 		"organizers": [
 			"Nathan Alspaugh",
-			"Freddie Yershon"
+			"Freddie Yershon",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recXHambOhVVD95X5",
@@ -3421,7 +3465,8 @@
 		"archive_url": null,
 		"description": "code and eat!",
 		"organizers": [
-			"Swarit Narang"
+			"Swarit Narang",
+			"ascpixi"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -3455,7 +3500,8 @@
 		"description": "Design and build hardware projects and get them funded.",
 		"organizers": [
 			"Aarav Jhamb",
-			"Ryan (Cybdo)"
+			"Ryan (Cybdo)",
+			"Kai Pereira"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -3669,7 +3715,8 @@
 		"description": "Make a interactive portfolio website, get $20 for hosting or domains",
 		"organizers": [
 			"Rushil Chopra",
-			"Ivie Fonner"
+			"Ivie Fonner",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -3703,7 +3750,8 @@
 		"archive_url": null,
 		"description": "Ship An Android App and get a FREE Android Phone + Dev License!",
 		"organizers": [
-			"Mohamad Mortada"
+			"Mohamad Mortada",
+			"Graham Darcey"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -3768,7 +3816,9 @@
 		"url_status": null,
 		"archive_url": null,
 		"description": null,
-		"organizers": [],
+		"organizers": [
+			"Gus Ruben"
+		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec1yiOy0LzQApsaq"
 		],
@@ -3823,7 +3873,8 @@
 		"archive_url": null,
 		"description": "ship a Go Project, get a gopher plushie",
 		"organizers": [
-			"BananaJeans"
+			"BananaJeans",
+			"Sebastian Hernandez"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recNMKvfpEYyxOvc2",
@@ -4013,7 +4064,8 @@
 		"description": "Build a 3D website and get a free frappuccino.",
 		"organizers": [
 			"Jonathan Dong",
-			"Shubham Patil"
+			"Shubham Patil",
+			"Graham Darcey"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -4180,7 +4232,8 @@
 		"description": "Create A DuckyScript get a Rubber Ducky ! ( hackducky )",
 		"organizers": [
 			"Acon Lin",
-			"Souptik Samanta"
+			"Souptik Samanta",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -4243,7 +4296,8 @@
 		"archive_url": null,
 		"description": "Spend two hours building a creative javascript bookmarklet, get $10 to buy a domain!",
 		"organizers": [
-			"Joel Gallagher"
+			"Joel Gallagher",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -4278,7 +4332,8 @@
 		"archive_url": null,
 		"description": "Build a collaborative app, get upto $50 for cloud credits or a raspberry pi",
 		"organizers": [
-			"Hridya Agrawal"
+			"Hridya Agrawal",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -4341,7 +4396,8 @@
 		"archive_url": null,
 		"description": "Ship projects that use open train data, get train passes and tickets!",
 		"organizers": [
-			"Alice (espcaa)"
+			"Alice (espcaa)",
+			"Barnav Mitra"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec5S2LK4Of57qe3y",
@@ -4436,7 +4492,8 @@
 		"archive_url": null,
 		"description": "You make a password manager and we'll ship you a Yubikey!",
 		"organizers": [
-			"Benjamin Graetz"
+			"Benjamin Graetz",
+			"Clay Nicholson"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -4502,7 +4559,8 @@
 		"description": null,
 		"organizers": [
 			"Tushar Sinha",
-			"Rupnil"
+			"Rupnil",
+			"Sebastian Hernandez"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec6rWJfUTJMHfrqi",
@@ -4534,7 +4592,8 @@
 		"archive_url": null,
 		"description": "become a hardware expert in 10 weeks, get a 3D printer",
 		"organizers": [
-			"Meghana Madiraju"
+			"Meghana Madiraju",
+			"Lewin Kelly"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recMbhE93XPc0hrZC"
@@ -4564,7 +4623,8 @@
 		"description": "Get your ham radio technician license and score a free radio!",
 		"organizers": [
 			"Charlie Nicholson",
-			"Jasper Mayone"
+			"Jasper Mayone",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/rectvQ49dMZdaKHQP",
@@ -4593,7 +4653,8 @@
 		"archive_url": null,
 		"description": "Make a song using only code in 48 hours and show off your musical skills!",
 		"organizers": [
-			"Leafd"
+			"Leafd",
+			"Micha Albert"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recPimoHxXnOiwLn0",
@@ -4621,7 +4682,9 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Build a spooky project for a haunted house hackathon and get ready for some frightful fun!",
-		"organizers": [],
+		"organizers": [
+			"Dhamari Trice-Hanson"
+		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recRJCzLovGBPvRKD"
 		],
@@ -4680,7 +4743,12 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "A worldwide game jam happening in 200+ cities on\nNovember 14th & 15th. Find an event in your city!",
-		"organizers": [],
+		"organizers": [
+			"Jolly Wang",
+			"Kaylee Dinh",
+			"Katie Sue",
+			"Barnav Mitra"
+		],
 		"sources": [
 			"https://haven.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -4711,7 +4779,8 @@
 		"description": "Do workshops, get prizes! Repeat til Christmas!",
 		"organizers": [
 			"Charmunk",
-			"Jenin Henin"
+			"Jenin Henin",
+			"Dhamari Trice-Hanson"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -4782,7 +4851,8 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [
-			"Meghana Madiraju"
+			"Meghana Madiraju",
+			"Gus Ruben"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/reckjOs9Gd4rDOWGK",
@@ -5217,7 +5287,8 @@
 		"archive_url": null,
 		"description": "Build something in an ESP32-S3 emulator and get a real ESP32-S3 dev board.",
 		"organizers": [
-			"Natey Hecht"
+			"Natey Hecht",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -5279,7 +5350,8 @@
 		"archive_url": null,
 		"description": "Build a website with an infinite realtime canvas, get awesome prizes!",
 		"organizers": [
-			"EnterpriseGoose"
+			"EnterpriseGoose",
+			"Olive Wu"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -5313,7 +5385,8 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [
-			"aqua (phthallo)"
+			"aqua (phthallo)",
+			"Annabel"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recr5bSOzc4SPYWlh",
@@ -5435,7 +5508,8 @@
 		"archive_url": null,
 		"description": "Join a game jam every month with us, earn an awesome prize!",
 		"organizers": [
-			"Gus Ruben"
+			"Gus Ruben",
+			"Max H"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -5466,7 +5540,9 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Get travel stipends just by programming with Jet Fund!",
-		"organizers": [],
+		"organizers": [
+			"Deven Jadhav"
+		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recaq91LDxgXWya84"
 		],
@@ -5551,7 +5627,9 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Build a game inspired by a photo in a 25-hour overnight jam and unleash your creativity!",
-		"organizers": [],
+		"organizers": [
+			"Renran Sun"
+		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec8WzB60gMxr0xPn"
 		],
@@ -5675,7 +5753,8 @@
 		"archive_url": null,
 		"description": "Spend time working on your game, get money to help publish it! Prizes include steam license, itch.io asset store credits, and much much more!",
 		"organizers": [
-			"Thomas Stubblefield"
+			"Thomas Stubblefield",
+			"Graham Darcey"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -5703,7 +5782,8 @@
 		"archive_url": null,
 		"description": "Design and build a keyboard from scratch, with an optional twist.",
 		"organizers": [
-			"roxstar123"
+			"roxstar123",
+			"Clay Nicholson"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -5736,7 +5816,10 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": null,
-		"organizers": [],
+		"organizers": [
+			"Jiang Tongyu",
+			"Kai Ling"
+		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recCdPnG1aFtMY6Gj"
 		],
@@ -5762,7 +5845,10 @@
 		"url_status": null,
 		"archive_url": null,
 		"description": "Build a website at our in-person workshop for girls and non-binary students and gain essential coding skills!",
-		"organizers": [],
+		"organizers": [
+			"Jiang Tongyu",
+			"Kai Ling"
+		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/reczYtdg59OnyijBH"
 		],
@@ -6247,7 +6333,8 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [
-			"Leafd"
+			"Leafd",
+			"Sebastian Sanchez"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recNKkAVIY8PIHEck",
@@ -6572,7 +6659,8 @@
 		"archive_url": null,
 		"description": "Spend 6 hours making a nvim/vim plugin and get a Neovim shirt!",
 		"organizers": [
-			"Kashyap Sukshavasi"
+			"Kashyap Sukshavasi",
+			"Sam Liu"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recZL8pvW0PII6Y2X",
@@ -6726,7 +6814,8 @@
 		"archive_url": null,
 		"description": "make software projects revolving around only one key on your keyboard, we'll send you a onekey macropad (or other amazing prizes!)",
 		"organizers": [
-			"Stelle Tran"
+			"Stelle Tran",
+			"Anson Chung"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/reckBhHrcB92vLu22",
@@ -6758,7 +6847,8 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [
-			"Hridya Agrawal"
+			"Hridya Agrawal",
+			"Alex Van Doren"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recfUrmCnCURU5puy",
@@ -6880,7 +6970,13 @@
 		"description": "Make hardware projects to qualify for a 4-day hackathon and showcase at Open Sauce.",
 		"organizers": [
 			"Acon Lin",
-			"Alex Ren"
+			"Alex Ren",
+			"Max Wofford",
+			"Deven Jadhav",
+			"Olive Wu",
+			"Jiang Tongyu",
+			"Alex Van Doren",
+			"Clay Nicholson"
 		],
 		"sources": [
 			"https://outpost.hackclub.com",
@@ -6918,7 +7014,8 @@
 		"description": "ysws where you can't use a scrollbar",
 		"organizers": [
 			"Zara",
-			"EnterpriseGoose"
+			"EnterpriseGoose",
+			"Olive Wu"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -7015,7 +7112,8 @@
 		"description": "Draw your own Assets, get Art Supplies!",
 		"organizers": [
 			"Lola",
-			"Kaylee Dinh"
+			"Kaylee Dinh",
+			"Selena Nguyen"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/rectMCKqCrwfa13VZ",
@@ -7081,7 +7179,10 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Build your dream project with teens from around the world and showcase your skills at Parthenon!",
-		"organizers": [],
+		"organizers": [
+			"Reem Khalifa",
+			"Annabel"
+		],
 		"sources": [
 			"https://parthenon.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -7112,7 +7213,8 @@
 		"archive_url": null,
 		"description": "Make a custom PCB controller board.",
 		"organizers": [
-			"Meghana Madiraju"
+			"Meghana Madiraju",
+			"Gus Ruben"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -7212,7 +7314,10 @@
 		"description": "Build creative projects for 50 hours, then fly to an escape room hackathon in Philadelphia",
 		"organizers": [
 			"Anson Chung",
-			"Stelle Tran"
+			"Stelle Tran",
+			"Antonio Archer",
+			"David P",
+			"Beltran"
 		],
 		"sources": [
 			"https://phantom.hackclub.com",
@@ -7248,7 +7353,8 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [
-			"Aarav Jhamb"
+			"Aarav Jhamb",
+			"Olive Wu"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recEUB8vPOv4RIe3p"
@@ -7309,7 +7415,8 @@
 		"archive_url": null,
 		"description": "Design a NeoPixel-based PCB and get the parts to make it.",
 		"organizers": [
-			"M0HID"
+			"M0HID",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -7345,7 +7452,9 @@
 		"organizers": [
 			"Ridit",
 			"Gabin Tavernier",
-			"Ricky Parmar"
+			"Ricky Parmar",
+			"Barnav Mitra",
+			"Sebastian Hernandez"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -7445,7 +7554,8 @@
 		"description": "Work together to built a godot game, get a custom hackclub badge",
 		"organizers": [
 			"Charmunk",
-			"ShyMike"
+			"ShyMike",
+			"Euan Ripper"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -7472,7 +7582,9 @@
 		"url_status": "offline",
 		"archive_url": null,
 		"description": null,
-		"organizers": [],
+		"organizers": [
+			"Barnav Mitra"
+		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recScXgFX7kWIpPg8"
 		],
@@ -7500,7 +7612,8 @@
 		"description": "Build a 3d website using three.js and get a grant to go watch your favourite movies!",
 		"organizers": [
 			"Mohammed Zaid",
-			"Wally"
+			"Wally",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -7535,7 +7648,8 @@
 		"archive_url": null,
 		"description": "Build an AR/VR application, get a VR headset!",
 		"organizers": [
-			"Nishtha Sharma"
+			"Nishtha Sharma",
+			"Dhamari Trice-Hanson"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -7651,7 +7765,8 @@
 		"archive_url": null,
 		"description": "Design a 3D model for the IKEA Skadis pegboard and get a pegboard.",
 		"organizers": [
-			"Ivie Fonner"
+			"Ivie Fonner",
+			"Alex Ren"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -7710,7 +7825,9 @@
 		"organizers": [
 			"Joy Su",
 			"qcoral",
-			"Clay Nicholson"
+			"Clay Nicholson",
+			"Sam Liu",
+			"Alex Ren"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recalBePmnZ2ZxagX",
@@ -7740,7 +7857,8 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [
-			"Wally"
+			"Wally",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recaFMK1bmoe3f48H",
@@ -7770,7 +7888,8 @@
 		"archive_url": null,
 		"description": "Build a project using the Spotify API with 6 hours on Hackatime, get 3 months of Spotify Premium",
 		"organizers": [
-			"Hussein (46-HA)"
+			"Hussein (46-HA)",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -7832,7 +7951,8 @@
 		"description": "Code any project, place pixels on a r/place-like canvas!",
 		"organizers": [
 			"Nico Smith",
-			"Ben Elliott"
+			"Ben Elliott",
+			"Euan Ripper"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -7867,7 +7987,7 @@
 		"archive_url": null,
 		"description": "No entry fee. Full creative control. A global software jam for teens.",
 		"organizers": [
-			"Giles Ellison-Taylor"
+			"Foxmoss"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recDFXvSpx4603YEa",
@@ -7965,7 +8085,8 @@
 		"archive_url": null,
 		"description": "Build an API, get a Raspberry Pi Zero 2W to host it on!",
 		"organizers": [
-			"Sahil Deshmukh"
+			"Sahil Deshmukh",
+			"Clay Nicholson"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -8001,7 +8122,8 @@
 		"archive_url": null,
 		"description": "Build a website for your club and host it on a Raspberry Pi!",
 		"organizers": [
-			"Fonz Beato"
+			"Lynn",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recwXwf6N7gLcx0lc",
@@ -8065,7 +8187,8 @@
 		"description": "Ship a website built with React, get $15 to buy a domain.",
 		"organizers": [
 			"Arjav Jain",
-			"Jps"
+			"Jps",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -8094,7 +8217,8 @@
 		"archive_url": null,
 		"description": "Build a tool that helps you or others break free from a digital bad habit and get a personalized prize.",
 		"organizers": [
-			"Rushil Chopra"
+			"Rushil Chopra",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://github.com/hackclub/YSWS-Catalog/commit/7ce14bf",
@@ -8193,7 +8317,8 @@
 		"archive_url": null,
 		"description": "Build a PCB and get a hotplate soldering kit; complete it for funds to make your board!",
 		"organizers": [
-			"pmnlla"
+			"pmnlla",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/reccutv4YlUXXj6Zf",
@@ -8424,7 +8549,8 @@
 		"description": "Customize your Linux install, and get programmer socks or a Blåhaj.",
 		"organizers": [
 			"Neon",
-			"Leah Anderson"
+			"Leah Anderson",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -8490,7 +8616,8 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [
-			"aqua (phthallo)"
+			"aqua (phthallo)",
+			"Annabel"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recm19FkNIcQuxIPA",
@@ -8520,7 +8647,8 @@
 		"archive_url": null,
 		"description": "Build something cool with RSS feeds, get a domain grant.",
 		"organizers": [
-			"Rushil Chopra"
+			"Rushil Chopra",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -8646,7 +8774,9 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Build stupid stuff, get stupid prizes.",
-		"organizers": [],
+		"organizers": [
+			"Deven Jadhav"
+		],
 		"sources": [
 			"https://scrapyard.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -8676,7 +8806,9 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": null,
-		"organizers": [],
+		"organizers": [
+			"Deven Jadhav"
+		],
 		"sources": [
 			"https://scrapyard.hackclub.com"
 		]
@@ -8792,7 +8924,9 @@
 		"archive_url": null,
 		"description": "Make a game with Godot, earn SSS, and get invited to build an arcade in Tokyo (flight stipends available!)",
 		"organizers": [
-			"Thomas Stubblefield"
+			"Thomas Stubblefield",
+			"Kai Ling",
+			"Jiang Tongyu"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -8865,7 +8999,8 @@
 		"archive_url": null,
 		"description": "Ship 7 weeks of computing and coding challenges. Earn prizes from the shop!",
 		"organizers": [
-			"Bisher Almasri"
+			"Bisher Almasri",
+			"Alex Van Doren"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -8958,7 +9093,8 @@
 		"archive_url": null,
 		"description": "Code every week, get prizes. Make it to the end, get a framework!",
 		"organizers": [
-			"Olive Wu"
+			"Olive Wu",
+			"Kai Ling"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -8988,7 +9124,8 @@
 		"description": "Design your own custom dev board and get it funded.",
 		"organizers": [
 			"Rudy",
-			"Aarav J"
+			"Aarav J",
+			"Olive Wu"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -9061,7 +9198,8 @@
 		"archive_url": null,
 		"description": "Earn $5 for deploying your Flask app",
 		"organizers": [
-			"Mustafa"
+			"Mustafa",
+			"Olive Wu"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -9184,7 +9322,8 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [
-			"Jenin Henin"
+			"Jenin Henin",
+			"Dhamari Trice-Hanson"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recujSvjyVH3kexp3",
@@ -9309,7 +9448,8 @@
 		"organizers": [
 			"Leo McElroy",
 			"Graham Darcey",
-			"Lucas Honda"
+			"Lucas Honda",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -9446,7 +9586,8 @@
 		"organizers": [
 			"Gus Ruben",
 			"Alex Park",
-			"Clay Nicholson"
+			"Clay Nicholson",
+			"Reem Khalifa"
 		],
 		"sources": [
 			"https://stasis.hackclub.com",
@@ -9549,7 +9690,8 @@
 			"Kaylee Dinh",
 			"Sophia Duan",
 			"Yunfei Shuai",
-			"Susan Zheng"
+			"Susan Zheng",
+			"Renran Sun"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -9578,7 +9720,9 @@
 		"url_status": "offline",
 		"archive_url": null,
 		"description": null,
-		"organizers": [],
+		"organizers": [
+			"Dhamari Trice-Hanson"
+		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recTyNiJ7ZFXqsqmQ"
 		],
@@ -9644,7 +9788,11 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "A social coding event for girls 13-18 around the world! 20+ events in 20+ cities.",
-		"organizers": [],
+		"organizers": [
+			"Reem Khalifa",
+			"Lola",
+			"Jenny"
+		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec272KDQctg60HTq"
 		],
@@ -9699,7 +9847,8 @@
 		"archive_url": null,
 		"description": "Create a quality website with Scoops, get ice cream!",
 		"organizers": [
-			"Dhyan"
+			"Dhyan",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -9733,7 +9882,8 @@
 		"archive_url": null,
 		"description": "Ship a keyboard-only project, get keyboards, keycaps, and other cool prizes!",
 		"organizers": [
-			"Aryan Madan"
+			"Aryan Madan",
+			"Rudransh Goel"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recBdGKQHiTpZFzHQ",
@@ -9765,7 +9915,8 @@
 		"archive_url": null,
 		"description": "Ship a website without the use of HTML tags, get a luggage tag or other prizes!",
 		"organizers": [
-			"Alex Radu"
+			"Alex Radu",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -9920,7 +10071,8 @@
 		"archive_url": null,
 		"description": "Build a terminal program and earn 5$ per hour for building your program to get hackable hardware.",
 		"organizers": [
-			"Josias Aurel"
+			"Josias Aurel",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -9952,7 +10104,7 @@
 			"Olive Wu",
 			"Miguel",
 			"Fiona",
-			"Chan Kai Ling"
+			"Kai Ling"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recBr3EcgTa1ALLmR",
@@ -9983,7 +10135,8 @@
 		"description": null,
 		"organizers": [
 			"Kartikey Chauhan",
-			"Ben Dixon"
+			"Ben Dixon",
+			"Chris Walker"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recNAxSGgS3PKJV4p",
@@ -10042,7 +10195,8 @@
 		"archive_url": null,
 		"description": "Make an animal themed Svelte site, earn Ikea Animal Plushies",
 		"organizers": [
-			"Lynn"
+			"Lynn",
+			"Olive Wu"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -10226,7 +10380,9 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Run a Blinky electronics workshop, learn to solder, build LED circuits, and get free PCB kits!",
-		"organizers": [],
+		"organizers": [
+			"Clay Nicholson"
+		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recZ5l8X58v59Zb9h",
 			"https://github.com/hackclub/tinker"
@@ -10408,7 +10564,8 @@
 		"archive_url": null,
 		"description": "Produce A web-app, and get equipment to produce a Video!",
 		"organizers": [
-			"Peleg"
+			"Peleg",
+			"Euan Ripper"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -10436,7 +10593,8 @@
 		"archive_url": null,
 		"description": "Ship a project with 4+ hours of work and earn Gold Bars for cool prizes!",
 		"organizers": [
-			"Peleg"
+			"Peleg",
+			"Euan Ripper"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/recEnnbZY5xtgrZMr",
@@ -10492,7 +10650,8 @@
 		"archive_url": null,
 		"description": "Make an esolang, get stickers and a $40 electronics grant.",
 		"organizers": [
-			"Barnav Mitra"
+			"Barnav Mitra",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -10593,7 +10752,10 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "4-day Hardware Hackathon",
-		"organizers": [],
+		"organizers": [
+			"Alex Ren",
+			"Acon Lin"
+		],
 		"sources": [
 			"https://undercity.hackclub.com",
 			"https://hackclub.com/api/v1/events",
@@ -10623,7 +10785,8 @@
 		"archive_url": null,
 		"description": "Build a website with good vibes (and a little help from AI) and throw a club pizza party!",
 		"organizers": [
-			"Freddie Yershon"
+			"Freddie Yershon",
+			"Jared Senesac"
 		],
 		"sources": [
 			"https://hackclub.com/api/v1/events/rec3X8pFTzOoKhBfx",
@@ -10652,7 +10815,8 @@
 		"description": "Give a computer the gift of vision and get an ESP32-S3-EYE to run it on.",
 		"organizers": [
 			"Karthik Sankar",
-			"Ashwath Chandran"
+			"Ashwath Chandran",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -10745,7 +10909,8 @@
 		"archive_url": null,
 		"description": "Write a program that uses RTL-SDR and get a dongle and antenna kit.",
 		"organizers": [
-			"Craig Giles"
+			"Craig Giles",
+			"Max Wofford"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -10933,7 +11098,8 @@
 		"description": "Spend 5 or more hours making a dog-themed project and get a dog plushie!",
 		"organizers": [
 			"Aditya",
-			"Freddie Yershon"
+			"Freddie Yershon",
+			"Alex Van Doren"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
@@ -10999,7 +11165,8 @@
 		"archive_url": null,
 		"description": "Make a game inspired by the classic Snake game and get a 45-inch snake plush!",
 		"organizers": [
-			"fish (fishtested)"
+			"fish (fishtested)",
+			"Jiang Tongyu"
 		],
 		"sources": [
 			"https://ysws.hackclub.com/",
