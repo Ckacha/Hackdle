@@ -1,12 +1,22 @@
 import { error, fail } from '@sveltejs/kit';
 import { writeFileSync, mkdirSync } from 'node:fs';
+import { pastDays, todayKey } from '#lib/server/daily.ts';
 import { COOKIE, editPassword, isAuthed, passwordMatches, tokenFor } from '#lib/server/auth.ts';
-import { addName, moveToDeprecated, readList, renameName, writeList, type Entry } from '#lib/server/listfile.ts';
+import {
+	addName,
+	moveToDeprecated,
+	readDeprecated,
+	readList,
+	renameName,
+	restoreFromDeprecated,
+	writeList,
+	type Entry
+} from '#lib/server/listfile.ts';
 import type { Actions, PageServerLoad } from './$types';
 
 const KINDS = ['ysws', 'hackathon', 'both'];
 const TYPES = ['software', 'hardware', 'cad', 'everything'];
-const STATUSES = ['ended', 'ongoing', 'upcoming'];
+const STATUSES = ['ended', 'ongoing', 'upcoming', 'cancelled'];
 const IMAGE_EXT: Record<string, string> = {
 	'image/png': 'png',
 	'image/jpeg': 'jpg',
@@ -78,7 +88,14 @@ async function saveLogo(f: FormData, slug: string) {
 export const load: PageServerLoad = ({ cookies }) => {
 	if (!editPassword()) error(404, 'Not found');
 	if (!isAuthed(cookies)) return { authed: false as const };
-	return { authed: true as const, programs: readList().sort((a, b) => a.name.localeCompare(b.name)) };
+	const byName = (a: Entry, b: Entry) => a.name.localeCompare(b.name);
+	return {
+		authed: true as const,
+		programs: readList().sort(byName),
+		deprecated: readDeprecated().sort(byName),
+		days: pastDays(),
+		today: todayKey()
+	};
 };
 
 export const actions: Actions = {
@@ -87,7 +104,7 @@ export const actions: Actions = {
 		const f = await request.formData();
 		if (!passwordMatches(text(f, 'password'))) return fail(401, { problem: 'Wrong password' });
 		cookies.set(COOKIE, tokenFor(editPassword()), {
-			path: '/masterlistedit',
+			path: '/admin',
 			httpOnly: true,
 			sameSite: 'strict',
 			secure: url.protocol === 'https:',
@@ -97,7 +114,7 @@ export const actions: Actions = {
 	},
 
 	logout: ({ cookies }) => {
-		cookies.delete(COOKIE, { path: '/masterlistedit' });
+		cookies.delete(COOKIE, { path: '/admin' });
 		return { loggedOut: true };
 	},
 
@@ -165,5 +182,13 @@ export const actions: Actions = {
 		const entry = moveToDeprecated(text(f, 'slug'));
 		if (!entry) return fail(404, { problem: 'Program not found' });
 		return { deprecated: entry.slug, message: `Moved ${entry.name} to deprecated.json` };
+	},
+
+	restore: async ({ request, cookies }) => {
+		guard(cookies);
+		const f = await request.formData();
+		const entry = restoreFromDeprecated(text(f, 'slug'));
+		if (!entry) return fail(404, { problem: 'Program not found' });
+		return { saved: entry.slug, message: `Restored ${entry.name} to the list` };
 	}
 };

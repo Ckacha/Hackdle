@@ -2,10 +2,13 @@
 	import { onMount } from 'svelte';
 	import {
 		programs,
+		answerPool,
 		bySlug,
 		compare,
 		isWin,
 		formatOf,
+		isOngoing,
+		ONGOING,
 		logoFor,
 		organizers,
 		COLUMNS,
@@ -17,6 +20,8 @@
 		type Program,
 		type Type
 	} from '#lib/game.ts';
+	import Organizers from '#lib/Organizers.svelte';
+	import Undefined from '#lib/Undefined.svelte';
 	import type { PageProps } from './$types';
 	import './page.css';
 
@@ -37,7 +42,7 @@
 	let endMonth = $state('');
 	let endYear = $state('');
 	let start = $derived(startMonth && startYear ? `${startYear}-${startMonth}` : '');
-	let end = $derived(endMonth && endYear ? `${endYear}-${endMonth}` : '');
+	let end = $derived(endMonth === ONGOING ? ONGOING : endMonth && endYear ? `${endYear}-${endMonth}` : '');
 
 	const YEARS = Array.from({ length: 10 }, (_, i) => String(2018 + i));
 	let format = $state<Format | ''>('');
@@ -62,6 +67,23 @@
 			.sort((a, b) => +!a.name.toLowerCase().startsWith(q) - +!b.name.toLowerCase().startsWith(q))
 			.slice(0, 8);
 	});
+
+	let fName = $state('');
+	let fYear = $state('');
+
+	let byYear = $derived.by(() => {
+		const q = fName.trim().toLowerCase();
+		const groups = new Map<string, Program[]>();
+		for (const p of [...answerPool].sort((x, y) => x.start_date!.localeCompare(y.start_date!))) {
+			const y = p.start_date!.slice(0, 4);
+			if ((fYear && y !== fYear) || (q && !p.name.toLowerCase().includes(q))) continue;
+			groups.set(y, [...(groups.get(y) ?? []), p]);
+		}
+		return [...groups].reverse();
+	});
+	let matchCount = $derived(byYear.reduce((n, [, ps]) => n + ps.length, 0));
+
+	const POOL_YEARS = [...new Set(answerPool.map((p) => p.start_date!.slice(0, 4)))].sort().reverse();
 
 	let orgValid = $derived(organizers.some((o) => o.toLowerCase() === organizer.trim().toLowerCase()));
 
@@ -136,7 +158,10 @@
 
 	function pick(i: number) {
 		const p = suggestions[i];
-		if (!p) return;
+		if (p) choose(p);
+	}
+
+	function choose(p: Program) {
 		const fresh = p.slug !== filledFrom;
 		slug = p.slug;
 		query = p.name;
@@ -147,7 +172,7 @@
 	function fill(p: Program) {
 		filledFrom = p.slug;
 		[startYear, startMonth] = p.start_date ? p.start_date.split('-') : ['', ''];
-		[endYear, endMonth] = p.end_date ? p.end_date.split('-') : ['', ''];
+		[endYear, endMonth] = isOngoing(p) ? ['', ONGOING] : p.end_date ? p.end_date.split('-') : ['', ''];
 		format = formatOf(p);
 		type = p.type ?? '';
 		organizer = p.organizers[0] ?? '';
@@ -212,155 +237,195 @@
 			</p>
 		</section>
 	{:else}
-		<form class="card guess" onsubmit={submit}>
-			<h2>Guess today's Hack Club program!</h2>
-			<p class="muted">Fill in every field, then guess. Each field tells you if it's right.</p>
+		<div class="play" class:with-filter={guesses.length}>
+			<form class="card guess" onsubmit={submit}>
+				<h2>Guess today's Hack Club program!</h2>
+				<p class="muted">Fill in every field, then guess. Each field tells you if it's right.</p>
 
-			<div class="fields">
-				<label class="field wide">
-					<span>Program</span>
-					<div class="search">
-						<input
-							type="text"
-							placeholder="Type a program name…"
-							autocomplete="off"
-							spellcheck="false"
-							bind:value={query}
-							oninput={onQueryInput}
-							onkeydown={onQueryKeydown}
-							onblur={() => setTimeout(() => (open = false), 150)}
-							class:valid={!!slug}
-						/>
+				<div class="fields">
+					<label class="field wide">
+						<span>Program</span>
+						<div class="search">
+							<input
+								type="text"
+								placeholder="Type a program name…"
+								autocomplete="off"
+								spellcheck="false"
+								bind:value={query}
+								oninput={onQueryInput}
+								onkeydown={onQueryKeydown}
+								onblur={() => setTimeout(() => (open = false), 150)}
+								class:valid={!!slug}
+							/>
 
-						{#if suggestions.length}
-							<ul class="suggestions" role="listbox">
-								{#each suggestions as p, i (p.slug)}
-									<li role="option" aria-selected={i === highlighted}>
-										<button
-											type="button"
-											class:active={i === highlighted}
-											onmouseenter={() => (highlighted = i)}
-											onmousedown={(e) => e.preventDefault()}
-											onclick={() => pick(i)}
-										>
+							{#if suggestions.length}
+								<ul class="suggestions" role="listbox">
+									{#each suggestions as p, i (p.slug)}
+										<li role="option" aria-selected={i === highlighted}>
+											<button
+												type="button"
+												class:active={i === highlighted}
+												onmouseenter={() => (highlighted = i)}
+												onmousedown={(e) => e.preventDefault()}
+												onclick={() => pick(i)}
+											>
 
-											{#if logoFor(p)}<img src={logoFor(p)} alt="" loading="lazy" />{:else}<span
-													class="ph">{p.name[0]}</span
-												>{/if}
+												{#if logoFor(p)}<img src={logoFor(p)} alt="" loading="lazy" />{:else}<span
+														class="ph">{p.name[0]}</span
+													>{/if}
 
+												{p.name}
+											</button>
+										</li>
+									{/each}
+								</ul>
+							{/if}
+						</div>
+					</label>
+
+					<fieldset class="field">
+						<legend>Start</legend>
+						<div class="date">
+							<select aria-label="Start month" class:valid={startMonth} bind:value={startMonth}>
+								<option value="" disabled>Month</option>
+								{#each MONTHS as m, i}<option value={String(i + 1).padStart(2, '0')}>{m}</option>{/each}
+							</select>
+							<select aria-label="Start year" class:valid={startYear} bind:value={startYear}>
+								<option value="" disabled>Year</option>
+								{#each YEARS as y}<option value={y}>{y}</option>{/each}
+							</select>
+						</div>
+					</fieldset>
+
+					<fieldset class="field">
+						<legend>End</legend>
+						<div class="date">
+							<select aria-label="End month" class:valid={endMonth} bind:value={endMonth}>
+								<option value="" disabled>Month</option>
+								<option value={ONGOING}>Ongoing</option>
+								{#each MONTHS as m, i}<option value={String(i + 1).padStart(2, '0')}>{m}</option>{/each}
+							</select>
+							{#if endMonth !== ONGOING}
+								<select aria-label="End year" class:valid={endYear} bind:value={endYear}>
+									<option value="" disabled>Year</option>
+									{#each YEARS as y}<option value={y}>{y}</option>{/each}
+								</select>
+							{/if}
+						</div>
+					</fieldset>
+
+					<fieldset class="field wide">
+						<legend>Format</legend>
+						<div class="choices">
+							{#each Object.entries(FORMAT_LABEL) as [value, label]}
+								<button type="button" class:on={format === value} onclick={() => (format = value as Format)}
+									>{label}</button
+								>
+							{/each}
+						</div>
+					</fieldset>
+
+					<fieldset class="field wide">
+						<legend>Type</legend>
+						<div class="choices">
+							{#each Object.entries(TYPE_LABEL) as [value, label]}
+								<button type="button" class:on={type === value} onclick={() => (type = value as Type)}>{label}</button>
+							{/each}
+						</div>
+					</fieldset>
+
+					<label class="field wide">
+						<span>Organizer</span>
+						<div class="search org">
+							<input
+								type="text"
+								placeholder="Who ran it? Any organizer counts"
+								autocomplete="off"
+								spellcheck="false"
+								role="combobox"
+								aria-expanded={orgOpen}
+								aria-controls="organizer-list"
+								bind:value={organizer}
+								onfocus={() => ((orgOpen = true), (orgHighlighted = 0))}
+								oninput={() => ((orgOpen = true), (orgHighlighted = 0))}
+								onkeydown={onOrgKeydown}
+								onblur={() => setTimeout(() => (orgOpen = false), 150)}
+								class:valid={orgValid}
+							/>
+							<button
+								class="dice"
+								type="button"
+								title="Random organizer"
+								aria-label="Random organizer"
+								onmousedown={(e) => e.preventDefault()}
+								onclick={randomOrganizer}>🎲</button
+							>
+
+							{#if orgSuggestions.length}
+								<ul class="suggestions scroll" id="organizer-list" role="listbox">
+									{#each orgSuggestions as o, i (o)}
+										<li role="option" aria-selected={i === orgHighlighted} use:keepVisible={i === orgHighlighted}>
+											<button
+												type="button"
+												class:active={i === orgHighlighted}
+												onmouseenter={() => (orgHighlighted = i)}
+												onmousedown={(e) => e.preventDefault()}
+												onclick={() => pickOrganizer(i)}
+											>
+												<span class="ph">{o[0].toUpperCase()}</span>
+												{o}
+											</button>
+										</li>
+									{/each}
+								</ul>
+							{/if}
+						</div>
+					</label>
+				</div>
+
+				<div class="actions">
+					<button class="submit" type="submit" disabled={!complete}>Guess</button>
+					{#if guesses.length >= 3}
+						<button class="link" type="button" onclick={giveUp}>Give up</button>
+					{/if}
+				</div>
+			</form>
+
+			{#if guesses.length}
+				<aside class="card filter" aria-label="Programs by year">
+					<div class="filter-head">
+						<h3>Programs</h3>
+						<span class="count">{matchCount} {matchCount === 1 ? 'program' : 'programs'}</span>
+					</div>
+
+					<div class="filter-row">
+						<input type="search" placeholder="Name" bind:value={fName} />
+						<select aria-label="Year" bind:value={fYear}>
+							<option value="">All years</option>
+							{#each POOL_YEARS as y}<option value={y}>{y}</option>{/each}
+						</select>
+					</div>
+
+					<div class="matches scroll">
+						{#each byYear as [year, ps] (year)}
+							<h4 class="year">{year}</h4>
+							<ul>
+								{#each ps as p (p.slug)}
+									<li>
+										<button type="button" class:on={slug === p.slug} onclick={() => choose(p)}>
+											{#if logoFor(p)}<img src={logoFor(p)} alt="" loading="lazy" />{:else}<span class="ph">{p.name[0]}</span>{/if}
 											{p.name}
 										</button>
 									</li>
 								{/each}
 							</ul>
-						{/if}
-					</div>
-				</label>
-
-				<fieldset class="field">
-					<legend>Start</legend>
-					<div class="date">
-						<select aria-label="Start month" class:valid={startMonth} bind:value={startMonth}>
-							<option value="" disabled>Month</option>
-							{#each MONTHS as m, i}<option value={String(i + 1).padStart(2, '0')}>{m}</option>{/each}
-						</select>
-						<select aria-label="Start year" class:valid={startYear} bind:value={startYear}>
-							<option value="" disabled>Year</option>
-							{#each YEARS as y}<option value={y}>{y}</option>{/each}
-						</select>
-					</div>
-				</fieldset>
-
-				<fieldset class="field">
-					<legend>End</legend>
-					<div class="date">
-						<select aria-label="End month" class:valid={endMonth} bind:value={endMonth}>
-							<option value="" disabled>Month</option>
-							{#each MONTHS as m, i}<option value={String(i + 1).padStart(2, '0')}>{m}</option>{/each}
-						</select>
-						<select aria-label="End year" class:valid={endYear} bind:value={endYear}>
-							<option value="" disabled>Year</option>
-							{#each YEARS as y}<option value={y}>{y}</option>{/each}
-						</select>
-					</div>
-				</fieldset>
-
-				<fieldset class="field wide">
-					<legend>Format</legend>
-					<div class="choices">
-						{#each Object.entries(FORMAT_LABEL) as [value, label]}
-							<button type="button" class:on={format === value} onclick={() => (format = value as Format)}
-								>{label}</button
-							>
+						{:else}
+							<p class="muted none">No programs match.</p>
 						{/each}
 					</div>
-				</fieldset>
-
-				<fieldset class="field wide">
-					<legend>Type</legend>
-					<div class="choices">
-						{#each Object.entries(TYPE_LABEL) as [value, label]}
-							<button type="button" class:on={type === value} onclick={() => (type = value as Type)}>{label}</button>
-						{/each}
-					</div>
-				</fieldset>
-
-				<label class="field wide">
-					<span>Organizer</span>
-					<div class="search org">
-						<input
-							type="text"
-							placeholder="Who ran it? Any organizer counts"
-							autocomplete="off"
-							spellcheck="false"
-							role="combobox"
-							aria-expanded={orgOpen}
-							aria-controls="organizer-list"
-							bind:value={organizer}
-							onfocus={() => ((orgOpen = true), (orgHighlighted = 0))}
-							oninput={() => ((orgOpen = true), (orgHighlighted = 0))}
-							onkeydown={onOrgKeydown}
-							onblur={() => setTimeout(() => (orgOpen = false), 150)}
-							class:valid={orgValid}
-						/>
-						<button
-							class="dice"
-							type="button"
-							title="Random organizer"
-							aria-label="Random organizer"
-							onmousedown={(e) => e.preventDefault()}
-							onclick={randomOrganizer}>🎲</button
-						>
-
-						{#if orgSuggestions.length}
-							<ul class="suggestions scroll" id="organizer-list" role="listbox">
-								{#each orgSuggestions as o, i (o)}
-									<li role="option" aria-selected={i === orgHighlighted} use:keepVisible={i === orgHighlighted}>
-										<button
-											type="button"
-											class:active={i === orgHighlighted}
-											onmouseenter={() => (orgHighlighted = i)}
-											onmousedown={(e) => e.preventDefault()}
-											onclick={() => pickOrganizer(i)}
-										>
-											<span class="ph">{o[0].toUpperCase()}</span>
-											{o}
-										</button>
-									</li>
-								{/each}
-							</ul>
-						{/if}
-					</div>
-				</label>
-			</div>
-
-			<div class="actions">
-				<button class="submit" type="submit" disabled={!complete}>Guess</button>
-				{#if guesses.length >= 3}
-					<button class="link" type="button" onclick={giveUp}>Give up</button>
-				{/if}
-			</div>
-		</form>
+				</aside>
+			{/if}
+		</div>
 	{/if}
 
 	{#if guesses.length}
@@ -423,13 +488,13 @@
 	</div>
 
 	<dl class="facts">
-		<div><dt>Start</dt><dd>{p.start_date ?? '?'}</dd></div>
-		<div><dt>End</dt><dd>{p.end_date ?? '?'}</dd></div>
+		<div><dt>Start</dt><dd>{#if p.start_date}{p.start_date}{:else}<Undefined which="start" />{/if}</dd></div>
+		<div><dt>End</dt><dd>{#if p.end_date}{p.end_date}{:else if isOngoing(p)}Ongoing{:else}<Undefined which="end" />{/if}</dd></div>
 		<div><dt>Format</dt><dd>{FORMAT_LABEL[formatOf(p)]}</dd></div>
 		<div><dt>Type</dt><dd>{p.type ? TYPE_LABEL[p.type] : '?'}</dd></div>
 		<div>
 			<dt>{p.organizers.length > 1 ? 'Organizers' : 'Organizer'}</dt>
-			<dd>{p.organizers.join(', ') || 'Unknown'}</dd>
+			<dd><Organizers names={p.organizers} /></dd>
 		</div>
 	</dl>
 

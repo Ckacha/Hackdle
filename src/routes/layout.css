@@ -149,3 +149,64 @@ footer {
 		font-size: 14px;
 	}
 }
+
+.orgs {
+	position: relative;
+	cursor: help;
+	outline: none;
+}
+
+.orgs-more {
+	display: inline-block;
+	margin-left: 4px;
+	padding: 1px 8px;
+	border-radius: 999px;
+	background: var(--surface-hover);
+	color: var(--muted);
+	font-size: 0.85em;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.orgs-all {
+	position: absolute;
+	bottom: calc(100% + 6px);
+	left: 0;
+	z-index: 20;
+	width: max-content;
+	max-width: min(280px, 80vw);
+	padding: 8px 12px;
+	border-radius: 10px;
+	background: var(--foreground);
+	color: var(--background);
+	box-shadow: var(--shadow-dd);
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.4;
+	text-align: left;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity 0.15s;
+}
+
+.orgs:hover .orgs-all,
+.orgs:focus .orgs-all {
+	opacity: 1;
+	visibility: visible;
+}
+
+.orgs:focus-visible .orgs-more {
+	outline: 2px solid var(--red);
+}
+
+.undefined {
+	font-size: 13px;
+	font-style: italic;
+	color: var(--muted);
+}
+
+.undefined a {
+	color: var(--red-text);
+	font-weight: bold;
+}

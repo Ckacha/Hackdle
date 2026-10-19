@@ -8,7 +8,9 @@ type History = Record<string, string>;
 
 const dateFormat = new Intl.DateTimeFormat('en-CA', { timeZone: TIME_ZONE });
 
-function todayKey(): string {
+export const HISTORY_START = '2026-10-18';
+
+export function todayKey(): string {
 	return dateFormat.format(new Date());
 }
 
@@ -36,6 +38,12 @@ export function daily() {
 	}
 
 	return { key: today, answer: history[today], yesterday: history[dayBefore(today)] ?? null };
+}
+
+export function pastDays() {
+	return Object.entries(read())
+		.map(([date, slug]) => ({ date, slug }))
+		.sort((a, b) => b.date.localeCompare(a.date));
 }
 
 let lastKey = '';

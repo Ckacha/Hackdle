@@ -278,5 +278,1270 @@
 			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
 			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml"
 		]
+	},
+	{
+		"name": "10 Days of Tarot",
+		"slug": "10-days-of-tarot",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2025-04-02",
+		"end_date": "2025-04-13",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://github.com/hackclub/tarot/blob/main/docs/title.svg",
+		"logo_kind": "logo",
+		"logo_file": "logos/10-days-of-tarot.svg",
+		"url": "https://tarot.hackclub.com/",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Build a project or feature and get exclusive prizes for each card requirement you hit.",
+		"organizers": [
+			"Max Wofford"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://tarot.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/recVPMMaiHHXOYNF4",
+			"https://github.com/hackclub/tarot",
+			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
+			"https://hackclub.com/team/"
+		],
+		"hackclub_event_id": "recVPMMaiHHXOYNF4",
+		"project_types": [
+			"Other"
+		],
+		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
+	},
+	{
+		"name": "Aces",
+		"slug": "aces",
+		"kind": "ysws",
+		"type": "everything",
+		"start_date": null,
+		"end_date": "2026-04-26",
+		"status": "cancelled",
+		"location": "Washington, D.C., USA",
+		"event": {
+			"location": "Washington, D.C., USA",
+			"start_date": "2026-04-24",
+			"end_date": "2026-04-26"
+		},
+		"logo": "https://raw.githubusercontent.com/hackclub/aces/main/public/aces_logo.svg",
+		"logo_kind": "logo",
+		"logo_file": "logos/aces.svg",
+		"url": "https://aces.hackclub.com",
+		"url_status": "offline",
+		"archive_url": "http://web.archive.org/web/20260420002220/https://aces.hackclub.com/",
+		"description": "Create a digital board game, get a grant to make it physical, and show it off in Washington DC.",
+		"organizers": [
+			"Ivie Fonner",
+			"Niko Yu",
+			"ShyMike"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://aces.hackclub.com",
+			"https://raw.githubusercontent.com/hackclub/aces/main/public/aces_logo.svg",
+			"https://github.com/hackclub/aces",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://www.downtowndc.org/events/awesome-con-2026/",
+			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
+			"https://github.com/Charmunks"
+		],
+		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
+	},
+	{
+		"name": "Alleyway",
+		"slug": "alleyway",
+		"kind": "both",
+		"type": "hardware",
+		"start_date": "2025-09-19",
+		"end_date": "2025-11-16",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": null,
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Build wearable gadgets and fly to LA for a hardware convention!",
+		"organizers": [
+			"Alex Ren"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recoHYKBDk6ISnxyC",
+			"https://github.com/hackclub/alleyway",
+			"https://hackclub.com/team/"
+		],
+		"hackclub_event_id": "recoHYKBDk6ISnxyC",
+		"project_types": [
+			"Electronics"
+		],
+		"deprecated_reason": "No site (checked 2026-10-18)"
+	},
+	{
+		"name": "APIs",
+		"slug": "apis",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2026-09-08",
+		"end_date": "2026-09-10",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": "https://apis.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Beltran"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/reckFSlhg1TWZZJri",
+			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
+			"https://hackclub.com/team/"
+		],
+		"hackclub_event_id": "reckFSlhg1TWZZJri",
+		"project_types": [
+			"Software",
+			"Websites"
+		],
+		"deprecated_reason": "Site returns 404 (checked 2026-10-18)"
+	},
+	{
+		"name": "Archaeology",
+		"slug": "archaeology",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2026-07-31",
+		"end_date": "2026-08-31",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": "https://archaeology.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Jolly Wang"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recSXJBZV0mMayQpx",
+			"https://github.com/hackclub/archaeology",
+			"https://hackclub.com/team/"
+		],
+		"hackclub_event_id": "recSXJBZV0mMayQpx",
+		"project_types": [
+			"Software"
+		],
+		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
+	},
+	{
+		"name": "Armed",
+		"slug": "armed",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2025-08-11",
+		"end_date": "2025-09-01",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/armed/HEAD/static/armlogo.svg",
+		"logo_kind": "logo",
+		"logo_file": "logos/armed.svg",
+		"url": "https://armed.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Develop an arm assembly program, get lego.",
+		"organizers": [
+			"Alex Van Doren"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://armed.hackclub.com",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/recWw9We2on9q0ej7",
+			"https://github.com/hackclub/armed",
+			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
+			"https://hackclub.com/team/"
+		],
+		"hackclub_event_id": "recWw9We2on9q0ej7",
+		"project_types": [
+			"Software"
+		],
+		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
+	},
+	{
+		"name": "Asylum",
+		"slug": "asylum",
+		"kind": "ysws",
+		"type": "hardware",
+		"start_date": "2024-12-03",
+		"end_date": "2024-12-31",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/asylum/HEAD/designs/nfc_keytags/ATag/ATag.png",
+		"logo_kind": "photo",
+		"logo_file": "logos/asylum.png",
+		"url": "https://asylum.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "A series of fast-paced hardware YSWS challenges.",
+		"organizers": [
+			"Alex Ren"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/recrlzmXEeG5rVRPr",
+			"https://github.com/hackclub/asylum",
+			"https://hackclub.com/team/"
+		],
+		"hackclub_event_id": "recrlzmXEeG5rVRPr",
+		"project_types": [
+			"Electronics"
+		],
+		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
+	},
+	{
+		"name": "Clam",
+		"slug": "clam",
+		"kind": "ysws",
+		"type": null,
+		"start_date": "2026-06-26",
+		"end_date": "2026-06-28",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": "https://clam.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Mihi"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recFulYPt4BUUZbHJ",
+			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
+			"https://hackclub.com/team/"
+		],
+		"hackclub_event_id": "recFulYPt4BUUZbHJ",
+		"project_types": [
+			"Other"
+		],
+		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
+	},
+	{
+		"name": "Club Dashboard",
+		"slug": "club-dashboard",
+		"kind": "ysws",
+		"type": null,
+		"start_date": "2025-06-11",
+		"end_date": "2025-11-19",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": null,
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Ethan Canterbury",
+			"Jared Senesac"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recxp7od3AsEp28ry",
+			"https://github.com/hackclub/club-dashboard",
+			"https://hackclub.com/team/"
+		],
+		"hackclub_event_id": "recxp7od3AsEp28ry",
+		"project_types": [
+			"Other"
+		],
+		"deprecated_reason": "No site (checked 2026-10-18)"
+	},
+	{
+		"name": "CodeQuest",
+		"slug": "codequest",
+		"kind": "ysws",
+		"type": null,
+		"start_date": "2025-09-04",
+		"end_date": "2025-09-11",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": "logo",
+		"logo_file": "logos/codequest.png",
+		"url": "https://codequest.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Memma"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recqNEHajXIUBkUmN",
+			"https://github.com/hackclub/CodeQuest",
+			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
+			"https://github.com/hackclub/codequest"
+		],
+		"hackclub_event_id": "recqNEHajXIUBkUmN",
+		"project_types": [
+			"Other"
+		],
+		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
+	},
+	{
+		"name": "Converge",
+		"slug": "converge",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": null,
+		"end_date": "2025-11-10",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://files.catbox.moe/jv7zh5.png",
+		"logo_kind": "banner",
+		"logo_file": "logos/converge.png",
+		"url": "https://submit.hackclub.com/converge-rsvp",
+		"url_status": "offline",
+		"archive_url": "http://web.archive.org/web/20260217081200/https://submit.hackclub.com/converge-rsvp",
+		"description": "Build Discord/Slack bots, we ship domain names, server hosting, Blahajs, and more",
+		"organizers": [
+			"Leo",
+			"Max Wofford"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://submit.hackclub.com/converge-rsvp",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events"
+		],
+		"deprecated_reason": "Site returns 404 (checked 2026-10-18)"
+	},
+	{
+		"name": "Cœur",
+		"slug": "coeur",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2026-02-23",
+		"end_date": "2026-05-24",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/coeur/HEAD/docs/images/heidiEnvelope.png",
+		"logo_kind": "photo",
+		"logo_file": "logos/coeur.png",
+		"url": "https://coeur.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Make an e-card, earn heart themed prizes (including a sweatshirt!!!)",
+		"organizers": [
+			"Lynn",
+			"Olive Wu"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://coeur.hackclub.com",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/rec3aN1Q0U26Ywgf0",
+			"https://github.com/hackclub/coeur"
+		],
+		"hackclub_event_id": "rec3aN1Q0U26Ywgf0",
+		"project_types": [
+			"Software",
+			"Websites"
+		],
+		"deprecated_reason": "Site returns 404 (checked 2026-10-18)"
+	},
+	{
+		"name": "Dessert",
+		"slug": "dessert",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": null,
+		"end_date": "2025-01-10",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": null,
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Make an Android app and earn a paid Google Developer account.",
+		"organizers": [
+			"Scooter",
+			"Max Wofford"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
+		],
+		"deprecated_reason": "No site (checked 2026-10-18)"
+	},
+	{
+		"name": "Giza Game Dev Bootcamp",
+		"slug": "giza-game-dev-bootcamp",
+		"kind": "hackathon",
+		"type": "software",
+		"start_date": "2025-09-04",
+		"end_date": "2025-09-21",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": null,
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Gus Ruben"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/rec1yiOy0LzQApsaq"
+		],
+		"hackclub_event_id": "rec1yiOy0LzQApsaq",
+		"project_types": [
+			"Gamedev"
+		],
+		"deprecated_reason": "No site (checked 2026-10-18)"
+	},
+	{
+		"name": "Hackberry",
+		"slug": "hackberry",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2025-09-22",
+		"end_date": "2025-10-13",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/hackberry/HEAD/Hero%20Section.png",
+		"logo_kind": "banner",
+		"logo_file": "logos/hackberry.png",
+		"url": "https://hackberry.hackclub.com/",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Built a machine learning project in python, get a personalized raspberry pi kit!",
+		"organizers": [
+			"Memma"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://hackberry.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events/recmVm58wYwCV0kOz",
+			"https://github.com/hackclub/hackberry"
+		],
+		"hackclub_event_id": "recmVm58wYwCV0kOz",
+		"project_types": [
+			"Electronics"
+		],
+		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
+	},
+	{
+		"name": "Ham Club",
+		"slug": "ham-club",
+		"kind": "ysws",
+		"type": null,
+		"start_date": "2024-05-01",
+		"end_date": "2024-07-13",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": null,
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Get your ham radio technician license and score a free radio!",
+		"organizers": [
+			"Charlie Nicholson",
+			"Jasper Mayone",
+			"Max Wofford"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/rectvQ49dMZdaKHQP",
+			"https://github.com/hackclub/ham-club"
+		],
+		"hackclub_event_id": "rectvQ49dMZdaKHQP",
+		"project_types": [
+			"Other"
+		],
+		"deprecated_reason": "No site (checked 2026-10-18)"
+	},
+	{
+		"name": "Haunted Halloween",
+		"slug": "haunted-halloween",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": null,
+		"end_date": "2025-11-03",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/cd344d85eb7d1e1992bc53a389352ea015a2e1f6_image.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/haunted-halloween.png",
+		"url": "https://halloween.hackclub.com/",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Make a halloween theme for a website or app, get a custom halloween themed sticker and candy!",
+		"organizers": [
+			"Charmunk",
+			"Jenin Henin"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://halloween.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://github.com/hackclub/haunted-halloween"
+		],
+		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
+	},
+	{
+		"name": "Haxmas",
+		"slug": "haxmas",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2025-12-13",
+		"end_date": "2025-12-25",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/haxmas/HEAD/static/haxmas-logo.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/haxmas.png",
+		"url": "https://haxmas.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Do workshops, get prizes! Repeat til Christmas!",
+		"organizers": [
+			"Charmunk",
+			"Jenin Henin",
+			"Dhamari Trice-Hanson"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://haxmas.hackclub.com",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events/recowzvbHrKAp3z14",
+			"https://github.com/hackclub/haxmas",
+			"https://github.com/hackclub/YSWS-Catalog"
+		],
+		"hackclub_event_id": "recowzvbHrKAp3z14",
+		"project_types": [
+			"Websites",
+			"Software",
+			"Electronics",
+			"Gamedev",
+			"CAD"
+		],
+		"deprecated_reason": "Site returns 500 (checked 2026-10-18)"
+	},
+	{
+		"name": "iFrame",
+		"slug": "iframe",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2025-08-04",
+		"end_date": "2025-08-15",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/iframe/HEAD/src/assets/logo.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/iframe.png",
+		"url": "https://iframe.hackclub.com/",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Draw or edit images using any programming language and we will hang your custom image on HQ wall and send a copy to you",
+		"organizers": [
+			"Dhamari Trice-Hanson",
+			"Adhdhyan Jain"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://iframe.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events/rec09TOqfk7JuJ0jt",
+			"https://github.com/hackclub/iframe"
+		],
+		"hackclub_event_id": "rec09TOqfk7JuJ0jt",
+		"project_types": [
+			"Software"
+		],
+		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
+	},
+	{
+		"name": "Infinity",
+		"slug": "infinity",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2025-08-01",
+		"end_date": "2025-08-22",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/infinity/HEAD/public/favicon.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/infinity.png",
+		"url": "https://infinity.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Build a website with an infinite realtime canvas, get awesome prizes!",
+		"organizers": [
+			"EnterpriseGoose",
+			"Olive Wu"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://infinity.hackclub.com",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events/recD4UuIKd0jJSZaa",
+			"https://github.com/hackclub/infinity",
+			"https://github.com/hackclub/YSWS-Catalog"
+		],
+		"hackclub_event_id": "recD4UuIKd0jJSZaa",
+		"project_types": [
+			"Websites"
+		],
+		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
+	},
+	{
+		"name": "Inkling",
+		"slug": "inkling",
+		"kind": "ysws",
+		"type": null,
+		"start_date": "2026-01-23",
+		"end_date": "2026-03-14",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": "https://inkling.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"aqua (phthallo)",
+			"Annabel"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recr5bSOzc4SPYWlh",
+			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
+		],
+		"hackclub_event_id": "recr5bSOzc4SPYWlh",
+		"project_types": [
+			"Other"
+		],
+		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
+	},
+	{
+		"name": "Keepsake Aurora",
+		"slug": "keepsake-aurora",
+		"kind": "hackathon",
+		"type": "software",
+		"start_date": "2025-07-18",
+		"end_date": "2025-07-20",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": null,
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Build a website at our in-person workshop for girls and non-binary students and gain essential coding skills!",
+		"organizers": [
+			"Jiang Tongyu",
+			"Kai Ling"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/reczYtdg59OnyijBH"
+		],
+		"hackclub_event_id": "reczYtdg59OnyijBH",
+		"project_types": [
+			"Websites"
+		],
+		"deprecated_reason": "No site (checked 2026-10-18)"
+	},
+	{
+		"name": "Mob Games",
+		"slug": "mob-games",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2025-08-01",
+		"end_date": "2025-08-05",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": "logo",
+		"logo_file": "logos/mob-games.png",
+		"url": "https://mob-games.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Thomas Stubblefield",
+			"Leafd"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recrHReFgh3a8PRvN",
+			"https://github.com/hackclub/mob-games"
+		],
+		"hackclub_event_id": "recrHReFgh3a8PRvN",
+		"project_types": [
+			"Software"
+		],
+		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
+	},
+	{
+		"name": "Mosaic",
+		"slug": "mosaic",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": null,
+		"end_date": "2026-03-14",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://github.com/nexora-droid/Mosaic-YSWS-Website/blob/main/static/images/mosaic.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/mosaic.webp",
+		"url": "https://mosaic.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Build a website every month with a different theme. Get stuff. Repeat.",
+		"organizers": [
+			"Ashlesh Deshmukh",
+			"Saurabh",
+			"Dhamari Trice-Hanson"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://mosaic.hackclub.com",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://github.com/nexora-droid/Mosaic-YSWS-Website"
+		],
+		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
+	},
+	{
+		"name": "Optimize",
+		"slug": "optimize",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2025-07-25",
+		"end_date": "2025-08-22",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": "https://optimize.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Hridya Agrawal",
+			"Alex Van Doren"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recfUrmCnCURU5puy",
+			"https://github.com/hridaya423/optimize",
+			"https://github.com/hackclub/YSWS-Catalog"
+		],
+		"hackclub_event_id": "recfUrmCnCURU5puy",
+		"project_types": [
+			"Software"
+		],
+		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
+	},
+	{
+		"name": "Picoducky",
+		"slug": "picoducky",
+		"kind": "ysws",
+		"type": "hardware",
+		"start_date": "2025-10-13",
+		"end_date": "2025-11-11",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": "https://picoducky.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Aarav",
+			"Olive Wu"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recEUB8vPOv4RIe3p"
+		],
+		"hackclub_event_id": "recEUB8vPOv4RIe3p",
+		"project_types": [
+			"Electronics"
+		],
+		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
+	},
+	{
+		"name": "Plush",
+		"slug": "plush",
+		"kind": "ysws",
+		"type": null,
+		"start_date": "2026-07-31",
+		"end_date": "2026-08-31",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": "https://plush.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Barnav Mitra"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recScXgFX7kWIpPg8"
+		],
+		"hackclub_event_id": "recScXgFX7kWIpPg8",
+		"project_types": [
+			"Other"
+		],
+		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
+	},
+	{
+		"name": "Portal VR",
+		"slug": "portal-vr",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": null,
+		"end_date": "2025-08-23",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://github.com/anirudh12032008/portal-vr/blob/main/logo.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/portal-vr.png",
+		"url": "https://portalvr.hackclub.com/",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Build an AR/VR application, get a VR headset!",
+		"organizers": [
+			"Nishtha Sharma",
+			"Dhamari Trice-Hanson"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://portalvr.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://github.com/hackclub/YSWS-Catalog"
+		],
+		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
+	},
+	{
+		"name": "Pxl",
+		"slug": "pxl",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2026-01-01",
+		"end_date": "2026-01-31",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/pxl/HEAD/static/images/pxl-logo.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/pxl.png",
+		"url": "https://pxl.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Code any project, place pixels on a r/place-like canvas!",
+		"organizers": [
+			"Nico Smith",
+			"Ben Elliott",
+			"Euan Ripper"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://pxl.hackclub.com",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/recMlZ9yxz9fFwQeg",
+			"https://github.com/hackclub/pxl",
+			"https://github.com/hackclub/YSWS-Catalog/commits/main/data.yml"
+		],
+		"hackclub_event_id": "recMlZ9yxz9fFwQeg",
+		"project_types": [
+			"Other"
+		],
+		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
+	},
+	{
+		"name": "RPG",
+		"slug": "rpg",
+		"kind": "ysws",
+		"type": null,
+		"start_date": "2025-03-19",
+		"end_date": "2025-03-26",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": "https://rpg.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"aqua (phthallo)",
+			"Annabel"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recm19FkNIcQuxIPA",
+			"https://github.com/hackclub/rpg",
+			"https://github.com/phthallo"
+		],
+		"hackclub_event_id": "recm19FkNIcQuxIPA",
+		"project_types": [
+			"Other"
+		],
+		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
+	},
+	{
+		"name": "Shallow Learning",
+		"slug": "shallow-learning",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2025-09-12",
+		"end_date": "2025-10-12",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": "logo",
+		"logo_file": "logos/shallow-learning.png",
+		"url": "https://shallow-learning.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Build your own neural network and explore the depths of machine learning!",
+		"organizers": [
+			"Graham Darcey"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recofxZ0xDBKgOvAF",
+			"https://github.com/hackclub/shallow-learning",
+			"https://raw.githubusercontent.com/hackclub/site/main/public/team.json"
+		],
+		"hackclub_event_id": "recofxZ0xDBKgOvAF",
+		"project_types": [
+			"Software"
+		],
+		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
+	},
+	{
+		"name": "Shipyard",
+		"slug": "shipyard",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": null,
+		"end_date": "2026-07-04",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/logos/ShipyardLogo.svg",
+		"logo_kind": "logo",
+		"logo_file": "logos/shipyard.svg",
+		"url": "https://shipyard.hackclub.com/",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Ship 7 weeks of computing and coding challenges. Earn prizes from the shop!",
+		"organizers": [
+			"Bisher Almasri",
+			"Alex Van Doren"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://shipyard.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
+		],
+		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
+	},
+	{
+		"name": "Sidequests",
+		"slug": "sidequests",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2025-03-26",
+		"end_date": "2025-04-25",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": "https://sidequests.hackclub.com/",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "A short-run low-volume low-effort ysws series from nora & co.",
+		"organizers": [
+			"Nora",
+			"Phoebe"
+		],
+		"sources": [
+			"https://ysws.hackclub.com/",
+			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
+			"https://sidequests.hackclub.com/",
+			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
+			"https://hackclub.com/api/v1/events",
+			"https://hackclub.com/api/v1/events/rec2G7e3EnGjtoYzy",
+			"https://raw.githubusercontent.com/hackclub/site/main/public/team.json"
+		],
+		"hackclub_event_id": "rec2G7e3EnGjtoYzy",
+		"project_types": [
+			"Software",
+			"Other"
+		],
+		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
+	},
+	{
+		"name": "Soaked",
+		"slug": "soaked",
+		"kind": "ysws",
+		"type": null,
+		"start_date": "2025-08-27",
+		"end_date": "2025-09-10",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": "https://soaked.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Jenin Henin",
+			"Dhamari Trice-Hanson"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recujSvjyVH3kexp3",
+			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
+		],
+		"hackclub_event_id": "recujSvjyVH3kexp3",
+		"project_types": [
+			"Other"
+		],
+		"deprecated_reason": "Site returns 404 (checked 2026-10-18)"
+	},
+	{
+		"name": "Sockathon",
+		"slug": "sockathon",
+		"kind": "ysws",
+		"type": null,
+		"start_date": "2025-02-18",
+		"end_date": "2025-03-02",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": null,
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Ben Dixon"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recZoBHhXx7dMa3wq",
+			"https://github.com/hackclub/sock",
+			"https://raw.githubusercontent.com/hackclub/site/main/public/team.json"
+		],
+		"hackclub_event_id": "recZoBHhXx7dMa3wq",
+		"project_types": [
+			"Other"
+		],
+		"deprecated_reason": "No site (checked 2026-10-18)"
+	},
+	{
+		"name": "Summer Camp",
+		"slug": "summer-camp",
+		"kind": "hackathon",
+		"type": null,
+		"start_date": "2026-06-29",
+		"end_date": "2026-07-17",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": "https://summer-camp.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Dhamari Trice-Hanson"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recTyNiJ7ZFXqsqmQ"
+		],
+		"hackclub_event_id": "recTyNiJ7ZFXqsqmQ",
+		"project_types": [
+			"Other"
+		],
+		"deprecated_reason": "Site returns 404 (checked 2026-10-18)"
+	},
+	{
+		"name": "The Journey",
+		"slug": "the-journey",
+		"kind": "ysws",
+		"type": null,
+		"start_date": "2025-04-15",
+		"end_date": "2025-06-10",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": null,
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Kartikey Chauhan",
+			"Ben Dixon",
+			"Chris Walker"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recNAxSGgS3PKJV4p",
+			"https://github.com/hackclub/journey",
+			"https://github.com/cskartikey"
+		],
+		"hackclub_event_id": "recNAxSGgS3PKJV4p",
+		"project_types": [
+			"Other"
+		],
+		"deprecated_reason": "No site (checked 2026-10-18)"
+	},
+	{
+		"name": "Turf Wars",
+		"slug": "turf-wars",
+		"kind": "ysws",
+		"type": null,
+		"start_date": "2026-07-02",
+		"end_date": "2026-07-17",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://hackclub.com/api/v1/events/recO21kDLGrO3UNVg",
+		"logo_kind": "logo",
+		"logo_file": "logos/turf-wars.webp",
+		"url": "https://turfwars.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Mihi"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recO21kDLGrO3UNVg",
+			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
+		],
+		"hackclub_event_id": "recO21kDLGrO3UNVg",
+		"project_types": [],
+		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
+	},
+	{
+		"name": "Wizard Orpheus",
+		"slug": "wizard-orpheus",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2024-03-06",
+		"end_date": "2024-06-01",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": null,
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Build an AI-powered interactive game with Wizard Orpheus and unleash your coding magic!",
+		"organizers": [
+			"Zach Latta"
+		],
+		"sources": [
+			"https://hackclub.com/api/v1/events/recSODGhknuccVVfj",
+			"https://github.com/hackclub/wizard-orpheus"
+		],
+		"hackclub_event_id": "recSODGhknuccVVfj",
+		"project_types": [
+			"Gamedev"
+		],
+		"deprecated_reason": "No site (checked 2026-10-18)"
 	}
 ]

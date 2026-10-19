@@ -11,7 +11,7 @@ export interface Program {
 	type: Type | null;
 	start_date: string | null;
 	end_date: string | null;
-	status: 'ended' | 'ongoing' | 'upcoming';
+	status: 'ended' | 'ongoing' | 'upcoming' | 'cancelled';
 	location: string | null;
 	logo: string | null;
 	logo_file: string | null;
@@ -66,6 +66,10 @@ const KIND_FORMAT: Record<Kind, Format> = {
 
 export const formatOf = (p: Program): Format => KIND_FORMAT[p.kind];
 
+export const ONGOING = 'ongoing';
+
+export const isOngoing = (p: Program) => p.status === 'ongoing' && !p.end_date;
+
 export const COLUMNS = ['Program', 'Start', 'End', 'Format', 'Type', 'Organizer'] as const;
 
 export const organizers = [
@@ -73,7 +77,7 @@ export const organizers = [
 ].sort((a, b) => a.localeCompare(b));
 
 const playable = programs.filter(
-	(p) => p.kind !== 'hackathon' && p.start_date && p.end_date && p.type
+	(p) => p.kind !== 'hackathon' && p.status !== 'cancelled' && p.start_date && (p.end_date || isOngoing(p)) && p.type
 );
 const withOrganizer = playable.filter((p) => p.organizers.length);
 
@@ -87,9 +91,11 @@ export function monthLabel(ym: string): string {
 }
 
 function compareMonth(guess: string, answer: string): Cell {
-	const a = answer.slice(0, 7);
-	if (guess === a) return { label: monthLabel(guess), verdict: 'correct' };
-	return { label: monthLabel(guess), verdict: 'wrong', arrow: guess < a ? 'up' : 'down' };
+	const a = answer === ONGOING ? ONGOING : answer.slice(0, 7);
+	const label = guess === ONGOING ? 'Ongoing' : monthLabel(guess);
+	if (guess === a) return { label, verdict: 'correct' };
+	const later = a === ONGOING || (guess !== ONGOING && guess < a);
+	return { label, verdict: 'wrong', arrow: later ? 'up' : 'down' };
 }
 
 const norm = (s: string) => s.trim().toLowerCase();
@@ -104,7 +110,7 @@ export function compare(guess: Guess, answer: Program): Cell[] {
 			verdict: guess.slug === answer.slug ? 'correct' : 'wrong'
 		},
 		compareMonth(guess.start, answer.start_date!),
-		compareMonth(guess.end, answer.end_date!),
+		compareMonth(guess.end, isOngoing(answer) ? ONGOING : answer.end_date!),
 		{
 			label: FORMAT_LABEL[guess.format],
 			verdict: guess.format === formatOf(answer) ? 'correct' : 'wrong'

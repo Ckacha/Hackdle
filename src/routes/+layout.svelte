@@ -5,14 +5,14 @@
 	import favicon from '#lib/assets/favicon.png';
 	import type { LayoutProps } from './$types';
 
-	let { children, data }: LayoutProps = $props();
+	let { children }: LayoutProps = $props();
 
-	let TABS = $derived([
+	const TABS = [
 		{ href: '/', label: 'Play' },
 		{ href: '/list', label: 'Master List' },
-		{ href: '/info', label: 'Info' },
-		...(data.canEdit ? [{ href: '/masterlistedit', label: 'Edit' }] : [])
-	]);
+		{ href: '/history', label: 'History' },
+		{ href: '/info', label: 'Info' }
+	];
 </script>
 
 <svelte:head>

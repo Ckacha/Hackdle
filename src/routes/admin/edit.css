@@ -278,3 +278,66 @@ textarea:focus {
 		grid-template-columns: 1fr;
 	}
 }
+
+.views {
+	display: flex;
+	gap: 4px;
+	padding: 4px;
+	border-radius: 12px;
+	background: var(--surface-hover);
+}
+
+.views button {
+	flex: 1;
+	padding: 6px 8px;
+	border: none;
+	border-radius: 9px;
+	background: none;
+	font: inherit;
+	font-size: 14px;
+	font-weight: bold;
+	color: var(--muted);
+	cursor: pointer;
+}
+
+.views button.on {
+	background: var(--background);
+	color: var(--foreground);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.retired dl {
+	display: grid;
+	grid-template-columns: 110px 1fr;
+	gap: 8px 12px;
+	margin: 0 0 20px;
+}
+
+.retired dt {
+	font-weight: bold;
+}
+
+.retired dd {
+	margin: 0;
+	overflow-wrap: anywhere;
+}
+
+.retired a {
+	color: var(--red-text);
+}
+
+.picker .days button {
+	justify-content: space-between;
+}
+
+.day-date {
+	font-size: 13px;
+	font-weight: bold;
+	color: var(--red-text);
+	white-space: nowrap;
+}
+
+.day-name {
+	text-align: right;
+	overflow-wrap: anywhere;
+}

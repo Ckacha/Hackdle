@@ -12,12 +12,27 @@ const writeJson = (file: string, data: unknown) => writeFileSync(file, JSON.stri
 
 export const readList = (): Entry[] => readJson(LIST);
 export const writeList = (list: Entry[]) => writeJson(LIST, list);
+export const readDeprecated = (): Entry[] => readJson(DEPRECATED);
+
+export function restoreFromDeprecated(slug: string) {
+	const deprecated = readDeprecated();
+	const entry = deprecated.find((p) => p.slug === slug);
+	if (!entry) return null;
+	delete entry.deprecated_reason;
+	const list = readList().filter((p) => p.slug !== slug);
+	const at = list.findIndex((p) => p.name.toLowerCase() > entry.name.toLowerCase());
+	list.splice(at === -1 ? list.length : at, 0, entry);
+	writeList(list);
+	writeJson(DEPRECATED, deprecated.filter((p) => p.slug !== slug));
+	if (entry.kind !== 'hackathon') addName(entry.name);
+	return entry;
+}
 
 export function moveToDeprecated(slug: string) {
 	const list = readList();
 	const entry = list.find((p) => p.slug === slug);
 	if (!entry) return null;
-	writeJson(DEPRECATED, [...readJson(DEPRECATED), entry]);
+	writeJson(DEPRECATED, [...readDeprecated(), entry]);
 	writeList(list.filter((p) => p.slug !== slug));
 	removeName(entry.name);
 	return entry;

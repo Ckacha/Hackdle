@@ -10,9 +10,12 @@
 	let preview = $state<string | null>(null);
 	let busy = $state(false);
 
-	let programs = $derived(data.authed ? data.programs : []);
-	let current = $derived(selected && selected !== 'new' ? programs.find((p) => p.slug === selected) : undefined);
-	let creating = $derived(selected === 'new');
+	let view = $state<'list' | 'deprecated' | 'days'>('list');
+	let programs = $derived(data.authed ? (view === 'deprecated' ? data.deprecated : data.programs) : []);
+	let found = $derived(selected && selected !== 'new' ? programs.find((p) => p.slug === selected) : undefined);
+	let current = $derived(view === 'list' ? found : undefined);
+	let retired = $derived(view === 'deprecated' ? found : undefined);
+	let creating = $derived(view === 'list' && selected === 'new');
 
 	let shown = $derived.by(() => {
 		const q = query.trim().toLowerCase();
@@ -35,6 +38,11 @@
 		preview = null;
 	}
 
+	function show(v: typeof view) {
+		view = v;
+		choose(null);
+	}
+
 	function onLogo(e: Event) {
 		const file = (e.currentTarget as HTMLInputElement).files?.[0];
 		preview = file ? URL.createObjectURL(file) : null;
@@ -50,7 +58,10 @@
 			await update({ reset: false });
 			busy = false;
 			if (result.type === 'success') {
-				if (result.data?.saved) choose(String(result.data.saved));
+				if (result.data?.saved) {
+					view = 'list';
+					choose(String(result.data.saved));
+				}
 				if (result.data?.deprecated) choose(null);
 			}
 		};
@@ -58,13 +69,13 @@
 </script>
 
 <svelte:head>
-	<title>Edit Master List · Hackdle</title>
+	<title>Admin · Hackdle</title>
 	<meta name="robots" content="noindex" />
 </svelte:head>
 
 <main class="editor-main">
 	<header>
-		<h1>Edit List</h1>
+		<h1>Admin</h1>
 		<p class="tagline">Changes save straight to docs/list.json</p>
 	</header>
 
@@ -78,25 +89,50 @@
 	{:else}
 		<div class="editor">
 			<aside class="card picker">
-				<div class="picker-head">
-					<input type="search" placeholder="Search {programs.length} programs…" bind:value={query} />
-					<button class="new" type="button" class:on={creating} onclick={() => choose('new')}>+ New</button>
+				<div class="views">
+					<button type="button" class:on={view === 'list'} onclick={() => show('list')}>
+						List ({data.programs.length})
+					</button>
+					<button type="button" class:on={view === 'deprecated'} onclick={() => show('deprecated')}>
+						Deprecated ({data.deprecated.length})
+					</button>
+					<button type="button" class:on={view === 'days'} onclick={() => show('days')}>Days</button>
 				</div>
-				<ul>
-					{#each shown as p (p.slug)}
-						<li>
-							<button type="button" class:on={selected === p.slug} onclick={() => choose(p.slug)}>
-								{#if p.logo_file}<img src="/{p.logo_file}" alt="" loading="lazy" />{:else}<span class="ph"
-										>{p.name[0].toUpperCase()}</span
-									>{/if}
-								<span class="picker-name">
-									{p.name}
-									{#if missing(p)}<small>missing {missing(p)}</small>{/if}
-								</span>
-							</button>
-						</li>
-					{/each}
-				</ul>
+				{#if view === 'days'}
+					<ul class="days">
+						{#each data.days as d (d.date)}
+							{@const p = data.programs.find((x) => x.slug === d.slug) ?? data.deprecated.find((x) => x.slug === d.slug)}
+							<li>
+								<button type="button" onclick={() => p && data.programs.includes(p) && ((view = 'list'), choose(p.slug))}>
+									<span class="day-date">{d.date === data.today ? 'Today' : d.date}</span>
+									<span class="day-name">{p?.name ?? d.slug}{#if p && !data.programs.includes(p)} (deprecated){/if}</span>
+								</button>
+							</li>
+						{/each}
+					</ul>
+				{:else}
+					<div class="picker-head">
+						<input type="search" placeholder="Search {programs.length} programs…" bind:value={query} />
+						{#if view === 'list'}
+							<button class="new" type="button" class:on={creating} onclick={() => choose('new')}>+ New</button>
+						{/if}
+					</div>
+					<ul>
+						{#each shown as p (p.slug)}
+							<li>
+								<button type="button" class:on={selected === p.slug} onclick={() => choose(p.slug)}>
+									{#if p.logo_file}<img src="/{p.logo_file}" alt="" loading="lazy" />{:else}<span class="ph"
+											>{p.name[0].toUpperCase()}</span
+										>{/if}
+									<span class="picker-name">
+										{p.name}
+										{#if missing(p)}<small>missing {missing(p)}</small>{/if}
+									</span>
+								</button>
+							</li>
+						{/each}
+					</ul>
+				{/if}
 				<form method="POST" action="?/logout" use:enhance>
 					<button class="link" type="submit">Log out</button>
 				</form>
@@ -106,7 +142,27 @@
 				{#if form?.message}<p class="notice">{form.message}</p>{/if}
 				{#if form?.problem}<p class="problem">{form.problem}</p>{/if}
 
-				{#if current || creating}
+				{#if retired}
+					<div class="retired">
+						<h2>{retired.name}</h2>
+						<p class="muted">slug: {retired.slug}</p>
+						{#if retired.deprecated_reason}<p class="problem">{retired.deprecated_reason}</p>{/if}
+						<dl>
+							<dt>Site</dt>
+							<dd>{#if retired.url}<a href={retired.url} target="_blank" rel="noreferrer">{retired.url}</a>{:else}None{/if}</dd>
+							<dt>Dates</dt>
+							<dd>{retired.start_date ?? '?'} to {retired.end_date ?? '?'}</dd>
+							<dt>Organizers</dt>
+							<dd>{retired.organizers?.join(', ') || 'None'}</dd>
+							<dt>Description</dt>
+							<dd>{retired.description ?? 'None'}</dd>
+						</dl>
+						<form method="POST" action="?/restore" use:enhance={submit}>
+							<input type="hidden" name="slug" value={retired.slug} />
+							<button class="submit" type="submit" disabled={busy}>Restore to list</button>
+						</form>
+					</div>
+				{:else if current || creating}
 					{#key selected}
 						<form
 							class="edit-form"
@@ -168,6 +224,7 @@
 										<option value="ended">Ended</option>
 										<option value="ongoing">Ongoing</option>
 										<option value="upcoming">Upcoming</option>
+										<option value="cancelled">Cancelled</option>
 									</select>
 								</label>
 
