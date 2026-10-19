@@ -310,7 +310,7 @@
 		"name": "Hack a Home",
 		"slug": "hack-a-home",
 		"kind": "ysws",
-		"description": "Mod, tweak, and upgrade your devices — earn grants to buy IoT hardware.",
+		"description": "Mod, tweak, and upgrade your devices, earn grants to buy IoT hardware.",
 		"url": "https://hackahome.nullbyte.rip/",
 		"slack_channel": "#hackahome",
 		"catalog_status": "draft",

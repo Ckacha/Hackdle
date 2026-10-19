@@ -1,0 +1,280 @@
+.editor-main {
+	max-width: 1200px;
+}
+
+.login {
+	max-width: 380px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.problem,
+.notice {
+	margin: 0 0 12px;
+	padding: 10px 14px;
+	border-radius: 12px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.problem {
+	background: rgba(236, 55, 80, 0.12);
+	color: var(--red-text);
+}
+
+.notice {
+	background: rgba(51, 214, 166, 0.16);
+	color: #1a7f61;
+}
+
+.editor {
+	width: 100%;
+	display: grid;
+	grid-template-columns: minmax(240px, 320px) 1fr;
+	gap: 16px;
+	align-items: start;
+}
+
+.editor .card {
+	max-width: none;
+	text-align: left;
+}
+
+.picker {
+	position: sticky;
+	top: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 14px;
+	max-height: calc(100vh - 32px);
+}
+
+.picker-head {
+	display: flex;
+	gap: 6px;
+}
+
+.picker-head input {
+	min-width: 0;
+}
+
+.new {
+	flex-shrink: 0;
+	padding: 0 14px;
+	border: 2px solid var(--red);
+	border-radius: 12px;
+	background: var(--background);
+	color: var(--red);
+	font: inherit;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.new.on,
+.new:hover {
+	background: var(--red);
+	color: white;
+}
+
+.picker ul {
+	flex: 1;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+}
+
+.picker li button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	padding: 6px 8px;
+	border: none;
+	border-radius: 8px;
+	background: none;
+	font: inherit;
+	font-size: 15px;
+	color: var(--foreground);
+	text-align: left;
+	cursor: pointer;
+}
+
+.picker li button:hover {
+	background: var(--surface-hover);
+}
+
+.picker li button.on {
+	background: rgba(236, 55, 80, 0.12);
+}
+
+.picker img,
+.picker .ph {
+	width: 28px;
+	height: 28px;
+	flex-shrink: 0;
+	object-fit: contain;
+}
+
+.ph {
+	display: grid;
+	place-items: center;
+	border-radius: 8px;
+	background: var(--surface-hover);
+	font-weight: bold;
+	color: var(--muted);
+}
+
+.picker-name {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	overflow-wrap: anywhere;
+}
+
+.picker-name small {
+	font-size: 12px;
+	color: var(--red-text);
+}
+
+.link {
+	border: none;
+	background: none;
+	font: inherit;
+	color: var(--muted);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.pane .muted {
+	margin-bottom: 12px;
+}
+
+.empty {
+	padding: 40px 0;
+	text-align: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 14px 16px;
+}
+
+.grid label {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	min-width: 0;
+}
+
+.grid label > span {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.grid .wide {
+	grid-column: 1 / -1;
+}
+
+textarea {
+	width: 100%;
+	font: inherit;
+	font-size: 16px;
+	padding: 10px 14px;
+	border: 2px solid var(--border);
+	border-radius: 12px;
+	background: var(--surface);
+	color: var(--foreground);
+	outline: none;
+	resize: vertical;
+}
+
+textarea:focus {
+	border-color: var(--red);
+}
+
+.logo-row {
+	display: grid;
+	grid-template-columns: 72px 1fr 1fr;
+	gap: 12px;
+	align-items: end;
+}
+
+.logo-row img,
+.ph.big {
+	width: 72px;
+	height: 72px;
+	object-fit: contain;
+	border-radius: 12px;
+	background: var(--surface-hover);
+	font-size: 28px;
+}
+
+.logo-row input[type='file'] {
+	padding: 8px;
+	font-size: 14px;
+}
+
+.edit-actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px;
+	margin-top: 20px;
+}
+
+.submit {
+	padding: 12px 32px;
+	border: none;
+	border-radius: 999px;
+	background: var(--red);
+	color: white;
+	font: inherit;
+	font-weight: bold;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.submit:disabled,
+.danger:disabled {
+	opacity: 0.5;
+	cursor: wait;
+}
+
+.danger {
+	margin-left: auto;
+	padding: 10px 18px;
+	border: 2px solid var(--red-text);
+	border-radius: 999px;
+	background: none;
+	color: var(--red-text);
+	font: inherit;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.danger:hover {
+	background: var(--red-text);
+	color: white;
+}
+
+@media (max-width: 760px) {
+	.editor {
+		grid-template-columns: 1fr;
+	}
+
+	.picker {
+		position: static;
+		max-height: 340px;
+	}
+
+	.grid,
+	.logo-row {
+		grid-template-columns: 1fr;
+	}
+}

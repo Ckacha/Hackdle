@@ -422,7 +422,3 @@
 	</dl>
 
 {/snippet}
-
-<footer>
-	Made with &lt;3 by a Hack Clubber
-</footer>
