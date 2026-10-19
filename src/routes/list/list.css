@@ -53,6 +53,12 @@
 	object-fit: contain;
 }
 
+.program-top img {
+	padding: 3px;
+	border-radius: 10px;
+	background: var(--logo-bg);
+}
+
 .program-top .ph {
 	display: grid;
 	place-items: center;

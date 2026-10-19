@@ -45,8 +45,44 @@
 	--purple: #a633d6;
 	--slate: #8492a6;
 
+	--green-text: #1a7f61;
+	--page-tint: rgba(236, 55, 80, 0.04);
+	--logo-bg: transparent;
+
 	--font-phantom: 'Phantom Sans', system-ui, sans-serif;
 	color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+	--background: #17171d;
+	--foreground: #ffffff;
+	--surface: #252429;
+	--surface-hover: #2f2e35;
+	--border: rgba(255, 255, 255, 0.1);
+	--muted: #8492a6;
+	--shadow-dd: 0 8px 32px rgba(0, 0, 0, 0.5);
+	--red-text: #ff6b81;
+	--green-text: #33d6a6;
+	--page-tint: rgba(18, 18, 23, 0.85);
+	--logo-bg: #f9fafc;
+	color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme='light']) {
+		--background: #17171d;
+		--foreground: #ffffff;
+		--surface: #252429;
+		--surface-hover: #2f2e35;
+		--border: rgba(255, 255, 255, 0.1);
+		--muted: #8492a6;
+		--shadow-dd: 0 8px 32px rgba(0, 0, 0, 0.5);
+		--red-text: #ff6b81;
+		--green-text: #33d6a6;
+		--page-tint: rgba(18, 18, 23, 0.85);
+		--logo-bg: #f9fafc;
+		color-scheme: dark;
+	}
 }
 
 * {
@@ -67,7 +103,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background:
 		url('/background.webp') center bottom / 100% auto no-repeat fixed,
-		linear-gradient(180deg, rgba(236, 55, 80, 0.04) 60%, rgba(236, 55, 80, 0.4) 100%) fixed,
+		linear-gradient(180deg, var(--page-tint) 60%, rgba(236, 55, 80, 0.4) 100%) fixed,
 		var(--background);
 }
 

@@ -41,6 +41,12 @@
 	object-fit: contain;
 }
 
+.program img {
+	padding: 3px;
+	border-radius: 10px;
+	background: var(--logo-bg);
+}
+
 .program .ph {
 	display: grid;
 	place-items: center;

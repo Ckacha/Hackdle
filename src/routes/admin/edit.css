@@ -25,7 +25,7 @@
 
 .notice {
 	background: rgba(51, 214, 166, 0.16);
-	color: #1a7f61;
+	color: var(--green-text);
 }
 
 .editor {
@@ -118,6 +118,12 @@
 	height: 28px;
 	flex-shrink: 0;
 	object-fit: contain;
+}
+
+.picker img {
+	padding: 3px;
+	border-radius: 10px;
+	background: var(--logo-bg);
 }
 
 .ph {

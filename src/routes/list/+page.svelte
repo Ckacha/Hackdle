@@ -54,7 +54,7 @@
 							</h2>
 							<p class="program-dates">
 								{#if p.start_date && p.end_date}
-									{month(p.start_date)} to {month(p.end_date)}
+								{month(p.start_date)} to {month(p.end_date)}
 								{:else if p.start_date && isOngoing(p)}
 									{month(p.start_date)} to now, still ongoing
 								{:else if p.start_date}
