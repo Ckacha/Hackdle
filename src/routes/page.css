@@ -460,7 +460,11 @@
 .filter-head {
 	display: flex;
 	align-items: baseline;
-	justify-content: space-between;
+	gap: 8px;
+}
+
+.filter-head .count {
+	margin-left: auto;
 }
 
 .filter h3 {
@@ -481,9 +485,36 @@
 	border-radius: 10px;
 }
 
-.filter-row {
-	display: flex;
+.filter-fields {
+	display: grid;
+	grid-template-columns: auto 1fr 1fr;
+	align-items: center;
 	gap: 6px;
+}
+
+.filter-fields .span {
+	grid-column: 1 / -1;
+}
+
+.filter-fields .pair {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 6px;
+}
+
+.filter-fields select {
+	min-width: 0;
+}
+
+.filter-label {
+	padding-right: 4px;
+	font-size: 13px;
+	font-weight: bold;
+	color: var(--muted);
+}
+
+.filter-head .clear {
+	font-size: 13px;
 }
 
 .matches {
@@ -536,15 +567,6 @@
 	background: var(--background);
 	font-size: 13px;
 	color: var(--red-text);
-}
-
-.filter-row input {
-	flex: 1;
-	min-width: 0;
-}
-
-.filter-row select {
-	width: auto;
 }
 
 .none {

@@ -71,14 +71,45 @@
 
 	let fName = $state('');
 	let fYear = $state('');
+	let fStartMonth = $state('');
+	let fEndYear = $state('');
+	let fEndMonth = $state('');
+	let fFormat = $state('');
+	let fType = $state('');
+	let fOrg = $state('');
+
+	let filtering = $derived(
+		!!(fName.trim() || fYear || fStartMonth || fEndYear || fEndMonth || fFormat || fType || fOrg.trim())
+	);
+
+	function clearFilter() {
+		fName = fYear = fStartMonth = fEndYear = fEndMonth = fFormat = fType = fOrg = '';
+	}
+
+	function fits(p: Program) {
+		const q = fName.trim().toLowerCase();
+		const o = fOrg.trim().toLowerCase();
+		const [sy, sm] = p.start_date!.split('-');
+		const ongoing = isOngoing(p);
+		const [ey, em] = ongoing ? ['', ONGOING] : p.end_date!.split('-');
+		return (
+			(!q || p.name.toLowerCase().includes(q)) &&
+			(!fYear || sy === fYear) &&
+			(!fStartMonth || sm === fStartMonth) &&
+			(!fEndYear || ey === fEndYear) &&
+			(!fEndMonth || em === fEndMonth) && 
+			(!fFormat || formatOf(p) === fFormat) &&
+			(!fType || p.type === fType) &&
+			(!o || p.organizers.some((n) => n.toLowerCase().includes(o)))
+		);
+	}
 
 	let byYear = $derived.by(() => {
-		const q = fName.trim().toLowerCase();
-		if (!q && !fYear) return [];
+		if (!filtering) return [];
 		const groups = new Map<string, Program[]>();
 		for (const p of [...answerPool].sort((x, y) => x.start_date!.localeCompare(y.start_date!))) {
+			if (!fits(p)) continue;
 			const y = p.start_date!.slice(0, 4);
-			if ((fYear && y !== fYear) || (q && !p.name.toLowerCase().includes(q))) continue;
 			groups.set(y, [...(groups.get(y) ?? []), p]);
 		}
 		return [...groups].reverse();
@@ -428,15 +459,45 @@
 				<aside class="card filter" aria-label="Filter">
 					<div class="filter-head">
 						<h3>Filter</h3>
-						{#if fName.trim() || fYear}<span class="count">{matchCount} {matchCount === 1 ? 'program' : 'programs'}</span>{/if}
+						{#if filtering}
+							<span class="count">{matchCount} {matchCount === 1 ? 'program' : 'programs'}</span>
+							<button class="link clear" type="button" onclick={clearFilter}>Clear</button>
+						{/if}
 					</div>
 
-					<div class="filter-row">
-						<input type="search" placeholder="Name" bind:value={fName} />
-						<select aria-label="Year" bind:value={fYear}>
-							<option value="">All years</option>
+					<div class="filter-fields">
+						<input class="span" type="search" placeholder="Name" aria-label="Name" bind:value={fName} />
+						<span class="filter-label">Start</span>
+						<select aria-label="Start month" bind:value={fStartMonth}>
+							<option value="">Month</option>
+							{#each MONTHS as m, i}<option value={String(i + 1).padStart(2, '0')}>{m}</option>{/each}
+						</select>
+						<select aria-label="Start year" bind:value={fYear}>
+							<option value="">Year</option>
 							{#each POOL_YEARS as y}<option value={y}>{y}</option>{/each}
 						</select>
+						<span class="filter-label">End</span>
+						<select aria-label="End month" bind:value={fEndMonth}>
+							<option value="">Month</option>
+							{#each MONTHS as m, i}<option value={String(i + 1).padStart(2, '0')}>{m}</option>{/each}
+							<option value={ONGOING}>Ongoing</option>
+						</select>
+						
+						<select aria-label="End year" bind:value={fEndYear} disabled={fEndMonth === ONGOING}>
+							<option value="">Year</option>
+							{#each POOL_YEARS as y}<option value={y}>{y}</option>{/each}
+						</select>
+						<div class="span pair">
+							<select aria-label="Format" bind:value={fFormat}>
+								<option value="">Any format</option>
+								{#each Object.entries(FORMAT_LABEL) as [value, label]}<option {value}>{label}</option>{/each}
+							</select>
+							<select aria-label="Type" bind:value={fType}>
+								<option value="">Any type</option>
+								{#each Object.entries(TYPE_LABEL) as [value, label]}<option {value}>{label}</option>{/each}
+							</select>
+						</div> 
+						<input class="span" type="search" placeholder="Organizer" aria-label="Organizer" bind:value={fOrg} />
 					</div>
 
 					<div class="matches scroll">
@@ -453,7 +514,7 @@
 								{/each}
 							</ul>
 						{:else}
-							<p class="muted none">{fName.trim() || fYear ? 'No programs match.' : 'Search a name or pick a year.'}</p>
+							<p class="muted none">{filtering ? 'No programs match.' : 'Fill in any field to find programs.'}</p>
 						{/each}
 					</div>
 				</aside>
