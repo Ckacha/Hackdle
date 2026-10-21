@@ -165,7 +165,6 @@ export const actions: Actions = {
 			archive_url: null,
 			description: null,
 			organizers: [],
-			sources: [],
 			...parsed.values,
 			...(logo.file ? { logo_file: logo.file } : {})
 		} as Entry;

@@ -17,10 +17,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recqYkMrUxNn5v6X0"
-		],
-		"hackclub_event_id": "recqYkMrUxNn5v6X0",
 		"project_types": []
 	},
 	{
@@ -41,10 +37,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recWh4JY75X2GQOoU"
-		],
-		"hackclub_event_id": "recWh4JY75X2GQOoU",
 		"project_types": []
 	},
 	{
@@ -65,10 +57,6 @@
 		"archive_url": null,
 		"description": "Build and train your own small language model using Python; gain hands-on experience with machine learning!",
 		"organizers": [],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recogPY9YwTFHFBjT"
-		],
-		"hackclub_event_id": "recogPY9YwTFHFBjT",
 		"project_types": [
 			"Software"
 		]
@@ -91,14 +79,6 @@
 		"archive_url": null,
 		"description": "Collect cups, progress the graph, earn bonuses!",
 		"organizers": [],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://hackclub.com/api/v1/events",
-			"https://hackclub.com/api/v1/events/recidiqSZA7IqctjC"
-		],
-		"hackclub_event_id": "recidiqSZA7IqctjC",
 		"project_types": []
 	},
 	{
@@ -118,15 +98,7 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Learn how a tech product works and get a grant to make it yourself.",
-		"organizers": [],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://decode.hackclub.dev",
-			"https://decode.hackclub.dev/logo-horizontal.png",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://hackclub.com/api/v1/events"
-		]
+		"organizers": []
 	},
 	{
 		"name": "OnBoard Live",
@@ -145,11 +117,7 @@
 		"url_status": null,
 		"archive_url": null,
 		"description": "Design a PCB live on stream and earn PCB credit per hour.",
-		"organizers": [],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml"
-		]
+		"organizers": []
 	},
 	{
 		"name": "Popcorn",
@@ -169,10 +137,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"sources": [
-			"https://hackclub.com/api/v1/events/rec1yPqTrjX15CyG3"
-		],
-		"hackclub_event_id": "rec1yPqTrjX15CyG3",
 		"project_types": [
 			"Other"
 		]
@@ -195,10 +159,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"sources": [
-			"https://hackclub.com/api/v1/events/rec939NW8NA9MIr2L"
-		],
-		"hackclub_event_id": "rec939NW8NA9MIr2L",
 		"project_types": [
 			"Other"
 		]
@@ -221,10 +181,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recUfu7Q286A0NSH4"
-		],
-		"hackclub_event_id": "recUfu7Q286A0NSH4",
 		"project_types": [
 			"Other"
 		]
@@ -247,10 +203,6 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"sources": [
-			"https://hackclub.com/api/v1/events/rec3cfpjdgcUsfloS"
-		],
-		"hackclub_event_id": "rec3cfpjdgcUsfloS",
 		"project_types": [
 			"Other"
 		]
@@ -272,12 +224,7 @@
 		"url_status": null,
 		"archive_url": null,
 		"description": "You Ship A Slack bot. We Ship A limited edition Orpheus bucket hat.",
-		"organizers": [],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml"
-		]
+		"organizers": []
 	},
 	{
 		"name": "10 Days of Tarot",
@@ -299,18 +246,6 @@
 		"organizers": [
 			"Max Wofford"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://tarot.hackclub.com/",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://hackclub.com/api/v1/events",
-			"https://hackclub.com/api/v1/events/recVPMMaiHHXOYNF4",
-			"https://github.com/hackclub/tarot",
-			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
-			"https://hackclub.com/team/"
-		],
-		"hackclub_event_id": "recVPMMaiHHXOYNF4",
 		"project_types": [
 			"Other"
 		],
@@ -342,17 +277,6 @@
 			"Niko Yu",
 			"ShyMike"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://aces.hackclub.com",
-			"https://raw.githubusercontent.com/hackclub/aces/main/public/aces_logo.svg",
-			"https://github.com/hackclub/aces",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://www.downtowndc.org/events/awesome-con-2026/",
-			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
-			"https://github.com/Charmunks"
-		],
 		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
 	},
 	{
@@ -375,12 +299,6 @@
 		"organizers": [
 			"Alex Ren"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recoHYKBDk6ISnxyC",
-			"https://github.com/hackclub/alleyway",
-			"https://hackclub.com/team/"
-		],
-		"hackclub_event_id": "recoHYKBDk6ISnxyC",
 		"project_types": [
 			"Electronics"
 		],
@@ -406,12 +324,6 @@
 		"organizers": [
 			"Beltran"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/reckFSlhg1TWZZJri",
-			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
-			"https://hackclub.com/team/"
-		],
-		"hackclub_event_id": "reckFSlhg1TWZZJri",
 		"project_types": [
 			"Software",
 			"Websites"
@@ -438,12 +350,6 @@
 		"organizers": [
 			"Jolly Wang"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recSXJBZV0mMayQpx",
-			"https://github.com/hackclub/archaeology",
-			"https://hackclub.com/team/"
-		],
-		"hackclub_event_id": "recSXJBZV0mMayQpx",
 		"project_types": [
 			"Software"
 		],
@@ -469,18 +375,6 @@
 		"organizers": [
 			"Alex Van Doren"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://armed.hackclub.com",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://hackclub.com/api/v1/events",
-			"https://hackclub.com/api/v1/events/recWw9We2on9q0ej7",
-			"https://github.com/hackclub/armed",
-			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
-			"https://hackclub.com/team/"
-		],
-		"hackclub_event_id": "recWw9We2on9q0ej7",
 		"project_types": [
 			"Software"
 		],
@@ -506,16 +400,6 @@
 		"organizers": [
 			"Alex Ren"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://hackclub.com/api/v1/events",
-			"https://hackclub.com/api/v1/events/recrlzmXEeG5rVRPr",
-			"https://github.com/hackclub/asylum",
-			"https://hackclub.com/team/"
-		],
-		"hackclub_event_id": "recrlzmXEeG5rVRPr",
 		"project_types": [
 			"Electronics"
 		],
@@ -541,12 +425,6 @@
 		"organizers": [
 			"Mihi"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recFulYPt4BUUZbHJ",
-			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
-			"https://hackclub.com/team/"
-		],
-		"hackclub_event_id": "recFulYPt4BUUZbHJ",
 		"project_types": [
 			"Other"
 		],
@@ -573,12 +451,6 @@
 			"Ethan Canterbury",
 			"Jared Senesac"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recxp7od3AsEp28ry",
-			"https://github.com/hackclub/club-dashboard",
-			"https://hackclub.com/team/"
-		],
-		"hackclub_event_id": "recxp7od3AsEp28ry",
 		"project_types": [
 			"Other"
 		],
@@ -604,13 +476,6 @@
 		"organizers": [
 			"Memma"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recqNEHajXIUBkUmN",
-			"https://github.com/hackclub/CodeQuest",
-			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml",
-			"https://github.com/hackclub/codequest"
-		],
-		"hackclub_event_id": "recqNEHajXIUBkUmN",
 		"project_types": [
 			"Other"
 		],
@@ -637,13 +502,6 @@
 			"Leo",
 			"Max Wofford"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://submit.hackclub.com/converge-rsvp",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://hackclub.com/api/v1/events"
-		],
 		"deprecated_reason": "Site returns 404 (checked 2026-10-18)"
 	},
 	{
@@ -667,16 +525,6 @@
 			"Lynn",
 			"Olive Wu"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://coeur.hackclub.com",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://hackclub.com/api/v1/events",
-			"https://hackclub.com/api/v1/events/rec3aN1Q0U26Ywgf0",
-			"https://github.com/hackclub/coeur"
-		],
-		"hackclub_event_id": "rec3aN1Q0U26Ywgf0",
 		"project_types": [
 			"Software",
 			"Websites"
@@ -704,13 +552,6 @@
 			"Scooter",
 			"Max Wofford"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://hackclub.com/api/v1/events",
-			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
-		],
 		"deprecated_reason": "No site (checked 2026-10-18)"
 	},
 	{
@@ -733,10 +574,6 @@
 		"organizers": [
 			"Gus Ruben"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/rec1yiOy0LzQApsaq"
-		],
-		"hackclub_event_id": "rec1yiOy0LzQApsaq",
 		"project_types": [
 			"Gamedev"
 		],
@@ -762,15 +599,6 @@
 		"organizers": [
 			"Memma"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://hackberry.hackclub.com/",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://hackclub.com/api/v1/events/recmVm58wYwCV0kOz",
-			"https://github.com/hackclub/hackberry"
-		],
-		"hackclub_event_id": "recmVm58wYwCV0kOz",
 		"project_types": [
 			"Electronics"
 		],
@@ -798,11 +626,6 @@
 			"Jasper Mayone",
 			"Max Wofford"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/rectvQ49dMZdaKHQP",
-			"https://github.com/hackclub/ham-club"
-		],
-		"hackclub_event_id": "rectvQ49dMZdaKHQP",
 		"project_types": [
 			"Other"
 		],
@@ -829,13 +652,6 @@
 			"Charmunk",
 			"Jenin Henin"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://halloween.hackclub.com/",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://github.com/hackclub/haunted-halloween"
-		],
 		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
 	},
 	{
@@ -860,16 +676,6 @@
 			"Jenin Henin",
 			"Dhamari Trice-Hanson"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://haxmas.hackclub.com",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://hackclub.com/api/v1/events/recowzvbHrKAp3z14",
-			"https://github.com/hackclub/haxmas",
-			"https://github.com/hackclub/YSWS-Catalog"
-		],
-		"hackclub_event_id": "recowzvbHrKAp3z14",
 		"project_types": [
 			"Websites",
 			"Software",
@@ -900,15 +706,6 @@
 			"Dhamari Trice-Hanson",
 			"Adhdhyan Jain"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://iframe.hackclub.com/",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://hackclub.com/api/v1/events/rec09TOqfk7JuJ0jt",
-			"https://github.com/hackclub/iframe"
-		],
-		"hackclub_event_id": "rec09TOqfk7JuJ0jt",
 		"project_types": [
 			"Software"
 		],
@@ -935,16 +732,6 @@
 			"EnterpriseGoose",
 			"Olive Wu"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://infinity.hackclub.com",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://hackclub.com/api/v1/events/recD4UuIKd0jJSZaa",
-			"https://github.com/hackclub/infinity",
-			"https://github.com/hackclub/YSWS-Catalog"
-		],
-		"hackclub_event_id": "recD4UuIKd0jJSZaa",
 		"project_types": [
 			"Websites"
 		],
@@ -971,11 +758,6 @@
 			"aqua (phthallo)",
 			"Annabel"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recr5bSOzc4SPYWlh",
-			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
-		],
-		"hackclub_event_id": "recr5bSOzc4SPYWlh",
 		"project_types": [
 			"Other"
 		],
@@ -1002,10 +784,6 @@
 			"Jiang Tongyu",
 			"Kai Ling"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/reczYtdg59OnyijBH"
-		],
-		"hackclub_event_id": "reczYtdg59OnyijBH",
 		"project_types": [
 			"Websites"
 		],
@@ -1032,11 +810,6 @@
 			"Thomas Stubblefield",
 			"Leafd"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recrHReFgh3a8PRvN",
-			"https://github.com/hackclub/mob-games"
-		],
-		"hackclub_event_id": "recrHReFgh3a8PRvN",
 		"project_types": [
 			"Software"
 		],
@@ -1064,13 +837,6 @@
 			"Saurabh",
 			"Dhamari Trice-Hanson"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://mosaic.hackclub.com",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://github.com/nexora-droid/Mosaic-YSWS-Website"
-		],
 		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
 	},
 	{
@@ -1094,12 +860,6 @@
 			"Hridya Agrawal",
 			"Alex Van Doren"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recfUrmCnCURU5puy",
-			"https://github.com/hridaya423/optimize",
-			"https://github.com/hackclub/YSWS-Catalog"
-		],
-		"hackclub_event_id": "recfUrmCnCURU5puy",
 		"project_types": [
 			"Software"
 		],
@@ -1126,10 +886,6 @@
 			"Aarav",
 			"Olive Wu"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recEUB8vPOv4RIe3p"
-		],
-		"hackclub_event_id": "recEUB8vPOv4RIe3p",
 		"project_types": [
 			"Electronics"
 		],
@@ -1155,10 +911,6 @@
 		"organizers": [
 			"Barnav Mitra"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recScXgFX7kWIpPg8"
-		],
-		"hackclub_event_id": "recScXgFX7kWIpPg8",
 		"project_types": [
 			"Other"
 		],
@@ -1185,13 +937,6 @@
 			"Nishtha Sharma",
 			"Dhamari Trice-Hanson"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://portalvr.hackclub.com/",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://github.com/hackclub/YSWS-Catalog"
-		],
 		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
 	},
 	{
@@ -1216,17 +961,6 @@
 			"Ben Elliott",
 			"Euan Ripper"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://pxl.hackclub.com",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://hackclub.com/api/v1/events",
-			"https://hackclub.com/api/v1/events/recMlZ9yxz9fFwQeg",
-			"https://github.com/hackclub/pxl",
-			"https://github.com/hackclub/YSWS-Catalog/commits/main/data.yml"
-		],
-		"hackclub_event_id": "recMlZ9yxz9fFwQeg",
 		"project_types": [
 			"Other"
 		],
@@ -1253,12 +987,6 @@
 			"aqua (phthallo)",
 			"Annabel"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recm19FkNIcQuxIPA",
-			"https://github.com/hackclub/rpg",
-			"https://github.com/phthallo"
-		],
-		"hackclub_event_id": "recm19FkNIcQuxIPA",
 		"project_types": [
 			"Other"
 		],
@@ -1284,12 +1012,6 @@
 		"organizers": [
 			"Graham Darcey"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recofxZ0xDBKgOvAF",
-			"https://github.com/hackclub/shallow-learning",
-			"https://raw.githubusercontent.com/hackclub/site/main/public/team.json"
-		],
-		"hackclub_event_id": "recofxZ0xDBKgOvAF",
 		"project_types": [
 			"Software"
 		],
@@ -1316,13 +1038,6 @@
 			"Bisher Almasri",
 			"Alex Van Doren"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://shipyard.hackclub.com/",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
-		],
 		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
 	},
 	{
@@ -1346,16 +1061,6 @@
 			"Nora",
 			"Phoebe"
 		],
-		"sources": [
-			"https://ysws.hackclub.com/",
-			"https://github.com/hackclub/YSWS-Catalog/blob/main/data.yml",
-			"https://sidequests.hackclub.com/",
-			"https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/data.yml",
-			"https://hackclub.com/api/v1/events",
-			"https://hackclub.com/api/v1/events/rec2G7e3EnGjtoYzy",
-			"https://raw.githubusercontent.com/hackclub/site/main/public/team.json"
-		],
-		"hackclub_event_id": "rec2G7e3EnGjtoYzy",
 		"project_types": [
 			"Software",
 			"Other"
@@ -1383,11 +1088,6 @@
 			"Jenin Henin",
 			"Dhamari Trice-Hanson"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recujSvjyVH3kexp3",
-			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
-		],
-		"hackclub_event_id": "recujSvjyVH3kexp3",
 		"project_types": [
 			"Other"
 		],
@@ -1413,12 +1113,6 @@
 		"organizers": [
 			"Ben Dixon"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recZoBHhXx7dMa3wq",
-			"https://github.com/hackclub/sock",
-			"https://raw.githubusercontent.com/hackclub/site/main/public/team.json"
-		],
-		"hackclub_event_id": "recZoBHhXx7dMa3wq",
 		"project_types": [
 			"Other"
 		],
@@ -1444,10 +1138,6 @@
 		"organizers": [
 			"Dhamari Trice-Hanson"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recTyNiJ7ZFXqsqmQ"
-		],
-		"hackclub_event_id": "recTyNiJ7ZFXqsqmQ",
 		"project_types": [
 			"Other"
 		],
@@ -1475,12 +1165,6 @@
 			"Ben Dixon",
 			"Chris Walker"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recNAxSGgS3PKJV4p",
-			"https://github.com/hackclub/journey",
-			"https://github.com/cskartikey"
-		],
-		"hackclub_event_id": "recNAxSGgS3PKJV4p",
 		"project_types": [
 			"Other"
 		],
@@ -1506,11 +1190,6 @@
 		"organizers": [
 			"Mihi"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recO21kDLGrO3UNVg",
-			"https://github.com/hackclub/dns/blob/main/hackclub.com.yaml"
-		],
-		"hackclub_event_id": "recO21kDLGrO3UNVg",
 		"project_types": [],
 		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
 	},
@@ -1534,11 +1213,6 @@
 		"organizers": [
 			"Zach Latta"
 		],
-		"sources": [
-			"https://hackclub.com/api/v1/events/recSODGhknuccVVfj",
-			"https://github.com/hackclub/wizard-orpheus"
-		],
-		"hackclub_event_id": "recSODGhknuccVVfj",
 		"project_types": [
 			"Gamedev"
 		],

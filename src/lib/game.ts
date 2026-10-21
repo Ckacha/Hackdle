@@ -100,10 +100,23 @@ function compareMonth(guess: string, answer: string): Cell {
 
 const norm = (s: string) => s.trim().toLowerCase();
 
+export const splitOrgs = (s: string) =>
+	s
+		.split(',')
+		.map((o) => o.trim())
+		.filter(Boolean);
+
 const isOrganizer = (guess: string, p: Program) =>
-	p.organizers.some((o) => norm(o) === norm(guess));
+	splitOrgs(guess).some((g) => p.organizers.some((o) => norm(o) === norm(g)));
+
+function guessedOrgs(guess: Guess) {
+	const names = [...(bySlug.get(guess.slug)?.organizers ?? [])];
+	for (const o of splitOrgs(guess.organizer)) if (!names.some((n) => norm(n) === norm(o))) names.push(o);
+	return names.join(', ');
+}
 
 export function compare(guess: Guess, answer: Program): Cell[] {
+	const orgs = guessedOrgs(guess);
 	return [
 		{
 			label: bySlug.get(guess.slug)?.name ?? guess.slug,
@@ -120,8 +133,8 @@ export function compare(guess: Guess, answer: Program): Cell[] {
 			verdict: guess.type === answer.type ? 'correct' : 'wrong'
 		},
 		{
-			label: guess.organizer,
-			verdict: isOrganizer(guess.organizer, answer) ? 'correct' : 'wrong'
+			label: orgs,
+			verdict: isOrganizer(orgs, answer) ? 'correct' : 'wrong'
 		}
 	];
 }

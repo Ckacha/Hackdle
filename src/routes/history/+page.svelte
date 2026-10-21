@@ -13,7 +13,9 @@
 		try {
 			const saved = JSON.parse(localStorage.getItem(`hackdle:v2:${data.today}`) ?? '{}');
 			revealed = !!saved.gaveUp || (saved.guesses ?? []).some((g: { slug: string }) => g.slug === data.answer);
-		} catch {}
+		} catch (e) {
+			console.warn('[hackdle] Could not read saved game for today:', e);
+		}
 	});
 
 	const dayLabel = (key: string) =>

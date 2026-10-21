@@ -20,7 +20,9 @@
 		document.documentElement.dataset.theme = t;
 		try {
 			localStorage.setItem('hackdle:theme', t);
-		} catch {}
+		} catch (e) {
+			console.warn('[hackdle] Could not save theme:', e);
+		}
 	}
 
 	const TABS = [

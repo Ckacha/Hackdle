@@ -188,27 +188,32 @@ footer {
 
 .orgs {
 	position: relative;
-	cursor: help;
+	display: block;
+	min-width: 0;
+	max-width: 100%;
 	outline: none;
 }
 
-.orgs-more {
-	display: inline-block;
-	margin-left: 4px;
-	padding: 1px 8px;
-	border-radius: 999px;
-	background: var(--surface-hover);
-	color: var(--muted);
-	font-size: 0.85em;
-	font-weight: bold;
+.orgs-text {
+	display: block;
+	overflow: hidden;
 	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.orgs.cut {
+	cursor: help;
+}
+
+.orgs.cut .orgs-text {
+	text-decoration: underline dotted;
+	text-underline-offset: 3px;
 }
 
 .orgs-all {
-	position: absolute;
-	bottom: calc(100% + 6px);
-	left: 0;
-	z-index: 20;
+	position: fixed;
+	z-index: 50;
+	transform: translate(-50%, calc(-100% - 6px));
 	width: max-content;
 	max-width: min(280px, 80vw);
 	padding: 8px 12px;
@@ -220,20 +225,13 @@ footer {
 	font-weight: normal;
 	line-height: 1.4;
 	text-align: left;
-	opacity: 0;
-	visibility: hidden;
+	white-space: normal;
 	pointer-events: none;
-	transition: opacity 0.15s;
 }
 
-.orgs:hover .orgs-all,
-.orgs:focus .orgs-all {
-	opacity: 1;
-	visibility: visible;
-}
-
-.orgs:focus-visible .orgs-more {
+.orgs:focus-visible .orgs-text {
 	outline: 2px solid var(--red);
+	border-radius: 4px;
 }
 
 .undefined {

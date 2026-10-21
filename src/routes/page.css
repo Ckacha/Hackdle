@@ -109,7 +109,7 @@
 	overscroll-behavior: contain;
 }
 
-.org input {
+.has-dice input {
 	padding-right: 52px;
 }
 
@@ -179,6 +179,23 @@
 	opacity: 0.4;
 	cursor: default;
 } 
+
+.randomize {
+	padding: 10px 22px;
+	border: 2px solid var(--border);
+	border-radius: 999px;
+	background: var(--surface);
+	color: var(--foreground);
+	font: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.randomize:hover {
+	background: var(--surface-hover);
+}
 
 .link {
 	border: none;
@@ -514,8 +531,6 @@
 }
 
 .year {
-	position: sticky;
-	top: 0;
 	margin: 0;
 	padding: 6px 8px 4px;
 	background: var(--background);

@@ -55,8 +55,14 @@
 		}
 		busy = true;
 		return async ({ result, update }) => {
-			await update({ reset: false });
-			busy = false;
+			try {
+				await update({ reset: false });
+			} catch (e) {
+				console.error('[hackdle] Admin action failed:', e);
+			} finally {
+				busy = false;
+			}
+			if (result.type === 'error') console.error('[hackdle] Admin action error:', result.error);
 			if (result.type === 'success') {
 				if (result.data?.saved) {
 					view = 'list';

@@ -11,6 +11,7 @@
 		ONGOING,
 		logoFor,
 		organizers,
+		splitOrgs,
 		COLUMNS,
 		MONTHS,
 		FORMAT_LABEL,
@@ -57,7 +58,7 @@
 	let results = $derived(guesses.map((g) => compare(g, answer)));
 	let won = $derived(results.some(isWin));
 	let done = $derived(won || gaveUp);
-	let complete = $derived(!!(slug && start && end && format && type && organizer.trim()));
+	let complete = $derived(!!(slug && start && end && format && type && splitOrgs(organizer).length));
 
 	let suggestions = $derived.by(() => {
 		const q = query.trim().toLowerCase();
@@ -73,6 +74,7 @@
 
 	let byYear = $derived.by(() => {
 		const q = fName.trim().toLowerCase();
+		if (!q && !fYear) return [];
 		const groups = new Map<string, Program[]>();
 		for (const p of [...answerPool].sort((x, y) => x.start_date!.localeCompare(y.start_date!))) {
 			const y = p.start_date!.slice(0, 4);
@@ -85,13 +87,18 @@
 
 	const POOL_YEARS = [...new Set(answerPool.map((p) => p.start_date!.slice(0, 4)))].sort().reverse();
 
-	let orgValid = $derived(organizers.some((o) => o.toLowerCase() === organizer.trim().toLowerCase()));
+	const known = (name: string) => organizers.some((o) => o.toLowerCase() === name.toLowerCase());
+
+	let orgParts = $derived(splitOrgs(organizer));
+	let orgValid = $derived(orgParts.length > 0 && orgParts.every(known));
 
 	let orgSuggestions = $derived.by(() => {
 		if (!orgOpen) return [];
-		const q = organizer.trim().toLowerCase();
-		if (!q || orgValid) return organizers;
-		return organizers
+		const q = (organizer.split(',').at(-1) ?? '').trim().toLowerCase();
+		const taken = orgParts.map((o) => o.toLowerCase());
+		const rest = organizers.filter((o) => !taken.includes(o.toLowerCase()) || o.toLowerCase() === q);
+		if (!q || known(q)) return rest;
+		return rest
 			.filter((o) => o.toLowerCase().includes(q))
 			.sort((a, b) => +!a.toLowerCase().startsWith(q) - +!b.toLowerCase().startsWith(q));
 	});
@@ -108,12 +115,34 @@
 	function pickOrganizer(i: number) {
 		const o = orgSuggestions[i];
 		if (!o) return;
-		organizer = o;
+		organizer = [...organizer.split(',').slice(0, -1).map((x) => x.trim()).filter(Boolean), o].join(', ');
 		orgOpen = false;
 	}
 
-	function randomOrganizer() {
-		organizer = organizers[Math.floor(Math.random() * organizers.length)];
+	const any = <T,>(xs: readonly T[]) => xs[Math.floor(Math.random() * xs.length)];
+
+	function randomProgram() {
+		choose(any(answerPool));
+	}
+
+	function randomizeAll() {
+		const p = any(answerPool);
+		slug = p.slug;
+		query = p.name;
+		filledFrom = p.slug;
+		open = false;
+		startYear = any(YEARS);
+		startMonth = String(Math.floor(Math.random() * 12) + 1).padStart(2, '0');
+		if (Math.random() < 0.1) {
+			[endYear, endMonth] = ['', ONGOING];
+		} else {
+			endYear = any(YEARS.filter((y) => y >= startYear));
+			const from = endYear === startYear ? Number(startMonth) : 1;
+			endMonth = String(from + Math.floor(Math.random() * (13 - from))).padStart(2, '0');
+		}
+		format = any(Object.keys(FORMAT_LABEL) as Format[]);
+		type = any(Object.keys(TYPE_LABEL) as Type[]);
+		organizer = any(organizers);
 		orgOpen = false;
 	}
 
@@ -147,13 +176,17 @@
 			const saved = JSON.parse(localStorage.getItem(storageKey) ?? '{}');
 			guesses = (saved.guesses ?? []).filter((g: Guess) => bySlug.has(g.slug));
 			gaveUp = !!saved.gaveUp;
-		} catch {}
+		} catch (e) {
+			console.warn('[hackdle] Could not load saved guesses, starting fresh:', e);
+		}
 	});
 
 	function save() {
 		try {
 			localStorage.setItem(storageKey, JSON.stringify({ guesses, gaveUp }));
-		} catch {}
+		} catch (e) {
+			console.warn('[hackdle] Could not save guesses, progress will reset on reload:', e);
+		}
 	}
 
 	function pick(i: number) {
@@ -175,7 +208,7 @@
 		[endYear, endMonth] = isOngoing(p) ? ['', ONGOING] : p.end_date ? p.end_date.split('-') : ['', ''];
 		format = formatOf(p);
 		type = p.type ?? '';
-		organizer = p.organizers[0] ?? '';
+		organizer = p.organizers.join(', ');
 	}
 
 	function onQueryInput() {
@@ -204,7 +237,7 @@
 		e.preventDefault();
 		if (!complete || done) return;
 		guesses = [
-			{ slug, start, end, format: format as Format, type: type as Type, organizer: organizer.trim() },
+			{ slug, start, end, format: format as Format, type: type as Type, organizer: orgParts.join(', ') },
 			...guesses
 		];
 		save();
@@ -224,7 +257,7 @@
 <main>
 	<header>
 		<h1>Hackdle</h1>
-		<p class="tagline">The daily guessing game for Hack Club programs</p>
+		<p class="tagline">The daily guessing game for Hack Club programs!</p>
 	</header>
 
 	{#if done}
@@ -240,12 +273,11 @@
 		<div class="play" class:with-filter={guesses.length}>
 			<form class="card guess" onsubmit={submit}>
 				<h2>Guess today's Hack Club program!</h2>
-				<p class="muted">Fill in every field, then guess. Each field tells you if it's right.</p>
 
 				<div class="fields">
 					<label class="field wide">
 						<span>Program</span>
-						<div class="search">
+						<div class="search has-dice">
 							<input
 								type="text"
 								placeholder="Type a program name…"
@@ -257,6 +289,14 @@
 								onblur={() => setTimeout(() => (open = false), 150)}
 								class:valid={!!slug}
 							/>
+							<button
+								class="dice"
+								type="button"
+								title="Random program"
+								aria-label="Random program"
+								onmousedown={(e) => e.preventDefault()}
+								onclick={randomProgram}>🎲</button
+							>
 
 							{#if suggestions.length}
 								<ul class="suggestions" role="listbox">
@@ -336,7 +376,7 @@
 
 					<label class="field wide">
 						<span>Organizer</span>
-						<div class="search org">
+						<div class="search">
 							<input
 								type="text"
 								placeholder="Who ran it? Any organizer counts"
@@ -352,14 +392,6 @@
 								onblur={() => setTimeout(() => (orgOpen = false), 150)}
 								class:valid={orgValid}
 							/>
-							<button
-								class="dice"
-								type="button"
-								title="Random organizer"
-								aria-label="Random organizer"
-								onmousedown={(e) => e.preventDefault()}
-								onclick={randomOrganizer}>🎲</button
-							>
 
 							{#if orgSuggestions.length}
 								<ul class="suggestions scroll" id="organizer-list" role="listbox">
@@ -385,6 +417,7 @@
 
 				<div class="actions">
 					<button class="submit" type="submit" disabled={!complete}>Guess</button>
+					<button class="randomize" type="button" onclick={randomizeAll}>🎲 Randomize</button>
 					{#if guesses.length >= 3}
 						<button class="link" type="button" onclick={giveUp}>Give up</button>
 					{/if}
@@ -392,10 +425,10 @@
 			</form>
 
 			{#if guesses.length}
-				<aside class="card filter" aria-label="Programs by year">
+				<aside class="card filter" aria-label="Filter">
 					<div class="filter-head">
-						<h3>Programs</h3>
-						<span class="count">{matchCount} {matchCount === 1 ? 'program' : 'programs'}</span>
+						<h3>Filter</h3>
+						{#if fName.trim() || fYear}<span class="count">{matchCount} {matchCount === 1 ? 'program' : 'programs'}</span>{/if}
 					</div>
 
 					<div class="filter-row">
@@ -420,7 +453,7 @@
 								{/each}
 							</ul>
 						{:else}
-							<p class="muted none">No programs match.</p>
+							<p class="muted none">{fName.trim() || fYear ? 'No programs match.' : 'Search a name or pick a year.'}</p>
 						{/each}
 					</div>
 				</aside>
@@ -439,7 +472,7 @@
 					{#each results[n] as cell, i}
 						<div class="tile {cell.verdict}" style="animation-delay: {i * 150}ms">
 							{#if i === 0 && p && logoFor(p)}<img src={logoFor(p)} alt="" />{/if}
-							<span class:name={i === 0}>{cell.label}</span>
+							{#if i === 5}<Organizers names={splitOrgs(cell.label)} pick />{:else}<span class:name={i === 0}>{cell.label}</span>{/if}
 							{#if cell.arrow}
 							<span class="arrow" aria-label={cell.arrow === 'up' ? 'later' : 'earlier'}>{cell.arrow === 'up' ? '▲' : '▼'}</span>
 							{/if}
