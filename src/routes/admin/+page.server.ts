@@ -85,6 +85,25 @@ async function saveLogo(f: FormData, slug: string) {
 	return { file: `logos/${slug}.${ext}` };
 }
 
+async function store(request: Request, cookies: Parameters<typeof isAuthed>[0], pass: boolean) {
+	guard(cookies);
+	const f = await request.formData();
+	const slug = text(f, 'slug');
+	const list = readList();
+	const entry = list.find((p) => p.slug === slug);
+	if (!entry) return fail(404, { problem: `No program with slug "${slug}"` });
+	const parsed = fields(f);
+	if (parsed.problem) return fail(400, { problem: parsed.problem });
+	const logo = await saveLogo(f, slug);
+	if (logo.problem) return fail(400, { problem: logo.problem });
+	const before = entry.name;
+	Object.assign(entry, parsed.values, logo.file ? { logo_file: logo.file } : {});
+	if (pass) entry.checked = true;
+	writeList(list);
+	renameName(before, entry.name);
+	return pass ? { passed: slug, message: `Passed ${entry.name}` } : { saved: slug, message: `Saved ${entry.name}` };
+}
+
 export const load: PageServerLoad = ({ cookies }) => {
 	if (!editPassword()) error(404, 'Not found');
 	if (!isAuthed(cookies)) return { authed: false as const };
@@ -118,23 +137,9 @@ export const actions: Actions = {
 		return { loggedOut: true };
 	},
 
-	save: async ({ request, cookies }) => {
-		guard(cookies);
-		const f = await request.formData();
-		const slug = text(f, 'slug');
-		const list = readList();
-		const entry = list.find((p) => p.slug === slug);
-		if (!entry) return fail(404, { problem: `No program with slug "${slug}"` });
-		const parsed = fields(f);
-		if (parsed.problem) return fail(400, { problem: parsed.problem });
-		const logo = await saveLogo(f, slug);
-		if (logo.problem) return fail(400, { problem: logo.problem });
-		const before = entry.name;
-		Object.assign(entry, parsed.values, logo.file ? { logo_file: logo.file } : {});
-		writeList(list);
-		renameName(before, entry.name);
-		return { saved: slug, message: `Saved ${entry.name}` };
-	},
+	save: ({ request, cookies }) => store(request, cookies, false),
+
+	pass: ({ request, cookies }) => store(request, cookies, true),
 
 	create: async ({ request, cookies }) => {
 		guard(cookies);
@@ -165,6 +170,7 @@ export const actions: Actions = {
 			archive_url: null,
 			description: null,
 			organizers: [],
+			checked: false,
 			...parsed.values,
 			...(logo.file ? { logo_file: logo.file } : {})
 		} as Entry;

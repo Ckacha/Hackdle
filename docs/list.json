@@ -17,10 +17,11 @@
 		"archive_url": null,
 		"description": "Build a dark-themed project like a website, game .etc late at night and earn rewards based on your Hackatime hours.",
 		"organizers": [
-			"Hridhaan Sahay",
-			"Sebastian Hernandez"
+			"Hridhaan",
+			"Sebastian H"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "555",
@@ -44,7 +45,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Accelerate",
@@ -68,7 +70,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Aesthetic",
@@ -90,7 +93,8 @@
 		"organizers": [
 			"Euan Ripper"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Anansi",
@@ -114,7 +118,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Anvil",
@@ -136,7 +141,8 @@
 		"organizers": [
 			"ascpixi"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Apex",
@@ -162,7 +168,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Apocalypse",
@@ -185,7 +192,8 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": null,
-		"organizers": []
+		"organizers": [],
+		"checked": false
 	},
 	{
 		"name": "Aria",
@@ -207,7 +215,8 @@
 		"organizers": [
 			"Mihi"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Ascend",
@@ -234,7 +243,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "ASIC",
@@ -259,7 +269,8 @@
 		"project_types": [
 			"Electronics",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Assemble",
@@ -282,7 +293,8 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": null,
-		"organizers": []
+		"organizers": [],
+		"checked": false
 	},
 	{
 		"name": "Athena Award",
@@ -312,7 +324,8 @@
 		"project_types": [
 			"Websites",
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Atlantis",
@@ -339,7 +352,8 @@
 		],
 		"project_types": [
 			"CAD"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Authly",
@@ -362,7 +376,8 @@
 			"Dandililacs",
 			"Jim Dinias",
 			"Graham Darcey"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Axiom",
@@ -388,7 +403,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Back to the Future",
@@ -409,7 +425,8 @@
 		"description": "Make an app for an old device, get an old device or media to use them with!",
 		"organizers": [
 			"Adithiya Venkatakrishnan"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "BakeBuild",
@@ -436,7 +453,8 @@
 		],
 		"project_types": [
 			"CAD"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Bauble",
@@ -462,7 +480,8 @@
 		],
 		"project_types": [
 			"CAD"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Beest",
@@ -488,7 +507,8 @@
 		"organizers": [
 			"Euan Ripper"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Bento",
@@ -512,7 +532,8 @@
 			"Freddie Yershon",
 			"Jared Senesac"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Birthday Cards",
@@ -538,7 +559,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Bitstream",
@@ -562,7 +584,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Black Box",
@@ -584,7 +607,8 @@
 		"organizers": [
 			"Lux Loff"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "BLARE",
@@ -610,7 +634,8 @@
 			"Electronics",
 			"CAD",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Blueprint",
@@ -636,7 +661,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Boba Bash",
@@ -665,7 +691,8 @@
 		"project_types": [
 			"Websites",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Boba Drops",
@@ -691,7 +718,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Boba Olympics",
@@ -716,7 +744,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Boot",
@@ -742,7 +771,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Braize",
@@ -765,7 +795,8 @@
 			"Jane (hiddenhorseylarper)",
 			"Ketan",
 			"Jenny"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Breadboard",
@@ -790,7 +821,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Browser Buddy",
@@ -813,7 +845,8 @@
 			"Josias Aurel",
 			"Graham Darcey"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "builders club",
@@ -837,7 +870,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Bulky",
@@ -861,7 +895,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "C-LI",
@@ -885,7 +920,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Calculate",
@@ -914,7 +950,8 @@
 			"Gamedev",
 			"CAD",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Campfire",
@@ -937,7 +974,8 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": null,
-		"organizers": []
+		"organizers": [],
+		"checked": false
 	},
 	{
 		"name": "Campfire Flagship",
@@ -969,7 +1007,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Campfire Overdrive",
@@ -993,7 +1032,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Canvas",
@@ -1019,7 +1059,8 @@
 			"Websites",
 			"Software",
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Capitol",
@@ -1051,7 +1092,8 @@
 			"Websites",
 			"Software",
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Carnival",
@@ -1073,7 +1115,8 @@
 		"organizers": [
 			"Josias Aurel",
 			"Jared Senesac"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Cascade",
@@ -1097,7 +1140,8 @@
 			"Rushil Chopra",
 			"Thanishkka Vijayabaskar",
 			"Max Wofford"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "catgirl ysws",
@@ -1124,7 +1168,8 @@
 			"Websites",
 			"Software",
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Ceiling",
@@ -1150,7 +1195,8 @@
 		"project_types": [
 			"Software",
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Chipless",
@@ -1174,7 +1220,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Cider",
@@ -1200,7 +1247,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Cinema",
@@ -1221,7 +1269,8 @@
 		"description": "You ship a short story JavaScript animation using canvas. In return, we ship HQ-made caramel popcorn",
 		"organizers": [
 			"Dandililacs"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Circazine",
@@ -1242,7 +1291,8 @@
 		"description": "Design a simple circuit and a zine page, and get the printed magazine.",
 		"organizers": [
 			"Lola"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "CloudFall",
@@ -1267,7 +1317,8 @@
 		"project_types": [
 			"Software",
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Club Shop",
@@ -1300,7 +1351,8 @@
 			"Software",
 			"Websites",
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Clutter",
@@ -1325,7 +1377,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "cmd + k",
@@ -1347,7 +1400,8 @@
 		"organizers": [
 			"Sam Liu"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Construct",
@@ -1369,7 +1423,8 @@
 		"organizers": [
 			"Olive Wu",
 			"Arca Cengiz"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Coral",
@@ -1401,7 +1456,8 @@
 			"Websites",
 			"Software",
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Counterspell",
@@ -1429,7 +1485,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "CQ",
@@ -1450,7 +1507,8 @@
 		"description": "Build an amateur radio project, like a transceiver or a logger, and earn radio-related prizes.",
 		"organizers": [
 			"Ruben Sutton"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Craft",
@@ -1478,7 +1536,8 @@
 		"project_types": [
 			"Gamedev",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Crawl",
@@ -1500,7 +1559,8 @@
 		"organizers": [
 			"Karo Roghzai"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Crescent",
@@ -1524,7 +1584,8 @@
 			"Euan Ripper",
 			"Anson Chung"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Cubed",
@@ -1552,7 +1613,8 @@
 			"Software",
 			"Electronics",
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Darkroom",
@@ -1581,7 +1643,8 @@
 			"CAD",
 			"Other",
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Daydream",
@@ -1611,7 +1674,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Days of Service",
@@ -1634,7 +1698,8 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": null,
-		"organizers": []
+		"organizers": [],
+		"checked": false
 	},
 	{
 		"name": "Defector",
@@ -1658,7 +1723,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "dockerize",
@@ -1683,7 +1749,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Doppel",
@@ -1708,7 +1775,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "duckduckduck",
@@ -1732,7 +1800,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Dummies",
@@ -1754,7 +1823,8 @@
 		"organizers": [
 			"Euan Ripper",
 			"Peleg"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Dyad",
@@ -1778,7 +1848,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Ellipse",
@@ -1802,7 +1873,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Embassy",
@@ -1824,7 +1896,8 @@
 		"organizers": [
 			"Barnav Mitra"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Ember",
@@ -1849,7 +1922,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Emerge",
@@ -1873,7 +1947,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "En Passant",
@@ -1898,7 +1973,8 @@
 		"project_types": [
 			"Gamedev",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Enclosure",
@@ -1921,7 +1997,8 @@
 			"Adhdhyan Jain",
 			"Jacob Navaratne",
 			"Jared Senesac"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Endpointer",
@@ -1946,7 +2023,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Entropy",
@@ -1974,7 +2052,8 @@
 			"Electronics",
 			"Websites",
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Epoch",
@@ -1997,7 +2076,8 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": null,
-		"organizers": []
+		"organizers": [],
+		"checked": false
 	},
 	{
 		"name": "Expedition",
@@ -2026,7 +2106,8 @@
 			"Gamedev",
 			"CAD",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Extensify",
@@ -2050,7 +2131,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Fabricate",
@@ -2076,7 +2158,8 @@
 		"project_types": [
 			"Electronics",
 			"CAD"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Fallout",
@@ -2108,7 +2191,8 @@
 		"project_types": [
 			"Electronics",
 			"CAD"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Fanpage",
@@ -2133,7 +2217,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Feud",
@@ -2155,7 +2240,8 @@
 		"organizers": [
 			"Emme McDonald"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Fix Hack Club",
@@ -2177,7 +2263,8 @@
 		"organizers": [
 			"Wally",
 			"Jared Senesac"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "FIX IT",
@@ -2199,7 +2286,8 @@
 		"organizers": [
 			"Gus Ruben"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "flavorless",
@@ -2225,7 +2313,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Flavortown",
@@ -2254,7 +2343,8 @@
 			"Gamedev",
 			"CAD",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "flickr",
@@ -2280,7 +2370,8 @@
 			"Websites",
 			"Software",
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Folktale",
@@ -2304,7 +2395,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Foodie",
@@ -2326,7 +2418,8 @@
 		"organizers": [
 			"Swarit Narang",
 			"ascpixi"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Forge",
@@ -2357,7 +2450,8 @@
 		"project_types": [
 			"Electronics",
 			"CAD"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "frame",
@@ -2381,7 +2475,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Fudge",
@@ -2403,7 +2498,8 @@
 		"organizers": [
 			"Reem Khalifa"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Fusering",
@@ -2428,7 +2524,8 @@
 		],
 		"project_types": [
 			"CAD"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Future",
@@ -2455,7 +2552,8 @@
 			"Software",
 			"Websites",
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Gadget Market",
@@ -2480,7 +2578,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Gamefolio",
@@ -2506,7 +2605,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Gemini",
@@ -2531,7 +2631,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Genesis",
@@ -2555,7 +2656,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Ghost Ship",
@@ -2577,7 +2679,8 @@
 		"organizers": [
 			"Iamalive",
 			"Mihi"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Gong",
@@ -2599,7 +2702,8 @@
 		"organizers": [
 			"Ren Leonard"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Goship",
@@ -2624,7 +2728,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Grandma",
@@ -2647,7 +2752,8 @@
 			"Shashwat",
 			"Sebastian Hernandez"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Greeble",
@@ -2669,7 +2775,8 @@
 		"organizers": [
 			"Brendan Reynard"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Grounded",
@@ -2693,7 +2800,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Grub",
@@ -2715,7 +2823,8 @@
 		"organizers": [
 			"Artem Kim",
 			"Jared Senesac"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hack Club: The Game",
@@ -2751,7 +2860,8 @@
 			"Gamedev",
 			"CAD",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hackaccino",
@@ -2778,7 +2888,8 @@
 		"project_types": [
 			"Websites",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hackachu",
@@ -2803,7 +2914,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hackapet",
@@ -2826,7 +2938,8 @@
 			"Acon Lin",
 			"spacevini8",
 			"Alex Ren"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "HackCraft",
@@ -2853,7 +2966,8 @@
 		"project_types": [
 			"Software",
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hackducky",
@@ -2880,7 +2994,8 @@
 		"project_types": [
 			"Electronics",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hackfinger",
@@ -2901,7 +3016,8 @@
 		"description": "Design a custom appendage and get it printed along with a custom control board.",
 		"organizers": [
 			"Charlie Nicholson"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hacklet",
@@ -2926,7 +3042,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hackmate",
@@ -2951,7 +3068,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hackpad",
@@ -2972,7 +3090,8 @@
 		"description": "Design your own custom macropad from scratch and get the parts to build it.",
 		"organizers": [
 			"Alex Ren"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hackrail",
@@ -2999,7 +3118,8 @@
 			"Websites",
 			"Gamedev",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hacksaber",
@@ -3020,7 +3140,8 @@
 		"description": "Ship a Beat Saber Modchart, and we'll ship custom T-Shirt designed by a HC member, or a copy of the game! Live YSWS!",
 		"organizers": [
 			"fireentity"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "HackTank",
@@ -3048,7 +3169,8 @@
 			"Websites",
 			"Software",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hackvault",
@@ -3073,7 +3195,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hacky Holidays",
@@ -3096,7 +3219,8 @@
 			"Bright",
 			"Scott",
 			"Ryan (LimesKey)"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Haj4ever",
@@ -3125,7 +3249,8 @@
 			"Software",
 			"Websites",
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Half Life",
@@ -3151,7 +3276,8 @@
 		"project_types": [
 			"Electronics",
 			"CAD"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hashcore",
@@ -3176,7 +3302,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Haunted",
@@ -3200,7 +3327,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Haven",
@@ -3231,7 +3359,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Helvetica",
@@ -3255,7 +3384,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hermes",
@@ -3280,7 +3410,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Highway",
@@ -3307,7 +3438,8 @@
 			"Acon Lin",
 			"Cyao",
 			"Alex Ren"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Hivemind",
@@ -3328,7 +3460,8 @@
 		"description": "Create a roguelike in 7 days, get itch.io credit.",
 		"organizers": [
 			"Lux (sporeball)"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "HomeLab",
@@ -3354,7 +3487,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Horizons",
@@ -3382,7 +3516,8 @@
 			"Annabel",
 			"dld"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Horizons Arcana",
@@ -3409,7 +3544,8 @@
 			"Manitej",
 			"Annabel",
 			"dld"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Horizons Crux",
@@ -3436,7 +3572,8 @@
 			"Manitej",
 			"Annabel",
 			"dld"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Horizons Equinox",
@@ -3463,7 +3600,8 @@
 			"Manitej",
 			"Annabel",
 			"dld"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Horizons Europa",
@@ -3490,7 +3628,8 @@
 			"Manitej",
 			"Annabel",
 			"dld"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Horizons Nexus",
@@ -3517,7 +3656,8 @@
 			"Manitej",
 			"Annabel",
 			"dld"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Horizons Polaris",
@@ -3544,7 +3684,8 @@
 			"Manitej",
 			"Annabel",
 			"dld"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Horizons Sol",
@@ -3571,7 +3712,8 @@
 			"Manitej",
 			"Annabel",
 			"dld"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Illumination",
@@ -3593,7 +3735,8 @@
 		"organizers": [
 			"Natey Hecht",
 			"Max Wofford"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Infill",
@@ -3618,7 +3761,8 @@
 		"project_types": [
 			"CAD",
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Insert Coin",
@@ -3639,7 +3783,8 @@
 		"description": "An Arcade themed game dev where teens make games, post them, and earn reward tiers through plays.",
 		"organizers": [
 			"roxstar123"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "iplace",
@@ -3661,7 +3806,8 @@
 		"organizers": [
 			"ascpixi"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Jackpot",
@@ -3689,7 +3835,8 @@
 			"Software",
 			"Electronics",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Jame Gam",
@@ -3712,7 +3859,8 @@
 			"Gus Ruben",
 			"Max H"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Jet Fund",
@@ -3736,7 +3884,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Jolly",
@@ -3760,7 +3909,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Journey",
@@ -3781,7 +3931,8 @@
 		"description": "The smash-hit Hack Club event where you share insider details of whatever you're building.",
 		"organizers": [
 			"Kartikey Chauhan"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "JPEG",
@@ -3805,7 +3956,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "JS2Photo",
@@ -3829,7 +3981,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Juice",
@@ -3857,7 +4010,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Jumpstart",
@@ -3878,7 +4032,8 @@
 		"description": "Game-dev YSWS running July 9th to Aug 9th ✨",
 		"organizers": [
 			"Estella Gu"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Jungle",
@@ -3900,7 +4055,8 @@
 		"organizers": [
 			"Thomas Stubblefield",
 			"Graham Darcey"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Keeb",
@@ -3927,7 +4083,8 @@
 			"CAD",
 			"Electronics",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Keepsake",
@@ -3952,7 +4109,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Keyframe",
@@ -3974,7 +4132,8 @@
 		"organizers": [
 			"Nick Do"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "level zero",
@@ -3999,7 +4158,8 @@
 		"project_types": [
 			"Software",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Like It's 1999",
@@ -4026,7 +4186,8 @@
 			"Software",
 			"Gamedev",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Liquidate",
@@ -4051,7 +4212,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Live",
@@ -4075,7 +4237,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Lockin",
@@ -4096,7 +4259,8 @@
 		"description": "Work on anything Wakatime-able on call with another Hack Clubber, spin for stickers at the end of the session.",
 		"organizers": [
 			"Ben (malted)"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Lookalike",
@@ -4118,7 +4282,8 @@
 		"organizers": [
 			"Johnathan McPhilbin"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Lumen",
@@ -4140,7 +4305,8 @@
 		"organizers": [
 			"ascpixi",
 			"Felix"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Macondo",
@@ -4174,7 +4340,8 @@
 			"Gamedev",
 			"CAD",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Meow",
@@ -4200,7 +4367,8 @@
 			"Electronics",
 			"Software",
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "MetroShip",
@@ -4221,7 +4389,8 @@
 		"description": "MetroShip is a transportation and mapping based YSWS where you build a map website to show something fun, useful, or interesting. Build a map website, ship it, and get tickets to buy prizes based on your hours spent building.",
 		"organizers": [
 			"Tritium Labs"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Midnight",
@@ -4248,7 +4417,8 @@
 			"Manitej",
 			"Sebastian"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Milkyway",
@@ -4278,7 +4448,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "mini",
@@ -4300,7 +4471,8 @@
 		"organizers": [
 			"Sahana"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Minicraft",
@@ -4325,7 +4497,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Minigame",
@@ -4346,7 +4519,8 @@
 		"description": "A YSWS where you build \"mini\" 5 hour games and earn a $20 grant for each one! At the end everyone's games will be combined together to make a big Minigame collection!",
 		"organizers": [
 			"Andre Snellings Jr."
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Miniverge",
@@ -4367,7 +4541,8 @@
 		"description": "Spend 2 hours on a bot, get stickers and a chance for a Blåhaj or Minecraft!",
 		"organizers": [
 			"Mahad Kalam"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Minus Twelve",
@@ -4391,7 +4566,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Mipmap",
@@ -4416,7 +4592,8 @@
 		"project_types": [
 			"Gamedev",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Moonshot",
@@ -4448,7 +4625,8 @@
 			"Software",
 			"Electronics",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Moving Day",
@@ -4472,7 +4650,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Neighborhood",
@@ -4500,7 +4679,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "neohack",
@@ -4525,7 +4705,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Noodles",
@@ -4550,7 +4731,8 @@
 		"project_types": [
 			"Websites",
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Nothing",
@@ -4572,7 +4754,8 @@
 		"organizers": [
 			"Amber"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Off-Track",
@@ -4594,7 +4777,8 @@
 		"organizers": [
 			"Emma"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "OnBoard",
@@ -4620,7 +4804,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "onekey",
@@ -4647,7 +4832,8 @@
 			"Software",
 			"Gamedev",
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "OrpheusAthon",
@@ -4669,7 +4855,8 @@
 		"organizers": [
 			"Antonio Archer"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Out to C",
@@ -4693,7 +4880,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Outernet",
@@ -4716,7 +4904,8 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": null,
-		"organizers": []
+		"organizers": [],
+		"checked": false
 	},
 	{
 		"name": "Outpost",
@@ -4751,7 +4940,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Overflow: hidden",
@@ -4777,7 +4967,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Overglade",
@@ -4802,7 +4993,8 @@
 		"description": null,
 		"organizers": [
 			"Jiang Tongyu"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Page",
@@ -4826,7 +5018,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Paper Clip",
@@ -4854,7 +5047,8 @@
 			"Websites",
 			"Software",
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Paradox",
@@ -4879,7 +5073,8 @@
 		"description": null,
 		"organizers": [
 			"Dhamari Trice-Hanson"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Parthenon",
@@ -4909,7 +5104,8 @@
 		"project_types": [
 			"Electronics",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Pathfinder",
@@ -4932,7 +5128,8 @@
 			"Meghana Madiraju",
 			"Gus Ruben"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Pendant",
@@ -4957,7 +5154,8 @@
 		"project_types": [
 			"Electronics",
 			"CAD"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Penumbra",
@@ -4978,7 +5176,8 @@
 		"description": "Make shaders, and we'll ship you GPUs and posters!",
 		"organizers": [
 			"ascpixi"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Phantom",
@@ -5015,7 +5214,8 @@
 			"Software",
 			"Gamedev",
 			"CAD"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Picture this!",
@@ -5042,7 +5242,8 @@
 			"Software",
 			"Gamedev",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Pixeldust",
@@ -5068,7 +5269,8 @@
 		"project_types": [
 			"CAD",
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Pixl",
@@ -5097,7 +5299,8 @@
 		"project_types": [
 			"Electronics",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Playground",
@@ -5124,7 +5327,8 @@
 			"Gamedev",
 			"Websites",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Playhouse",
@@ -5148,7 +5352,8 @@
 		],
 		"project_types": [
 			"CAD"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Playphone",
@@ -5171,7 +5376,8 @@
 			"Charmunk",
 			"ShyMike",
 			"Euan Ripper"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Polygon",
@@ -5197,7 +5403,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Portputer",
@@ -5219,7 +5426,8 @@
 		"organizers": [
 			"Lily Flowers",
 			"Lola"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Power Tools",
@@ -5243,7 +5451,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "premiere",
@@ -5267,7 +5476,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Printboard",
@@ -5289,7 +5499,8 @@
 		"organizers": [
 			"Ivie Fonner",
 			"Alex Ren"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Prologue",
@@ -5311,7 +5522,8 @@
 		"organizers": [
 			"Julia"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Prototype",
@@ -5339,7 +5551,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "PullQuests",
@@ -5364,7 +5577,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Pulse",
@@ -5386,7 +5600,8 @@
 		"organizers": [
 			"Hussein (46-HA)",
 			"Max Wofford"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Pulsewidth",
@@ -5412,7 +5627,8 @@
 			"Websites",
 			"Software",
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Radish Jam",
@@ -5438,7 +5654,8 @@
 			"Websites",
 			"Software",
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Rageclick",
@@ -5462,7 +5679,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Railway",
@@ -5486,7 +5704,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "RaspAPI",
@@ -5512,7 +5731,8 @@
 		"project_types": [
 			"Electronics",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Raspite",
@@ -5537,7 +5757,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Re-Dream",
@@ -5563,7 +5784,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Reactive",
@@ -5586,7 +5808,8 @@
 			"Arjav Jain",
 			"Jps",
 			"Jared Senesac"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Reality",
@@ -5611,7 +5834,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Reamde",
@@ -5635,7 +5859,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Reboot",
@@ -5661,7 +5886,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Reflow",
@@ -5686,7 +5912,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Reinforced",
@@ -5708,7 +5935,8 @@
 		"organizers": [
 			"Vihaan Sondhi",
 			"Rushil Chopra"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Remix",
@@ -5730,7 +5958,8 @@
 		"organizers": [
 			"Dhamari Trice-Hanson"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Remixed",
@@ -5756,7 +5985,8 @@
 			"fireentity",
 			"swn"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Resolution",
@@ -5781,7 +6011,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "retrograde",
@@ -5807,7 +6038,8 @@
 			"Gamedev",
 			"Software",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Rewind",
@@ -5831,7 +6063,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Riceathon",
@@ -5857,7 +6090,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Roulette",
@@ -5881,7 +6115,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "RSS",
@@ -5903,7 +6138,8 @@
 		"organizers": [
 			"Rushil Chopra",
 			"Max Wofford"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Scare",
@@ -5929,7 +6165,8 @@
 			"Gamedev",
 			"Electronics",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "scrape",
@@ -5953,7 +6190,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Scraps",
@@ -5976,7 +6214,8 @@
 			"Mihi",
 			"Iamalive",
 			"Nathan"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Scrapyard",
@@ -6002,7 +6241,8 @@
 		"organizers": [
 			"Deven Jadhav"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Scrapyard Flagship",
@@ -6027,7 +6267,8 @@
 		"description": null,
 		"organizers": [
 			"Deven Jadhav"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Scribble",
@@ -6048,7 +6289,8 @@
 		"description": "Work on an art-related site for 3 hours and get a sketchbook, or work for 1 and get a sticker!",
 		"organizers": [
 			"Jenny"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "self-portrait",
@@ -6072,7 +6314,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Shiba Arcade",
@@ -6102,7 +6345,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Shipwrecked",
@@ -6130,7 +6374,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Shrink",
@@ -6152,7 +6397,8 @@
 		"organizers": [
 			"Anson Chung"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Siege",
@@ -6174,7 +6420,8 @@
 		"organizers": [
 			"Olive",
 			"Kai Ling"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Silicon",
@@ -6197,7 +6444,8 @@
 			"Rudy",
 			"Aarav",
 			"Olive Wu"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Sleepover",
@@ -6231,7 +6479,8 @@
 			"Gamedev",
 			"CAD",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Slushies",
@@ -6253,7 +6502,8 @@
 		"organizers": [
 			"Mustafa",
 			"Olive Wu"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Smelt",
@@ -6275,7 +6525,8 @@
 		"organizers": [
 			"Alex Van Doren",
 			"Sam Liu"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Snek",
@@ -6299,7 +6550,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Snowglobe",
@@ -6328,7 +6580,8 @@
 		"project_types": [
 			"Software",
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Solder",
@@ -6350,7 +6603,8 @@
 		"organizers": [
 			"Acon Lin",
 			"Cyao"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Spatula",
@@ -6374,7 +6628,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Sprig",
@@ -6401,7 +6656,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Squeak",
@@ -6423,7 +6679,8 @@
 		"organizers": [
 			"Sarah Park-Ngai",
 			"Jenin Henin"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Stack",
@@ -6446,7 +6703,8 @@
 			"Scooter",
 			"Memma"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Stardance",
@@ -6475,7 +6733,8 @@
 			"Gamedev",
 			"CAD",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Stasis",
@@ -6506,7 +6765,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Static",
@@ -6531,7 +6791,8 @@
 		"project_types": [
 			"Electronics",
 			"CAD"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Sticky",
@@ -6557,7 +6818,8 @@
 			"Websites",
 			"Software",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Storyboard",
@@ -6583,7 +6845,8 @@
 			"Yunfei Shuai",
 			"Susan Zheng",
 			"Renran Sun"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Summer of Making",
@@ -6610,7 +6873,8 @@
 			"Software",
 			"Gamedev",
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Sunbeam",
@@ -6641,7 +6905,8 @@
 		"project_types": [
 			"Websites",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Suncatcher",
@@ -6663,7 +6928,8 @@
 		"organizers": [
 			"Julia"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Swirl",
@@ -6688,7 +6954,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Tabbed",
@@ -6716,7 +6983,8 @@
 			"Software",
 			"Gamedev",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Tagless",
@@ -6741,7 +7009,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Tailor",
@@ -6765,7 +7034,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Taiyaki",
@@ -6787,7 +7057,8 @@
 		"organizers": [
 			"Julia"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Tape to Tape",
@@ -6812,7 +7083,8 @@
 		"project_types": [
 			"Software",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Teach Your Machine",
@@ -6836,7 +7108,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "TerminalCraft",
@@ -6858,7 +7131,8 @@
 		"organizers": [
 			"Josias Aurel",
 			"Jared Senesac"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Terra",
@@ -6885,7 +7159,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "The Trail",
@@ -6910,7 +7185,8 @@
 		"description": null,
 		"organizers": [
 			"Thomas Stubblefield"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "The Zoo",
@@ -6932,7 +7208,8 @@
 		"organizers": [
 			"Lynn",
 			"Olive Wu"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "thingondesk",
@@ -6958,7 +7235,8 @@
 			"Electronics",
 			"Websites",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "thirdspace",
@@ -6983,7 +7261,8 @@
 		"project_types": [
 			"Websites",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Throwback",
@@ -7007,7 +7286,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Tile",
@@ -7028,7 +7308,8 @@
 		"description": "Build a tile, get a tile, tile the tiles!",
 		"organizers": [
 			"Olive Wu"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Timeless",
@@ -7052,7 +7333,8 @@
 		],
 		"project_types": [
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Tinker",
@@ -7076,7 +7358,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Tonic",
@@ -7101,7 +7384,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Toolsmith",
@@ -7122,7 +7406,8 @@
 		"description": "Build a AI extension (MCP tool), get $10 of AI credits.",
 		"organizers": [
 			"Sam Liu"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Toppings",
@@ -7147,7 +7432,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Touch Grass",
@@ -7172,7 +7458,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Toybox",
@@ -7193,7 +7480,8 @@
 		"description": "You ship a daily game, we ship stickers + keycap keychain + steam gift card. Make the next Wordle.",
 		"organizers": [
 			"Jiang Tongyu"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "TrailIt",
@@ -7215,7 +7503,8 @@
 		"organizers": [
 			"Peleg",
 			"Euan Ripper"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Treasure",
@@ -7240,7 +7529,8 @@
 		],
 		"project_types": [
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Twist",
@@ -7262,7 +7552,8 @@
 		"organizers": [
 			"Barnav Mitra",
 			"Max Wofford"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Twisted",
@@ -7293,7 +7584,8 @@
 			"Websites",
 			"Electronics",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Typeface",
@@ -7319,7 +7611,8 @@
 		"project_types": [
 			"Websites",
 			"Other"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Undercity",
@@ -7348,7 +7641,8 @@
 		],
 		"project_types": [
 			"Electronics"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Vibes",
@@ -7371,7 +7665,8 @@
 			"Freddie Yershon",
 			"Jared Senesac"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Visioneer",
@@ -7394,7 +7689,8 @@
 			"Karthik Sankar",
 			"Ashwath Chandran",
 			"Max Wofford"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Wacky Files",
@@ -7415,7 +7711,8 @@
 		"description": "Find the wackiest ways to store files for free and earn $3/hour with multipliers!",
 		"organizers": [
 			"Euan Ripper"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Waffles",
@@ -7440,7 +7737,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Waveband",
@@ -7465,7 +7763,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Waveform",
@@ -7487,7 +7786,8 @@
 		"organizers": [
 			"Manitej"
 		],
-		"project_types": []
+		"project_types": [],
+		"checked": false
 	},
 	{
 		"name": "Whimsy",
@@ -7513,7 +7813,8 @@
 			"Websites",
 			"Software",
 			"Gamedev"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Widget",
@@ -7537,7 +7838,8 @@
 		],
 		"project_types": [
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Winter Hardware Wonderland",
@@ -7559,7 +7861,8 @@
 		"organizers": [
 			"Ella Xu",
 			"Belle See"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Woof",
@@ -7585,7 +7888,8 @@
 		],
 		"project_types": [
 			"Websites"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "Wrangler",
@@ -7611,7 +7915,8 @@
 			"Electronics",
 			"Websites",
 			"Software"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "You Snake We Snake",
@@ -7633,7 +7938,8 @@
 		"organizers": [
 			"fish (fishtested)",
 			"Jiang Tongyu"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "You Spud, We Spud",
@@ -7654,7 +7960,8 @@
 		"description": "Build a fast, lightweight website or game using pure vanilla HTML, CSS, and JS under strict size constraints (<15KB, <5KB, <2KB)!",
 		"organizers": [
 			"Sami.s"
-		]
+		],
+		"checked": false
 	},
 	{
 		"name": "ZoneOut",
@@ -7681,6 +7988,7 @@
 			"Software",
 			"Websites",
 			"Other"
-		]
+		],
+		"checked": false
 	}
 ]

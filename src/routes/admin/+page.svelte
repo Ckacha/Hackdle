@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { enhance, type SubmitFunction } from '$app/forms';
+	import { isOngoing, type Kind, type Program, type Type } from '#lib/game.ts';
+	import ProgramCard from '#lib/ProgramCard.svelte';
 	import type { PageProps } from './$types';
 	import './edit.css';
 
@@ -10,10 +12,20 @@
 	let preview = $state<string | null>(null);
 	let busy = $state(false);
 
-	let view = $state<'list' | 'deprecated' | 'days'>('list');
-	let programs = $derived(data.authed ? (view === 'deprecated' ? data.deprecated : data.programs) : []);
+	let view = $state<'list' | 'review' | 'deprecated' | 'days'>('list');
+	let programs = $derived(
+		data.authed
+			? view === 'deprecated'
+				? data.deprecated
+				: view === 'review'
+					? data.programs.filter((p) => !p.checked)
+					: data.programs
+			: []
+	);
+	let checkedCount = $derived(data.authed ? data.programs.filter((p) => p.checked).length : 0);
 	let found = $derived(selected && selected !== 'new' ? programs.find((p) => p.slug === selected) : undefined);
-	let current = $derived(view === 'list' ? found : undefined);
+	let current = $derived(view === 'list' || view === 'review' ? found : undefined);
+	let reviewing = $derived(view === 'review' && !!current);
 	let retired = $derived(view === 'deprecated' ? found : undefined);
 	let creating = $derived(view === 'list' && selected === 'new');
 
@@ -40,7 +52,69 @@
 
 	function show(v: typeof view) {
 		view = v;
-		choose(null);
+		choose(v === 'review' ? (programs[0]?.slug ?? null) : null);
+	}
+
+	function next(at: number) {
+		choose(programs[at % Math.max(programs.length, 1)]?.slug ?? null);
+	}
+
+	function skip() {
+		next(programs.findIndex((p) => p.slug === selected) + 1);
+	}
+
+	let draft = $state<Program | null>(null);
+	let demo = $derived(draft && preview ? { ...draft, logo_file: null, logo: preview } : draft);
+
+	let blockers = $derived.by(() => {
+		if (!demo) return [];
+		return [
+			demo.kind === 'hackathon' && 'it is in person only',
+			demo.status === 'cancelled' && 'it is cancelled',
+			!demo.start_date && 'no start date',
+			!demo.end_date && !isOngoing(demo) && 'no end date (and not ongoing)',
+			!demo.type && 'no type',
+			!demo.organizers.length && 'no organizers'
+		].filter((b): b is string => !!b);
+	});
+
+	function live(form: HTMLFormElement) {
+		const sync = () => {
+			const f = new FormData(form);
+			const s = (k: string) => String(f.get(k) ?? '').trim();
+			draft = {
+				name: s('name') || 'Untitled',
+				slug: current?.slug ?? 'new',
+				kind: (s('kind') || 'ysws') as Kind,
+				type: (s('type') || null) as Type | null,
+				start_date: s('start_date') || null,
+				end_date: s('end_date') || null,
+				status: (s('status') || 'ended') as Program['status'],
+				location: s('location') || null,
+				logo: current?.logo ?? null,
+				logo_file: s('logo_file') || null,
+				url: s('url') || null,
+				description: s('description') || null,
+				organizers: [
+					...new Set(
+						s('organizers')
+							.split('\n')
+							.map((o) => o.trim())
+							.filter(Boolean)
+					)
+				]
+			};
+		};
+		const read = () => queueMicrotask(sync);
+		read();
+		form.addEventListener('input', read);
+		form.addEventListener('change', read);
+		return {
+			destroy: () => {
+				form.removeEventListener('input', read);
+				form.removeEventListener('change', read);
+			}
+		};
 	}
 
 	function onLogo(e: Event) {
@@ -54,6 +128,7 @@
 			return;
 		}
 		busy = true;
+		const at = programs.findIndex((p) => p.slug === selected);
 		return async ({ result, update }) => {
 			try {
 				await update({ reset: false });
@@ -64,6 +139,12 @@
 			}
 			if (result.type === 'error') console.error('[hackdle] Admin action error:', result.error);
 			if (result.type === 'success') {
+				if (view === 'review' && (result.data?.passed || result.data?.deprecated)) {
+					next(Math.max(at, 0));
+					return;
+				}
+				if (result.data?.passed) return;
+				if (result.data?.saved && view === 'review') return;
 				if (result.data?.saved) {
 					view = 'list';
 					choose(String(result.data.saved));
@@ -82,7 +163,7 @@
 <main class="editor-main">
 	<header>
 		<h1>Admin</h1>
-		<p class="tagline">Changes save straight to docs/list.json</p>
+		<p class="tagline">Check list.json, should update</p>
 	</header>
 
 	{#if !data.authed}
@@ -98,6 +179,9 @@
 				<div class="views">
 					<button type="button" class:on={view === 'list'} onclick={() => show('list')}>
 						List ({data.programs.length})
+					</button>
+					<button type="button" class:on={view === 'review'} onclick={() => show('review')}>
+						Check ({checkedCount}/{data.programs.length})
 					</button>
 					<button type="button" class:on={view === 'deprecated'} onclick={() => show('deprecated')}>
 						Deprecated ({data.deprecated.length})
@@ -118,7 +202,11 @@
 					</ul>
 				{:else}
 					<div class="picker-head">
-						<input type="search" placeholder="Search {programs.length} programs…" bind:value={query} />
+						<input
+							type="search"
+							placeholder={view === 'review' ? `Search ${programs.length} left to check…` : `Search ${programs.length} programs…`}
+							bind:value={query}
+						/>
 						{#if view === 'list'}
 							<button class="new" type="button" class:on={creating} onclick={() => choose('new')}>+ New</button>
 						{/if}
@@ -131,7 +219,7 @@
 											>{p.name[0].toUpperCase()}</span
 										>{/if}
 									<span class="picker-name">
-										{p.name}
+										{p.name}{#if view === 'list' && p.checked}<span class="checked" title="Checked"> ✓</span>{/if}
 										{#if missing(p)}<small>missing {missing(p)}</small>{/if}
 									</span>
 								</button>
@@ -176,9 +264,18 @@
 							action={creating ? '?/create' : '?/save'}
 							enctype="multipart/form-data"
 							use:enhance={submit}
+							use:live
 						>
 							<h2>{creating ? 'New program' : current?.name}</h2>
-							{#if current}<p class="muted">slug: {current.slug}</p>{/if}
+							{#if current}<p class="muted">slug: {current.slug}{#if current.checked} · checked ✓{/if}</p>{/if}
+							{#if reviewing}
+								<p class="muted">
+									{checkedCount} of {data.programs.length} checked. Fix anything wrong, then press Pass to save and mark it checked.
+								</p>
+								{#if current?.url}
+									<p><a href={current.url} target="_blank" rel="noreferrer">Open {current.url}</a></p>
+								{/if}
+							{/if}
 							{#if current}<input type="hidden" name="slug" value={current.slug} />{/if}
 
 							<div class="grid">
@@ -272,17 +369,39 @@
 							</div>
 
 							<div class="edit-actions">
-								<button class="submit" type="submit" disabled={busy}>{creating ? 'Add program' : 'Save'}</button>
+								{#if reviewing}
+									<button class="submit" type="submit" formaction="?/pass" disabled={busy}>Pass ✓</button>
+									<button class="link" type="button" onclick={skip} disabled={busy}>Skip</button>
+								{/if}
+								<button class={reviewing ? 'link' : 'submit'} type="submit" disabled={busy}>{creating ? 'Add program' : 'Save'}</button>
 								{#if current}
 									<button class="danger" type="submit" formaction="?/deprecate" disabled={busy}>Move to deprecated</button>
 								{/if}
 							</div>
 						</form>
 					{/key}
+				{:else if view === 'review'}
+					<p class="muted empty">
+						{programs.length ? 'Pick a program on the left.' : `All ${data.programs.length} programs are checked.`}
+					</p>
 				{:else}
 					<p class="muted empty">Pick a program on the left, or press + New.</p>
 				{/if}
 			</section>
+
+			{#if (current || creating) && demo}
+				<aside class="demo" aria-label="Preview">
+					<div class="demo-head">
+						<h3>User/public view</h3>
+						{#if blockers.length}
+							<span class="demo-note bad" title="Can't be a daily answer: {blockers.join(', ')}">Not visible</span>
+						{:else}
+							<span class="demo-note good" title="Can be a daily answer">Visible</span>
+						{/if}
+					</div>
+					<ProgramCard p={demo} />
+				</aside>
+			{/if}
 		</div>
 	{/if}
 </main>

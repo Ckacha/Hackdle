@@ -1,5 +1,5 @@
 .editor-main {
-	max-width: 1200px;
+	max-width: 1440px;
 }
 
 .login {
@@ -287,6 +287,7 @@ textarea:focus {
 
 .views {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 4px;
 	padding: 4px;
 	border-radius: 12px;
@@ -346,4 +347,78 @@ textarea:focus {
 .day-name {
 	text-align: right;
 	overflow-wrap: anywhere;
+}
+
+.picker-name .checked {
+	color: var(--green-text);
+	font-weight: bold;
+}
+
+.editor:has(.demo) {
+	grid-template-columns: minmax(240px, 300px) 1fr 300px;
+}
+
+.demo {
+	position: sticky;
+	top: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	text-align: left;
+}
+
+.demo h3 {
+	margin: 0;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: var(--muted);
+}
+
+.demo-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+}
+
+.demo-note {
+	padding: 4px 12px;
+	border-radius: 999px;
+	font-size: 13px;
+	font-weight: bold;
+	cursor: help;
+}
+
+.demo-note.good {
+	background: var(--green);
+	color: #17171d;
+}
+
+.demo-note.bad {
+	background: var(--red);
+	color: #fff;
+}
+
+@media (max-width: 1150px) {
+	.editor:has(.demo) {
+		grid-template-columns: minmax(240px, 320px) 1fr;
+	}
+
+	.demo {
+		position: static;
+		grid-column: 2;
+		max-width: 340px;
+	}
+}
+
+@media (max-width: 760px) {
+	.editor:has(.demo) {
+		grid-template-columns: 1fr;
+	}
+
+	.demo {
+		grid-column: auto;
+		max-width: none;
+	}
 }
