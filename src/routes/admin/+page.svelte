@@ -1,6 +1,7 @@
 <script lang="ts">
+	import { tick } from 'svelte';
 	import { enhance, type SubmitFunction } from '$app/forms';
-	import { isOngoing, type Kind, type Program, type Type } from '#lib/game.ts';
+	import { isOngoing, type Kind, type Program, type Type } from '#lib/program.ts';
 	import ProgramCard from '#lib/ProgramCard.svelte';
 	import type { PageProps } from './$types';
 	import './edit.css';
@@ -55,12 +56,16 @@
 		choose(v === 'review' ? (programs[0]?.slug ?? null) : null);
 	}
 
-	function next(at: number) {
-		choose(programs[at % Math.max(programs.length, 1)]?.slug ?? null);
+	async function next(at: number) {
+		choose(shown[at % Math.max(shown.length, 1)]?.slug ?? null);
+		await tick();
+		document.querySelector('.picker button.on')?.scrollIntoView({ block: 'nearest' });
+		const pane = document.querySelector('.pane');
+		if (pane && pane.getBoundingClientRect().top < 0) pane.scrollIntoView({ behavior: 'smooth' });
 	}
 
 	function skip() {
-		next(programs.findIndex((p) => p.slug === selected) + 1);
+		next(shown.findIndex((p) => p.slug === selected) + 1);
 	}
 
 	let draft = $state<Program | null>(null);
@@ -128,7 +133,7 @@
 			return;
 		}
 		busy = true;
-		const at = programs.findIndex((p) => p.slug === selected);
+		const at = shown.findIndex((p) => p.slug === selected);
 		return async ({ result, update }) => {
 			try {
 				await update({ reset: false });

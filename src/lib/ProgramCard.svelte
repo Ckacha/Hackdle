@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { formatOf, isOngoing, logoFor, monthLabel, FORMAT_LABEL, TYPE_LABEL, type Program } from '#lib/game.ts';
+	import { formatOf, isOngoing, logoFor, monthLabel, FORMAT_LABEL, TYPE_LABEL, type Program } from '#lib/program.ts';
 	import Organizers from '#lib/Organizers.svelte';
 	import Undefined from '#lib/Undefined.svelte';
 	import './program-card.css';

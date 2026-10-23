@@ -1,24 +1,7 @@
 import list from '../../docs/list.json';
+import { formatOf, isOngoing, monthLabel, FORMAT_LABEL, ONGOING, TYPE_LABEL, type Format, type Program, type Type } from '#lib/program.ts';
 
-export type Kind = 'ysws' | 'hackathon' | 'both';
-export type Type = 'software' | 'hardware' | 'cad' | 'everything';
-export type Format = 'online' | 'in-person' | 'both';
-
-export interface Program {
-	name: string;
-	slug: string;
-	kind: Kind;
-	type: Type | null;
-	start_date: string | null;
-	end_date: string | null;
-	status: 'ended' | 'ongoing' | 'upcoming' | 'cancelled';
-	location: string | null;
-	logo: string | null;
-	logo_file: string | null;
-	url: string | null;
-	description: string | null;
-	organizers: string[];
-}
+export * from '#lib/program.ts';
 
 export interface Guess {
 	slug: string;
@@ -41,35 +24,6 @@ export const programs = list as Program[];
 
 export const bySlug = new Map(programs.map((p) => [p.slug, p]));
 
-export function logoFor(p: Program): string | null {
-	return p.logo_file ? `/${p.logo_file}` : p.logo;
-}
-
-export const FORMAT_LABEL: Record<Format, string> = {
-	online: 'Online',
-	'in-person': 'In person',
-	both: 'Both'
-};
-
-export const TYPE_LABEL: Record<Type, string> = {
-	software: 'Software',
-	hardware: 'Hardware',
-	cad: 'CAD',
-	everything: 'Everything'
-};
-
-const KIND_FORMAT: Record<Kind, Format> = {
-	ysws: 'online',
-	hackathon: 'in-person',
-	both: 'both'
-};
-
-export const formatOf = (p: Program): Format => KIND_FORMAT[p.kind];
-
-export const ONGOING = 'ongoing';
-
-export const isOngoing = (p: Program) => p.status === 'ongoing' && !p.end_date;
-
 export const COLUMNS = ['Program', 'Start', 'End', 'Format', 'Type', 'Organizer'] as const;
 
 export const organizers = [
@@ -82,13 +36,6 @@ const playable = programs.filter(
 const withOrganizer = playable.filter((p) => p.organizers.length);
 
 export const answerPool = withOrganizer.length ? withOrganizer : playable;
-
-export const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
-export function monthLabel(ym: string): string {
-	const [y, m] = ym.split('-');
-	return `${MONTHS[Number(m) - 1]} ${y}`;
-}
 
 function compareMonth(guess: string, answer: string): Cell {
 	const a = answer === ONGOING ? ONGOING : answer.slice(0, 7);
