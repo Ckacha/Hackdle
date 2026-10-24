@@ -16,11 +16,20 @@ export interface Program {
 	url: string | null;
 	description: string | null;
 	organizers: string[];
+	logo_dark?: boolean;
+	slack_id?: string;
+	slack_channel?: string;
 }
 
 export function logoFor(p: Program): string | null {
 	return p.logo_file ? `/${p.logo_file}` : p.logo;
 }
+
+export const slackUrl = (p: Program) => (p.slack_id ? `https://hackclub.enterprise.slack.com/archives/${p.slack_id}` : null);
+
+export const slackIdFrom = (s: string) => s.match(/\b([CG][A-Z0-9]{8,})\b/)?.[1];
+
+export const slackChannelFrom = (s: string) => s.trim().replace(/^#/, '') || undefined;
 
 export const FORMAT_LABEL: Record<Format, string> = {
 	online: 'Online',

@@ -105,3 +105,17 @@
 	background: rgba(236, 55, 80, 0.12);
 	color: var(--red-text);
 }
+
+.tags .slack {
+	padding: 3px 10px;
+	border-radius: 999px;
+	background: #4a154b;
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.tags .slack:hover {
+	background: var(--red);
+}

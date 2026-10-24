@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { formatOf, isOngoing, logoFor, monthLabel, FORMAT_LABEL, TYPE_LABEL, type Program } from '#lib/program.ts';
+	import { formatOf, isOngoing, logoFor, monthLabel, slackUrl, FORMAT_LABEL, TYPE_LABEL, type Program } from '#lib/program.ts';
 	import Organizers from '#lib/Organizers.svelte';
 	import Undefined from '#lib/Undefined.svelte';
 	import './program-card.css';
@@ -11,7 +11,7 @@
 <div class="program">
 	<div class="program-top">
 		{#if logoFor(p)}
-			<img src={logoFor(p)} alt="" loading="lazy" />
+			<img src={logoFor(p)} class:logo-dark={p.logo_dark} alt="" loading="lazy" />
 		{:else}
 			<span class="ph">{(p.name[0] ?? '?').toUpperCase()}</span>
 		{/if}
@@ -44,6 +44,7 @@
 		<span>{formatOf(p) === 'both' ? 'Online + In person' : FORMAT_LABEL[formatOf(p)]}</span>
 		{#if p.type}<span>{TYPE_LABEL[p.type]}</span>{/if}
 		{#if p.status === 'cancelled'}<span class="cancelled">Cancelled</span>{/if}
+		{#if slackUrl(p)}<a class="slack" href={slackUrl(p)} target="_blank" rel="noreferrer">#{p.slack_channel ?? 'slack'}</a>{/if}
 	</div>
 
 	<p class="program-org">

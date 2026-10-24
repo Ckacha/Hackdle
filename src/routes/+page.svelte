@@ -341,7 +341,7 @@
 												onclick={() => pick(i)}
 											>
 
-												{#if logoFor(p)}<img src={logoFor(p)} alt="" loading="lazy" />{:else}<span
+												{#if logoFor(p)}<img src={logoFor(p)} class:logo-dark={p.logo_dark} alt="" loading="lazy" />{:else}<span
 														class="ph">{p.name[0]}</span
 													>{/if}
 
@@ -507,7 +507,7 @@
 								{#each ps as p (p.slug)}
 									<li>
 										<button type="button" class:on={slug === p.slug} onclick={() => choose(p)}>
-											{#if logoFor(p)}<img src={logoFor(p)} alt="" loading="lazy" />{:else}<span class="ph">{p.name[0]}</span>{/if}
+											{#if logoFor(p)}<img src={logoFor(p)} class:logo-dark={p.logo_dark} alt="" loading="lazy" />{:else}<span class="ph">{p.name[0]}</span>{/if}
 											{p.name}
 										</button>
 									</li>
@@ -532,7 +532,7 @@
 				<div class="row">
 					{#each results[n] as cell, i}
 						<div class="tile {cell.verdict}" style="animation-delay: {i * 150}ms">
-							{#if i === 0 && p && logoFor(p)}<img src={logoFor(p)} alt="" />{/if}
+							{#if i === 0 && p && logoFor(p)}<img src={logoFor(p)} class:logo-dark={p.logo_dark} alt="" />{/if}
 							{#if i === 5}<Organizers names={splitOrgs(cell.label)} pick />{:else}<span class:name={i === 0}>{cell.label}</span>{/if}
 							{#if cell.arrow}
 							<span class="arrow" aria-label={cell.arrow === 'up' ? 'later' : 'earlier'}>{cell.arrow === 'up' ? '▲' : '▼'}</span>
@@ -573,7 +573,7 @@
 {#snippet details(p: Program)}
 
 	<div class="winner">
-		{#if logoFor(p)}<img src={logoFor(p)} alt="" />{/if}
+		{#if logoFor(p)}<img src={logoFor(p)} class:logo-dark={p.logo_dark} alt="" />{/if}
 		<div>
 			<strong>{p.name}</strong>
 			{#if p.description}<p>{p.description}</p>{/if}

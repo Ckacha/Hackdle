@@ -1,6 +1,7 @@
 import { error, fail } from '@sveltejs/kit';
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { pastDays, todayKey } from '#lib/server/daily.ts';
+import { slackIdFrom, slackChannelFrom } from '#lib/program.ts';
 import { COOKIE, editPassword, isAuthed, passwordMatches, tokenFor } from '#lib/server/auth.ts';
 import {
 	addName,
@@ -25,6 +26,7 @@ const IMAGE_EXT: Record<string, string> = {
 	'image/svg+xml': 'svg',
 	'image/avif': 'avif'
 };
+
 const MAX_LOGO = 2 * 1024 * 1024;
 
 function guard(cookies: Parameters<typeof isAuthed>[0]) {
@@ -41,7 +43,7 @@ const slugify = (s: string) =>
 		.toLowerCase()
 		.replace(/[^a-z0-9]+/g, '-')
 		.replace(/^-|-$/g, '');
-
+ 
 function fields(f: FormData) {
 	const name = text(f, 'name');
 	const start = text(f, 'start_date');
@@ -69,7 +71,10 @@ function fields(f: FormData) {
 						.filter(Boolean)
 				)
 			],
-			logo_file: orNull(text(f, 'logo_file'))
+			logo_file: orNull(text(f, 'logo_file')),
+			logo_dark: f.get('logo_dark') ? true : undefined,
+			slack_id: slackIdFrom(text(f, 'slack_id')),
+			slack_channel: slackChannelFrom(text(f, 'slack_channel'))
 		} as Partial<Entry>
 	};
 }

@@ -111,3 +111,9 @@ img {
 	-webkit-user-drag: none;
 	user-select: none;
 }
+
+img.logo-dark {
+	padding: 3px;
+	border-radius: 10px;
+	background: #17171d !important;
+}

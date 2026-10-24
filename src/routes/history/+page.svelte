@@ -73,7 +73,7 @@
 
 {#snippet program(p: Program)}
 	<div class="program">
-		{#if logoFor(p)}<img src={logoFor(p)} alt="" loading="lazy" />{:else}<span class="ph">{p.name[0]}</span>{/if}
+		{#if logoFor(p)}<img src={logoFor(p)} class:logo-dark={p.logo_dark} alt="" loading="lazy" />{:else}<span class="ph">{p.name[0]}</span>{/if}
 		<div class="info">
 			<strong>{#if p.url}<a href={p.url} target="_blank" rel="noreferrer">{p.name}</a>{:else}{p.name}{/if}</strong>
 			<span class="meta">{dates(p)} · {FORMAT_LABEL[formatOf(p)]}{#if p.type} · {TYPE_LABEL[p.type]}{/if}</span>

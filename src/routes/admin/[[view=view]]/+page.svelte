@@ -1,19 +1,24 @@
 <script lang="ts">
 	import { tick } from 'svelte';
 	import { enhance, type SubmitFunction } from '$app/forms';
-	import { isOngoing, type Kind, type Program, type Type } from '#lib/program.ts';
+	import { goto, replaceState } from '$app/navigation';
+	import { page } from '$app/state';
+	import { isOngoing, slackIdFrom, slackChannelFrom, type Kind, type Program, type Type } from '#lib/program.ts';
 	import ProgramCard from '#lib/ProgramCard.svelte';
 	import type { PageProps } from './$types';
 	import './edit.css';
 
 	let { data, form }: PageProps = $props();
 
+	type View = 'list' | 'review' | 'deprecated' | 'days';
+	const PATH: Record<View, string> = { list: '/admin', review: '/admin/verify', deprecated: '/admin/deprecated', days: '/admin/days' };
+
+	let view = $derived<View>(page.params.view === 'verify' ? 'review' : (page.params.view ?? 'list'));
 	let query = $state('');
-	let selected = $state<string | null>(null);
+	let selected = $state<string | null>(page.url.searchParams.get('p'));
 	let preview = $state<string | null>(null);
 	let busy = $state(false);
 
-	let view = $state<'list' | 'review' | 'deprecated' | 'days'>('list');
 	let programs = $derived(
 		data.authed
 			? view === 'deprecated'
@@ -42,19 +47,26 @@
 	});
 
 	const missing = (p: (typeof programs)[number]) =>
-		[!p.start_date && 'start', !p.end_date && 'end', !p.type && 'type', !p.organizers.length && 'organizer', !p.logo_file && 'logo']
+		[!p.start_date && 'start', !p.end_date && 'end', !p.type && 'type', !p.organizers.length && 'organizer', !p.logo_file && 'logo', !p.slack_id && 'slack']
 			.filter(Boolean)
 			.join(', ');
 
 	function choose(slug: string | null) {
 		selected = slug;
 		preview = null;
+		const url = new URL(page.url.href);
+		url.search = slug && slug !== 'new' ? `?p=${encodeURIComponent(slug)}` : '';
+		if (url.href !== page.url.href) replaceState(url, page.state);
 	}
 
-	function show(v: typeof view) {
-		view = v;
+	async function show(v: View) {
+		if (v !== view) await goto(PATH[v], { reset: false });
 		choose(v === 'review' ? (programs[0]?.slug ?? null) : null);
 	}
+
+	$effect.pre(() => {
+		if (view === 'review' && data.authed && !found) selected = programs[0]?.slug ?? null;
+	});
 
 	async function next(at: number) {
 		choose(shown[at % Math.max(shown.length, 1)]?.slug ?? null);
@@ -98,6 +110,9 @@
 				location: s('location') || null,
 				logo: current?.logo ?? null,
 				logo_file: s('logo_file') || null,
+				logo_dark: f.get('logo_dark') ? true : undefined,
+				slack_id: slackIdFrom(s('slack_id')),
+				slack_channel: slackChannelFrom(s('slack_channel')),
 				url: s('url') || null,
 				description: s('description') || null,
 				organizers: [
@@ -151,7 +166,7 @@
 				if (result.data?.passed) return;
 				if (result.data?.saved && view === 'review') return;
 				if (result.data?.saved) {
-					view = 'list';
+					await show('list');
 					choose(String(result.data.saved));
 				}
 				if (result.data?.deprecated) choose(null);
@@ -198,7 +213,7 @@
 						{#each data.days as d (d.date)}
 							{@const p = data.programs.find((x) => x.slug === d.slug) ?? data.deprecated.find((x) => x.slug === d.slug)}
 							<li>
-								<button type="button" onclick={() => p && data.programs.includes(p) && ((view = 'list'), choose(p.slug))}>
+								<button type="button" onclick={() => p && data.programs.includes(p) && show('list').then(() => choose(p.slug))}>
 									<span class="day-date">{d.date === data.today ? 'Today' : d.date}</span>
 									<span class="day-name">{p?.name ?? d.slug}{#if p && !data.programs.includes(p)} (deprecated){/if}</span>
 								</button>
@@ -220,11 +235,11 @@
 						{#each shown as p (p.slug)}
 							<li>
 								<button type="button" class:on={selected === p.slug} onclick={() => choose(p.slug)}>
-									{#if p.logo_file}<img src="/{p.logo_file}" alt="" loading="lazy" />{:else}<span class="ph"
+									{#if p.logo_file}<img src="/{p.logo_file}" class:logo-dark={p.logo_dark} alt="" loading="lazy" />{:else}<span class="ph"
 											>{p.name[0].toUpperCase()}</span
 										>{/if}
 									<span class="picker-name">
-										{p.name}{#if view === 'list' && p.checked}<span class="checked" title="Checked"> ✓</span>{/if}
+										<span>{p.name}{#if view === 'list' && p.checked}<span class="checked" title="Checked"> ✓</span>{/if}</span>
 										{#if missing(p)}<small>missing {missing(p)}</small>{/if}
 									</span>
 								</button>
@@ -346,6 +361,20 @@
 									<input type="url" name="url" value={current?.url ?? ''} placeholder="https://" />
 								</label>
 
+								<label>
+									<span>Slack channel name</span>
+									<input name="slack_channel" value={current?.slack_channel ? `#${current.slack_channel}` : ''} placeholder="#aesthetic" />
+								</label>
+
+								<label>
+									<span>Slack channel link or ID</span>
+									<input name="slack_id" value={current?.slack_id ?? ''} placeholder="https://hackclub.enterprise.slack.com/archives/C0…" />
+								</label>
+
+								{#if demo && !demo.slack_id}
+									<p class="wide field-warn">Slack channel is missing. Paste the channel link above.</p>
+								{/if}
+
 								<label class="wide">
 									<span>Description</span>
 									<textarea name="description" rows="3">{current?.description ?? ''}</textarea>
@@ -358,7 +387,7 @@
 
 								<div class="wide logo-row">
 									{#if preview || current?.logo_file}
-										<img src={preview ?? `/${current?.logo_file}`} alt="" />
+										<img src={preview ?? `/${current?.logo_file}`} class:logo-dark={demo?.logo_dark} alt="" />
 									{:else}
 										<span class="ph big">?</span>
 									{/if}
@@ -369,6 +398,10 @@
 									<label>
 										<span>Upload new logo</span>
 										<input type="file" name="logo_upload" accept="image/*" onchange={onLogo} />
+									</label>
+									<label class="logo-dark-toggle">
+										<input type="checkbox" name="logo_dark" checked={!!current?.logo_dark} />
+										<span>Dark logo background (for white or light logos)</span>
 									</label>
 								</div>
 							</div>

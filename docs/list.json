@@ -21,7 +21,9 @@
 			"Sebastian H"
 		],
 		"project_types": [],
-		"checked": true
+		"checked": true,
+		"slack_channel": "3am",
+		"slack_id": "C0BLDHX7PRA"
 	},
 	{
 		"name": "555",
@@ -39,14 +41,16 @@
 		"url": "https://555.hackclub.com",
 		"url_status": "online",
 		"archive_url": null,
-		"description": "Make a circuit using a 555 timer, get stickers + a chance to win a giant 3d printed 555 timer\n",
+		"description": "Make a circuit using a 555 timer, get stickers + a chance to win a giant 3d printed 555 timer",
 		"organizers": [
 			"Rudy"
 		],
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "555",
+		"slack_id": "C0BR14P2A93"
 	},
 	{
 		"name": "Accelerate",
@@ -66,19 +70,21 @@
 		"archive_url": null,
 		"description": "Build physics simulations, get prizes!",
 		"organizers": [
-			"Alex Van Doren"
+			"Alex Van Doren (AVD)"
 		],
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "accelerate",
+		"slack_id": "C09DPBK2K4K"
 	},
 	{
 		"name": "Aesthetic",
 		"slug": "aesthetic",
 		"kind": "ysws",
-		"type": null,
-		"start_date": "2025-07-23",
+		"type": "software",
+		"start_date": "2025-07-07",
 		"end_date": "2025-07-28",
 		"status": "ended",
 		"location": null,
@@ -94,7 +100,10 @@
 			"Euan Ripper"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": true,
+		"logo_dark": true,
+		"slack_channel": "aesthetic",
+		"slack_id": "C096T301L2G"
 	},
 	{
 		"name": "Anansi",
@@ -102,7 +111,7 @@
 		"kind": "ysws",
 		"type": "software",
 		"start_date": "2025-07-01",
-		"end_date": "2025-07-04",
+		"end_date": "2025-07-07",
 		"status": "ended",
 		"location": null,
 		"event": null,
@@ -119,14 +128,16 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "anansi",
+		"slack_id": "C094J1QDU72"
 	},
 	{
 		"name": "Anvil",
 		"slug": "anvil",
 		"kind": "ysws",
 		"type": "software",
-		"start_date": "2026-07-01",
+		"start_date": "2026-07-09",
 		"end_date": "2026-07-28",
 		"status": "ended",
 		"location": null,
@@ -142,17 +153,19 @@
 			"ascpixi"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": true,
+		"slack_channel": "anvil-chat",
+		"slack_id": "C0BGYG2NELW"
 	},
 	{
 		"name": "Apex",
 		"slug": "apex",
 		"kind": "both",
-		"type": null,
-		"start_date": "2025-03-08",
+		"type": "hardware",
+		"start_date": "2025-03-03",
 		"end_date": "2025-06-18",
 		"status": "ended",
-		"location": null,
+		"location": "Boston, MA, USA",
 		"event": null,
 		"logo": "https://hackclub.com/api/v1/events/recvfbLnlZdxgMTP8",
 		"logo_kind": "logo",
@@ -160,23 +173,26 @@
 		"url": "https://apex.hackclub.com",
 		"url_status": "online",
 		"archive_url": null,
-		"description": "Send projects 100,000 ft skyward in Boston\n",
+		"description": "Send projects 100,000 ft skyward in Boston!",
 		"organizers": [
 			"Max Kendall",
+			"Luke Oldenburg",
 			"Charlie Nicholson",
 			"Samuel Fernandez"
 		],
 		"project_types": [
 			"Other"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "apex",
+		"slack_id": "C08EFAYBZ38"
 	},
 	{
 		"name": "Apocalypse",
 		"slug": "apocalypse",
-		"kind": "hackathon",
+		"kind": "both",
 		"type": "everything",
-		"start_date": "2024-05-17",
+		"start_date": "2024-04-02",
 		"end_date": "2024-05-19",
 		"status": "ended",
 		"location": "Shopify Toronto, 620 King St W, Toronto, ON, Canada",
@@ -191,15 +207,28 @@
 		"url": "https://apocalypse.hackclub.com",
 		"url_status": "online",
 		"archive_url": null,
-		"description": null,
-		"organizers": [],
-		"checked": false
+		"description": "The high school hackathon where you build fun tech to survive the zombie apocalypse!",
+		"organizers": [
+			"Acon Lin",
+			"Arav Narula",
+			"Mutammim Sarkar",
+			"Shayaan Azeem",
+			"Ryan Di Lorenzo",
+			"Gregory Gu",
+			"Sam Liu",
+			"Sarvesh Mohan Kumar",
+			"Evelyn Wong",
+			"Vivian Yuan"
+		],
+		"checked": true,
+		"slack_channel": "apocalypse",
+		"slack_id": "C06SGG2AGHJ"
 	},
 	{
 		"name": "Aria",
 		"slug": "aria",
 		"kind": "ysws",
-		"type": null,
+		"type": "software",
 		"start_date": "2026-07-29",
 		"end_date": "2026-10-09",
 		"status": "ended",
@@ -216,17 +245,20 @@
 			"Mihi"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": true,
+		"logo_dark": true,
+		"slack_channel": "aria",
+		"slack_id": "C0BKPS1HUPR"
 	},
 	{
 		"name": "Ascend",
 		"slug": "ascend",
-		"kind": "ysws",
-		"type": null,
+		"kind": "both",
+		"type": "software",
 		"start_date": "2024-10-27",
 		"end_date": "2024-11-18",
 		"status": "ended",
-		"location": null,
+		"location": "Los Angles, California, USA",
 		"event": null,
 		"logo": "https://ascend.hackclub.com/favicon.svg",
 		"logo_kind": "logo",
@@ -234,17 +266,18 @@
 		"url": "https://ascend.hackclub.com",
 		"url_status": "online",
 		"archive_url": null,
-		"description": null,
+		"description": "The first-ever Days of Service summit for girls and nonbinary students in tech.",
 		"organizers": [
-			"Elianah (elia)",
-			"Phaedra Sanon",
-			"Andrea",
-			"Savina"
+			"Christina",
+			"Elianah",
+			"Zenab"
 		],
 		"project_types": [
 			"Other"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "ascend",
+		"slack_id": "C07T6DEFD7U"
 	},
 	{
 		"name": "ASIC",
@@ -262,7 +295,7 @@
 		"url": "https://asic.hackclub.com/",
 		"url_status": "online",
 		"archive_url": null,
-		"description": "Design a chip, we'll manufacture it  and send you tools to test it. ",
+		"description": "Design a chip, we'll manufacture it  and send you tools to test it!",
 		"organizers": [
 			"Kai Pereira"
 		],
@@ -270,7 +303,10 @@
 			"Electronics",
 			"Other"
 		],
-		"checked": false
+		"checked": true,
+		"logo_dark": true,
+		"slack_channel": "asic",
+		"slack_id": "C0BT3MJM129"
 	},
 	{
 		"name": "Assemble",
@@ -292,40 +328,41 @@
 		"url": "https://github.com/hackclub/assemble",
 		"url_status": "online",
 		"archive_url": null,
-		"description": null,
-		"organizers": [],
-		"checked": false
+		"description": "Hack Club's 42 hour hackathon!",
+		"organizers": [
+			"Hack Club HQ"
+		],
+		"checked": true,
+		"slack_channel": "assemble",
+		"slack_id": "C03L35R822Y"
 	},
 	{
 		"name": "Athena Award",
 		"slug": "athena-award",
-		"kind": "both",
-		"type": "software",
+		"kind": "ysws",
+		"type": "everything",
 		"start_date": "2025-05-22",
-		"end_date": "2025-11-16",
-		"status": "ended",
-		"location": "New York City, NY, USA",
-		"event": {
-			"location": "New York City, NY, USA",
-			"start_date": "2025-11-14",
-			"end_date": "2025-11-16"
-		},
-		"logo": "https://raw.githubusercontent.com/hackclub/YSWS-Catalog/main/logos/athena.png",
+		"end_date": null,
+		"status": "ongoing",
+		"location": null,
+		"event": null,
+		"logo": "https://athena.hackclub.com/_next/image?url=%2Fimages%2Fathena-logo-heading-red.png&w=2048&q=75",
 		"logo_kind": "logo",
 		"logo_file": "logos/athena-award.png",
 		"url": "https://athena.hackclub.com",
 		"url_status": "online",
 		"archive_url": null,
-		"description": "Program for girls and nonbinary teens to earn a certificate by completing three coding projects and 30 tracked hours, with top finishers invited to the Parthenon hackathon.",
+		"description": "Hack Club's way to support girls in STEAM and coding by making exclusive events for them!",
 		"organizers": [
-			"Reem Khalifa",
-			"Annabel"
+			"Hack Club Athena Team"
 		],
 		"project_types": [
 			"Websites",
 			"Gamedev"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "athena-announcements",
+		"slack_id": "C0BLUJDU0G5"
 	},
 	{
 		"name": "Atlantis",
@@ -343,7 +380,7 @@
 		"url": "https://atlantis.hackclub.com",
 		"url_status": "online",
 		"archive_url": null,
-		"description": "Ship 5 hours of CAD each week and get a 3D printer!",
+		"description": "Ship 5 hours of CAD each week for 8 weeks and get a 3D printer!",
 		"organizers": [
 			"Swarit Narang",
 			"KC",
@@ -353,14 +390,17 @@
 		"project_types": [
 			"CAD"
 		],
-		"checked": false
+		"checked": true,
+		"logo_dark": true,
+		"slack_channel": "atlantis",
+		"slack_id": "C0ATSHVECBG"
 	},
 	{
 		"name": "Authly",
 		"slug": "authly",
 		"kind": "ysws",
 		"type": "software",
-		"start_date": null,
+		"start_date": "2025-08-05",
 		"end_date": "2025-08-31",
 		"status": "ended",
 		"location": null,
@@ -373,11 +413,12 @@
 		"archive_url": null,
 		"description": "Build the weirdest and never-before-seen authentication system, get yubikeys, programmable nfc tags, antivirus giftcards and more!",
 		"organizers": [
-			"Dandililacs",
-			"Jim Dinias",
-			"Graham Darcey"
+			"Jim",
+			"Alex Van Doren"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "authly",
+		"slack_id": "C0963JU3CSD"
 	},
 	{
 		"name": "Axiom",
@@ -404,15 +445,18 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": true,
+		"logo_dark": true,
+		"slack_channel": "axiom",
+		"slack_id": "C09K4HZJ2DP"
 	},
 	{
 		"name": "Back to the Future",
 		"slug": "back-to-the-future",
 		"kind": "ysws",
 		"type": "software",
-		"start_date": null,
-		"end_date": "2026-09-07",
+		"start_date": "2026-08-14",
+		"end_date": "2026-10-01",
 		"status": "ended",
 		"location": null,
 		"event": null,
@@ -424,9 +468,11 @@
 		"archive_url": null,
 		"description": "Make an app for an old device, get an old device or media to use them with!",
 		"organizers": [
-			"Adithiya Venkatakrishnan"
+			"atomtables"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "backtothefuture",
+		"slack_id": "C0BPWDJ44CA"
 	},
 	{
 		"name": "BakeBuild",
@@ -447,14 +493,15 @@
 		"description": "Design a cookie cutter and get it 3D printed and shipped.",
 		"organizers": [
 			"Dhyan",
-			"Shaan Yu",
-			"Kayla Blosser",
+			"Shaan",
 			"Jared Senesac"
 		],
 		"project_types": [
 			"CAD"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "bakebuild",
+		"slack_id": "C0844MV2JM9"
 	},
 	{
 		"name": "Bauble",
@@ -481,7 +528,9 @@
 		"project_types": [
 			"CAD"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "bauble",
+		"slack_id": "C0A1SH6PF89"
 	},
 	{
 		"name": "Beest",
@@ -508,7 +557,9 @@
 			"Euan Ripper"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": true,
+		"slack_channel": "beest",
+		"slack_id": "C0ALJ3NT1D0"
 	},
 	{
 		"name": "Bento",
@@ -533,7 +584,9 @@
 			"Jared Senesac"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": true,
+		"slack_channel": "bento",
+		"slack_id": "C0BNZ0WBTBN"
 	},
 	{
 		"name": "Birthday Cards",
@@ -553,14 +606,16 @@
 		"archive_url": null,
 		"description": "You ship a birthday themed project we ship a birthday card!",
 		"organizers": [
-			"Christian Well",
+			"Christian",
 			"EnterpriseGoose",
 			"Dhamari Trice-Hanson"
 		],
 		"project_types": [
 			"Other"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "birthday-cards-ysws",
+		"slack_id": "C099VPF7V3P"
 	},
 	{
 		"name": "Bitstream",
@@ -578,14 +633,16 @@
 		"url": "https://bitstream.hackclub.com",
 		"url_status": "online",
 		"archive_url": null,
-		"description": "Learn FPGAs, build projects, unlock chip design!\n\n",
+		"description": "Learn FPGAs, build projects, unlock chip design!",
 		"organizers": [
 			"Charlie Nicholson"
 		],
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "bitstream",
+		"slack_id": "C09AUVACSNM"
 	},
 	{
 		"name": "Black Box",
@@ -608,7 +665,9 @@
 			"Lux Loff"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": true,
+		"slack_channel": "black-box",
+		"slack_id": "C08APN1CKEJ"
 	},
 	{
 		"name": "BLARE",
@@ -626,7 +685,7 @@
 		"url": "https://blare.hackclub.com",
 		"url_status": "online",
 		"archive_url": null,
-		"description": "Build your own special alarm clock and get the parts to make it.",
+		"description": "Build your own special alarm clock and get the parts to make it. (Technically still ongoing through stardance!)",
 		"organizers": [
 			"Liam Newbill"
 		],
@@ -635,7 +694,9 @@
 			"CAD",
 			"Software"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "blare",
+		"slack_id": "C0BC47NPFT9"
 	},
 	{
 		"name": "Blueprint",
@@ -662,7 +723,9 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "blueprint",
+		"slack_id": "C083S537USC"
 	},
 	{
 		"name": "Boba Bash",
@@ -684,7 +747,7 @@
 		"url": "https://bash.hackclub.com",
 		"url_status": "online",
 		"archive_url": null,
-		"description": "Hang out with friends, make a website, get free boba! ",
+		"description": "Hang out with friends, make a website, get free boba!",
 		"organizers": [
 			"Jared Senesac"
 		],
@@ -692,7 +755,9 @@
 			"Websites",
 			"Software"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "boba-bash",
+		"slack_id": "C0BHTG31G8N"
 	},
 	{
 		"name": "Boba Drops",
@@ -719,7 +784,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "boba",
+		"slack_id": "C06UJR8QW0M"
 	},
 	{
 		"name": "Boba Olympics",
@@ -745,7 +812,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "boba-olympics",
+		"slack_id": "C09LY6P34D6"
 	},
 	{
 		"name": "Boot",
@@ -772,7 +841,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "boot",
+		"slack_id": "C09EWDU9ZQT"
 	},
 	{
 		"name": "Braize",
@@ -796,7 +867,9 @@
 			"Ketan",
 			"Jenny"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "braize",
+		"slack_id": "C0BF9UFNEDS"
 	},
 	{
 		"name": "Breadboard",
@@ -822,7 +895,9 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "breadboard",
+		"slack_id": "C09EB0AE68M"
 	},
 	{
 		"name": "Browser Buddy",
@@ -842,11 +917,13 @@
 		"archive_url": null,
 		"description": "Build a Chrome extension, and Hack Club provides $30 to launch it on Chrome Web Store.",
 		"organizers": [
-			"Josias Aurel",
-			"Graham Darcey"
+			"Josias",
+			"Graham"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": true,
+		"slack_channel": "browser-buddy",
+		"slack_id": "C07MQBTNVRU"
 	},
 	{
 		"name": "builders club",
@@ -871,7 +948,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "builders-club",
+		"slack_id": "C0BE2CN38DN"
 	},
 	{
 		"name": "Bulky",
@@ -896,7 +975,9 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "bulky",
+		"slack_id": "C0BURQY9JN4"
 	},
 	{
 		"name": "C-LI",
@@ -921,7 +1002,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "c-li",
+		"slack_id": "C0BL66JKRUJ"
 	},
 	{
 		"name": "Calculate",
@@ -941,7 +1024,7 @@
 		"archive_url": null,
 		"description": "Make a project involving numbers, get a calculator + stickersheet!",
 		"organizers": [
-			"Candy Ying"
+			"Candy"
 		],
 		"project_types": [
 			"Electronics",
@@ -951,7 +1034,9 @@
 			"CAD",
 			"Other"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "calculate",
+		"slack_id": "C0ARJHZPU9H"
 	},
 	{
 		"name": "Campfire",
@@ -973,15 +1058,19 @@
 		"url": "https://campfire.hackclub.com",
 		"url_status": "online",
 		"archive_url": null,
-		"description": null,
-		"organizers": [],
-		"checked": false
+		"description": "Hack Club's v5(?) global worldwide Hackathon!",
+		"organizers": [
+			"Hack Club HQ"
+		],
+		"checked": true,
+		"slack_channel": "campfire",
+		"slack_id": "C09PXLPEL2Y"
 	},
 	{
 		"name": "Campfire Flagship",
 		"slug": "campfire-flagship",
 		"kind": "hackathon",
-		"type": "software",
+		"type": "everything",
 		"start_date": "2026-02-20",
 		"end_date": "2026-02-22",
 		"status": "ended",
@@ -997,43 +1086,16 @@
 		"url": "https://flagship.hackclub.com",
 		"url_status": "online",
 		"archive_url": null,
-		"description": null,
+		"description": "Hack Club's Flagship Hackathon where you can go to California and meet some cool people!",
 		"organizers": [
-			"Deven Jadhav",
-			"Gus Ruben",
-			"Euan Ripper",
-			"Kai Ling",
-			"Sam Liu"
+			"Hack Club HQ"
 		],
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
-	},
-	{
-		"name": "Campfire Overdrive",
-		"slug": "campfire-overdrive",
-		"kind": "hackathon",
-		"type": "software",
-		"start_date": "2026-02-03",
-		"end_date": "2026-02-26",
-		"status": "ended",
-		"location": null,
-		"event": null,
-		"logo": "https://training.campfire.hackclub.com/assets/logo2.png",
-		"logo_kind": "logo",
-		"logo_file": "logos/campfire-overdrive.png",
-		"url": "https://training.campfire.hackclub.com/",
-		"url_status": "online",
-		"archive_url": null,
-		"description": null,
-		"organizers": [
-			"Deven Jadhav"
-		],
-		"project_types": [
-			"Gamedev"
-		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "campfire-flagship",
+		"slack_id": "C0A1GH3FY4T"
 	},
 	{
 		"name": "Canvas",
@@ -1060,7 +1122,9 @@
 			"Software",
 			"Gamedev"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "hack-club-canvas",
+		"slack_id": "C0ADK2079GD"
 	},
 	{
 		"name": "Capitol",
@@ -1069,7 +1133,7 @@
 		"type": "software",
 		"start_date": "2026-10-16",
 		"end_date": "2026-10-18",
-		"status": "ongoing",
+		"status": "ended",
 		"location": "Washington, D.C., USA",
 		"event": {
 			"location": "Washington, D.C., USA",
@@ -1093,7 +1157,9 @@
 			"Software",
 			"Gamedev"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "capitol",
+		"slack_id": "C0BT42D77U5"
 	},
 	{
 		"name": "Carnival",
@@ -1116,7 +1182,9 @@
 			"Josias Aurel",
 			"Jared Senesac"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "carnival",
+		"slack_id": "C091ZRTMF16"
 	},
 	{
 		"name": "Cascade",
@@ -1141,7 +1209,9 @@
 			"Thanishkka Vijayabaskar",
 			"Max Wofford"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "cascade-ysws",
+		"slack_id": "C07QA8HD48N"
 	},
 	{
 		"name": "catgirl ysws",
@@ -1169,7 +1239,9 @@
 			"Software",
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "catgirl-ysws",
+		"slack_id": "C0BFJLTF5HA"
 	},
 	{
 		"name": "Ceiling",
@@ -1189,14 +1261,16 @@
 		"archive_url": null,
 		"description": "make anything you want, get a ceiling and really cool prizes/merch",
 		"organizers": [
-			"Gus Ruben",
-			"Jiang Tongyu"
+			"Augie",
+			"Tongyu"
 		],
 		"project_types": [
 			"Software",
 			"Websites"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "ceiling",
+		"slack_id": "C0AJLBLDM8E"
 	},
 	{
 		"name": "Chipless",
@@ -1221,7 +1295,10 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "chipless",
+		"slack_id": "C0BAZNHMTKQ"
 	},
 	{
 		"name": "Cider",
@@ -1248,7 +1325,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "cider",
+		"slack_id": "C073DTGENJ2"
 	},
 	{
 		"name": "Cinema",
@@ -1270,7 +1349,9 @@
 		"organizers": [
 			"Dandililacs"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "cinema",
+		"slack_id": "C0936AVS683"
 	},
 	{
 		"name": "Circazine",
@@ -1292,7 +1373,9 @@
 		"organizers": [
 			"Lola"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "circazine",
+		"slack_id": "C0BJ4EF228G"
 	},
 	{
 		"name": "CloudFall",
@@ -1318,7 +1401,9 @@
 			"Software",
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "ysws-cloudfall",
+		"slack_id": "C0BMV3W7Y05"
 	},
 	{
 		"name": "Club Shop",
@@ -1352,7 +1437,9 @@
 			"Websites",
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "leaders",
+		"slack_id": "C02PA5G01ND"
 	},
 	{
 		"name": "Clutter",
@@ -1378,7 +1465,9 @@
 		"project_types": [
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "clutter",
+		"slack_id": "C0997C887M3"
 	},
 	{
 		"name": "cmd + k",
@@ -1401,14 +1490,16 @@
 			"Sam Liu"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "cmd-k",
+		"slack_id": "C0981BXG124"
 	},
 	{
 		"name": "Construct",
 		"slug": "construct",
 		"kind": "ysws",
 		"type": "cad",
-		"start_date": null,
+		"start_date": "2025-12-15",
 		"end_date": "2026-04-19",
 		"status": "ended",
 		"location": null,
@@ -1422,9 +1513,12 @@
 		"description": "Design projects in CAD and get a 3D printer to print them.",
 		"organizers": [
 			"Olive Wu",
-			"Arca Cengiz"
+			"Arca Cengiz",
+			"Iamalive"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "construct",
+		"slack_id": "C09TM7XKSSY"
 	},
 	{
 		"name": "Coral",
@@ -1457,7 +1551,9 @@
 			"Software",
 			"Electronics"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "coral",
+		"slack_id": "C0BPWPBUWRE"
 	},
 	{
 		"name": "Counterspell",
@@ -1479,14 +1575,16 @@
 		"url": "https://counterspell.hackclub.com",
 		"url_status": "online",
 		"archive_url": null,
-		"description": "Hack Club's beginner friendly game jam",
+		"description": "Hack Club's beginner friendly game jam. v3!",
 		"organizers": [
-			"Deven Jadhav"
+			"Hack Club HQ"
 		],
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "counterspell",
+		"slack_id": "C07NWJSQR5J"
 	},
 	{
 		"name": "CQ",
@@ -1508,7 +1606,9 @@
 		"organizers": [
 			"Ruben Sutton"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "cq",
+		"slack_id": "C0B2256L7PF"
 	},
 	{
 		"name": "Craft",
@@ -1537,7 +1637,9 @@
 			"Gamedev",
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "craft",
+		"slack_id": "C09E15S589K"
 	},
 	{
 		"name": "Crawl",
@@ -1560,7 +1662,9 @@
 			"Karo Roghzai"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "crawl",
+		"slack_id": "C0C7N079Z2Q"
 	},
 	{
 		"name": "Crescent",
@@ -1585,7 +1689,9 @@
 			"Anson Chung"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": true,
+		"slack_channel": "crescent-help",
+		"slack_id": "C0C3BHDUHT7"
 	},
 	{
 		"name": "Cubed",
@@ -1614,7 +1720,9 @@
 			"Electronics",
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "cubed-ysws",
+		"slack_id": "C0BL0LJMUR5"
 	},
 	{
 		"name": "Darkroom",
@@ -1644,7 +1752,10 @@
 			"Other",
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "darkroom",
+		"slack_id": "C0ALM44RBFU"
 	},
 	{
 		"name": "Daydream",
@@ -1675,7 +1786,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "daydream",
+		"slack_id": "C094GLLH2RX"
 	},
 	{
 		"name": "Days of Service",
@@ -1699,7 +1812,9 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "days-of-service",
+		"slack_id": "C05T8E9GY64"
 	},
 	{
 		"name": "Defector",
@@ -1724,7 +1839,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "ysws-defector",
+		"slack_id": "C0BTKRY48M7"
 	},
 	{
 		"name": "dockerize",
@@ -1750,7 +1867,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "dockerize",
+		"slack_id": "C092D9HARSQ"
 	},
 	{
 		"name": "Doppel",
@@ -1768,21 +1887,24 @@
 		"url": "https://doppel.hackclub.com",
 		"url_status": "online",
 		"archive_url": null,
-		"description": "Come make me a bot friend!",
+		"description": "Come make me a bot friend in slack!",
 		"organizers": [
-			"Jolly Wang",
-			"Katie Sue"
+			"Jolly",
+			"Katie"
 		],
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": true,
+		"logo_dark": true,
+		"slack_channel": "doppel",
+		"slack_id": "C0BEAG698GH"
 	},
 	{
 		"name": "duckduckduck",
 		"slug": "duckduckduck",
 		"kind": "ysws",
-		"type": null,
+		"type": "everything",
 		"start_date": "2026-07-14",
 		"end_date": "2026-07-16",
 		"status": "ended",
@@ -1801,7 +1923,9 @@
 		"project_types": [
 			"Other"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "duckduckduck",
+		"slack_id": "C0BGZHQV3RU"
 	},
 	{
 		"name": "Dummies",
@@ -1824,7 +1948,9 @@
 			"Euan Ripper",
 			"Peleg"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "dummies",
+		"slack_id": "C096M3EV67M"
 	},
 	{
 		"name": "Dyad",
@@ -1849,7 +1975,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "dyad",
+		"slack_id": "C0BUXJ7T15F"
 	},
 	{
 		"name": "Ellipse",
@@ -1874,7 +2002,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "ellipse",
+		"slack_id": "C0BEWBCTF4H"
 	},
 	{
 		"name": "Embassy",
@@ -1897,7 +2027,9 @@
 			"Barnav Mitra"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "embassy",
+		"slack_id": "C0BM1L56D19"
 	},
 	{
 		"name": "Ember",
@@ -1923,7 +2055,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "ember-jam",
+		"slack_id": "C0AHWG867UZ"
 	},
 	{
 		"name": "Emerge",
@@ -1948,7 +2082,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "emerge",
+		"slack_id": "C09900Q6873"
 	},
 	{
 		"name": "En Passant",
@@ -1974,7 +2110,10 @@
 			"Gamedev",
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "en-passant",
+		"slack_id": "C0BRQ7R7KS5"
 	},
 	{
 		"name": "Enclosure",
@@ -1998,7 +2137,9 @@
 			"Jacob Navaratne",
 			"Jared Senesac"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "enclosure",
+		"slack_id": "C092D99G1RU"
 	},
 	{
 		"name": "Endpointer",
@@ -2024,7 +2165,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "endpointer",
+		"slack_id": "C097M5JRT7F"
 	},
 	{
 		"name": "Entropy",
@@ -2053,7 +2196,9 @@
 			"Websites",
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "entropy-ysws",
+		"slack_id": "C0BCGRJ302G"
 	},
 	{
 		"name": "Epoch",
@@ -2077,7 +2222,9 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "epoch",
+		"slack_id": "C044SRZR8MB"
 	},
 	{
 		"name": "Expedition",
@@ -2107,7 +2254,9 @@
 			"CAD",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "expedition-help",
+		"slack_id": "C0C4PNDU1QA"
 	},
 	{
 		"name": "Extensify",
@@ -2159,7 +2308,10 @@
 			"Electronics",
 			"CAD"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "fabricate",
+		"slack_id": "C0ATWSPM22J"
 	},
 	{
 		"name": "Fallout",
@@ -2192,7 +2344,10 @@
 			"Electronics",
 			"CAD"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "fallout",
+		"slack_id": "C037157AL30"
 	},
 	{
 		"name": "Fanpage",
@@ -2241,7 +2396,9 @@
 			"Emme McDonald"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "feud",
+		"slack_id": "C0BFP6L8EUQ"
 	},
 	{
 		"name": "Fix Hack Club",
@@ -2264,7 +2421,9 @@
 			"Wally",
 			"Jared Senesac"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "fix",
+		"slack_id": "C0B2SRW8F5L"
 	},
 	{
 		"name": "FIX IT",
@@ -2287,7 +2446,9 @@
 			"Gus Ruben"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "fixit",
+		"slack_id": "C093145P15W"
 	},
 	{
 		"name": "flavorless",
@@ -2308,13 +2469,15 @@
 		"description": "Build a functional website without any CSS and show off your unique style!",
 		"organizers": [
 			"Nathan",
-			"Freddie Yershon",
+			"Freddie",
 			"Jared Senesac"
 		],
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "flavorless",
+		"slack_id": "C0AAYT5EWBF"
 	},
 	{
 		"name": "Flavortown",
@@ -2344,7 +2507,9 @@
 			"CAD",
 			"Other"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "flavortown",
+		"slack_id": "C09MPB8NE8H"
 	},
 	{
 		"name": "flickr",
@@ -2371,7 +2536,9 @@
 			"Software",
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "flickr-ysws",
+		"slack_id": "C0BHCTB70RF"
 	},
 	{
 		"name": "Folktale",
@@ -2396,7 +2563,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "folktale",
+		"slack_id": "C0BQGFFAHHQ"
 	},
 	{
 		"name": "Foodie",
@@ -2419,7 +2588,9 @@
 			"Swarit Narang",
 			"ascpixi"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "foodie",
+		"slack_id": "C09DLGM81E1"
 	},
 	{
 		"name": "Forge",
@@ -2451,7 +2622,9 @@
 			"Electronics",
 			"CAD"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "forge",
+		"slack_id": "C0ALJ6P00B1"
 	},
 	{
 		"name": "frame",
@@ -2476,7 +2649,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "frame",
+		"slack_id": "C0C9Z9D6BEG"
 	},
 	{
 		"name": "Fudge",
@@ -2499,7 +2674,9 @@
 			"Reem Khalifa"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": true,
+		"slack_channel": "fudge-fudge-fudge",
+		"slack_id": "C09UZPNGMMM"
 	},
 	{
 		"name": "Fusering",
@@ -2525,7 +2702,9 @@
 		"project_types": [
 			"CAD"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "fusering",
+		"slack_id": "C098U42PD2A"
 	},
 	{
 		"name": "Future",
@@ -2553,7 +2732,9 @@
 			"Websites",
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "future-ysws",
+		"slack_id": "C0BMMC7486R"
 	},
 	{
 		"name": "Gadget Market",
@@ -2579,7 +2760,9 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "gadget-market",
+		"slack_id": "C0AJQ0HBC12"
 	},
 	{
 		"name": "Gamefolio",
@@ -2606,7 +2789,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "gamefolio",
+		"slack_id": "C08RT4C2485"
 	},
 	{
 		"name": "Gemini",
@@ -2632,7 +2817,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "gemini",
+		"slack_id": "C094VQKH1FV"
 	},
 	{
 		"name": "Genesis",
@@ -2657,7 +2844,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "genesis",
+		"slack_id": "C0BCLMS1R5L"
 	},
 	{
 		"name": "Ghost Ship",
@@ -2680,7 +2869,9 @@
 			"Iamalive",
 			"Mihi"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "ghost-ship",
+		"slack_id": "C0C6GM4H79T"
 	},
 	{
 		"name": "Gong",
@@ -2703,7 +2894,9 @@
 			"Ren Leonard"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "gong",
+		"slack_id": "C0BU68VAV42"
 	},
 	{
 		"name": "Goship",
@@ -2729,7 +2922,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "go-ship",
+		"slack_id": "C0AMCKRCAP9"
 	},
 	{
 		"name": "Grandma",
@@ -2753,7 +2948,9 @@
 			"Sebastian Hernandez"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "grandma",
+		"slack_id": "C0C5H8NJP4Z"
 	},
 	{
 		"name": "Greeble",
@@ -2776,7 +2973,9 @@
 			"Brendan Reynard"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "greeble",
+		"slack_id": "C0BMPAY9NK0"
 	},
 	{
 		"name": "Grounded",
@@ -2801,7 +3000,9 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "grounded",
+		"slack_id": "C0948RT0C1M"
 	},
 	{
 		"name": "Grub",
@@ -2824,7 +3025,9 @@
 			"Artem Kim",
 			"Jared Senesac"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "grub",
+		"slack_id": "C08S9NCEULB"
 	},
 	{
 		"name": "Hack Club: The Game",
@@ -2861,7 +3064,9 @@
 			"CAD",
 			"Other"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "hack-club-the-game",
+		"slack_id": "C088DT8P7B8"
 	},
 	{
 		"name": "Hackaccino",
@@ -2889,7 +3094,9 @@
 			"Websites",
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hackaccino",
+		"slack_id": "C08D95NNTV3"
 	},
 	{
 		"name": "Hackachu",
@@ -2915,7 +3122,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hackachu",
+		"slack_id": "C0BFWNU7V4M"
 	},
 	{
 		"name": "Hackapet",
@@ -2939,7 +3148,9 @@
 			"spacevini8",
 			"Alex Ren"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hackapet",
+		"slack_id": "C0809PN4TPE"
 	},
 	{
 		"name": "HackCraft",
@@ -2967,7 +3178,9 @@
 			"Software",
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hackcraft",
+		"slack_id": "C07BMJKA6TA"
 	},
 	{
 		"name": "Hackducky",
@@ -2995,7 +3208,9 @@
 			"Electronics",
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hackducky",
+		"slack_id": "C08B8HZBC85"
 	},
 	{
 		"name": "Hackfinger",
@@ -3017,7 +3232,9 @@
 		"organizers": [
 			"Charlie Nicholson"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hackfinger",
+		"slack_id": "C095T0TQ5A8"
 	},
 	{
 		"name": "Hacklet",
@@ -3043,7 +3260,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hacklet",
+		"slack_id": "C08PJMATU8Y"
 	},
 	{
 		"name": "Hackmate",
@@ -3069,7 +3288,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hackmate",
+		"slack_id": "C092HR1LG20"
 	},
 	{
 		"name": "Hackpad",
@@ -3091,7 +3312,9 @@
 		"organizers": [
 			"Alex Ren"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hackpad",
+		"slack_id": "C07LESGH0B0"
 	},
 	{
 		"name": "Hackrail",
@@ -3112,14 +3335,16 @@
 		"description": "Ship projects that use open train data, get train passes and tickets!",
 		"organizers": [
 			"Alice (espcaa)",
-			"Barnav Mitra"
+			"Barnav"
 		],
 		"project_types": [
 			"Websites",
 			"Gamedev",
 			"Software"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "hackrail",
+		"slack_id": "C0BS4M9U8M8"
 	},
 	{
 		"name": "Hacksaber",
@@ -3141,7 +3366,9 @@
 		"organizers": [
 			"fireentity"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hacksaber",
+		"slack_id": "C096K1ZEXDL"
 	},
 	{
 		"name": "HackTank",
@@ -3170,7 +3397,9 @@
 			"Software",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hacktank",
+		"slack_id": "C0C5RAT9666"
 	},
 	{
 		"name": "Hackvault",
@@ -3196,7 +3425,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hackvault",
+		"slack_id": "C09KQ58CMHD"
 	},
 	{
 		"name": "Hacky Holidays",
@@ -3220,7 +3451,9 @@
 			"Scott",
 			"Ryan (LimesKey)"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hacky-holidays",
+		"slack_id": "C083SK3G5D3"
 	},
 	{
 		"name": "Haj4ever",
@@ -3250,7 +3483,9 @@
 			"Websites",
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "haj4ever",
+		"slack_id": "C0ATRK4G5NY"
 	},
 	{
 		"name": "Half Life",
@@ -3277,7 +3512,9 @@
 			"Electronics",
 			"CAD"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "half-life",
+		"slack_id": "C0BTE0WN23S"
 	},
 	{
 		"name": "Hashcore",
@@ -3303,7 +3540,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hashcore",
+		"slack_id": "C09395S9BPT"
 	},
 	{
 		"name": "Haunted",
@@ -3360,7 +3599,10 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "haven",
+		"slack_id": "C0C6H21RNAY"
 	},
 	{
 		"name": "Helvetica",
@@ -3385,7 +3627,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "helvetica",
+		"slack_id": "C0BB07QGR6E"
 	},
 	{
 		"name": "Hermes",
@@ -3411,7 +3655,9 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hermes",
+		"slack_id": "C0AA818TDAM"
 	},
 	{
 		"name": "Highway",
@@ -3439,7 +3685,9 @@
 			"Cyao",
 			"Alex Ren"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "highway",
+		"slack_id": "C08Q1H6D79B"
 	},
 	{
 		"name": "Hivemind",
@@ -3461,7 +3709,9 @@
 		"organizers": [
 			"Lux (sporeball)"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "hivemind-",
+		"slack_id": "C096T7JRQRG"
 	},
 	{
 		"name": "HomeLab",
@@ -3517,7 +3767,9 @@
 			"dld"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": true,
+		"slack_channel": "horizons",
+		"slack_id": "C0AGKQ6K476"
 	},
 	{
 		"name": "Horizons Arcana",
@@ -3545,7 +3797,9 @@
 			"Annabel",
 			"dld"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "horizons-arcana",
+		"slack_id": "C0AKNMLG2P5"
 	},
 	{
 		"name": "Horizons Crux",
@@ -3573,7 +3827,9 @@
 			"Annabel",
 			"dld"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "horizons-crux",
+		"slack_id": "C0ANDKD8DJB"
 	},
 	{
 		"name": "Horizons Equinox",
@@ -3601,7 +3857,9 @@
 			"Annabel",
 			"dld"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "horizons-equinox",
+		"slack_id": "C0ANDFRS9RD"
 	},
 	{
 		"name": "Horizons Europa",
@@ -3629,7 +3887,9 @@
 			"Annabel",
 			"dld"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "horizons-europa",
+		"slack_id": "C0AL61QF4R5"
 	},
 	{
 		"name": "Horizons Nexus",
@@ -3657,7 +3917,9 @@
 			"Annabel",
 			"dld"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "horizons-nexus",
+		"slack_id": "C0AG1164T8X"
 	},
 	{
 		"name": "Horizons Polaris",
@@ -3685,7 +3947,9 @@
 			"Annabel",
 			"dld"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "horizons-polaris",
+		"slack_id": "C0AKL0G0FFF"
 	},
 	{
 		"name": "Horizons Sol",
@@ -3713,7 +3977,9 @@
 			"Annabel",
 			"dld"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "horizons-sol",
+		"slack_id": "C0ANDKA6NKH"
 	},
 	{
 		"name": "Illumination",
@@ -3736,7 +4002,9 @@
 			"Natey Hecht",
 			"Max Wofford"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "illumination",
+		"slack_id": "C091MS57D37"
 	},
 	{
 		"name": "Infill",
@@ -3754,7 +4022,7 @@
 		"url": "https://github.com/hackclub/infill",
 		"url_status": "online",
 		"archive_url": null,
-		"description": "Design your own 3D printer mod and get $20 to build it.",
+		"description": "Design your own 3D printer and get $300 to build it. Then get flown out to RMRRF to show it off!",
 		"organizers": [
 			"Alex Ren"
 		],
@@ -3762,7 +4030,9 @@
 			"CAD",
 			"Electronics"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "infill",
+		"slack_id": "C08B7LF58TX"
 	},
 	{
 		"name": "Insert Coin",
@@ -3784,7 +4054,9 @@
 		"organizers": [
 			"roxstar123"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "insert-coin",
+		"slack_id": "C0B9833PULV"
 	},
 	{
 		"name": "iplace",
@@ -3807,7 +4079,9 @@
 			"ascpixi"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "iplace",
+		"slack_id": "C09NB7UDSDD"
 	},
 	{
 		"name": "Jackpot",
@@ -3836,7 +4110,9 @@
 			"Electronics",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "jackpot",
+		"slack_id": "C0AEQ8VAPA4"
 	},
 	{
 		"name": "Jame Gam",
@@ -3856,11 +4132,13 @@
 		"archive_url": null,
 		"description": "Join a game jam every month with us, earn an awesome prize!",
 		"organizers": [
-			"Gus Ruben",
+			"Augie",
 			"Max H"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": true,
+		"slack_channel": "jame-gam",
+		"slack_id": "C0BBFQASBV2"
 	},
 	{
 		"name": "Jet Fund",
@@ -3885,7 +4163,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "jet",
+		"slack_id": "C09640ENTS7"
 	},
 	{
 		"name": "Jolly",
@@ -3905,12 +4185,14 @@
 		"archive_url": null,
 		"description": "Ship something jolly and get Jolly Ranchers delivered to your door!",
 		"organizers": [
-			"Jolly Wang"
+			"Jolly"
 		],
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "jolly-ysws",
+		"slack_id": "C0BDCTA7SH3"
 	},
 	{
 		"name": "Journey",
@@ -3932,7 +4214,9 @@
 		"organizers": [
 			"Kartikey Chauhan"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "journey",
+		"slack_id": "C08MYN7HVN2"
 	},
 	{
 		"name": "JPEG",
@@ -4011,7 +4295,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "juice",
+		"slack_id": "C088UF12N1Z"
 	},
 	{
 		"name": "Jumpstart",
@@ -4033,7 +4319,9 @@
 		"organizers": [
 			"Estella Gu"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "jumpstart",
+		"slack_id": "C0931T5SEH4"
 	},
 	{
 		"name": "Jungle",
@@ -4056,7 +4344,9 @@
 			"Thomas Stubblefield",
 			"Graham Darcey"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "jungle",
+		"slack_id": "C086MACKK43"
 	},
 	{
 		"name": "Keeb",
@@ -4084,7 +4374,9 @@
 			"Electronics",
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "keeb",
+		"slack_id": "C0ATP7MTNPJ"
 	},
 	{
 		"name": "Keepsake",
@@ -4110,7 +4402,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "keepsake",
+		"slack_id": "C08QJH5LPGX"
 	},
 	{
 		"name": "Keyframe",
@@ -4133,7 +4427,9 @@
 			"Nick Do"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "keyframe",
+		"slack_id": "C0BUDKQGMHR"
 	},
 	{
 		"name": "level zero",
@@ -4159,7 +4455,9 @@
 			"Software",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "level-zero",
+		"slack_id": "C0AQNT2U3NX"
 	},
 	{
 		"name": "Like It's 1999",
@@ -4187,7 +4485,8 @@
 			"Gamedev",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true
 	},
 	{
 		"name": "Liquidate",
@@ -4213,7 +4512,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "liquidate",
+		"slack_id": "C0BEPM78JUV"
 	},
 	{
 		"name": "Live",
@@ -4238,7 +4539,9 @@
 		"project_types": [
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "live-ysws",
+		"slack_id": "C0BU006CTS6"
 	},
 	{
 		"name": "Lockin",
@@ -4260,7 +4563,9 @@
 		"organizers": [
 			"Ben (malted)"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "lock-in",
+		"slack_id": "C08JV3ZV1DY"
 	},
 	{
 		"name": "Lookalike",
@@ -4283,7 +4588,9 @@
 			"Johnathan McPhilbin"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "lookalike",
+		"slack_id": "C0BUJSHMHMX"
 	},
 	{
 		"name": "Lumen",
@@ -4341,7 +4648,9 @@
 			"CAD",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "macondo",
+		"slack_id": "C0AUZ1LAMH6"
 	},
 	{
 		"name": "Meow",
@@ -4368,7 +4677,9 @@
 			"Software",
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "meow-ysws",
+		"slack_id": "C0BQ5K53093"
 	},
 	{
 		"name": "MetroShip",
@@ -4390,7 +4701,9 @@
 		"organizers": [
 			"Tritium Labs"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "metroship",
+		"slack_id": "C0BA8RLV9RN"
 	},
 	{
 		"name": "Midnight",
@@ -4418,7 +4731,9 @@
 			"Sebastian"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "midnight",
+		"slack_id": "C09L1BDSC68"
 	},
 	{
 		"name": "Milkyway",
@@ -4449,7 +4764,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "milkyway",
+		"slack_id": "C09EZSEMB16"
 	},
 	{
 		"name": "mini",
@@ -4472,7 +4789,9 @@
 			"Sahana"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "mini-ysws",
+		"slack_id": "C0BPMT54UDD"
 	},
 	{
 		"name": "Minicraft",
@@ -4498,7 +4817,9 @@
 		"project_types": [
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "minicraft",
+		"slack_id": "C09A8PXGW65"
 	},
 	{
 		"name": "Minigame",
@@ -4520,7 +4841,9 @@
 		"organizers": [
 			"Andre Snellings Jr."
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "minigame",
+		"slack_id": "C093SSC3Z16"
 	},
 	{
 		"name": "Miniverge",
@@ -4542,7 +4865,9 @@
 		"organizers": [
 			"Mahad Kalam"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "converge",
+		"slack_id": "C091UF79VDM"
 	},
 	{
 		"name": "Minus Twelve",
@@ -4567,7 +4892,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "minus-twelve",
+		"slack_id": "C087S82MNFR"
 	},
 	{
 		"name": "Mipmap",
@@ -4593,7 +4920,9 @@
 			"Gamedev",
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "mipmap",
+		"slack_id": "C0C2UMX4S9E"
 	},
 	{
 		"name": "Moonshot",
@@ -4626,7 +4955,10 @@
 			"Electronics",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "moonshot",
+		"slack_id": "C09J2HHRQ95"
 	},
 	{
 		"name": "Moving Day",
@@ -4651,7 +4983,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "moving-day-ysws",
+		"slack_id": "C0BBV0AMF24"
 	},
 	{
 		"name": "Neighborhood",
@@ -4680,7 +5014,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "neighborhood-help",
+		"slack_id": "C08QJCPDFTP"
 	},
 	{
 		"name": "neohack",
@@ -4706,7 +5042,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "neohack",
+		"slack_id": "C094E4QHFPX"
 	},
 	{
 		"name": "Noodles",
@@ -4732,7 +5070,9 @@
 			"Websites",
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "noodles",
+		"slack_id": "C0BAUMWHAA0"
 	},
 	{
 		"name": "Nothing",
@@ -4755,7 +5095,10 @@
 			"Amber"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "nothing-ysws",
+		"slack_id": "C07S3P4M5UL"
 	},
 	{
 		"name": "Off-Track",
@@ -4778,7 +5121,9 @@
 			"Emma"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "off-track",
+		"slack_id": "C0B8Q49DG4R"
 	},
 	{
 		"name": "OnBoard",
@@ -4805,7 +5150,9 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "onboard-help",
+		"slack_id": "C0593MG26TT"
 	},
 	{
 		"name": "onekey",
@@ -4833,7 +5180,9 @@
 			"Gamedev",
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "onekey",
+		"slack_id": "C0AM132QQUR"
 	},
 	{
 		"name": "OrpheusAthon",
@@ -4856,7 +5205,9 @@
 			"Antonio Archer"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "orpheusathon",
+		"slack_id": "C0BSK0VFU13"
 	},
 	{
 		"name": "Out to C",
@@ -4881,7 +5232,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "out-to-c",
+		"slack_id": "C0ANHQPT1S4"
 	},
 	{
 		"name": "Outernet",
@@ -4905,7 +5258,9 @@
 		"archive_url": null,
 		"description": null,
 		"organizers": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "outernet",
+		"slack_id": "C054FA87K8C"
 	},
 	{
 		"name": "Outpost",
@@ -4941,7 +5296,9 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "outpost",
+		"slack_id": "C0B04RP43TQ"
 	},
 	{
 		"name": "Overflow: hidden",
@@ -4968,7 +5325,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "overflow-hidden",
+		"slack_id": "C095HDJK3TQ"
 	},
 	{
 		"name": "Overglade",
@@ -4994,7 +5353,10 @@
 		"organizers": [
 			"Jiang Tongyu"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "overglade",
+		"slack_id": "C09HDTRNZJQ"
 	},
 	{
 		"name": "Page",
@@ -5048,7 +5410,9 @@
 			"Software",
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "paper-clip",
+		"slack_id": "C0C6M7QJ6LW"
 	},
 	{
 		"name": "Paradox",
@@ -5074,14 +5438,16 @@
 		"organizers": [
 			"Dhamari Trice-Hanson"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "paradox",
+		"slack_id": "C0AE8RZBG4E"
 	},
 	{
 		"name": "Parthenon",
 		"slug": "parthenon",
-		"kind": "hackathon",
+		"kind": "both",
 		"type": "everything",
-		"start_date": "2025-11-14",
+		"start_date": "2025-05-22",
 		"end_date": "2025-11-16",
 		"status": "ended",
 		"location": "Duolingo HQ / Civic Hall, New York City, NY, USA",
@@ -5129,7 +5495,9 @@
 			"Gus Ruben"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "pathfinder",
+		"slack_id": "C0943DE80E4"
 	},
 	{
 		"name": "Pendant",
@@ -5155,7 +5523,9 @@
 			"Electronics",
 			"CAD"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "pendant",
+		"slack_id": "C0BB11MPG10"
 	},
 	{
 		"name": "Penumbra",
@@ -5177,7 +5547,9 @@
 		"organizers": [
 			"ascpixi"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "penumbra",
+		"slack_id": "C09EC7ZS05S"
 	},
 	{
 		"name": "Phantom",
@@ -5215,7 +5587,10 @@
 			"Gamedev",
 			"CAD"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "phantom",
+		"slack_id": "C0B3M1T5C3U"
 	},
 	{
 		"name": "Picture this!",
@@ -5243,7 +5618,9 @@
 			"Gamedev",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "picture-this",
+		"slack_id": "C0C208VFZLJ"
 	},
 	{
 		"name": "Pixeldust",
@@ -5270,7 +5647,9 @@
 			"CAD",
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "pixeldust",
+		"slack_id": "C0895PXH53M"
 	},
 	{
 		"name": "Pixl",
@@ -5300,7 +5679,9 @@
 			"Electronics",
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "pixl",
+		"slack_id": "C0B5P4N0WHH"
 	},
 	{
 		"name": "Playground",
@@ -5328,7 +5709,9 @@
 			"Websites",
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "playground",
+		"slack_id": "C0ASBTMS82H"
 	},
 	{
 		"name": "Playhouse",
@@ -5353,7 +5736,9 @@
 		"project_types": [
 			"CAD"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "playhouse",
+		"slack_id": "C0BS4AWCTGA"
 	},
 	{
 		"name": "Playphone",
@@ -5377,7 +5762,9 @@
 			"ShyMike",
 			"Euan Ripper"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "playphone",
+		"slack_id": "C09GJS3PH47"
 	},
 	{
 		"name": "Polygon",
@@ -5404,7 +5791,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "polygon",
+		"slack_id": "C08H7R7T40N"
 	},
 	{
 		"name": "Portputer",
@@ -5427,7 +5816,9 @@
 			"Lily Flowers",
 			"Lola"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "portputer",
+		"slack_id": "C0AV4TR1K5K"
 	},
 	{
 		"name": "Power Tools",
@@ -5452,7 +5843,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "ysws-power-tools",
+		"slack_id": "C0BQYBR36P8"
 	},
 	{
 		"name": "premiere",
@@ -5477,7 +5870,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "premiere",
+		"slack_id": "C0APJFR4M4L"
 	},
 	{
 		"name": "Printboard",
@@ -5500,7 +5895,9 @@
 			"Ivie Fonner",
 			"Alex Ren"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "printboard",
+		"slack_id": "C0853M4PCUA"
 	},
 	{
 		"name": "Prologue",
@@ -5523,7 +5920,9 @@
 			"Julia"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "prologue",
+		"slack_id": "C0BAM60LQ4E"
 	},
 	{
 		"name": "Prototype",
@@ -5552,7 +5951,10 @@
 		"project_types": [
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "prototype",
+		"slack_id": "C09S62D2QSY"
 	},
 	{
 		"name": "PullQuests",
@@ -5578,7 +5980,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "pull-quests",
+		"slack_id": "C0ALHGAASLV"
 	},
 	{
 		"name": "Pulse",
@@ -5601,7 +6005,9 @@
 			"Hussein (46-HA)",
 			"Max Wofford"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "pulse-ysws",
+		"slack_id": "C090E7XUEA3"
 	},
 	{
 		"name": "Pulsewidth",
@@ -5628,7 +6034,9 @@
 			"Software",
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "pulsewidth",
+		"slack_id": "C0AS9JJ5E77"
 	},
 	{
 		"name": "Radish Jam",
@@ -5655,7 +6063,9 @@
 			"Software",
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "radish-jam",
+		"slack_id": "C0BAXEEC4J1"
 	},
 	{
 		"name": "Rageclick",
@@ -5680,7 +6090,9 @@
 		"project_types": [
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "rageclick-ysws-",
+		"slack_id": "C0BEXSMU3BK"
 	},
 	{
 		"name": "Railway",
@@ -5705,7 +6117,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "railway",
+		"slack_id": "C094T1FL2KG"
 	},
 	{
 		"name": "RaspAPI",
@@ -5732,7 +6146,9 @@
 			"Electronics",
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "raspapi",
+		"slack_id": "C07UZSKJQRX"
 	},
 	{
 		"name": "Raspite",
@@ -5758,7 +6174,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "raspite",
+		"slack_id": "C09788020T0"
 	},
 	{
 		"name": "Re-Dream",
@@ -5785,7 +6203,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "re-dream",
+		"slack_id": "C0B8ZKCAA07"
 	},
 	{
 		"name": "Reactive",
@@ -5809,7 +6229,9 @@
 			"Jps",
 			"Jared Senesac"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "reactive",
+		"slack_id": "C090S7Q2HT4"
 	},
 	{
 		"name": "Reality",
@@ -5835,7 +6257,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "reality",
+		"slack_id": "C09668Y9H1R"
 	},
 	{
 		"name": "Reamde",
@@ -5860,7 +6284,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "reamde",
+		"slack_id": "C096VTGGZ6X"
 	},
 	{
 		"name": "Reboot",
@@ -5887,7 +6313,9 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "reboot",
+		"slack_id": "C0404BSAS0J"
 	},
 	{
 		"name": "Reflow",
@@ -5913,7 +6341,9 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "reflow",
+		"slack_id": "C08NDN4JA3G"
 	},
 	{
 		"name": "Reinforced",
@@ -5936,7 +6366,9 @@
 			"Vihaan Sondhi",
 			"Rushil Chopra"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "reinforced",
+		"slack_id": "C092JUZ7V7Y"
 	},
 	{
 		"name": "Remix",
@@ -5986,7 +6418,9 @@
 			"swn"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "remixed",
+		"slack_id": "C0AKAQN2VJQ"
 	},
 	{
 		"name": "Resolution",
@@ -6012,7 +6446,9 @@
 		"project_types": [
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "resolution",
+		"slack_id": "C0A62ACLT8R"
 	},
 	{
 		"name": "retrograde",
@@ -6039,7 +6475,9 @@
 			"Software",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "retrograde",
+		"slack_id": "C0ALGF6K4F9"
 	},
 	{
 		"name": "Rewind",
@@ -6064,7 +6502,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "rewind",
+		"slack_id": "C093ALFAW8K"
 	},
 	{
 		"name": "Riceathon",
@@ -6091,7 +6531,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "riceathon",
+		"slack_id": "C07MLF9A8H5"
 	},
 	{
 		"name": "Roulette",
@@ -6116,7 +6558,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "roulette",
+		"slack_id": "C0997MH9QF2"
 	},
 	{
 		"name": "RSS",
@@ -6139,7 +6583,9 @@
 			"Rushil Chopra",
 			"Max Wofford"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "rss",
+		"slack_id": "C09HRMNTNQK"
 	},
 	{
 		"name": "Scare",
@@ -6166,7 +6612,9 @@
 			"Electronics",
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "scare",
+		"slack_id": "C0C5ZFU9292"
 	},
 	{
 		"name": "scrape",
@@ -6191,7 +6639,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "scrape",
+		"slack_id": "C0BR3PBD61J"
 	},
 	{
 		"name": "Scraps",
@@ -6215,7 +6665,9 @@
 			"Iamalive",
 			"Nathan"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "scraps",
+		"slack_id": "C0ADMQFFU56"
 	},
 	{
 		"name": "Scrapyard",
@@ -6242,7 +6694,9 @@
 			"Deven Jadhav"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "scrapyard",
+		"slack_id": "C0864GFN63X"
 	},
 	{
 		"name": "Scrapyard Flagship",
@@ -6268,7 +6722,9 @@
 		"organizers": [
 			"Deven Jadhav"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "scrapyard-flagship",
+		"slack_id": "C08D9QAC10X"
 	},
 	{
 		"name": "Scribble",
@@ -6290,7 +6746,9 @@
 		"organizers": [
 			"Jenny"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "scribble-ysws",
+		"slack_id": "C0BAXHKTETY"
 	},
 	{
 		"name": "self-portrait",
@@ -6315,7 +6773,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "self-portrait",
+		"slack_id": "C09974327NV"
 	},
 	{
 		"name": "Shiba Arcade",
@@ -6346,7 +6806,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "shiba",
+		"slack_id": "C09AG5L0L03"
 	},
 	{
 		"name": "Shipwrecked",
@@ -6375,7 +6837,9 @@
 		"project_types": [
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "shipwrecked",
+		"slack_id": "C08N0R86DMJ"
 	},
 	{
 		"name": "Shrink",
@@ -6398,7 +6862,9 @@
 			"Anson Chung"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "shrink",
+		"slack_id": "C0AQTQMV2SJ"
 	},
 	{
 		"name": "Siege",
@@ -6421,7 +6887,9 @@
 			"Olive",
 			"Kai Ling"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "siege",
+		"slack_id": "C08SKC6P85V"
 	},
 	{
 		"name": "Silicon",
@@ -6480,7 +6948,9 @@
 			"CAD",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "athena-sleepover",
+		"slack_id": "C0A9UNRF96V"
 	},
 	{
 		"name": "Slushies",
@@ -6503,7 +6973,9 @@
 			"Mustafa",
 			"Olive Wu"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "slushies",
+		"slack_id": "C097GP305G8"
 	},
 	{
 		"name": "Smelt",
@@ -6526,7 +6998,9 @@
 			"Alex Van Doren",
 			"Sam Liu"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "smelt",
+		"slack_id": "C09535Y8E83"
 	},
 	{
 		"name": "Snek",
@@ -6551,7 +7025,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "snek-help",
+		"slack_id": "C0C6DA3ALTX"
 	},
 	{
 		"name": "Snowglobe",
@@ -6581,7 +7057,9 @@
 			"Software",
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "snowglobe",
+		"slack_id": "C0BPM9KRW8L"
 	},
 	{
 		"name": "Solder",
@@ -6604,7 +7082,9 @@
 			"Acon Lin",
 			"Cyao"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "solder",
+		"slack_id": "C08L288G22Y"
 	},
 	{
 		"name": "Spatula",
@@ -6629,7 +7109,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "spatula",
+		"slack_id": "C093Q40FU3C"
 	},
 	{
 		"name": "Sprig",
@@ -6657,7 +7139,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "sprig",
+		"slack_id": "C02UN35M7LG"
 	},
 	{
 		"name": "Squeak",
@@ -6680,7 +7164,9 @@
 			"Sarah Park-Ngai",
 			"Jenin Henin"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "squeak",
+		"slack_id": "C094458MVMX"
 	},
 	{
 		"name": "Stack",
@@ -6704,7 +7190,9 @@
 			"Memma"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "stack",
+		"slack_id": "C0B6RUQJ1EW"
 	},
 	{
 		"name": "Stardance",
@@ -6734,7 +7222,10 @@
 			"CAD",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "stardance",
+		"slack_id": "C0APH2MMHH7"
 	},
 	{
 		"name": "Stasis",
@@ -6766,7 +7257,9 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "stasis",
+		"slack_id": "C09HSQM550A"
 	},
 	{
 		"name": "Static",
@@ -6792,7 +7285,9 @@
 			"Electronics",
 			"CAD"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "static",
+		"slack_id": "C0BSCTE57KL"
 	},
 	{
 		"name": "Sticky",
@@ -6819,7 +7314,9 @@
 			"Software",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "sticky-ysws",
+		"slack_id": "C0C35URJY82"
 	},
 	{
 		"name": "Storyboard",
@@ -6846,7 +7343,9 @@
 			"Susan Zheng",
 			"Renran Sun"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "storyboard",
+		"slack_id": "C095E84SE1X"
 	},
 	{
 		"name": "Summer of Making",
@@ -6874,7 +7373,9 @@
 			"Gamedev",
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "summer-of-making",
+		"slack_id": "C015M4L9AHW"
 	},
 	{
 		"name": "Sunbeam",
@@ -6906,7 +7407,9 @@
 			"Websites",
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "sunbeam",
+		"slack_id": "C0BERFPEKQU"
 	},
 	{
 		"name": "Suncatcher",
@@ -6929,7 +7432,10 @@
 			"Julia"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "suncatcher",
+		"slack_id": "C0AQYC605FE"
 	},
 	{
 		"name": "Swirl",
@@ -6955,7 +7461,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "swirl",
+		"slack_id": "C08FR0LMVHD"
 	},
 	{
 		"name": "Tabbed",
@@ -6984,7 +7492,9 @@
 			"Gamedev",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "tabbed",
+		"slack_id": "C0APGH99DJ9"
 	},
 	{
 		"name": "Tagless",
@@ -7010,7 +7520,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "tagless",
+		"slack_id": "C0B620CBDDW"
 	},
 	{
 		"name": "Tailor",
@@ -7035,7 +7547,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "tailor-ysws",
+		"slack_id": "C0BCDN149RD"
 	},
 	{
 		"name": "Taiyaki",
@@ -7058,7 +7572,9 @@
 			"Julia"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "taiyaki",
+		"slack_id": "C0BSEPMAA5U"
 	},
 	{
 		"name": "Tape to Tape",
@@ -7084,7 +7600,9 @@
 			"Software",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "tape-to-tape",
+		"slack_id": "C0BAPE8AZ53"
 	},
 	{
 		"name": "Teach Your Machine",
@@ -7109,7 +7627,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "teach-your-machine",
+		"slack_id": "C093VLA0E1F"
 	},
 	{
 		"name": "TerminalCraft",
@@ -7160,7 +7680,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "terra",
+		"slack_id": "C0BQ6EA82AX"
 	},
 	{
 		"name": "The Trail",
@@ -7186,7 +7708,9 @@
 		"organizers": [
 			"Thomas Stubblefield"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "the-trail",
+		"slack_id": "C06RQ9TTEG3"
 	},
 	{
 		"name": "The Zoo",
@@ -7209,7 +7733,9 @@
 			"Lynn",
 			"Olive Wu"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "the-zoo",
+		"slack_id": "C08K37F66AK"
 	},
 	{
 		"name": "thingondesk",
@@ -7236,7 +7762,10 @@
 			"Websites",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "thingondesk",
+		"slack_id": "C0BEDRYH6AX"
 	},
 	{
 		"name": "thirdspace",
@@ -7287,7 +7816,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "throwback",
+		"slack_id": "C0BRWNCB8MP"
 	},
 	{
 		"name": "Tile",
@@ -7309,7 +7840,9 @@
 		"organizers": [
 			"Olive Wu"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "tile",
+		"slack_id": "C097E6ZAF99"
 	},
 	{
 		"name": "Timeless",
@@ -7334,7 +7867,9 @@
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "timeless",
+		"slack_id": "C0956A8CL86"
 	},
 	{
 		"name": "Tinker",
@@ -7359,7 +7894,9 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "tinker",
+		"slack_id": "C0A8UR7Q405"
 	},
 	{
 		"name": "Tonic",
@@ -7385,7 +7922,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "tonic",
+		"slack_id": "C08K7ARJ58U"
 	},
 	{
 		"name": "Toolsmith",
@@ -7407,7 +7946,9 @@
 		"organizers": [
 			"Sam Liu"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "toolsmith",
+		"slack_id": "C094X38BFT5"
 	},
 	{
 		"name": "Toppings",
@@ -7433,7 +7974,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "toppings",
+		"slack_id": "C08R8V2E3LY"
 	},
 	{
 		"name": "Touch Grass",
@@ -7459,7 +8002,9 @@
 		"project_types": [
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "touch-grass",
+		"slack_id": "C09BQMHB724"
 	},
 	{
 		"name": "Toybox",
@@ -7481,7 +8026,9 @@
 		"organizers": [
 			"Jiang Tongyu"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "toybox",
+		"slack_id": "C096HCT11G9"
 	},
 	{
 		"name": "TrailIt",
@@ -7504,7 +8051,9 @@
 			"Peleg",
 			"Euan Ripper"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "trailit-ysws",
+		"slack_id": "C0AGG8J6PLL"
 	},
 	{
 		"name": "Treasure",
@@ -7530,7 +8079,9 @@
 		"project_types": [
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "treasure-hunt-ysws",
+		"slack_id": "C0APFPMDETD"
 	},
 	{
 		"name": "Twist",
@@ -7553,7 +8104,9 @@
 			"Barnav Mitra",
 			"Max Wofford"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "twist-ysws",
+		"slack_id": "C092A93FA4X"
 	},
 	{
 		"name": "Twisted",
@@ -7585,7 +8138,10 @@
 			"Electronics",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "twisted",
+		"slack_id": "C0A8G9BSCSG"
 	},
 	{
 		"name": "Typeface",
@@ -7612,7 +8168,9 @@
 			"Websites",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "typeface-ysws",
+		"slack_id": "C0BBMA16677"
 	},
 	{
 		"name": "Undercity",
@@ -7642,7 +8200,8 @@
 		"project_types": [
 			"Electronics"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true
 	},
 	{
 		"name": "Vibes",
@@ -7666,7 +8225,9 @@
 			"Jared Senesac"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "vibes",
+		"slack_id": "C0AB4A5MJ4F"
 	},
 	{
 		"name": "Visioneer",
@@ -7690,7 +8251,9 @@
 			"Ashwath Chandran",
 			"Max Wofford"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "visioneer",
+		"slack_id": "C082PCKJYMN"
 	},
 	{
 		"name": "Wacky Files",
@@ -7712,7 +8275,9 @@
 		"organizers": [
 			"Euan Ripper"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "wacky-files",
+		"slack_id": "C09M0TRLRV0"
 	},
 	{
 		"name": "Waffles",
@@ -7720,7 +8285,7 @@
 		"kind": "ysws",
 		"type": "software",
 		"start_date": "2025-07-13",
-		"end_date": null,
+		"end_date": "2026-10-22",
 		"status": "ongoing",
 		"location": null,
 		"event": null,
@@ -7732,13 +8297,16 @@
 		"archive_url": null,
 		"description": "You ship a website using HTML CSS and JavaScript, and get Waffles!!!",
 		"organizers": [
-			"Sahana",
-			"Jared Senesac"
+			"Hana",
+			"Jared Senesac",
+			"Nova Harrington"
 		],
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": true,
+		"slack_channel": "waffles",
+		"slack_id": "C08QBKX5WCD"
 	},
 	{
 		"name": "Waveband",
@@ -7764,7 +8332,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "waveband",
+		"slack_id": "C082S5V95G8"
 	},
 	{
 		"name": "Waveform",
@@ -7787,7 +8357,9 @@
 			"Manitej"
 		],
 		"project_types": [],
-		"checked": false
+		"checked": false,
+		"slack_channel": "waveform",
+		"slack_id": "C09AX5PLLUS"
 	},
 	{
 		"name": "Whimsy",
@@ -7814,7 +8386,10 @@
 			"Software",
 			"Gamedev"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "whimsy",
+		"slack_id": "C0BDDKQF16Z"
 	},
 	{
 		"name": "Widget",
@@ -7839,7 +8414,9 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "widget",
+		"slack_id": "C0BHJB5HXUJ"
 	},
 	{
 		"name": "Winter Hardware Wonderland",
@@ -7862,7 +8439,9 @@
 			"Ella Xu",
 			"Belle See"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "wonderland",
+		"slack_id": "C06C6C646M6"
 	},
 	{
 		"name": "Woof",
@@ -7889,7 +8468,9 @@
 		"project_types": [
 			"Websites"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "woof",
+		"slack_id": "C08LCGSECQP"
 	},
 	{
 		"name": "Wrangler",
@@ -7916,7 +8497,9 @@
 			"Websites",
 			"Software"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "wrangler",
+		"slack_id": "C0BGVPKH0JH"
 	},
 	{
 		"name": "You Snake We Snake",
@@ -7939,7 +8522,9 @@
 			"fish (fishtested)",
 			"Jiang Tongyu"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "you-snake-we-snake",
+		"slack_id": "C0AFDMUEPRS"
 	},
 	{
 		"name": "You Spud, We Spud",
@@ -7961,7 +8546,9 @@
 		"organizers": [
 			"Sami.s"
 		],
-		"checked": false
+		"checked": false,
+		"slack_channel": "youspudwespud",
+		"slack_id": "C0BMCT6U3H6"
 	},
 	{
 		"name": "ZoneOut",
@@ -7989,6 +8576,9 @@
 			"Websites",
 			"Other"
 		],
-		"checked": false
+		"checked": false,
+		"logo_dark": true,
+		"slack_channel": "zoneout-announcements",
+		"slack_id": "C0BRRHJ7D7D"
 	}
 ]

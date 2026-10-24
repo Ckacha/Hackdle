@@ -98,7 +98,8 @@
 		"url_status": "online",
 		"archive_url": null,
 		"description": "Learn how a tech product works and get a grant to make it yourself.",
-		"organizers": []
+		"organizers": [],
+		"logo_dark": true
 	},
 	{
 		"name": "OnBoard Live",
@@ -1217,5 +1218,32 @@
 			"Gamedev"
 		],
 		"deprecated_reason": "No site (checked 2026-10-18)"
+	},
+	{
+		"name": "Campfire Overdrive",
+		"slug": "campfire-overdrive",
+		"kind": "hackathon",
+		"type": "software",
+		"start_date": "2026-02-03",
+		"end_date": "2026-02-26",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://training.campfire.hackclub.com/assets/logo2.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/campfire-overdrive.png",
+		"url": "https://training.campfire.hackclub.com/",
+		"url_status": "online",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Deven Jadhav"
+		],
+		"project_types": [
+			"Gamedev"
+		],
+		"checked": false,
+		"slack_channel": "campfire-overdrive",
+		"slack_id": "C0AAZ93PKJA"
 	}
 ]
