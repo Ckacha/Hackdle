@@ -24,6 +24,8 @@ export const programs = list as Program[];
 
 export const bySlug = new Map(programs.map((p) => [p.slug, p]));
 
+export const MAX_GUESSES = 5;
+
 export const COLUMNS = ['Program', 'Start', 'End', 'Format', 'Type', 'Organizer'] as const;
 
 export const organizers = [

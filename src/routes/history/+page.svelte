@@ -8,6 +8,8 @@
 	let { data }: PageProps = $props();
 
 	let revealed = $state(false);
+	let query = $state('');
+	let day = $state('');
 
 	onMount(() => {
 		try {
@@ -27,6 +29,29 @@
 			timeZone: 'UTC'
 		});
 
+	const norm = (s: string) => s.trim().toLowerCase();
+
+	function matches(date: string, p: Program | undefined) {
+		if (day && date !== day) return false;
+		const q = norm(query);
+		if (!q) return true;
+		return (
+			date.includes(q) ||
+			norm(dayLabel(date)).includes(q) ||
+			(!!p && (norm(p.name).includes(q) || p.organizers.some((o) => norm(o).includes(q))))
+		);
+	}
+
+	let todayShown = $derived(matches(data.today, revealed ? bySlug.get(data.answer) : undefined));
+	let shown = $derived(data.days.filter((d) => matches(d.date, bySlug.get(d.slug))));
+	let searching = $derived(!!(query.trim() || day));
+	let count = $derived(shown.length + +todayShown);
+
+	function clear() {
+		query = '';
+		day = '';
+	}
+
 	function dates(p: Program) {
 		const start = p.start_date ? monthLabel(p.start_date.slice(0, 7)) : '?';
 		const end = p.end_date ? monthLabel(p.end_date.slice(0, 7)) : isOngoing(p) ? 'now' : '?';
@@ -45,17 +70,32 @@
 		<p class="tagline">Every past Hackdle answer, newest first</p>
 	</header>
 
-	<ol class="days">
-		<li class="card day today">
-			<span class="date">Today · {dayLabel(data.today)}</span>
-			{#if revealed && bySlug.get(data.answer)}
-				{@render program(bySlug.get(data.answer)!)}
-			{:else}
-				<p class="hidden">Still a secret. <a href="/">Go play</a> to find out!</p>
-			{/if}
-		</li>
+	<div class="history-search">
+		<div class="history-inputs">
+			<input type="search" placeholder="Search a program, organizer or date…" aria-label="Search" bind:value={query} />
+			<input type="date" aria-label="Pick a day" min={data.days.at(-1)?.date ?? data.today} max={data.today} bind:value={day} />
+		</div>
+		{#if searching}
+			<p class="muted">
+				{count} {count === 1 ? 'day' : 'days'} found
+				<button class="link" type="button" onclick={clear}>Clear</button>
+			</p>
+		{/if}
+	</div>
 
-		{#each data.days as d (d.date)}
+	<ol class="days">
+		{#if todayShown}
+			<li class="card day today">
+				<span class="date">Today · {dayLabel(data.today)}</span>
+				{#if revealed && bySlug.get(data.answer)}
+					{@render program(bySlug.get(data.answer)!)}
+				{:else}
+					<p class="hidden">Still a secret. <a href="/">Go play</a> to find out!</p>
+				{/if}
+			</li>
+		{/if}
+
+		{#each shown as d (d.date)}
 			{@const p = bySlug.get(d.slug)}
 			<li class="card day">
 				<span class="date">{dayLabel(d.date)}</span>
@@ -66,7 +106,11 @@
 				{/if}
 			</li>
 		{:else}
-			<li class="muted none">No past days yet. Check back tomorrow!</li>
+			{#if searching}
+				{#if !todayShown}<li class="muted none">No days match.</li>{/if}
+			{:else}
+				<li class="muted none">No past days yet. Check back tomorrow!</li>
+			{/if}
 		{/each}
 	</ol>
 </main>

@@ -27,7 +27,7 @@
 
 	const TABS = [
 		{ href: '/', label: 'Play' },
-		{ href: '/list', label: 'Master List' },
+		{ href: '/list', label: 'Catalog' },
 		{ href: '/history', label: 'History' },
 		{ href: '/info', label: 'Info' }
 	];

@@ -1425,7 +1425,7 @@
 		"url": "https://clubs.hackclub.com/",
 		"url_status": "online",
 		"archive_url": null,
-		"description": "Don't run your programming club alone, make it a Hack Club! \nRun workshops, ship projects, get rewards with friends for free!",
+		"description": "Don't run your programming club alone, make it a Hack Club! \r\nRun workshops, ship projects, get rewards with friends for free!",
 		"organizers": [
 			"Jared Senesac"
 		],
@@ -1437,7 +1437,7 @@
 			"Websites",
 			"Electronics"
 		],
-		"checked": false,
+		"checked": true,
 		"slack_channel": "leaders",
 		"slack_id": "C02PA5G01ND"
 	},
@@ -1460,7 +1460,7 @@
 		"description": "You ship something to organize your digital life. We ship you a grant to buy something to organize your physical life.",
 		"organizers": [
 			"Ben Elliott",
-			"Olive Wu"
+			"Olive"
 		],
 		"project_types": [
 			"Other"
@@ -1512,7 +1512,7 @@
 		"archive_url": null,
 		"description": "Design projects in CAD and get a 3D printer to print them.",
 		"organizers": [
-			"Olive Wu",
+			"Olive",
 			"Arca Cengiz",
 			"Iamalive"
 		],
@@ -1723,6 +1723,35 @@
 		"checked": false,
 		"slack_channel": "cubed-ysws",
 		"slack_id": "C0BL0LJMUR5"
+	},
+	{
+		"name": "Cœur",
+		"slug": "coeur",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2026-02-23",
+		"end_date": "2026-07-12",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/coeur/HEAD/docs/images/heidiEnvelope.png",
+		"logo_kind": "photo",
+		"logo_file": "logos/coeur.png",
+		"url": "https://coeur.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Make an e-card, earn heart themed prizes (including a sweatshirt!!!)",
+		"organizers": [
+			"Lynn",
+			"Olive"
+		],
+		"project_types": [
+			"Software",
+			"Websites"
+		],
+		"slack_id": "C0A6MCHFFEU",
+		"slack_channel": "coeur",
+		"checked": true
 	},
 	{
 		"name": "Darkroom",
@@ -4920,7 +4949,7 @@
 			"Gamedev",
 			"Software"
 		],
-		"checked": false,
+		"checked": true,
 		"slack_channel": "mipmap",
 		"slack_id": "C0C2UMX4S9E"
 	},
@@ -5014,7 +5043,7 @@
 		"project_types": [
 			"Software"
 		],
-		"checked": false,
+		"checked": true,
 		"slack_channel": "neighborhood-help",
 		"slack_id": "C08QJCPDFTP"
 	},
@@ -5172,7 +5201,7 @@
 		"archive_url": null,
 		"description": "make software projects revolving around only one key on your keyboard, we'll send you a onekey macropad (or other amazing prizes!)",
 		"organizers": [
-			"Stelle Tran",
+			"Stelle",
 			"Anson Chung"
 		],
 		"project_types": [
@@ -5180,7 +5209,7 @@
 			"Gamedev",
 			"Websites"
 		],
-		"checked": false,
+		"checked": true,
 		"slack_channel": "onekey",
 		"slack_id": "C0AM132QQUR"
 	},
@@ -5288,7 +5317,7 @@
 			"Alex Ren",
 			"Max Wofford",
 			"Deven Jadhav",
-			"Olive Wu",
+			"Olive",
 			"Jiang Tongyu",
 			"Alex Van Doren",
 			"Clay Nicholson"
@@ -5320,7 +5349,7 @@
 		"organizers": [
 			"Zara",
 			"EnterpriseGoose",
-			"Olive Wu"
+			"Olive"
 		],
 		"project_types": [
 			"Websites"
@@ -5591,6 +5620,31 @@
 		"logo_dark": true,
 		"slack_channel": "phantom",
 		"slack_id": "C0B3M1T5C3U"
+	},
+	{
+		"name": "Picoducky",
+		"slug": "picoducky",
+		"kind": "ysws",
+		"type": "hardware",
+		"start_date": "2025-10-13",
+		"end_date": "2025-11-11",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": "https://picoducky.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Aarav",
+			"Olive"
+		],
+		"project_types": [
+			"Electronics"
+		]
 	},
 	{
 		"name": "Picture this!",
@@ -6037,6 +6091,32 @@
 		"checked": false,
 		"slack_channel": "pulsewidth",
 		"slack_id": "C0AS9JJ5E77"
+	},
+	{
+		"name": "Pxl",
+		"slug": "pxl",
+		"kind": "ysws",
+		"type": "software",
+		"start_date": "2026-01-01",
+		"end_date": "2026-01-31",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://raw.githubusercontent.com/hackclub/pxl/HEAD/static/images/pxl-logo.png",
+		"logo_kind": "logo",
+		"logo_file": "logos/pxl.png",
+		"url": "https://pxl.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": "Code any project, place pixels on a r/place-like canvas!",
+		"organizers": [
+			"Nico Smith",
+			"Ben Elliott",
+			"Euan Ripper"
+		],
+		"project_types": [
+			"Other"
+		]
 	},
 	{
 		"name": "Radish Jam",
@@ -6911,7 +6991,7 @@
 		"organizers": [
 			"Rudy",
 			"Aarav",
-			"Olive Wu"
+			"Olive"
 		],
 		"checked": false
 	},
@@ -6937,7 +7017,7 @@
 		"archive_url": null,
 		"description": "Learn to code and fly to an all girls slumber party hackathon!",
 		"organizers": [
-			"Celeste Roselli",
+			"Celeste",
 			"Reem Khalifa"
 		],
 		"project_types": [
@@ -6948,7 +7028,7 @@
 			"CAD",
 			"Other"
 		],
-		"checked": false,
+		"checked": true,
 		"slack_channel": "athena-sleepover",
 		"slack_id": "C0A9UNRF96V"
 	},
@@ -6971,7 +7051,7 @@
 		"description": "Earn $5 for deploying your Flask app",
 		"organizers": [
 			"Mustafa",
-			"Olive Wu"
+			"Olive"
 		],
 		"checked": false,
 		"slack_channel": "slushies",
@@ -7222,7 +7302,7 @@
 			"CAD",
 			"Other"
 		],
-		"checked": false,
+		"checked": true,
 		"logo_dark": true,
 		"slack_channel": "stardance",
 		"slack_id": "C0APH2MMHH7"
@@ -7346,6 +7426,30 @@
 		"checked": false,
 		"slack_channel": "storyboard",
 		"slack_id": "C095E84SE1X"
+	},
+	{
+		"name": "Summer Camp",
+		"slug": "summer-camp",
+		"kind": "hackathon",
+		"type": null,
+		"start_date": "2026-06-29",
+		"end_date": "2026-07-17",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": null,
+		"logo_kind": null,
+		"logo_file": null,
+		"url": "https://summer-camp.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Dhamari Trice-Hanson"
+		],
+		"project_types": [
+			"Other"
+		]
 	},
 	{
 		"name": "Summer of Making",
@@ -7672,7 +7776,7 @@
 		"archive_url": null,
 		"description": "Code each week, grow your farm, get a laptop!",
 		"organizers": [
-			"Olive Wu",
+			"Olive",
 			"Miguel",
 			"Fiona",
 			"Kai Ling"
@@ -7731,7 +7835,7 @@
 		"description": "Make an animal themed Svelte site, earn Ikea Animal Plushies",
 		"organizers": [
 			"Lynn",
-			"Olive Wu"
+			"Olive"
 		],
 		"checked": false,
 		"slack_channel": "the-zoo",
@@ -7838,7 +7942,7 @@
 		"archive_url": null,
 		"description": "Build a tile, get a tile, tile the tiles!",
 		"organizers": [
-			"Olive Wu"
+			"Olive"
 		],
 		"checked": false,
 		"slack_channel": "tile",
@@ -8082,6 +8186,28 @@
 		"checked": false,
 		"slack_channel": "treasure-hunt-ysws",
 		"slack_id": "C0APFPMDETD"
+	},
+	{
+		"name": "Turf Wars",
+		"slug": "turf-wars",
+		"kind": "ysws",
+		"type": null,
+		"start_date": "2026-07-02",
+		"end_date": "2026-07-17",
+		"status": "ended",
+		"location": null,
+		"event": null,
+		"logo": "https://hackclub.com/api/v1/events/recO21kDLGrO3UNVg",
+		"logo_kind": "logo",
+		"logo_file": "logos/turf-wars.webp",
+		"url": "https://turfwars.hackclub.com",
+		"url_status": "offline",
+		"archive_url": null,
+		"description": null,
+		"organizers": [
+			"Mihi"
+		],
+		"project_types": []
 	},
 	{
 		"name": "Twist",

@@ -20,14 +20,14 @@
 </script>
 
 <svelte:head>
-	<title>Master List · Hackdle</title>
+	<title>Catalog · Hackdle</title>
 	<meta name="description" content="Every Hack Club program in Hackdle." />
 </svelte:head>
 
 <main>
 	<header>
-		<h1>Master List</h1>
-		<p class="tagline">Every program that Hack Club has ever ran! (might have some incorrect info, if so please dm @Iamalive on slack!)</p>
+		<h1>Catalog</h1>
+		<p class="tagline">Every program that Hack Club has ever run! (Some info might be wrong. If so, please DM @Iamalive on Slack!)</p>
 	</header>
 
 	<div class="list-search">

@@ -150,6 +150,34 @@
 	color: var(--muted);
 }
 
+.guesses-left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin: 4px 0 16px;
+	color: var(--muted);
+	font-weight: bold;
+}
+
+.pips {
+	display: flex;
+	gap: 6px;
+}
+
+.pips i {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: var(--green);
+}
+
+.pips i.used {
+	background: var(--border);
+	box-shadow: inset 0 0 0 2px var(--muted);
+	opacity: 0.5;
+}
+
 .actions {
 	display: flex;
 	align-items: center;

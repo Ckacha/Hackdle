@@ -91,3 +91,47 @@
 	text-align: center;
 	padding: 12px;
 }
+
+.history-search {
+	width: 100%;
+	max-width: 680px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	text-align: center;
+}
+
+.history-inputs {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: 8px;
+}
+
+.history-inputs input {
+	box-shadow: var(--shadow-dd);
+	background: var(--background);
+}
+
+.history-inputs input[type='date'] {
+	width: auto;
+	color-scheme: light dark;
+}
+
+@media (max-width: 480px) {
+	.history-inputs {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.history-inputs input[type='date'] {
+		width: 100%;
+	}
+}
+
+.history-search .link {
+	border: none;
+	background: none;
+	font: inherit;
+	color: var(--red-text);
+	cursor: pointer;
+	text-decoration: underline;
+}

@@ -13,6 +13,7 @@
 		organizers,
 		splitOrgs,
 		COLUMNS,
+		MAX_GUESSES,
 		MONTHS,
 		FORMAT_LABEL,
 		TYPE_LABEL,
@@ -57,7 +58,9 @@
 
 	let results = $derived(guesses.map((g) => compare(g, answer)));
 	let won = $derived(results.some(isWin));
-	let done = $derived(won || gaveUp);
+	let left = $derived(Math.max(MAX_GUESSES - guesses.length, 0));
+	let lost = $derived(!won && !left);
+	let done = $derived(won || gaveUp || lost);
 	let complete = $derived(!!(slug && start && end && format && type && splitOrgs(organizer).length));
 
 	let suggestions = $derived.by(() => {
@@ -114,20 +117,20 @@
 		}
 		return [...groups].reverse();
 	});
-	let matchCount = $derived(byYear.reduce((n, [, ps]) => n + ps.length, 0));
+	let matchCount = $derived(byYear.reduce((n, [, ps]) => n + ps.length, 0)); 
 
 	const POOL_YEARS = [...new Set(answerPool.map((p) => p.start_date!.slice(0, 4)))].sort().reverse();
-
 	const known = (name: string) => organizers.some((o) => o.toLowerCase() === name.toLowerCase());
 
 	let orgParts = $derived(splitOrgs(organizer));
 	let orgValid = $derived(orgParts.length > 0 && orgParts.every(known));
-
 	let orgSuggestions = $derived.by(() => {
 		if (!orgOpen) return [];
+
 		const q = (organizer.split(',').at(-1) ?? '').trim().toLowerCase();
 		const taken = orgParts.map((o) => o.toLowerCase());
 		const rest = organizers.filter((o) => !taken.includes(o.toLowerCase()) || o.toLowerCase() === q);
+		
 		if (!q || known(q)) return rest;
 		return rest
 			.filter((o) => o.toLowerCase().includes(q))
@@ -293,10 +296,10 @@
 
 	{#if done}
 		<section class="card result">
-			<h2>{won ? 'You got it!' : 'Today’s program was'}</h2>
+			<h2>{won ? 'You got it!' : lost ? "Out of guesses! Today's program was" : "Today's program was"}</h2>
 			{@render details(answer)}
 			<p class="muted">
-				{#if won}Solved in {guesses.length} {guesses.length === 1 ? 'guess' : 'guesses'}.{/if}
+				{#if won}Solved in {guesses.length} of {MAX_GUESSES} {guesses.length === 1 ? 'guess' : 'guesses'}.{:else if lost}You used all {MAX_GUESSES} guesses.{/if}
 				Come back tomorrow for a new one.
 			</p>
 		</section>
@@ -304,6 +307,12 @@
 		<div class="play" class:with-filter={guesses.length}>
 			<form class="card guess" onsubmit={submit}>
 				<h2>Guess today's Hack Club program!</h2>
+				<div class="guesses-left" aria-label="{left} of {MAX_GUESSES} guesses left">
+					<span class="pips">
+						{#each Array.from({ length: MAX_GUESSES }) as _, i (i)}<i class:used={i < guesses.length}></i>{/each}
+					</span>
+					<span>{left} {left === 1 ? 'guess' : 'guesses'} left</span>
+				</div>
 
 				<div class="fields">
 					<label class="field wide">

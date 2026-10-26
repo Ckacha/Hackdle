@@ -506,33 +506,6 @@
 		"deprecated_reason": "Site returns 404 (checked 2026-10-18)"
 	},
 	{
-		"name": "Cœur",
-		"slug": "coeur",
-		"kind": "ysws",
-		"type": "software",
-		"start_date": "2026-02-23",
-		"end_date": "2026-05-24",
-		"status": "ended",
-		"location": null,
-		"event": null,
-		"logo": "https://raw.githubusercontent.com/hackclub/coeur/HEAD/docs/images/heidiEnvelope.png",
-		"logo_kind": "photo",
-		"logo_file": "logos/coeur.png",
-		"url": "https://coeur.hackclub.com",
-		"url_status": "offline",
-		"archive_url": null,
-		"description": "Make an e-card, earn heart themed prizes (including a sweatshirt!!!)",
-		"organizers": [
-			"Lynn",
-			"Olive Wu"
-		],
-		"project_types": [
-			"Software",
-			"Websites"
-		],
-		"deprecated_reason": "Site returns 404 (checked 2026-10-18)"
-	},
-	{
 		"name": "Dessert",
 		"slug": "dessert",
 		"kind": "ysws",
@@ -731,7 +704,7 @@
 		"description": "Build a website with an infinite realtime canvas, get awesome prizes!",
 		"organizers": [
 			"EnterpriseGoose",
-			"Olive Wu"
+			"Olive"
 		],
 		"project_types": [
 			"Websites"
@@ -867,32 +840,6 @@
 		"deprecated_reason": "Site does not resolve (checked 2026-10-18)"
 	},
 	{
-		"name": "Picoducky",
-		"slug": "picoducky",
-		"kind": "ysws",
-		"type": "hardware",
-		"start_date": "2025-10-13",
-		"end_date": "2025-11-11",
-		"status": "ended",
-		"location": null,
-		"event": null,
-		"logo": null,
-		"logo_kind": null,
-		"logo_file": null,
-		"url": "https://picoducky.hackclub.com",
-		"url_status": "offline",
-		"archive_url": null,
-		"description": null,
-		"organizers": [
-			"Aarav",
-			"Olive Wu"
-		],
-		"project_types": [
-			"Electronics"
-		],
-		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
-	},
-	{
 		"name": "Plush",
 		"slug": "plush",
 		"kind": "ysws",
@@ -937,33 +884,6 @@
 		"organizers": [
 			"Nishtha Sharma",
 			"Dhamari Trice-Hanson"
-		],
-		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
-	},
-	{
-		"name": "Pxl",
-		"slug": "pxl",
-		"kind": "ysws",
-		"type": "software",
-		"start_date": "2026-01-01",
-		"end_date": "2026-01-31",
-		"status": "ended",
-		"location": null,
-		"event": null,
-		"logo": "https://raw.githubusercontent.com/hackclub/pxl/HEAD/static/images/pxl-logo.png",
-		"logo_kind": "logo",
-		"logo_file": "logos/pxl.png",
-		"url": "https://pxl.hackclub.com",
-		"url_status": "offline",
-		"archive_url": null,
-		"description": "Code any project, place pixels on a r/place-like canvas!",
-		"organizers": [
-			"Nico Smith",
-			"Ben Elliott",
-			"Euan Ripper"
-		],
-		"project_types": [
-			"Other"
 		],
 		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
 	},
@@ -1120,31 +1040,6 @@
 		"deprecated_reason": "No site (checked 2026-10-18)"
 	},
 	{
-		"name": "Summer Camp",
-		"slug": "summer-camp",
-		"kind": "hackathon",
-		"type": null,
-		"start_date": "2026-06-29",
-		"end_date": "2026-07-17",
-		"status": "ended",
-		"location": null,
-		"event": null,
-		"logo": null,
-		"logo_kind": null,
-		"logo_file": null,
-		"url": "https://summer-camp.hackclub.com",
-		"url_status": "offline",
-		"archive_url": null,
-		"description": null,
-		"organizers": [
-			"Dhamari Trice-Hanson"
-		],
-		"project_types": [
-			"Other"
-		],
-		"deprecated_reason": "Site returns 404 (checked 2026-10-18)"
-	},
-	{
 		"name": "The Journey",
 		"slug": "the-journey",
 		"kind": "ysws",
@@ -1170,29 +1065,6 @@
 			"Other"
 		],
 		"deprecated_reason": "No site (checked 2026-10-18)"
-	},
-	{
-		"name": "Turf Wars",
-		"slug": "turf-wars",
-		"kind": "ysws",
-		"type": null,
-		"start_date": "2026-07-02",
-		"end_date": "2026-07-17",
-		"status": "ended",
-		"location": null,
-		"event": null,
-		"logo": "https://hackclub.com/api/v1/events/recO21kDLGrO3UNVg",
-		"logo_kind": "logo",
-		"logo_file": "logos/turf-wars.webp",
-		"url": "https://turfwars.hackclub.com",
-		"url_status": "offline",
-		"archive_url": null,
-		"description": null,
-		"organizers": [
-			"Mihi"
-		],
-		"project_types": [],
-		"deprecated_reason": "Site returns 503 (checked 2026-10-18)"
 	},
 	{
 		"name": "Wizard Orpheus",

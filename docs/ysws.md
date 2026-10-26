@@ -59,6 +59,7 @@
 - Crawl
 - Crescent
 - Cubed
+- Cœur
 - Darkroom
 - Defector
 - dockerize
@@ -182,6 +183,7 @@
 - Pathfinder
 - Pendant
 - Penumbra
+- Picoducky
 - Picture this!
 - Pixeldust
 - Pixl
@@ -198,6 +200,7 @@
 - PullQuests
 - Pulse
 - Pulsewidth
+- Pxl
 - Radish Jam
 - Rageclick
 - Railway
@@ -273,6 +276,7 @@
 - TrailIt
 - Treasure
 - Trick or Trace
+- Turf Wars
 - Twist
 - Twisted
 - Typeface
