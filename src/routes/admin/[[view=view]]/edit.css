@@ -444,3 +444,61 @@ textarea:focus {
 	font-size: 14px;
 	font-weight: bold;
 }
+
+.plan {
+	text-align: left;
+}
+
+.plan h3 {
+	margin: 24px 0 8px;
+}
+
+.plan-form {
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr) auto;
+	gap: 12px;
+	align-items: end;
+}
+
+.plan-form label {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin: 0;
+	font-weight: bold;
+}
+
+.plan-form input[type='date'] {
+	color-scheme: light dark;
+}
+
+.plan-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.plan-list li {
+	display: grid;
+	grid-template-columns: 190px minmax(0, 1fr) auto;
+	gap: 12px;
+	align-items: center;
+	padding: 10px 14px;
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	background: var(--surface);
+}
+
+.plan-list form {
+	margin: 0;
+}
+
+@media (max-width: 760px) {
+	.plan-form,
+	.plan-list li {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}

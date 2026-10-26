@@ -2,6 +2,7 @@ import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { answerPool } from '#lib/game.ts';
 
 const FILE = process.env.HACKDLE_DAILY_FILE || 'docs/daily.json';
+const SCHEDULE = 'docs/schedule.json';
 const TIME_ZONE = process.env.HACKDLE_TZ || 'America/New_York';
 
 type History = Record<string, string>;
@@ -20,8 +21,31 @@ function dayBefore(key: string): string {
 	return d.toISOString().slice(0, 10);
 }
 
-function read(): History {
-	return existsSync(FILE) ? JSON.parse(readFileSync(FILE, 'utf-8')) : {};
+export function dayAfter(key: string): string {
+	const d = new Date(`${key}T00:00:00Z`);
+	d.setUTCDate(d.getUTCDate() + 1);
+	return d.toISOString().slice(0, 10);
+}
+
+const readJson = (file: string): History => (existsSync(file) ? JSON.parse(readFileSync(file, 'utf-8')) : {});
+const read = () => readJson(FILE);
+
+export const readSchedule = () => readJson(SCHEDULE);
+
+export function upcoming() {
+	const today = todayKey();
+	return Object.entries(readSchedule())
+		.filter(([date]) => date > today)
+		.map(([date, slug]) => ({ date, slug }))
+		.sort((a, b) => a.date.localeCompare(b.date));
+}
+
+export function schedule(date: string, slug: string | null) {
+	const today = todayKey();
+	const next = Object.fromEntries(Object.entries(readSchedule()).filter(([d, s]) => d > today && d !== date && s !== slug));
+	if (slug) next[date] = slug;
+	const sorted = Object.fromEntries(Object.entries(next).sort(([a], [b]) => a.localeCompare(b)));
+	writeFileSync(SCHEDULE, JSON.stringify(sorted, null, '\t') + '\n');
 }
 
 export function daily() {
@@ -29,10 +53,13 @@ export function daily() {
 	const today = todayKey();
 
 	if (!history[today] || !answerPool.some((p) => p.slug === history[today])) {
-		const used = new Set(Object.values(history));
+		const planned = readSchedule();
+		const used = new Set([...Object.values(history), ...Object.entries(planned).filter(([d]) => d > today).map(([, s]) => s)]);
 		const fresh = answerPool.filter((p) => !used.has(p.slug));
 		const pool = fresh.length ? fresh : answerPool;
-		history[today] = pool[Math.floor(Math.random() * pool.length)].slug;
+		history[today] = answerPool.some((p) => p.slug === planned[today])
+			? planned[today]
+			: pool[Math.floor(Math.random() * pool.length)].slug;
 		writeFileSync(FILE, JSON.stringify(history, null, '\t') + '\n');
 		console.log(`[hackdle] ${today}: picked ${history[today]}`);
 	}

@@ -1809,13 +1809,13 @@
 		"description": "Game jam for high schoolers. Organized by high schoolers in 100 cities worldwide",
 		"organizers": [
 			"Deven Jadhav",
-			"Gus Ruben",
+			"Augie",
 			"Renran Sun"
 		],
 		"project_types": [
 			"Gamedev"
 		],
-		"checked": false,
+		"checked": true,
 		"slack_channel": "daydream",
 		"slack_id": "C094GLLH2RX"
 	},

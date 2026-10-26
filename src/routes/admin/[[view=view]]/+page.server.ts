@@ -1,8 +1,9 @@
 import { error, fail } from '@sveltejs/kit';
 import { writeFileSync, mkdirSync } from 'node:fs';
-import { pastDays, todayKey } from '#lib/server/daily.ts';
+import { dayAfter, pastDays, schedule, todayKey, upcoming } from '#lib/server/daily.ts';
+import { answerPool } from '#lib/game.ts';
 import { slackIdFrom, slackChannelFrom } from '#lib/program.ts';
-import { COOKIE, editPassword, isAuthed, passwordMatches, tokenFor } from '#lib/server/auth.ts';
+import { clearFailures, clientKey, COOKIE, editPassword, isAuthed, passwordMatches, recordFailure, tokenFor, triesLeft } from '#lib/server/auth.ts';
 import {
 	addName,
 	moveToDeprecated,
@@ -109,24 +110,36 @@ async function store(request: Request, cookies: Parameters<typeof isAuthed>[0], 
 	return pass ? { passed: slug, message: `Passed ${entry.name}` } : { saved: slug, message: `Saved ${entry.name}` };
 }
 
-export const load: PageServerLoad = ({ cookies }) => {
+export const load: PageServerLoad = (event) => {
+	const { cookies } = event;
 	if (!editPassword()) error(404, 'Not found');
-	if (!isAuthed(cookies)) return { authed: false as const };
+	if (!isAuthed(cookies)) return { authed: false as const, locked: !triesLeft(clientKey(event)) };
 	const byName = (a: Entry, b: Entry) => a.name.localeCompare(b.name);
 	return {
 		authed: true as const,
 		programs: readList().sort(byName),
 		deprecated: readDeprecated().sort(byName),
 		days: pastDays(),
-		today: todayKey()
+		today: todayKey(),
+		tomorrow: dayAfter(todayKey()),
+		upcoming: upcoming(),
+		pool: answerPool.map((p) => p.slug)
 	};
 };
 
 export const actions: Actions = {
-	login: async ({ request, cookies, url }) => {
+	login: async (event) => {
+		const { request, cookies, url } = event;
 		if (!editPassword()) error(404, 'Not found');
+		const key = clientKey(event);
+		if (!triesLeft(key)) return fail(429, { problem: 'Too many wrong passwords. Login is locked.', locked: true });
 		const f = await request.formData();
-		if (!passwordMatches(text(f, 'password'))) return fail(401, { problem: 'Wrong password' });
+		if (!passwordMatches(text(f, 'password'))) {
+			const left = recordFailure(key);
+			if (!left) return fail(429, { problem: 'Too many wrong passwords. Login is locked.', locked: true });
+			return fail(401, { problem: `Wrong password. ${left} ${left === 1 ? 'try' : 'tries'} left.` });
+		}
+		clearFailures(key);
 		cookies.set(COOKIE, tokenFor(editPassword()), {
 			path: '/admin',
 			httpOnly: true,
@@ -184,6 +197,25 @@ export const actions: Actions = {
 		writeList(list);
 		if (entry.kind !== 'hackathon') addName(entry.name);
 		return { saved: slug, message: `Added ${entry.name}` };
+	},
+
+	schedule: async ({ request, cookies }) => {
+		guard(cookies);
+		const f = await request.formData();
+		const date = text(f, 'date');
+		const slug = text(f, 'slug');
+		if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || date <= todayKey()) return fail(400, { problem: 'Pick a day after today' });
+		const p = answerPool.find((x) => x.slug === slug);
+		if (!p) return fail(400, { problem: "That program can't be a daily answer" });
+		schedule(date, slug);
+		return { message: `${p.name} is set for ${date}` };
+	},
+
+	unschedule: async ({ request, cookies }) => {
+		guard(cookies);
+		const f = await request.formData();
+		schedule(text(f, 'date'), null);
+		return { message: `Cleared ${text(f, 'date')}` };
 	},
 
 	deprecate: async ({ request, cookies }) => {

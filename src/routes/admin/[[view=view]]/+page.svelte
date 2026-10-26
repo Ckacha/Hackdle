@@ -28,7 +28,9 @@
 					: data.programs
 			: []
 	);
-	let checkedCount = $derived(data.authed ? data.programs.filter((p) => p.checked).length : 0);
+	let pickable = $derived(data.authed ? data.programs.filter((p) => data.pool.includes(p.slug)) : []);
+	let usedOn = $derived(new Map(data.authed ? data.days.map((d) => [d.slug, d.date]) : []));
+	let checkedCount =$derived(data.authed ? data.programs.filter((p) => p.checked).length : 0);
 	let found = $derived(selected && selected !== 'new' ? programs.find((p) => p.slug === selected) : undefined);
 	let current = $derived(view === 'list' || view === 'review' ? found : undefined);
 	let reviewing = $derived(view === 'review' && !!current);
@@ -142,8 +144,22 @@
 		preview = file ? URL.createObjectURL(file) : null;
 	}
 
+	const LOCAL = ['localhost', '127.0.0.1', '[::1]'];
+	const LIVE_WARNING =
+		"You're on the live site. Saving here changes the files on hakos, so you'll have to sync those changes between hakos, your computer and GitHub by hand, and auto-deploys stop until you do. Use localhost instead.\n\nSave anyway?";
+
+	const liveOk = () => LOCAL.includes(location.hostname) || confirm(LIVE_WARNING);
+
+	const guarded: SubmitFunction = ({ cancel }) => {
+		if (!liveOk()) cancel();
+	};
+
 	const submit: SubmitFunction = ({ action, cancel }) => {
 		if (action.search.includes('deprecate') && !confirm(`Move ${current?.name} to deprecated.json?`)) {
+			cancel();
+			return;
+		}
+		if (!liveOk()) {
 			cancel();
 			return;
 		}
@@ -186,7 +202,12 @@
 		<p class="tagline">Check list.json, should update</p>
 	</header>
 
-	{#if !data.authed}
+	{#if !data.authed && (data.locked || (form && 'locked' in form))}
+		<div class="card login">
+			<h2>Locked</h2>
+			<p class="problem">Too many wrong passwords. Login is locked.</p>
+		</div>
+	{:else if !data.authed}
 		<form class="card login" method="POST" action="?/login" use:enhance>
 			<h2>Password</h2>
 			<input type="password" name="password" placeholder="Edit password" autocomplete="current-password" required />
@@ -418,6 +439,44 @@
 							</div>
 						</form>
 					{/key}
+				{:else if view === 'days'}
+					<div class="plan">
+						<h2>Pick an upcoming day</h2>
+						<p class="muted">Saved to docs/schedule.json. Push it before midnight Eastern so the live site uses it.</p>
+						<form class="plan-form" method="POST" action="?/schedule" use:enhance={guarded}>
+							<label>
+								<span>Day</span>
+								<input type="date" name="date" min={data.tomorrow} value={data.tomorrow} required />
+							</label>
+							<label>
+								<span>Program</span>
+								<select name="slug" required>
+									<option value="">Choose a program…</option>
+									{#each pickable as p (p.slug)}
+										<option value={p.slug}>{p.name}{#if usedOn.get(p.slug)} (used {usedOn.get(p.slug)}){/if}</option>
+									{/each}
+								</select>
+							</label>
+							<button class="submit" type="submit">Set</button>
+						</form>
+						<h3>Coming up</h3>
+						{#if data.upcoming.length}
+							<ul class="plan-list">
+								{#each data.upcoming as u (u.date)}
+									<li>
+										<span class="day-date">{u.date === data.tomorrow ? `Tomorrow · ${u.date}` : u.date}</span>
+										<span>{data.programs.find((x) => x.slug === u.slug)?.name ?? u.slug}</span>
+										<form method="POST" action="?/unschedule" use:enhance={guarded}>
+											<input type="hidden" name="date" value={u.date} />
+											<button class="link" type="submit">Remove</button>
+										</form>
+									</li>
+								{/each}
+							</ul>
+						{:else}
+							<p class="muted">Nothing set. Days without a pick get a random program.</p>
+						{/if}
+					</div>
 				{:else if view === 'review'}
 					<p class="muted empty">
 						{programs.length ? 'Pick a program on the left.' : `All ${data.programs.length} programs are checked.`}

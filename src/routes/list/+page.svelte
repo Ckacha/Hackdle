@@ -27,7 +27,7 @@
 <main>
 	<header>
 		<h1>Catalog</h1>
-		<p class="tagline">Every program that Hack Club has ever run! (Some info might be wrong. If so, please DM @Iamalive on Slack!)</p>
+		<p class="tagline">Every program that Hack Club has ever run! (Some info might be wrong. If so, please DM @Iamalive or go to <a href="https://hackclub.enterprise.slack.com/archives/C0CB25LV0PJ" target="_blank" rel="noreferrer">#hackdle</a> on Slack!)</p>
 	</header>
 
 	<div class="list-search">

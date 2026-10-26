@@ -30,3 +30,8 @@
 .programs .program {
 	flex: 1;
 }
+
+.tagline a {
+	color: var(--red-text);
+	font-weight: bold;
+}
